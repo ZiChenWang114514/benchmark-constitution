@@ -305,8 +305,9 @@ export function trendingFor(id: string): TrendingView | undefined {
 export function newsWhen(item: NewsItem): string {
   const locale = currentLocale();
   const observed = t(locale, 'news.observed', { date: item.observed_date });
+  const sep = locale === 'zh' ? '，' : ', ';
   if (!item.event_date || item.event_date === '待核实' || item.event_date === 'Unverified') {
-    return `${observed}, ${t(locale, 'news.event_unverified')}`;
+    return `${observed}${sep}${t(locale, 'news.event_unverified')}`;
   }
-  return `${observed}, ${t(locale, 'news.event', { date: item.event_date })}`;
+  return `${observed}${sep}${t(locale, 'news.event', { date: item.event_date })}`;
 }
