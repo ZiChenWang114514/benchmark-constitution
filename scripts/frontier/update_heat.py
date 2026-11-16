@@ -163,9 +163,9 @@ def version_labels(mentions,reg,norm):
     out={}
     for (bid,mid),labs in raw.items():
         labs={pick[(bid,l)] for l in labs};canon=reg[bid]['name']
-        # A bare family name next to "<family> <version number>" from the same model adds
+        # A bare name next to "<same name> <version number>" from the same model adds
         # nothing; it is kept next to named subsets (e.g. HealthBench + HealthBench Hard).
-        if canon in labs and any(re.fullmatch(re.escape(canon)+r'[ -]v?\d+(?:\.\d+)*',l) for l in labs):labs.discard(canon)
+        labs={b for b in labs if not any(re.fullmatch(re.escape(b)+r'[ -]v?\d+(?:\.\d+)*',l) for l in labs)}
         out[(bid,mid)]=sorted(labs,key=lambda l:(l.casefold(),l))
     return out
 

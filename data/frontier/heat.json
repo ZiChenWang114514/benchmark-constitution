@@ -661,6 +661,18 @@
           "value": "not stated",
           "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
           "accessed": "2026-11-16"
+        },
+        {
+          "key": "api_model_id",
+          "value": "gpt-6.1-terra",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "input $1 / cached input $0.05 / output $5",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "accessed": "2026-11-16"
         }
       ]
     },
@@ -1145,6 +1157,7 @@
       ],
       "benchmarks": [
         "aav-capsid-packaging",
+        "agents-last-exam",
         "automationbench-aa",
         "broken-search-tool-openai",
         "coding-deception-openai",
@@ -1156,6 +1169,7 @@
         "healthbench",
         "kernelgen",
         "mentalhealthbench",
+        "mmmu-pro",
         "multimodal-troubleshooting-virology",
         "oai-repo-sabotage",
         "osworld",
@@ -1163,6 +1177,7 @@
         "protocolqa",
         "sec-bench",
         "shp2-function-prediction",
+        "terminal-bench",
         "terminal-bench-science",
         "troubleshootingbench"
       ],
@@ -1214,6 +1229,18 @@
           "key": "codex_default_context",
           "value": "500K default context in Codex",
           "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "api_model_id",
+          "value": "gpt-6.1-sol",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "input $2 / cached input $0.10 / output $10",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
           "accessed": "2026-11-16"
         }
       ]
@@ -1372,6 +1399,7 @@
         "exploitbench",
         "exploitgym",
         "frontiercode",
+        "gdp-pdf",
         "healthbench",
         "kernelgen",
         "multimodal-troubleshooting-virology",
@@ -1382,6 +1410,7 @@
         "sandbox-bench-openai",
         "sec-bench",
         "shp2-function-prediction",
+        "terminal-bench-science",
         "troubleshootingbench"
       ],
       "note": "官方论坛首帖2026-09-22=2026-09-23 03:16；官方公历标签9月22日。",
@@ -1426,6 +1455,18 @@
           "key": "parameters",
           "value": "not stated",
           "url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "api_model_id",
+          "value": "gpt-6-sol",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "input $2 / output $10; cached input 90% off",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
           "accessed": "2026-11-16"
         }
       ]
@@ -1908,6 +1949,7 @@
         "frontiercode",
         "frontiercyber",
         "frontiermath",
+        "gdp-pdf",
         "genebench",
         "gpqa",
         "gsm8k",
@@ -1921,6 +1963,7 @@
         "medchembench",
         "mind2web",
         "mle-bench",
+        "mmmu-pro",
         "monorepo-bench",
         "mrcr-v2",
         "multimodal-troubleshooting-virology",
@@ -1988,6 +2031,18 @@
           "value": "not stated",
           "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
           "accessed": "2026-11-16"
+        },
+        {
+          "key": "api_model_id",
+          "value": "gpt-6-astra",
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "accessed": "2026-11-16"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "input $10 / output $50",
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "accessed": "2026-11-16"
         }
       ]
     }
@@ -1995,6 +2050,92 @@
   "ranking": [
     {
       "rank": 1,
+      "benchmark_id": "terminal-bench",
+      "name": "Terminal-Bench",
+      "domain": "代码",
+      "count": 17,
+      "share": 0.85,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "deepseek-v4-1-flash",
+        "deepseek-v4-1-flash-1017",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "grok-4-7",
+        "kimi-k3-1-pro",
+        "longcat-2-5",
+        "muse-wonder",
+        "muse-wonder-full",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 2,
+      "versions": {
+        "claude-fable-5-2": [
+          "Terminal-Bench 4.0"
+        ],
+        "claude-opus-5-5": [
+          "Terminal-Bench 4.0"
+        ],
+        "claude-sonnet-5-5": [
+          "Terminal-Bench 4.0"
+        ],
+        "deepseek-v4-1-flash": [
+          "Terminal-Bench 2.1",
+          "Terminal-Bench 3.0",
+          "Terminal-Bench 4.0"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-argon": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-carbon": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-hydrogen": [
+          "Terminal-Bench 4.0",
+          "Terminal-Bench 4.1"
+        ],
+        "gpt-6-1-sol": [
+          "Terminal-Bench 4.0"
+        ],
+        "gpt-6-1-terra": [
+          "Terminal-Bench 4.0"
+        ],
+        "gpt-6-astra": [
+          "Terminal-Bench 4.0"
+        ],
+        "grok-4-7": [
+          "Terminal-Bench 4.0"
+        ],
+        "kimi-k3-1-pro": [
+          "Terminal-Bench 4.0"
+        ],
+        "longcat-2-5": [
+          "Terminal-Bench 2.1",
+          "Terminal-Bench 4.0"
+        ],
+        "muse-wonder": [
+          "Terminal-Bench 4.0"
+        ],
+        "muse-wonder-full": [
+          "Terminal-Bench 4.0"
+        ],
+        "qwen4-max": [
+          "Terminal-Bench 4.0"
+        ]
+      }
+    },
+    {
+      "rank": 2,
       "benchmark_id": "automationbench-aa",
       "name": "AutomationBench-AA",
       "domain": "Agent",
@@ -2019,7 +2160,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": -1,
       "versions": {
         "claude-fable-5-2": [
           "AutomationBench"
@@ -2031,7 +2172,6 @@
           "AutomationBench"
         ],
         "deepseek-v4-1-flash": [
-          "AutomationBench",
           "AutomationBench v1.0.6"
         ],
         "deepseek-v4-1-flash-1017": [
@@ -2050,7 +2190,7 @@
           "AutomationBench v1.0.6"
         ],
         "gpt-6-astra": [
-          "AutomationBench"
+          "AutomationBench v1.0.6"
         ],
         "gpt-6-sol": [
           "AutomationBench v1.0.6"
@@ -2073,7 +2213,7 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "benchmark_id": "deepswe",
       "name": "DeepSWE",
       "domain": "其他",
@@ -2098,7 +2238,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": -1,
       "versions": {
         "claude-fable-5-2": [
           "DeepSWE v1.1"
@@ -2151,24 +2291,22 @@
       }
     },
     {
-      "rank": 3,
-      "benchmark_id": "terminal-bench",
-      "name": "Terminal-Bench",
-      "domain": "代码",
-      "count": 16,
-      "share": 0.8,
+      "rank": 4,
+      "benchmark_id": "agents-last-exam",
+      "name": "Agents’ Last Exam",
+      "domain": "Agent",
+      "count": 14,
+      "share": 0.7,
       "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
         "deepseek-v4-1-flash",
         "deepseek-v4-1-flash-1017",
         "gemini-4-argon",
         "gemini-4-carbon",
         "gemini-4-hydrogen",
+        "gpt-6-1-sol",
         "gpt-6-1-terra",
         "gpt-6-astra",
-        "grok-4-7",
+        "gpt-6-sol",
         "kimi-k3-1-pro",
         "longcat-2-5",
         "muse-wonder",
@@ -2176,64 +2314,54 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": 2,
       "versions": {
-        "claude-fable-5-2": [
-          "Terminal-Bench 4.0"
-        ],
-        "claude-opus-5-5": [
-          "Terminal-Bench 4.0"
-        ],
-        "claude-sonnet-5-5": [
-          "Terminal-Bench 4.0"
-        ],
         "deepseek-v4-1-flash": [
-          "Terminal-Bench 2.1",
-          "Terminal-Bench 3.0",
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "deepseek-v4-1-flash-1017": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "gemini-4-argon": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "gemini-4-carbon": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam v1.1"
         ],
         "gemini-4-hydrogen": [
-          "Terminal-Bench 4.0",
-          "Terminal-Bench 4.1"
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6-1-sol": [
+          "Agents’ Last Exam v1"
         ],
         "gpt-6-1-terra": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam v1"
         ],
         "gpt-6-astra": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam v1"
         ],
-        "grok-4-7": [
-          "Terminal-Bench 4.0"
+        "gpt-6-sol": [
+          "Agents’ Last Exam"
         ],
         "kimi-k3-1-pro": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "longcat-2-5": [
-          "Terminal-Bench 2.1",
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam v1.1"
         ],
         "muse-wonder": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "muse-wonder-full": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam"
         ],
         "qwen4-max": [
-          "Terminal-Bench 4.0"
+          "Agents’ Last Exam v1.1"
         ]
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "benchmark_id": "healthbench",
       "name": "HealthBench",
       "domain": "生物与医学",
@@ -2256,7 +2384,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": 2,
       "versions": {
         "claude-fable-5-2": [
           "HealthBench",
@@ -2319,72 +2447,6 @@
       }
     },
     {
-      "rank": 5,
-      "benchmark_id": "agents-last-exam",
-      "name": "Agents’ Last Exam",
-      "domain": "Agent",
-      "count": 13,
-      "share": 0.65,
-      "models": [
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "kimi-k3-1-pro",
-        "longcat-2-5",
-        "muse-wonder",
-        "muse-wonder-full",
-        "qwen4-max"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "Agents’ Last Exam"
-        ],
-        "deepseek-v4-1-flash-1017": [
-          "Agents’ Last Exam"
-        ],
-        "gemini-4-argon": [
-          "Agents’ Last Exam"
-        ],
-        "gemini-4-carbon": [
-          "Agents’ Last Exam v1.1"
-        ],
-        "gemini-4-hydrogen": [
-          "Agents’ Last Exam v1.1"
-        ],
-        "gpt-6-1-terra": [
-          "Agents’ Last Exam"
-        ],
-        "gpt-6-astra": [
-          "Agents’ Last Exam"
-        ],
-        "gpt-6-sol": [
-          "Agents’ Last Exam"
-        ],
-        "kimi-k3-1-pro": [
-          "Agents’ Last Exam"
-        ],
-        "longcat-2-5": [
-          "Agents’ Last Exam v1.1"
-        ],
-        "muse-wonder": [
-          "Agents’ Last Exam"
-        ],
-        "muse-wonder-full": [
-          "Agents’ Last Exam"
-        ],
-        "qwen4-max": [
-          "Agents’ Last Exam v1.1"
-        ]
-      }
-    },
-    {
       "rank": 6,
       "benchmark_id": "hle",
       "name": "Humanity’s Last Exam",
@@ -2428,7 +2490,7 @@
           "Humanity’s Last Exam Diamond"
         ],
         "gpt-6-astra": [
-          "Humanity’s Last Exam"
+          "Humanity’s Last Exam with tools"
         ],
         "kimi-k3-1-pro": [
           "Humanity’s Last Exam",
@@ -2478,7 +2540,7 @@
       "rank_change": -2,
       "versions": {
         "claude-fable-5-2": [
-          "OSWorld 2.1"
+          "OSWorld 2.1 offline set"
         ],
         "claude-opus-5-5": [
           "OSWorld 2.0",
@@ -2494,19 +2556,21 @@
           "OSWorld 2.1"
         ],
         "gemini-4-hydrogen": [
-          "OSWorld 2.1 offline subset"
+          "OSWorld 2.1 offline set"
         ],
         "gpt-6-1-sol": [
-          "OSWorld 2.0"
+          "OSWorld 2.0 offline set",
+          "OSWorld 2.1 offline set"
         ],
         "gpt-6-1-terra": [
-          "OSWorld 2.1"
+          "OSWorld 2.1 offline set"
         ],
         "gpt-6-astra": [
-          "OSWorld 2.0"
+          "OSWorld 2.0 offline set",
+          "OSWorld 2.1 offline set"
         ],
         "gpt-6-sol": [
-          "OSWorld 2.0"
+          "OSWorld 2.0 offline set"
         ],
         "kimi-k3-1-pro": [
           "OSWorld 2.1"
@@ -2579,6 +2643,64 @@
     },
     {
       "rank": 9,
+      "benchmark_id": "terminal-bench-science",
+      "name": "Terminal-Bench-Science",
+      "domain": "综合科学",
+      "count": 11,
+      "share": 0.55,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 1,
+      "versions": {
+        "claude-fable-5-2": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "claude-opus-5-5": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "claude-sonnet-5-5": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-argon": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-carbon": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-hydrogen": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gpt-6-1-sol": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gpt-6-1-terra": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gpt-6-astra": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gpt-6-sol": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "kimi-k3-1-pro": [
+          "Terminal-Bench-Science 0.1"
+        ]
+      }
+    },
+    {
+      "rank": 10,
       "benchmark_id": "chartography",
       "name": "Chartography",
       "domain": "多模态",
@@ -2597,7 +2719,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 1,
       "versions": {
         "claude-fable-5-2": [
           "Chartography no tools"
@@ -2633,7 +2755,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "benchmark_id": "exploitbench",
       "name": "ExploitBench",
       "domain": "安全",
@@ -2652,7 +2774,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": -3,
       "versions": {
         "claude-opus-5-5": [
           "ExploitBench"
@@ -2673,7 +2795,8 @@
           "ExploitBench"
         ],
         "gpt-6-astra": [
-          "ExploitBench"
+          "ExploitBench",
+          "ExploitBench (June-Aug 2026)"
         ],
         "gpt-6-sol": [
           "ExploitBench"
@@ -2687,7 +2810,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "benchmark_id": "programbench",
       "name": "ProgramBench",
       "domain": "其他",
@@ -2706,7 +2829,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1,
+      "rank_change": 0,
       "versions": {
         "claude-fable-5-2": [
           "ProgramBench"
@@ -2737,60 +2860,6 @@
         ],
         "qwen4-max": [
           "ProgramBench"
-        ]
-      }
-    },
-    {
-      "rank": 12,
-      "benchmark_id": "terminal-bench-science",
-      "name": "Terminal-Bench-Science",
-      "domain": "综合科学",
-      "count": 10,
-      "share": 0.5,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen",
-        "gpt-6-1-sol",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "kimi-k3-1-pro"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "claude-fable-5-2": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "claude-opus-5-5": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "claude-sonnet-5-5": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-argon": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-carbon": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-hydrogen": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-1-sol": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-1-terra": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-astra": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "kimi-k3-1-pro": [
-          "Terminal-Bench-Science 0.1"
         ]
       }
     },
@@ -2927,7 +2996,6 @@
           "GDPval"
         ],
         "kimi-k3-1-pro": [
-          "GDPval-AA",
           "GDPval-AA v2.1"
         ],
         "longcat-2-5": [
@@ -3179,6 +3247,44 @@
     },
     {
       "rank": 22,
+      "benchmark_id": "gdp-pdf",
+      "name": "GDP.pdf",
+      "domain": "其他",
+      "count": 6,
+      "share": 0.3,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "kimi-k3-1-pro",
+        "muse-wonder",
+        "muse-wonder-full"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 3,
+      "versions": {
+        "gpt-6-1-sol": [
+          "GDP.pdf"
+        ],
+        "gpt-6-astra": [
+          "GDP.pdf"
+        ],
+        "gpt-6-sol": [
+          "GDP.pdf"
+        ],
+        "kimi-k3-1-pro": [
+          "GDP.pdf"
+        ],
+        "muse-wonder": [
+          "GDP.pdf"
+        ],
+        "muse-wonder-full": [
+          "GDP.pdf"
+        ]
+      }
+    },
+    {
+      "rank": 23,
       "benchmark_id": "benchcad",
       "name": "BenchCAD",
       "domain": "多模态",
@@ -3192,7 +3298,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1,
+      "rank_change": 0,
       "versions": {
         "claude-fable-5-2": [
           "BenchCAD 2.1"
@@ -3213,7 +3319,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "benchmark_id": "cursorbench",
       "name": "CursorBench",
       "domain": "代码",
@@ -3227,7 +3333,7 @@
         "grok-4-7"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 12,
+      "rank_change": 11,
       "versions": {
         "claude-fable-5-2": [
           "CursorBench 4.0"
@@ -3247,7 +3353,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 25,
       "benchmark_id": "draco",
       "name": "DRACO",
       "domain": "Agent",
@@ -3261,7 +3367,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 13,
+      "rank_change": 12,
       "versions": {
         "claude-fable-5-2": [
           "DRACO"
@@ -3281,7 +3387,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 26,
       "benchmark_id": "frontiercode",
       "name": "FrontierCode",
       "domain": "代码",
@@ -3295,7 +3401,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -2,
       "versions": {
         "claude-fable-5-2": [
           "FrontierCode v2.0"
@@ -3308,15 +3414,50 @@
           "FrontierCode v1.1"
         ],
         "gpt-6-astra": [
-          "FrontierCode v1.1"
+          "FrontierCode v1.1 Extended",
+          "FrontierCode v1.1 Main"
         ],
         "gpt-6-sol": [
-          "FrontierCode v1.1"
+          "FrontierCode v1.1 Main"
         ]
       }
     },
     {
-      "rank": 26,
+      "rank": 27,
+      "benchmark_id": "mmmu-pro",
+      "name": "MMMU-Pro",
+      "domain": "多模态",
+      "count": 5,
+      "share": 0.25,
+      "models": [
+        "deepseek-v4-1-flash",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 27,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MMMU-Pro"
+        ],
+        "gpt-6-1-sol": [
+          "MMMU-Pro (Vision)"
+        ],
+        "gpt-6-1-terra": [
+          "MMMU-Pro (Vision)"
+        ],
+        "gpt-6-astra": [
+          "MMMU-Pro (Vision)"
+        ],
+        "kimi-k3-1-pro": [
+          "MMMU-Pro"
+        ]
+      }
+    },
+    {
+      "rank": 28,
       "benchmark_id": "swe-bench-pro",
       "name": "SWE-Bench Pro",
       "domain": "代码",
@@ -3330,7 +3471,7 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": 1,
       "versions": {
         "claude-fable-5-2": [
           "SWE-Bench Pro"
@@ -3350,7 +3491,7 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 29,
       "benchmark_id": "biomysterybench",
       "name": "BioMysteryBench",
       "domain": "其他",
@@ -3363,7 +3504,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 22,
+      "rank_change": 20,
       "versions": {
         "claude-opus-5-5": [
           "BioMysteryBench"
@@ -3380,7 +3521,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 30,
       "benchmark_id": "broken-search-tool-openai",
       "name": "Broken Search Tool",
       "domain": "安全",
@@ -3393,7 +3534,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": 1,
       "versions": {
         "gpt-6-1-sol": [
           "Broken Search Tool"
@@ -3410,7 +3551,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 31,
       "benchmark_id": "coding-deception-openai",
       "name": "Coding Deception",
       "domain": "安全",
@@ -3423,7 +3564,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4,
+      "rank_change": 2,
       "versions": {
         "gpt-6-1-sol": [
           "Coding Deception"
@@ -3440,7 +3581,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 32,
       "benchmark_id": "coronavirus-ace2-screen",
       "name": "Coronavirus–ACE2 Cell-Entry Screen",
       "domain": "生物与医学",
@@ -3453,7 +3594,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4,
+      "rank_change": 2,
       "versions": {
         "gpt-6-1-sol": [
           "Coronavirus–ACE2 Cell-Entry Screen"
@@ -3470,37 +3611,7 @@
       }
     },
     {
-      "rank": 31,
-      "benchmark_id": "gdp-pdf",
-      "name": "GDP.pdf",
-      "domain": "其他",
-      "count": 4,
-      "share": 0.2,
-      "models": [
-        "gpt-6-1-sol",
-        "kimi-k3-1-pro",
-        "muse-wonder",
-        "muse-wonder-full"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "gpt-6-1-sol": [
-          "GDP.pdf"
-        ],
-        "kimi-k3-1-pro": [
-          "GDP.pdf"
-        ],
-        "muse-wonder": [
-          "GDP.pdf"
-        ],
-        "muse-wonder-full": [
-          "GDP.pdf"
-        ]
-      }
-    },
-    {
-      "rank": 32,
+      "rank": 33,
       "benchmark_id": "gpqa",
       "name": "GPQA",
       "domain": "推理",
@@ -3513,7 +3624,7 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -17,
+      "rank_change": -18,
       "versions": {
         "deepseek-v4-1-flash": [
           "GPQA Diamond"
@@ -3530,7 +3641,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 34,
       "benchmark_id": "jobbench",
       "name": "JobBench",
       "domain": "Agent",
@@ -3543,7 +3654,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 18,
+      "rank_change": 17,
       "versions": {
         "longcat-2-5": [
           "JobBench"
@@ -3560,7 +3671,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 35,
       "benchmark_id": "kernelgen",
       "name": "KernelGen 1P",
       "domain": "代码",
@@ -3573,7 +3684,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": 4,
       "versions": {
         "gpt-6-1-sol": [
           "KernelGen 1P"
@@ -3590,7 +3701,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 36,
       "benchmark_id": "multimodal-troubleshooting-virology",
       "name": "Multimodal Troubleshooting Virology",
       "domain": "生物与医学",
@@ -3603,7 +3714,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": 4,
       "versions": {
         "gpt-6-1-sol": [
           "Multimodal Troubleshooting Virology"
@@ -3620,7 +3731,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 37,
       "benchmark_id": "nl2repo-bench",
       "name": "NL2Repo-Bench",
       "domain": "代码",
@@ -3633,7 +3744,7 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -9,
+      "rank_change": -10,
       "versions": {
         "deepseek-v4-1-flash": [
           "NL2Repo-Bench"
@@ -3650,7 +3761,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 38,
       "benchmark_id": "officeqa",
       "name": "OfficeQA",
       "domain": "Agent",
@@ -3663,7 +3774,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 18,
+      "rank_change": 17,
       "versions": {
         "claude-fable-5-2": [
           "OfficeQA",
@@ -3676,13 +3787,12 @@
           "OfficeQA Pro"
         ],
         "kimi-k3-1-pro": [
-          "OfficeQA Pro",
           "OfficeQA Pro v2"
         ]
       }
     },
     {
-      "rank": 38,
+      "rank": 39,
       "benchmark_id": "phage-plasmid-coevolution",
       "name": "Phage–plasmid Co-evolution",
       "domain": "生物与医学",
@@ -3695,7 +3805,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4,
+      "rank_change": 3,
       "versions": {
         "gpt-6-1-sol": [
           "Phage–plasmid Co-evolution"
@@ -3712,7 +3822,7 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 40,
       "benchmark_id": "protocolqa",
       "name": "ProtocolQA",
       "domain": "生物与医学",
@@ -3725,7 +3835,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": 4,
       "versions": {
         "gpt-6-1-sol": [
           "ProtocolQA Open-Ended"
@@ -3742,7 +3852,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 41,
       "benchmark_id": "shp2-function-prediction",
       "name": "SHP2 Protein Function Prediction",
       "domain": "生物与医学",
@@ -3755,7 +3865,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": 4,
       "versions": {
         "gpt-6-1-sol": [
           "SHP2 Protein Function Prediction"
@@ -3772,7 +3882,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 42,
       "benchmark_id": "swe-bench",
       "name": "SWE-bench",
       "domain": "代码",
@@ -3785,7 +3895,7 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -13,
+      "rank_change": -14,
       "versions": {
         "claude-fable-5-2": [
           "SWE-bench Multilingual",
@@ -3807,7 +3917,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 43,
       "benchmark_id": "vct",
       "name": "Virology Capabilities Test",
       "domain": "安全",
@@ -3820,7 +3930,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4,
+      "rank_change": 3,
       "versions": {
         "claude-opus-5-5": [
           "Virology Capabilities Test"
@@ -3837,7 +3947,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 44,
       "benchmark_id": "wandr",
       "name": "WANDR",
       "domain": "Agent",
@@ -3850,7 +3960,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4,
+      "rank_change": 3,
       "versions": {
         "claude-fable-5-2": [
           "WANDR"
@@ -3867,7 +3977,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 45,
       "benchmark_id": "agentic-honesty",
       "name": "Agentic honesty benchmark",
       "domain": "安全",
@@ -3879,7 +3989,7 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 4,
+      "rank_change": 3,
       "versions": {
         "gemini-4-argon": [
           "Agentic honesty benchmark"
@@ -3893,7 +4003,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 46,
       "benchmark_id": "apex-agents",
       "name": "APEX-Agents",
       "domain": "Agent",
@@ -3905,7 +4015,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 19,
+      "rank_change": 18,
       "versions": {
         "deepseek-v4-1-flash-1017": [
           "APEX-Agents"
@@ -3919,7 +4029,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 47,
       "benchmark_id": "babyvision",
       "name": "BabyVision",
       "domain": "多模态",
@@ -3931,7 +4041,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -16,
+      "rank_change": -17,
       "versions": {
         "deepseek-v4-1-flash": [
           "BabyVision"
@@ -3945,7 +4055,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 48,
       "benchmark_id": "bbq",
       "name": "Bias Benchmark for Question Answering",
       "domain": "安全",
@@ -3957,7 +4067,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 19,
+      "rank_change": 18,
       "versions": {
         "claude-fable-5-2": [
           "Bias Benchmark for Question Answering"
@@ -3971,7 +4081,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 49,
       "benchmark_id": "browsecomp",
       "name": "BrowseComp",
       "domain": "其他",
@@ -3983,7 +4093,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 1,
       "versions": {
         "gpt-6-astra": [
           "BrowseComp"
@@ -3997,7 +4107,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 50,
       "benchmark_id": "charxiv",
       "name": "CharXiv",
       "domain": "其他",
@@ -4009,7 +4119,7 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -17,
+      "rank_change": -18,
       "versions": {
         "kimi-k3-1-pro": [
           "CharXiv Reasoning"
@@ -4023,7 +4133,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 51,
       "benchmark_id": "cybergym",
       "name": "CyberGym",
       "domain": "安全",
@@ -4035,7 +4145,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -14,
+      "rank_change": -15,
       "versions": {
         "claude-opus-5-5": [
           "CyberGym"
@@ -4049,7 +4159,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 52,
       "benchmark_id": "finance-agent",
       "name": "Finance Agent",
       "domain": "Agent",
@@ -4061,7 +4171,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -13,
+      "rank_change": -14,
       "versions": {
         "gemini-4-argon": [
           "Finance Agent"
@@ -4075,7 +4185,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 53,
       "benchmark_id": "global-mmlu",
       "name": "Global MMLU",
       "domain": "语言",
@@ -4087,7 +4197,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 35,
+      "rank_change": 34,
       "versions": {
         "claude-fable-5-2": [
           "Global MMLU"
@@ -4101,7 +4211,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 54,
       "benchmark_id": "linuxarena",
       "name": "LinuxArena",
       "domain": "安全",
@@ -4113,7 +4223,7 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -2,
       "versions": {
         "claude-opus-5-5": [
           "LinuxArena"
@@ -4127,7 +4237,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 55,
       "benchmark_id": "mask",
       "name": "MASK",
       "domain": "安全",
@@ -4139,7 +4249,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -2,
       "versions": {
         "claude-opus-5-5": [
           "MASK"
@@ -4153,7 +4263,7 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 56,
       "benchmark_id": "milu",
       "name": "MILU",
       "domain": "语言",
@@ -4165,7 +4275,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 29,
+      "rank_change": 28,
       "versions": {
         "claude-fable-5-2": [
           "MILU"
@@ -4175,32 +4285,6 @@
         ],
         "claude-sonnet-5-5": [
           "MILU"
-        ]
-      }
-    },
-    {
-      "rank": 56,
-      "benchmark_id": "mmmu-pro",
-      "name": "MMMU-Pro",
-      "domain": "多模态",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "deepseek-v4-1-flash",
-        "gpt-6-1-terra",
-        "kimi-k3-1-pro"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "MMMU-Pro"
-        ],
-        "gpt-6-1-terra": [
-          "MMMU-Pro"
-        ],
-        "kimi-k3-1-pro": [
-          "MMMU-Pro"
         ]
       }
     },
@@ -6082,7 +6166,7 @@
       "rank_change": -1,
       "versions": {
         "gpt-6-astra": [
-          "FrontierMath"
+          "FrontierMath Tier 4 (v2)"
         ]
       }
     },
@@ -6859,7 +6943,7 @@
       "rank_change": -2,
       "versions": {
         "gpt-6-astra": [
-          "OpenAI MRCR v2"
+          "OpenAI MRCR v2 8-needle"
         ]
       }
     },
@@ -7256,7 +7340,7 @@
       "rank_change": 1,
       "versions": {
         "gpt-6-astra": [
-          "ScreenSpot-Pro"
+          "ScreenSpot-Pro no tools"
         ]
       }
     },
@@ -8860,18 +8944,18 @@
     {
       "date": "2026-11-16",
       "top": [
+        "terminal-bench",
         "automationbench-aa",
         "deepswe",
-        "terminal-bench",
-        "healthbench",
         "agents-last-exam",
+        "healthbench",
         "hle",
         "osworld",
         "exploitgym",
+        "terminal-bench-science",
         "chartography",
         "exploitbench",
         "programbench",
-        "terminal-bench-science",
         "harvey-lab",
         "aa-briefcase",
         "gdpval",
@@ -8881,16 +8965,17 @@
         "aav-capsid-packaging",
         "cy-scenario-bench",
         "frontierswe",
+        "gdp-pdf",
         "benchcad",
         "cursorbench",
         "draco",
         "frontiercode",
+        "mmmu-pro",
         "swe-bench-pro",
         "biomysterybench",
         "broken-search-tool-openai",
         "coding-deception-openai",
         "coronavirus-ace2-screen",
-        "gdp-pdf",
         "gpqa",
         "jobbench",
         "kernelgen",
@@ -8915,7 +9000,6 @@
         "linuxarena",
         "mask",
         "milu",
-        "mmmu-pro",
         "oai-repo-sabotage",
         "posttrainbench",
         "sandbox-bench-openai",

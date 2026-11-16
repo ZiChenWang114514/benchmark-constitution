@@ -160,6 +160,18 @@
         "value": "not stated",
         "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
         "accessed": "2026-11-16"
+      },
+      {
+        "key": "api_model_id",
+        "value": "gpt-6.1-terra",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $1 / cached input $0.05 / output $5",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "accessed": "2026-11-16"
       }
     ]
   },
@@ -593,6 +605,18 @@
         "value": "500K default context in Codex",
         "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
         "accessed": "2026-11-16"
+      },
+      {
+        "key": "api_model_id",
+        "value": "gpt-6.1-sol",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $2 / cached input $0.10 / output $10",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "accessed": "2026-11-16"
       }
     ]
   },
@@ -740,6 +764,18 @@
         "key": "parameters",
         "value": "not stated",
         "url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "api_model_id",
+        "value": "gpt-6-sol",
+        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $2 / output $10; cached input 90% off",
+        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
         "accessed": "2026-11-16"
       }
     ]
@@ -1090,6 +1126,18 @@
         "key": "parameters",
         "value": "not stated",
         "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "api_model_id",
+        "value": "gpt-6-astra",
+        "url": "https://openai.com/index/gpt-6-astra/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $10 / output $50",
+        "url": "https://openai.com/index/gpt-6-astra/",
         "accessed": "2026-11-16"
       }
     ]
