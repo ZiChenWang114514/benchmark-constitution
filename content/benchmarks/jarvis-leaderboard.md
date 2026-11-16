@@ -516,9 +516,7 @@ https://pages.nist.gov/jarvis_leaderboard/
 
 ### 官方公开邮箱
 
-待核实
-
-> 该字段尚未完成精确核验，不表示官方未公开。
+论文首页脚注给出的联系邮箱：kamal.choudhary@nist.gov
 
 来源：[1](https://arxiv.org/abs/2306.11688)（访问 2026-11-07）；[2](https://arxiv.org/pdf/2306.11688)（访问 2026-11-07）；[3](https://pages.nist.gov/jarvis_leaderboard/)（访问 2026-11-07）。
 
@@ -576,7 +574,9 @@ https://arxiv.org/pdf/2306.11688
 
 ### 其他官方文档
 
-来源：。
+官方仓库说明页链接的 Zenodo 软件存档 DOI（https://zenodo.org/badge/latestdoi/514340921）与 Colab 数据分析笔记本（https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_Leaderboard.ipynb）
+
+来源：[1](https://github.com/usnistgov/jarvis_leaderboard)（访问 2026-11-16）。
 
 ### 已有 PDF归档
 
@@ -604,3 +604,5 @@ https://arxiv.org/pdf/2306.11688
 ```
 
 来源：[1](https://arxiv.org/abs/2306.11688)（访问 2026-11-07）；[2](https://arxiv.org/pdf/2306.11688)（访问 2026-11-07）；[3](https://arxiv.org/abs/2306.11688)（访问 2026-11-08）；[4](https://pages.nist.gov/jarvis_leaderboard/)（访问 2026-11-08）。
+
+2026-11-16：补充公开联系邮箱；补充其他官方文档。

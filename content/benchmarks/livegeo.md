@@ -212,7 +212,7 @@ LiveGeo 含1237道任务实例（1088道静态、149道配对动态），论文�
 
 来源: [1](https://arxiv.org/abs/2611.17267) [2](https://arxiv.org/pdf/2611.17267.pdf) [3](https://livegeoworld.github.io/) [4](https://github.com/LiveGeoWorld/GeoWorld) (访问 2026-11-14)
 
-**代码讨论**：官方代码仓库议题页：https://github.com/LiveGeoWorld/GeoWorld/issues ；题目数据仓库议题页：https://github.com/LiveGeoWorld/LiveGeo-benchmark/issues
+**代码讨论**：官方代码仓库议题页：https://github.com/LiveGeoWorld/GeoWorld/issues；题目数据仓库议题页：https://github.com/LiveGeoWorld/LiveGeo-benchmark/issues
 
 来源: [1](https://arxiv.org/abs/2611.17267) [2](https://arxiv.org/pdf/2611.17267.pdf) [3](https://livegeoworld.github.io/) [4](https://github.com/LiveGeoWorld/GeoWorld) (访问 2026-11-14)
 

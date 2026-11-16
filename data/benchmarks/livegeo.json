@@ -1038,7 +1038,7 @@
       "status": "待核实"
     },
     "github_issues": {
-      "value": "官方代码仓库议题页：https://github.com/LiveGeoWorld/GeoWorld/issues ；题目数据仓库议题页：https://github.com/LiveGeoWorld/LiveGeo-benchmark/issues",
+      "value": "官方代码仓库议题页：https://github.com/LiveGeoWorld/GeoWorld/issues；题目数据仓库议题页：https://github.com/LiveGeoWorld/LiveGeo-benchmark/issues",
       "sources": [
         {
           "url": "https://arxiv.org/abs/2611.17267",
@@ -1236,7 +1236,7 @@
     "value": [
       {
         "date": "2026-11-14",
-        "change": "初次收录"
+        "change": "最近复核"
       }
     ],
     "sources": [

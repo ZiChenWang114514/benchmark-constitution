@@ -838,23 +838,13 @@
   },
   "contact": {
     "public_emails": {
-      "value": "待核实",
+      "value": "论文首页脚注给出的联系邮箱：kamal.choudhary@nist.gov",
       "sources": [
         {
-          "url": "https://arxiv.org/abs/2306.11688",
-          "accessed": "2026-11-07"
-        },
-        {
           "url": "https://arxiv.org/pdf/2306.11688",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://pages.nist.gov/jarvis_leaderboard/",
-          "accessed": "2026-11-07"
+          "accessed": "2026-11-16"
         }
-      ],
-      "status": "待核实",
-      "note": "该字段尚未完成精确核验，不表示官方未公开。"
+      ]
     },
     "github_issues": {
       "value": "https://github.com/usnistgov/jarvis_leaderboard/issues",
@@ -939,11 +929,11 @@
       ]
     },
     "other_documents": {
-      "value": "待核实",
+      "value": "官方仓库说明页链接的 Zenodo 软件存档 DOI（https://zenodo.org/badge/latestdoi/514340921）与 Colab 数据分析笔记本（https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_Leaderboard.ipynb）",
       "sources": [
         {
-          "url": "urn:benchmark-constitution:record",
-          "accessed": "2026-11-07"
+          "url": "https://github.com/usnistgov/jarvis_leaderboard",
+          "accessed": "2026-11-16"
         }
       ]
     }
@@ -969,6 +959,14 @@
       },
       {
         "date": "2026-11-08",
+        "change": "最近复核"
+      },
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      },
+      {
+        "date": "2026-11-16",
         "change": "最近复核"
       }
     ],

@@ -1,5 +1,145 @@
 [
   {
+    "id": "qwen4-max-ga",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-16",
+    "title": "阿里云模型服务正式上线 Qwen4-Max，Artificial Analysis 已公布智能指数成绩",
+    "body": "阿里云模型服务于11月16日更新的发布说明将 qwen4-max 列为当日上线的新一代旗舰多模态模型，并与11月11日的限时预览版 qwen4-max-preview 分列。同日查阅的官方产品说明介绍了输入输出模态、工具调用与100万 token 上下文等能力，但未给出厂商评测成绩表。Artificial Analysis 更新日志在11月15日列出 Qwen4 Max 的智能指数为43分，并称阿里云的性能结果现已发布。",
+    "sources": [
+      {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://artificialanalysis.ai/changelog",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "前沿模型",
+    "sort_date": "2026-11-16",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "aa-intelligence-index-v5-0-1",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-03",
+    "title": "Artificial Analysis 智能指数现为 v5.0.1，GDPval-AA 已不计入综合指数",
+    "body": "Artificial Analysis 更新日志记载，该机构于11月3日发布智能指数 v5.0.1，纳入 CritPt 作者提供的评分稳健性改进，并据此重评所有模型的 CritPt v2 成绩。11月16日查阅的官方方法说明将现行指数标注为 v5.0.1，由九项评测组成：AA-Briefcase v1.1、AutomationBench-AA、GDP.pdf、FrontierCode-AA 2.0、Terminal-Bench 4.0、AA-Omniscience v1.1、HLE-Diamond、CritPt v2（困难子集）与 Terminal-Bench-Science 0.1.0。该机构10月27日发布的 v5 说明写明，GDPval-AA v2.1、SciCode 与 AA-LCR v1.1 已移出综合指数；GDPval-AA v2.1 仍作为独立评测保留。",
+    "sources": [
+      {
+        "url": "https://artificialanalysis.ai/changelog",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "榜单变化",
+    "sort_date": "2026-11-03",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "nibench-release",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-11",
+    "title": "NIBench：检验智能体能否独立完成神经影像分析并判断已发表结论",
+    "body": "南加州大学团队于11月11日在 arXiv 发布 NIBench，包含跨七个工具生态的56项神经影像工作流任务、技能蒸馏与迁移实验，以及要求智能体基于 ADNI 原始数据判断的36条已发表科学论断。论文作者测试了19个模型，其中11个闭源、8个开放权重。Claude Opus 5.5 在两种条件下正确率均为最高：提供分析方案时为0.994，不提供时为0.949。不提供方案时，闭源模型区间为0.810至0.949，开放权重模型为0.125至0.658。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.15831",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-11",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "pyrite-release",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-10",
+    "title": "Pyrite：让智能体为共折叠模型生成的蛋白质-配体构象排序",
+    "body": "Genesis Molecular AI 团队于11月10日在 arXiv 发布 Pyrite，给出1,500对由共折叠模型生成的蛋白质-配体结合构象，覆盖285个结构，要求在每对中选出更接近真实的构象。论文报告，专家化学家的表现接近随机；直接以文本化学推理排序的 PyriteReasoner 准确率最高为67%，结合代码描述符与语言模型子调用特征的 PyriteFeaturizer 最高为74%。论文还称，GRPO 训练可使开放权重模型达到或超过闭源前沿模型。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.14511",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/genesistherapeutics/pyrite",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-10",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "coilstellaration-release",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-09",
+    "title": "CoilStellaration：仿星器线圈设计基准，最佳基线严格可行率仅4.4%",
+    "body": "Proxima Fusion 团队于11月9日在 arXiv 发布 CoilStellaration，数据集含266,549个样本，覆盖14,496个不重复的等离子体边界，要求模型根据目标边界与工程要求一次生成可行的线圈组。论文报告，作者测试的基线中，最佳平均软可行性分数仅为0.13，最佳严格可行率为4.4%。数据集已在 Hugging Face 公开。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.12689",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/proxima-fusion/coilstellaration",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-09",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "hydroturing-release",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-08",
+    "title": "HydroTuring：用守恒定律探针检验水文模型，仅精确参考模型全部通过",
+    "body": "科罗拉多大学博尔德分校团队于11月8日在 arXiv 发布 HydroTuring，包含37个在运行时按随机种子生成隐藏工况的探针，检验水文模型是否遵守质量、能量与动量守恒。论文评测了32个模型，包括3个精确参考模型、7个人工智能模型与22个过程模型；在至少5个探针上有分数的28个模型中，只有3个精确参考模型通过了全部探针。过程模型与人工智能模型通过各自可评分探针的比例相近，分别为76%与74%。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.11563",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/Flood-Lab/HydroTuring",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-08",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "arena-interaction-as-a-judge",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-12",
+    "title": "Arena 提出“以交互为评委”：让计算机使用智能体实际操作应用来打分",
+    "body": "Arena 团队于11月12日在官方博客发布研究，提出由计算机使用智能体实际操作应用、以交互结果进行评测的范式。博客摘要称，这一做法同时改进了评测与下游生成：推理时扩展的结果由55.4%提升至75.5%，仅以交互作为奖励模型进行强化学习带来了50个 Arena 分的提升。",
+    "sources": [
+      {
+        "url": "https://news.lmarena.ai/",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "type": "核验观察",
+    "sort_date": "2026-11-12",
+    "sort_date_basis": "event_date"
+  },
+  {
     "id": "epoch-trajectory-incident-2026-11-13",
     "observed_date": "2026-11-14",
     "event_date": "2026-11-13",

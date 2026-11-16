@@ -180,11 +180,9 @@ Differences in prompt layout, context window, generation length, and language af
 
 ### 当前发布
 
-Unverified
+The public Hugging Face dataset lilbillbiscuit/biocoder_public linked from the official repository, last modified on June 11, 2024 at commit 9893b5c
 
-Note: The original paper and the official entry points have been checked, but this field did not receive sufficient evidence; this does not establish that it is Not disclosed.
 
-Status: Unverified (part of this field is still unconfirmed).
 
 ### 版本脉络
 
@@ -333,3 +331,5 @@ Note: Checksum of the PDF bytes downloaded from the source site. This does not c
 [7]: https://arxiv.org/pdf/2308.16458 "访问 2026-11-07"
 [8]: https://github.com/gersteinlab/BioCoder "访问 2026-11-07"
 [9]: "访问 2026-11-07"
+
+2026-11-16: Added latest dataset version.

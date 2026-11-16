@@ -74,7 +74,7 @@
 
 来源: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (访问 2026-11-10)
 
-**资助方**：待核实
+**资助方**：官方代码仓库称项目由非营利组织 AI MMLab Club 运营，由全球学术机构合作方共同维护和支持，且治理、运营、资金、赞助、算力与硬件等均不涉及商业公司；仓库未逐一列出具体资助机构
 
 来源: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (访问 2026-11-10)
 
@@ -208,7 +208,7 @@
 
 ## 联系方式
 
-**公开邮箱**：待核实
+**公开邮箱**：官方代码仓库“Affiliations”一节给出的合作与资源支持咨询邮箱：RoboDojoCommittee@gmail.com；一般问题与建议可联系 Tianxing Chen 或 Yue Chen（仓库链接至二人个人主页）
 
 来源: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (访问 2026-11-10)
 
@@ -249,3 +249,5 @@
 ## 变更记录
 
 2026-11-10：初次收录。
+
+2026-11-16：补充公开联系邮箱；补充资助方说明。

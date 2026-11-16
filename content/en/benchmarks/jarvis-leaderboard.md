@@ -516,9 +516,8 @@ Sources: [1](https://pages.nist.gov/jarvis_leaderboard/) (accessed 2026-11-08); 
 
 ### 官方公开邮箱
 
-Unverified
+Contact email given in the footnote on the paper's first page: kamal.choudhary@nist.gov
 
-> This field has not been verified exactly; that does not mean it is officially Not disclosed.
 
 Sources: [1](https://arxiv.org/abs/2306.11688) (accessed 2026-11-07); [2](https://arxiv.org/pdf/2306.11688) (accessed 2026-11-07); [3](https://pages.nist.gov/jarvis_leaderboard/) (accessed 2026-11-07).
 
@@ -570,6 +569,12 @@ Sources: [1](https://arxiv.org/pdf/2306.11688) (accessed 2026-11-08).
 
 Sources: [1](https://arxiv.org/pdf/2306.11688) (accessed 2026-11-08).
 
+### Other official documents
+
+The Zenodo software archive DOI (https://zenodo.org/badge/latestdoi/514340921) and the Colab data-analysis notebook (https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_Leaderboard.ipynb) linked from the official repository README
+
+Sources: [1](https://github.com/usnistgov/jarvis_leaderboard) (accessed 2026-11-16).
+
 ## Changelog
 
 ### 历次核查
@@ -592,3 +597,5 @@ Sources: [1](https://arxiv.org/pdf/2306.11688) (accessed 2026-11-08).
 ```
 
 Sources: [1](https://arxiv.org/abs/2306.11688) (accessed 2026-11-07); [2](https://arxiv.org/pdf/2306.11688) (accessed 2026-11-07); [3](https://arxiv.org/abs/2306.11688) (accessed 2026-11-08); [4](https://pages.nist.gov/jarvis_leaderboard/) (accessed 2026-11-08).
+
+2026-11-16: Added public contact email and other official documents.

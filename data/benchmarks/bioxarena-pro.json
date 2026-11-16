@@ -1,0 +1,1266 @@
+{
+  "id": "bioxarena-pro",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "BioXArena-Pro",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "BioXArena-Pro：生物医学端到端建模智能体基准（专业版）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "version": {
+      "value": "BioXArena-Pro v5.1.2；arXiv:2611.13994v1；64 项任务",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.13994v1（2026-11-10首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "section": {
+      "value": "生物与医学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "生物医学建模",
+        "机器学习智能体",
+        "分布外泛化",
+        "数据泄漏审计"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可。官方仓库的评测框架、评分与榜单脚本采用 MIT 许可；公开任务包按知识共享署名-非商业性使用 4.0 国际许可提供，用于学术及其他非商业用途，各任务来源的原许可同时适用。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.13994",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "https://mbzuai-ai4bio.github.io/BioXArena-Pro/",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_title": {
+      "value": "BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "穆罕默德·本·扎耶德人工智能大学（MBZUAI）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "partners": {
+      "value": "卡内基梅隆大学；另有一位作者来自美国亚特兰大威斯敏斯特学校",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Loka Li、Duzhen Zhang、Xingbo Du、Leonard Song、Kun Zhang、Le Song（共6位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "让智能体在一块 GPU、两小时预算内，从训练数据和未标注测试输入出发端到端构建模型并提交预测，检验其在真实研究级生物医学数据上的留出表现是否反映真实建模能力。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，多数科学与生物医学智能体基准考的是知识、工具使用或分析过程，而非端到端建模；已有建模基准规模小、来自竞赛或只含干净表格与随机划分。作者此前的 BioXArena（9 个领域 76 项任务）已接近饱和，两个最强配置平均已达 66 分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "每项任务复现一篇已发表研究或数据库中的研究级建模问题，保留原研究的分布偏移、数据量与原生格式；每项任务都给出已发表方法的复现参考（33 项为该数据集的方法，31 项为同类问题最强方法）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "论文发布审计协议、复现参考与全部智能体轨迹；评分统一映射到 0 至 100 分、越高越好。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "测试标签与答案文件不公开，以防污染，测试集分数需向 Codabench 上的竞赛提交预测获得；部分任务为防污染而重建（新划分、移除输入或更换指标），十项任务的描述隐去来源名称以减少检索。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "64 项任务，八个领域各 8 项；公开数据共 179.6 GiB，任务中位数为 19,663 个训练单元",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "端到端建模并提交预测文件",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "分子、图像、网络、扰动、表型、序列、单细胞与空间组学、结构等原生格式数据",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "公开任务包含训练数据、未标注测试输入、原生格式资产与任务描述，测试标签保密；83% 的任务按整组样本留出（如物种、队列、供体、患者、细胞系、蛋白家族），而 BioXArena 为 66%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "按科学输出选择指标，75% 的指标按组平均，统一映射到 0 至 100 分；报告 64 项任务均分及 95% 自助法置信区间",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "失败任务计 0 分；比较 22 种智能体配置（三种厂商命令行框架等与多种模型组合）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "v5.1.2（论文数据可用性部分所述公开任务包版本）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-10 12:39:35 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和：最佳配置 55.1 分，最佳成绩不低于 90 分的任务从 BioXArena 的 12/76 降至 0/64。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文说明智能体会主动寻找并利用泄漏标签、元数据伪影或评分漏洞，生物数据还易因同源性、跨划分共享实体与数据生成伪影而泄漏；单项任务在多次运行间可波动超过 15 分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "前身为同团队的 BioXArena（76 项任务、9 个领域）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "https://www.codabench.org/competitions/18583/",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "论文作者自测，22 种配置。Codex CLI 搭配 GPT-6 Astra 最高，55.1 分（95% 置信区间 50.0 至 59.8，三次运行平均 54.5）；Claude Code 搭配 Opus 5.5、OpenCode 搭配 GPT-6 Astra 或 Opus 5.5 均为 53.2；最简框架搭配 DeepSeek V4.1 Flash 最低，33.6。已发表方法的复现参考平均 48.6，智能体在 64 项中的 53 项更高。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "测试集分数通过 Codabench 竞赛提交获得；论文称框架对结果的影响几乎与模型相当。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "论文所列邮箱：duzhen.zhang@mbzuai.ac.ae、le.song@mbzuai.ac.ae",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "官方代码仓库的议题页：https://github.com/mbzuai-ai4bio/BioXArena-Pro/issues",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.13994",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "0442b69274575029aded923b85efc297d66430f64c4d16818b66560feafdc8ab",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "806433",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "项目主页：https://mbzuai-ai4bio.github.io/BioXArena-Pro/",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.13994",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.13994",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.13994",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+        "accessed": "2026-11-16"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.13994",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.13994",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+        "accessed": "2026-11-16"
+      }
+    ]
+  }
+}

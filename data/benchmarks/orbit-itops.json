@@ -1,0 +1,813 @@
+{
+  "id": "orbit-itops",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "ORBIT",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "ORBIT：评估大模型 IT 运维推理的证据溯源基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.15718v1；生成 3,178 道题，评测 3,019 道",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.15718v1（2026-11-11首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "section": {
+      "value": "推理",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "IT 运维",
+        "根因分析",
+        "证据溯源",
+        "大模型裁判"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可。数据与代码许可以官方仓库为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.15718",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "Orbit: An Evidence-Grounded Benchmark for Evaluating LLMs on IT Operations Reasoning",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "印度信息技术学院达尔瓦德分校",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "partners": {
+      "value": "IBM Software（印度）、新加坡国立大学、印度科学培养协会",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Sathwik Narkedimilli、Rakshit Verma、Rahul Soni、Ankit Kushwaha、Balaji Ganesan、Kaustabha Ray、Sunil Saumya、Pratibha Moogi（共8位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "评估大模型能否在 IT 运维中把部署历史、扩缩容规则、监控指标与文档串成一条因果链，完成故障诊断与多跳推理，而不是回忆单一事实。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，可观测性平台内置的助手模型与数据都不公开、无法比较；单一准确率掩盖了模型缺失的具体能力；作者从运维落地、多实体推理、证据可追溯与推理标注等方面与已有运维基准对比。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "知识来源包括 Instana、Dynatrace、Datadog 等应用性能监控文档，云与基础设施文档，运维维基与手册（含一个内部仓库），以及 Stack Overflow 等社区论坛。在有来源记录的 2,803 道题中，2,005 道引用内部仓库，798 道引用公开页面（794 个 Stack Overflow 帖子与 4 个维基百科页面）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "三位具有软件工程与 IT 运维经验的作者逐题审核。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "review_process": {
+      "value": "人机协作四阶段流程：组装知识库、生成有证据支撑的题目、标注难度与推理类型及题组、专家验证与修订；审核者对正确性、推理、运维有效性与答案证据匹配逐项判断，争议按多数票决定，难题由专家裁定。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "quality_control": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "生成 3,178 道题，其中 2,803 道（88.2%）至少有一条来源记录；闭卷评测 3,019 道",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "选择题、开放问答与故障排查题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "各题型准确率；开放与排查题采用独立裁判，并报告校正后的显著性检验、效应量与可检测的最小模型差异",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "使用一个独立的大模型裁判；论文比较发现自评裁判会显著放宽判分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-11 16:57:27 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "contamination_and_issues": {
+      "value": "论文报告：仅给选项、不给题干时，Llama 3.3 70B 与 Mistral Medium 也能答对 30.9% 与 32.7%（随机为 25%）；自评裁判让 Llama 3.3 70B 在开放题上从第二降到最后，并对有缺陷的题接受高达 75% 的答案；部分保留题尚未经专家复审；内部文档含基础设施标识与个人信息，只按路径与固定提交引用而不发布。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "论文作者自测五个模型（闭卷）。在独立裁判下，五个模型能答对大多数选择题，开放题约三分之一到略超一半，故障排查题只答对少数；题型改变会改变模型排名。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.15718",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "39dc73d6a6a187cd43b46dd8bb427740ebb85dfdd62f9be392ac6d8b5a1174dc",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "3199756",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "论文称以题目、参考答案、推理轨迹与来源引用的形式发布，代码采用 MIT 许可、数据采用知识共享署名-相同方式共享 4.0 国际许可；发布地址待核实。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15718",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15718",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.15718",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.15718",
+        "accessed": "2026-11-16"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.15718",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.15718",
+        "accessed": "2026-11-16"
+      }
+    ]
+  }
+}

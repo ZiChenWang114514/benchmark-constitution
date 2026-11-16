@@ -1,0 +1,1042 @@
+{
+  "id": "casescope",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "CaseScope",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "CaseScope：多模态大模型病例级多视野病理诊断基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.15325v1；六项任务共 4,679 道题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.15325v1（2026-11-11首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "section": {
+      "value": "生物与医学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "病理学",
+        "多模态大模型",
+        "病例级诊断",
+        "组织学图像"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。官方代码仓库声明 MIT 许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.15325",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/Wenchuan-Zhang/CaseScope",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "CaseScope: A Multi-Field Benchmark for Case-Level Pathology Diagnosis with Multimodal LLMs",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "四川大学华西医院病理科与临床病理研究所",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "partners": {
+      "value": "四川大学计算机学院、中国医科大学附属盛京医院病理科、武汉大学人民医院病理科",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Wenchuan Zhang、Chengyang Zhang、Fengling Li、Ting Yin、Chen Shu、Jie Chen、Shuwan Zhang、Xiaoyan Wu、Zhang Zhang、Yuhao Yi、Jiancheng Lv、Hong Bu（共12位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "模拟病理医生整合同一病变多个视野（由低倍到高倍）作出病例级诊断的过程，分别考察诊断、分诊、分级、形态学所见核实与所见定位。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有病理视觉问答多针对单张图像；跨尺度基准只展示同一张 TCGA 切片的两三个嵌套区域并用大模型生成问题；通用多图基准考的是一般跨图关系，而非专家证据整合。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "CaseScope-Teaching 来自住院医师培训教学病例库，经去重合并（原始 3,291 个图像文件中仅 2,586 个不同）并剔除非 HE 染色图像；CaseScope-Atlas 来自 88 部已出版图谱。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "同一病例在库中常以不同名称归入多个器官系统，作者合并共享图片的视野组，保留至少含两个 HE 视野的病例；跨部位出现的病种使用与部位无关的标签且不给部位提示。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "作者在 228,899 张公开病理图像中检索两类来源全部视野的近似重复，未发现近似重复；论文也指出整图检索可能漏掉裁剪图。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "CaseScope-Teaching：436 个病例、2,448 个 HE 视野（中位数每例 5 个）、390 个病种、18 个器官系统；CaseScope-Atlas：800 个病例、2,664 个视野（中位数 3 个），其中 453 个病种在教学集中没有对应病例；六项任务共 4,679 道题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "十选一诊断、分诊、分级、所见陈述真伪判断与所见定位",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "病理组织学图像（HE 染色）与文本",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "单次准确率、十种选项轮换下全部答对的循环准确率、所见判断准确率及图像带来的增益；病例级自助法置信区间",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "采用循环评测：同一题在十种选项轮换下作答；所见核实的真值来自标签（教学集）或图注（图谱集）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-11 11:04:30 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和：最佳开放与闭源模型在十种轮换下全部答对的比例分别仅为 17.9% 与 61.7%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "局限部分指出：教学病例与图谱选取的视野用于展示病种，比在未经挑选的切片上寻找更容易，因此本基准测的是教科书水平；视野以固定顺序给出，未测视野选择；仅提供 HE 图像与部位信息。论文还发现错误答案偏向经典形似病种。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "论文作者自测，28 个开放模型与 4 个闭源模型（Claude Sonnet 5.5、Claude Haiku 5.5、GPT-5.6-sol、GPT-5.6-luna）。教学集十选一单次准确率开放模型最高 50.6%、闭源最高 78.3%；所见核实中，开放模型中位数 62.0%（最高 81.5%，随机 50%），图像带来中位数 3.4 个百分点增益；闭源模型为 83.2% 至 93.2%，图像增益 10.2 至 19.5 个百分点。仅保留最高倍视野时开放模型循环准确率变化为 −7.1 至 +2.1 个百分点，去掉一行标本部位则最多下降 9.4。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "论文所列邮箱：zhangwenchuan@stu.scu.edu.cn、yuhaoyi@scu.edu.cn（通讯作者 Yuhao Yi）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "官方代码仓库的议题页：https://github.com/Wenchuan-Zhang/CaseScope/issues",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.15325",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "25e241eab8f018564a5af38003091f17bc56193366468d1a67b614595794143a",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "13156148",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.15325",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.15325",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.15325",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+        "accessed": "2026-11-16"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.15325",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.15325",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/Wenchuan-Zhang/CaseScope",
+        "accessed": "2026-11-16"
+      }
+    ]
+  }
+}

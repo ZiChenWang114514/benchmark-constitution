@@ -1,0 +1,1273 @@
+{
+  "id": "horizonmath",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "HorizonMath",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "HorizonMath：以自动验证衡量迈向数学发现的推理进展",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2603.15617v2；113 道题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2603.15617v2（2026-03-16首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-03-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "section": {
+      "value": "数学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "数学发现",
+        "开放问题",
+        "自动验证",
+        "计算数学"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用知识共享署名 4.0 国际许可。数据与代码许可以官方仓库为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2603.15617",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/ewang26/HorizonMath",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "Measuring Progress in Reasoning Toward Mathematical Discovery with Automatic Verification",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "斯坦福大学与牛津大学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "partners": {
+      "value": "哈佛大学、普林斯顿大学、埃里森理工学院等",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Erik Y. Wang、Sumeet R. Motwani、James V. Roggeveen、Eliot Hodges、Dulhan Jayalath、Charles London、Kalyan Ramakrishnan、Jakob Foerster、Cheng Zhang、Flaviu Cipcigan、Philip Torr、Alessandro Abate（共12位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "衡量模型在以未解问题为主的应用与计算数学问题上做出新发现的能力，利用“生成难、验证易”的特点自动核验答案。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，研究级数学评测传统上受限于人工审阅；已有开放问题基准或题量小、或验证器私有（需购买访问权）、或高度依赖专家人工评分，可复现性有限。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "选取三类可用确定性计算高效验证的问题，覆盖数论、特殊函数、统计力学、离散几何、组合、谱理论、连续介质物理与编码理论八个领域。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "每题配有问题定义、真值计算与验证脚本；可解性 0 级的 10 道题有已知解，用于校验评测流程并校准模型。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "论文称其为抗污染的开放问题基准：题目以未解问题为主，需要新解而非复现已知答案。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "113 道题：数论 20、特殊函数 19、统计力学 15、离散几何 15、组合 13、谱理论 12、连续介质物理 10、编码理论 9；可解性分级为 0 级 10 道、1 级 29 道、2 级 66 道、3 级 8 道",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "求常数、函数、公式发现与构造",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本与代码",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "按题目专属标准自动判定：可计算真值的题做高精度数值比对（71 道），与已知最佳结果比较（33 道），以及新构造的约束检查（9 道）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "高精度数值比对与确定性约束检查；另有合规审查环节检查是否只用了允许的运算。论文说明数值匹配并不形式化证明闭式表达完全正确。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "官方仓库提供运行与评测脚本，支持多家模型接口",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 共两个版本：v1 提交于2026-03-16 17:59:53 UTC；v2 提交于2026-09-10 14:47:24 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和：以未解问题为主，论文报告的是个别新解而非整体通过率。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "论文报告，借助 GPT-5.4 Pro 与 GPT-5.6 Sol Pro，各找到三个新解，或解决了此前的开放问题，或改进了已发表的最佳结果，六个结果在第 6 节与附录 A 中详述。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "论文获 ICML AI4Math 最佳论文奖（arXiv 备注所列）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "github_issues": {
+      "value": "官方代码仓库的议题页：https://github.com/ewang26/HorizonMath/issues",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2603.15617",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "9616325eadb6975c5d63df8dafc0fdfc1c54ff717c94da9fced8616bac236328",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "1564688",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2603.15617",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/ewang26/HorizonMath",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2603.15617",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2603.15617",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/ewang26/HorizonMath",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+        "accessed": "2026-11-16"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2603.15617",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2603.15617",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/ewang26/HorizonMath",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/squashenthus/HorizonMath",
+        "accessed": "2026-11-16"
+      }
+    ]
+  }
+}

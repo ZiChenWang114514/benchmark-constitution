@@ -300,22 +300,13 @@
       ]
     },
     "funders": {
-      "value": "待核实",
+      "value": "官方代码仓库称项目由非营利组织 AI MMLab Club 运营，由全球学术机构合作方共同维护和支持，且治理、运营、资金、赞助、算力与硬件等均不涉及商业公司；仓库未逐一列出具体资助机构",
       "sources": [
         {
-          "url": "https://arxiv.org/abs/2607.04434",
-          "accessed": "2026-11-10"
-        },
-        {
-          "url": "https://robodojo-benchmark.com/",
-          "accessed": "2026-11-10"
-        },
-        {
-          "url": "https://robodojo-benchmark.com/leaderboard",
-          "accessed": "2026-11-10"
+          "url": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+          "accessed": "2026-11-16"
         }
-      ],
-      "status": "待核实"
+      ]
     }
   },
   "design_goals": {
@@ -826,22 +817,13 @@
   },
   "contact": {
     "public_emails": {
-      "value": "待核实",
+      "value": "官方代码仓库“Affiliations”一节给出的合作与资源支持咨询邮箱：RoboDojoCommittee@gmail.com；一般问题与建议可联系 Tianxing Chen 或 Yue Chen（仓库链接至二人个人主页）",
       "sources": [
         {
-          "url": "https://arxiv.org/abs/2607.04434",
-          "accessed": "2026-11-10"
-        },
-        {
-          "url": "https://robodojo-benchmark.com/",
-          "accessed": "2026-11-10"
-        },
-        {
-          "url": "https://robodojo-benchmark.com/leaderboard",
-          "accessed": "2026-11-10"
+          "url": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+          "accessed": "2026-11-16"
         }
-      ],
-      "status": "待核实"
+      ]
     },
     "github_issues": {
       "value": "https://github.com/RoboDojo-Benchmark/RoboDojo/issues",
@@ -990,6 +972,14 @@
     "value": [
       {
         "date": "2026-11-10",
+        "change": "最近复核"
+      },
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      },
+      {
+        "date": "2026-11-16",
         "change": "最近复核"
       }
     ],

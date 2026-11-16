@@ -1,0 +1,1271 @@
+{
+  "id": "pyrite",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "Pyrite",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "Pyrite：构建与评测蛋白质-配体结合构象排序智能体",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.14511v1；1,500 对构象、285 个结构、1,799 个不重复构象",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.14511v1（2026-11-10首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "section": {
+      "value": "化学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "蛋白质-配体对接",
+        "构象排序",
+        "药物发现",
+        "化学智能体"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用知识共享署名 4.0 国际许可。数据与代码许可以官方仓库为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.14511",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/genesistherapeutics/pyrite",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://huggingface.co/datasets/genesisml/pyrite",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "Genesis Molecular AI（第一作者在该公司实习期间完成工作，所属斯坦福大学）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "partners": {
+      "value": "斯坦福大学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Megha Srivastava、Michael H. Lim、Allison M. Keys、Pranav Murugan、Nate Gruver（共5位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "给定同一蛋白质-配体复合物的两个预测结合构象，判断哪个更接近晶体结构中的真实结合模式；考察语言模型智能体能否在与化学家相同的计算工具输出上推理，排得比工具本身或专家更准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有将语言模型智能体与物理化学工具结合排序经典对接构象的工作，只在小型基准上与底层打分函数持平而未超越；共折叠模型能给出许多看似合理的结合模式，判别其优劣仍缺乏有挑战性的评测。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "用作者自有的共折叠模型与促进多样性的采样方法，对 RCSB 蛋白质数据库中五万余个结构的查询各采样至多 120 个构象，再按与晶体结构的均方根偏差和 lDDT-PLI 分类并筛选构象对。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "专家标注由化学家完成，标注界面提供二维接触图、三维交互视图、MM-GBSA 分数与 Mogul 异常扭转角数量。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "review_process": {
+      "value": "专家需选择哪一构象更接近晶体结合模式（1 至 5 级），写出支持两个构象的因素并说明权衡理由。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "quality_control": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "1,500 对构象，覆盖 285 个结构与 1,799 个不重复构象；其中 195 个结构在 2021-09-30 之前发布（pre-AF3），90 个在之后发布（post-AF3）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "成对构象二选一排序",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "三维分子结构、结构化文本特征（PyriteRep 含 29 项特征）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "论文重点使用三个子集：pre-AF3 curated（485 对、121 个结构，留作训练数据，只报告人类准确率）；post-AF3 all（484 对、90 个结构）；post-AF3 curated（265 对、56 个结构，含人工标注，是唯一可直接比较智能体与专家的子集）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "成对排序准确率；另报告前 k 富集因子（EF@k，随机为 1）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "以与晶体结合模式的接近程度为真值，按二选一是否正确计分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-10 18:56:32 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。最佳方法准确率 74%，专家接近随机水平。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文发现，专家化学家尽管标注者之间一致性较高，准确率却接近或低于随机；常规物理打分可能与正确性负相关。构象来自作者的专有共折叠模型，基准分布受该模型影响。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "论文作者自测。直接以文本化学推理排序的 PyriteReasoner 准确率最高 67%；结合代码描述符与语言模型子调用特征的 PyriteFeaturizer 最高 74%，为本基准最佳。在 post-AF3 curated 子集上，普通逻辑回归的平均单构象准确率为 64%，超过 Sonnet 5 与 GPT-5.6-sol，但低于最强的 Opus 4.8。GRPO 训练可使开放权重模型达到或超过闭源前沿模型。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "论文为 NeurIPS 2026 生物发现智能体研讨会论文，共 32 页。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "论文所列作者邮箱：megha@cs.stanford.edu、mlim@genesis.ml、allikeys@genesis.ml、pranav@genesis.ml、ngruver@genesis.ml",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "官方代码仓库的议题页：https://github.com/genesistherapeutics/pyrite/issues",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.14511",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "d530cbf2781a77b087bca4b42c56bea304a277fb32cd93faa052422985ae93de",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "6539592",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.14511",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://github.com/genesistherapeutics/pyrite",
+          "accessed": "2026-11-16"
+        },
+        {
+          "url": "https://huggingface.co/datasets/genesisml/pyrite",
+          "accessed": "2026-11-16"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.14511",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.14511",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/genesistherapeutics/pyrite",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/genesisml/pyrite",
+        "accessed": "2026-11-16"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-16",
+        "change": "最近复核"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.14511",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.14511",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://github.com/genesistherapeutics/pyrite",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://huggingface.co/datasets/genesisml/pyrite",
+        "accessed": "2026-11-16"
+      }
+    ]
+  }
+}

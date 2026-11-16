@@ -74,7 +74,7 @@ Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.co
 
 Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (accessed 2026-11-10)
 
-**Funders**：Unverified
+**Funders**：The official code repository says the project is operated by the non-profit AI MMLab Club and jointly maintained and supported by a global consortium of academic institutional partners, with no commercial companies involved in governance, operation, funding, sponsorship, compute or hardware; the repository does not list individual funders
 
 Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (accessed 2026-11-10)
 
@@ -208,7 +208,7 @@ Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.co
 
 ## Contact
 
-**Public email**：Unverified
+**Public email**：The collaboration and resource-support inquiry email given in the Affiliations section of the official code repository: RoboDojoCommittee@gmail.com; for general questions and suggestions the repository points to Tianxing Chen or Yue Chen via links to their personal homepages
 
 Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.com/) [3](https://robodojo-benchmark.com/leaderboard) (accessed 2026-11-10)
 
@@ -249,3 +249,5 @@ Sources: [1](https://arxiv.org/abs/2607.04434) [2](https://robodojo-benchmark.co
 ## Changelog
 
 2026-11-10: Initial filing.
+
+2026-11-16: Added public contact email and funding statement.

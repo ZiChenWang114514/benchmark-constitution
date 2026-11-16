@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Add one benchmark dossier to benchmark-constitution (AISLE-style intake)."""
 from __future__ import annotations
-import csv, json, re, sys
+import csv, json, os, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ACC = "2026-11-14"
+ACC = os.environ.get("BC_ACC", "2026-11-16")
 CJK = re.compile(r"[\u4e00-\u9fff]")
 
 ZH_LABELS = {
@@ -75,6 +75,7 @@ EN_LABELS = {
 SECTION_EN = {
   "化学": "Chemistry", "生物与医学": "Biology and medicine", "综合科学": "General science",
   "物理": "Physics", "多模态": "Multimodal", "Agent": "Agent", "安全": "Safety", "材料": "Materials", "机器人与具身": "Robotics and embodied AI",
+  "地球与天文": "Earth and astronomy", "数学": "Mathematics", "代码": "Code", "推理": "Reasoning", "语言": "Language",
 }
 
 def F(value, urls, status=None):
@@ -97,7 +98,9 @@ def src_line(field, prefix="来源"):
   word = "访问" if prefix == "来源" else "accessed"
   return f"{prefix}: {' '.join(parts)} ({word} {field['sources'][0]['accessed']})"
 
-def write_md(path, title, summary, dossier, labels, en_values=None, prefix="来源", changelog_line="2026-11-14：初次收录。"):
+def write_md(path, title, summary, dossier, labels, en_values=None, prefix="来源", changelog_line=None):
+  if changelog_line is None:
+    changelog_line = f"{ACC}：初次收录。"
   lines = [f"# {title}", "", summary, ""]
   for section_key, (heading, fields) in labels.items():
     lines.append(f"## {heading}")
@@ -163,8 +166,8 @@ def intake(spec: dict):
   dossier["latest_status"]["checked_at"] = F(ACC, primary)
 
   (ROOT / "data/benchmarks" / f"{bid}.json").write_text(json.dumps(dossier, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-  write_md(ROOT / "content/benchmarks" / f"{bid}.md", name, summary_zh, dossier, ZH_LABELS, prefix="来源", changelog_line="2026-11-14：初次收录。")
-  write_md(ROOT / "content/en/benchmarks" / f"{bid}.md", name if not CJK.search(name) else en["name"], summary_en, dossier, EN_LABELS, en_values=en, prefix="Sources", changelog_line="2026-11-14: Initial filing.")
+  write_md(ROOT / "content/benchmarks" / f"{bid}.md", name, summary_zh, dossier, ZH_LABELS, prefix="来源", changelog_line=f"{ACC}：初次收录。")
+  write_md(ROOT / "content/en/benchmarks" / f"{bid}.md", name if not CJK.search(name) else en["name"], summary_en, dossier, EN_LABELS, en_values=en, prefix="Sources", changelog_line=f"{ACC}: Initial filing.")
 
   # lexicon
   lex_path = ROOT / "data/en/lexicon.json"
