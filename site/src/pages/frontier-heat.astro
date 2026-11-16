@@ -124,7 +124,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
   <div class="wrap page-hero">
     <h1>{t(locale, 'heat.title')}</h1>
     <p class="lede">{t(locale, 'heat.lede')}</p>
-    {heat?.coverage?.interpretation_zh && <p class="disclaimer">{translateContent(heat.coverage.interpretation_zh, locale)}</p>}
+    {heat?.coverage?.interpretation_zh && <p class="disclaimer">{locale === 'zh' ? heat.coverage.interpretation_zh.replace(/\s*benchmarks?\s*/gi, '基准') : translateContent(heat.coverage.interpretation_zh, locale)}</p>}
     {heat && (
       <>
         <p class="meta-row">
