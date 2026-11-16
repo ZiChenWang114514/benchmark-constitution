@@ -25,7 +25,7 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
 <header class="site-header">
   <div class="header-inner">
     <a class="wordmark" href={page()}>Benchmark Constitution</a>
-    <div
+    <search
       class="site-search"
       data-search
       data-index={searchIndex}
@@ -38,7 +38,7 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
         data-open={t(locale, 'search.open')}
         data-close={t(locale, 'search.close')}
       >{t(locale, 'search.open')}</button>
-      <form class="site-search-form" role="search" action={searchAction} method="get">
+      <form class="site-search-form" action={searchAction} method="get">
         <label class="sr-only" for="site-q">{t(locale, 'search.label')}</label>
         <input
           id="site-q"
@@ -60,8 +60,26 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
         <p class="site-search-empty" hidden>{t(locale, 'search.empty')}</p>
         <a class="site-search-more" data-search-more href={searchAction}>{t(locale, 'search.view_all')}</a>
       </div>
-    </div>
+    </search>
     <a class="lang-switch" href={switchHref} hreflang={other === 'zh' ? 'zh-Hans' : 'en'}>{t(locale, 'lang.switch')}</a>
+    <button
+      type="button"
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-pressed="false"
+      aria-label={t(locale, 'theme.to_dark')}
+      title={t(locale, 'theme.to_dark')}
+      data-to-dark={t(locale, 'theme.to_dark')}
+      data-to-light={t(locale, 'theme.to_light')}
+    >
+      <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <path d="M20.2 14.8A8.2 8.2 0 0 1 9.2 3.8a8.4 8.4 0 1 0 11 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+      </svg>
+    </button>
     <button
       type="button"
       class="nav-toggle"
@@ -79,27 +97,79 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
 </header>
 <script>
   import '../scripts/site-search.ts';
+  const themeBtn = document.querySelector<HTMLButtonElement>('#theme-toggle');
+  const schemeMeta = document.querySelector<HTMLMetaElement>('meta[name="color-scheme"]');
+  const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const effectiveTheme = (): 'light' | 'dark' => {
+    const content = schemeMeta?.getAttribute('content');
+    if (content === 'light' || content === 'dark') return content;
+    return darkQuery.matches ? 'dark' : 'light';
+  };
+  const syncThemeToggle = () => {
+    if (!themeBtn) return;
+    const isDark = effectiveTheme() === 'dark';
+    const nextLabel = isDark ? (themeBtn.dataset.toLight || '') : (themeBtn.dataset.toDark || '');
+    themeBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    themeBtn.setAttribute('aria-label', nextLabel);
+    themeBtn.setAttribute('title', nextLabel);
+  };
+  if (themeBtn && schemeMeta) {
+    syncThemeToggle();
+    themeBtn.addEventListener('click', () => {
+      const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      const osTheme = darkQuery.matches ? 'dark' : 'light';
+      if (next === osTheme) {
+        try { localStorage.removeItem('bc-theme'); } catch { /* ignore */ }
+        schemeMeta.setAttribute('content', 'light dark');
+        delete document.documentElement.dataset.theme;
+      } else {
+        try { localStorage.setItem('bc-theme', next); } catch { /* ignore */ }
+        schemeMeta.setAttribute('content', next);
+        document.documentElement.dataset.theme = next;
+      }
+      syncThemeToggle();
+    });
+    darkQuery.addEventListener('change', syncThemeToggle);
+  }
+
   const header = document.querySelector<HTMLElement>('.site-header');
   const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
   const nav = document.querySelector<HTMLElement>('#site-nav');
   if (header && toggle && nav) {
     const openLabel = toggle.dataset.open || '';
     const closeLabel = toggle.dataset.close || '';
-    const setOpen = (open: boolean) => {
+    const outside = [
+      document.querySelector<HTMLElement>('main'),
+      document.querySelector<HTMLElement>('.site-footer'),
+    ].filter((el): el is HTMLElement => !!el);
+    let lastTrigger: HTMLElement | null = null;
+    const setOpen = (open: boolean, restoreFocus = false) => {
       header.classList.toggle('nav-open', open);
       document.body.classList.toggle('nav-lock', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       toggle.textContent = open ? closeLabel : openLabel;
+      for (const el of outside) el.inert = open;
+      if (open) {
+        lastTrigger = document.activeElement instanceof HTMLElement ? document.activeElement : toggle;
+        const firstLink = nav.querySelector<HTMLAnchorElement>('a');
+        firstLink?.focus({ preventScroll: true });
+      } else if (restoreFocus) {
+        (lastTrigger || toggle).focus({ preventScroll: true });
+        lastTrigger = null;
+      }
     };
     toggle.addEventListener('click', () => setOpen(!header.classList.contains('nav-open')));
     nav.addEventListener('click', (event) => {
       if ((event.target as HTMLElement | null)?.closest('a')) setOpen(false);
     });
     window.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') setOpen(false);
+      if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+        event.preventDefault();
+        setOpen(false, true);
+      }
     });
     window.matchMedia('(min-width: 861px)').addEventListener('change', (event) => {
-      if (event.matches) setOpen(false);
+      if (event.matches && header.classList.contains('nav-open')) setOpen(false);
     });
   }
 </script>

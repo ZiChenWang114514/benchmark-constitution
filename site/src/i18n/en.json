@@ -605,5 +605,11 @@
   "detail.heat_panel": "Frontier heat",
   "detail.heat_count": "Named on {n} of {total} model cards",
   "detail.heat_none": "Not named on these model cards",
-  "detail.score_label": "Impact score"
+  "detail.score_label": "Impact score",
+  "theme.to_dark": "Switch to dark theme",
+  "theme.to_light": "Switch to light theme",
+  "copy.label": "Copy SHA-256",
+  "copy.copied": "Copied",
+  "table.scroll_label": "Scrollable comparison table",
+  "heat.matrix_models_hint": "Each frontier model carries a distinct color swatch and official logo across headers, cells, and ranked lists."
 }

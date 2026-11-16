@@ -21,7 +21,31 @@ function mountMatrix(): void {
 
   const place = (cell: HTMLButtonElement) => {
     const text = cell.getAttribute('aria-label') || '';
-    tip.textContent = text;
+    const logo = cell.dataset.logo || '';
+    const logoKind = cell.dataset.logoKind || '';
+    const mLight = cell.style.getPropertyValue('--m-light');
+    const mDark = cell.style.getPropertyValue('--m-dark');
+    if (mLight) tip.style.setProperty('--m-light', mLight);
+    if (mDark) tip.style.setProperty('--m-dark', mDark);
+    tip.replaceChildren();
+    if (logo && logoKind === 'color') {
+      const img = document.createElement('img');
+      img.className = 'brand-logo tip-logo';
+      img.src = logo;
+      img.alt = '';
+      img.width = 15;
+      img.height = 15;
+      img.decoding = 'async';
+      tip.append(img);
+    } else if (logo && logoKind === 'mask') {
+      const maskEl = document.createElement('span');
+      maskEl.className = 'brand-mask tip-logo';
+      maskEl.setAttribute('aria-hidden', 'true');
+      maskEl.style.setProperty('--logo-mask', `url("${logo}")`);
+      maskEl.style.setProperty('--logo-size', '15px');
+      tip.append(maskEl);
+    }
+    tip.append(document.createTextNode(text));
     tip.hidden = false;
     const rect = cell.getBoundingClientRect();
     const width = Math.min(tip.offsetWidth, window.innerWidth - 16);

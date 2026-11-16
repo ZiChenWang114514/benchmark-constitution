@@ -1,5 +1,7 @@
 ---
-import { AMBER_RAMP } from '../lib/profile';
+import { SECTION_PALETTES } from '../lib/format';
+
+const SKY_PALETTES = Object.values(SECTION_PALETTES);
 
 interface Cluster {
   count: number;
@@ -11,7 +13,7 @@ interface Props {
 const { clusters, label } = Astro.props;
 const cx = 180;
 const cy = 112;
-const dots: { x: number; y: number; r: number; fill: string; delay: number }[] = [];
+const dots: { x: number; y: number; r: number; fill: string; style: string; delay: number }[] = [];
 const centers: { x: number; y: number }[] = [];
 clusters.forEach((cluster, index) => {
   const angle = -Math.PI / 2 + (index / Math.max(clusters.length, 1)) * Math.PI * 2;
@@ -19,6 +21,7 @@ clusters.forEach((cluster, index) => {
   const gy = cy + Math.sin(angle) * 56;
   centers.push({ x: gx, y: gy });
   const count = cluster.count;
+  const palette = SKY_PALETTES[index % SKY_PALETTES.length];
   for (let dot = 0; dot < count; dot += 1) {
     const spin = (dot / Math.max(count, 1)) * Math.PI * 2 + index * 0.4;
     const spread = count === 1 ? 0 : 5 + (dot % 4) * 3.2;
@@ -26,7 +29,8 @@ clusters.forEach((cluster, index) => {
       x: gx + Math.cos(spin) * spread,
       y: gy + Math.sin(spin) * spread * 0.82,
       r: dot % 6 === 0 ? 2.15 : 1.25,
-      fill: AMBER_RAMP[index % AMBER_RAMP.length],
+      fill: palette.light,
+      style: `--dot-light:${palette.light};--dot-dark:${palette.dark};--d:${(index * 13 + dot) % 40}`,
       delay: (index * 13 + dot) % 40,
     });
   }
@@ -49,6 +53,6 @@ const grid = [0, 1, 2, 3, 4, 5, 6];
     <line class="sky-link" x1={link.x1.toFixed(1)} y1={link.y1.toFixed(1)} x2={link.x2.toFixed(1)} y2={link.y2.toFixed(1)} />
   ))}
   {dots.map((dot) => (
-    <circle class="sky-dot" style={`--d:${dot.delay}`} cx={dot.x.toFixed(1)} cy={dot.y.toFixed(1)} r={dot.r} fill={dot.fill} />
+    <circle class="sky-dot" style={dot.style} cx={dot.x.toFixed(1)} cy={dot.y.toFixed(1)} r={dot.r} fill={dot.fill} />
   ))}
 </svg>

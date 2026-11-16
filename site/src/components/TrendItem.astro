@@ -1,6 +1,8 @@
 ---
 import { currentLocale, t } from '../i18n';
-import { page, safeUrl, tone } from '../lib/format';
+import { page, safeUrl, sectionStyle, tone } from '../lib/format';
+import { resolveOrgTheme } from '../lib/models';
+import BrandLogo from './BrandLogo.astro';
 import { sectionLabel, sectionSlug } from '../lib/sections';
 import type { TrendingView } from '../lib/data';
 
@@ -15,12 +17,12 @@ const showEvidence = showWhat || !item.linked;
 const podium = item.rank <= 3 ? `podium podium-${item.rank}` : '';
 const href = item.linked ? page(`benchmarks/${item.slug}`) : '';
 ---
-<article class:list={['trend-card', podium, href && 'is-linked']} id={`trend-${item.slug}`} style={`--tone:${tone(item.section)}`} data-trend data-section={sectionSlug(item.section)}>
+<article class:list={['trend-card', podium, href && 'is-linked']} id={`trend-${item.slug}`} style={`${sectionStyle(item.section)};--tone:${tone(item.section)}`} data-trend data-section={sectionSlug(item.section)}>
   {href && <a class="card-cover" href={href}><span class="sr-only">{item.name}</span></a>}
   <p class="trend-kicker">
     <span class="rank-no">{item.rank}</span>
     <span class:list={['badge', item.heat_confidence === 'A' ? 'badge-heat-a' : 'badge-heat-b']} title={confidence}>{item.heat_confidence}</span>
-    <span class="domain-tag">{sectionLabel(item.section, locale)}</span>
+    <span class="domain-tag" style={sectionStyle(item.section)}>{sectionLabel(item.section, locale)}</span>
   </p>
   <h3>{item.name}</h3>
   <p class="card-summary">{item.rationale}</p>
@@ -29,17 +31,28 @@ const href = item.linked ? page(`benchmarks/${item.slug}`) : '';
     <ul class="trend-evidence">
       {item.evidence.map((entry) => {
         const evidenceHref = safeUrl(entry.url);
+        const orgTheme = entry.organization ? resolveOrgTheme(entry.organization) : null;
         return (
           <li>
             {evidenceHref ? (
               <a class="inline-meta" href={evidenceHref} target="_blank" rel="noopener noreferrer">
-                {entry.organization && <span>{entry.organization}</span>}
+                {entry.organization && orgTheme && (
+                  <span class="org-pill" style={orgTheme.style}>
+                    <BrandLogo theme={orgTheme} size={14} />
+                    <span>{entry.organization}</span>
+                  </span>
+                )}
                 {entry.date && <span>{entry.date}</span>}
                 {!entry.organization && !entry.date && <span>{entry.url}</span>}
               </a>
             ) : (
               <span class="inline-meta">
-                {entry.organization && <span>{entry.organization}</span>}
+                {entry.organization && orgTheme && (
+                  <span class="org-pill" style={orgTheme.style}>
+                    <BrandLogo theme={orgTheme} size={14} />
+                    <span>{entry.organization}</span>
+                  </span>
+                )}
                 {entry.date && <span>{entry.date}</span>}
                 {!entry.organization && !entry.date && <span>{entry.url}</span>}
               </span>

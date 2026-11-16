@@ -6,6 +6,7 @@ interface Point {
   score: number;
   citations: number;
   color: string;
+  style?: string;
 }
 interface Props {
   points: Point[];
@@ -59,19 +60,19 @@ function tipText(point: Point): string {
 ---
 <figure class="scatter-block">
   {title && <figcaption>{title}</figcaption>}
-  <div class="scatter-scroll">
+  <div class="scatter-scroll" role="region" tabindex="0" aria-label={aria}>
     <svg class="scatter" viewBox={`0 0 ${width} ${height}`} role="img" aria-label={aria}>
       <title>{aria} {scoreLabel}</title>
       {scoreTicks.map((score) => (
         <g>
-          <line x1={left} y1={yOf(score)} x2={width - right} y2={yOf(score)} stroke="#e6dcc8" stroke-width="1" />
-          <text x={left - 8} y={yOf(score) + 4} text-anchor="end" fill="#5c564c" font-size="11">{score}</text>
+          <line x1={left} y1={yOf(score)} x2={width - right} y2={yOf(score)} stroke="var(--line, #e6dcc8)" stroke-width="1" />
+          <text x={left - 8} y={yOf(score) + 4} text-anchor="end" fill="var(--muted, #5c564c)" font-size="11">{score}</text>
         </g>
       ))}
       {yearTicks.map((year) => (
-        <text x={xOf(year)} y={height - 12} text-anchor="middle" fill="#5c564c" font-size="11">{year}</text>
+        <text x={xOf(year)} y={height - 12} text-anchor="middle" fill="var(--muted, #5c564c)" font-size="11">{year}</text>
       ))}
-      <text x={left + plotW / 2} y={height - 4} text-anchor="middle" fill="#5c564c" font-size="11">{yearLabel}</text>
+      <text x={left + plotW / 2} y={height - 4} text-anchor="middle" fill="var(--muted, #5c564c)" font-size="11">{yearLabel}</text>
       {points.map((point) => {
         const cx = xOf(point.year);
         const cy = yOf(point.score);
@@ -79,7 +80,7 @@ function tipText(point: Point): string {
         const label = tipText(point);
         return (
           <a href={point.href} aria-label={label}>
-            <circle cx={cx} cy={cy} r={r} fill={point.color} fill-opacity="0.88" stroke="#fffdf8" stroke-width="1.2" />
+            <circle class="scatter-dot" style={point.style} cx={cx} cy={cy} r={r} fill={point.color} fill-opacity="0.88" stroke="var(--paper-2, #fffdf8)" stroke-width="1.2" />
             <title>{label}</title>
           </a>
         );

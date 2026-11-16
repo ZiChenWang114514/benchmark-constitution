@@ -9,12 +9,36 @@ export function bindToc(nav: ParentNode) {
     heads.push(head);
     byHead.set(head, link);
   }
-  if (!heads.length || typeof IntersectionObserver === 'undefined') return;
+  if (!heads.length) return;
   const mark = (head: Element) => {
     for (const link of links) link.removeAttribute('aria-current');
     byHead.get(head)?.setAttribute('aria-current', 'true');
   };
   mark(heads[0]);
+
+  if (typeof CSS !== 'undefined' && CSS.supports?.('scroll-target-group', 'auto')) {
+    const syncAria = () => {
+      let current = heads[0];
+      const offset = 140;
+      for (const head of heads) {
+        if (head.getBoundingClientRect().top <= offset) current = head;
+        else break;
+      }
+      mark(current);
+    };
+    if ('onscrollend' in (window as unknown as Record<string, unknown>)) {
+      window.addEventListener('scrollend', syncAria, { passive: true });
+    } else {
+      let timer = 0;
+      window.addEventListener('scroll', () => {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(syncAria, 120);
+      }, { passive: true });
+    }
+    return;
+  }
+
+  if (typeof IntersectionObserver === 'undefined') return;
   const observer = new IntersectionObserver(
     (entries) => {
       const visible = entries

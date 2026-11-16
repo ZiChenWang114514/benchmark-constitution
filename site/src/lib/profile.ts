@@ -101,19 +101,19 @@ function radar(parts: Drawn[], aria: string): string {
   const data = parts.map((part, index) => point(index, clamp(part.value) / 100).map((n) => n.toFixed(1)).join(',')).join(' ');
   const axes = parts.map((_, index) => {
     const [x, y] = point(index, 1);
-    return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#e6dcc8" stroke-width="1" />`;
+    return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line, #e6dcc8)" stroke-width="1" />`;
   }).join('');
   const labels = parts.map((part, index) => {
     const [x, y] = point(index, 1.28);
     const anchor = x < cx - 10 ? 'end' : x > cx + 10 ? 'start' : 'middle';
     const dy = y < cy - 8 ? -2 : y > cy + 8 ? 8 : 3;
-    return `<text x="${x.toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${anchor}" fill="#3a342c" font-size="9">${esc(part.label)}</text>`;
+    return `<text x="${x.toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${anchor}" fill="var(--ink-soft, #3a342c)" font-size="9">${esc(part.label)}</text>`;
   }).join('');
   const dots = parts.map((part, index) => {
     const [x, y] = point(index, clamp(part.value) / 100);
-    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.2" fill="#7a4e08" />`;
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.4" fill="var(--amber, #7a4e08)" />`;
   }).join('');
-  return `<svg class="chart-svg" viewBox="0 0 320 236" role="img" aria-label="${esc(aria)}"><polygon points="${ring(0.34)}" fill="none" stroke="#f0e2c4" stroke-width="1" /><polygon points="${ring(0.67)}" fill="none" stroke="#e6dcc8" stroke-width="1" /><polygon points="${ring(1)}" fill="#fffdf8" stroke="#d4c4a4" stroke-width="1" />${axes}<polygon points="${data}" fill="rgba(232,180,35,0.42)" stroke="#a87408" stroke-width="1.6" />${dots}${labels}</svg>`;
+  return `<svg class="chart-svg" viewBox="0 0 320 236" role="img" aria-label="${esc(aria)}"><polygon points="${ring(0.34)}" fill="none" stroke="var(--line, #f0e2c4)" stroke-width="1" /><polygon points="${ring(0.67)}" fill="none" stroke="var(--line, #e6dcc8)" stroke-width="1" /><polygon points="${ring(1)}" fill="var(--paper-2, #fffdf8)" stroke="var(--line-strong, #d4c4a4)" stroke-width="1" />${axes}<polygon points="${data}" fill="var(--amber-tint, rgba(232,180,35,0.42))" fill-opacity="0.72" stroke="var(--amber, #a87408)" stroke-width="1.6" />${dots}${labels}</svg>`;
 }
 
 function bars(parts: Drawn[], aria: string): string {
@@ -122,8 +122,8 @@ function bars(parts: Drawn[], aria: string): string {
   const body = parts.map((part, index) => {
     const y = 6 + index * row;
     const width = (clamp(part.value) / 100) * 120;
-    const fill = AMBER_RAMP[Math.min(AMBER_RAMP.length - 1, 6 + index)];
-    return `<text x="0" y="${y + 12}" fill="#3a342c" font-size="11">${esc(part.label)}</text><rect x="108" y="${y + 4}" width="120" height="8" rx="4" fill="#efe4cc" /><rect x="108" y="${y + 4}" width="${width.toFixed(1)}" height="8" rx="4" fill="${fill}" /><text x="234" y="${y + 12}" fill="#1b1916" font-size="11">${part.value.toFixed(1)}</text>`;
+    const fill = AMBER_RAMP[Math.min(AMBER_RAMP.length - 1, 2 + index)];
+    return `<text x="0" y="${y + 12}" fill="var(--ink-soft, #3a342c)" font-size="11">${esc(part.label)}</text><rect x="108" y="${y + 4}" width="120" height="8" rx="4" fill="var(--amber-tint, #efe4cc)" /><rect x="108" y="${y + 4}" width="${width.toFixed(1)}" height="8" rx="4" fill="var(--amber, ${fill})" /><text x="234" y="${y + 12}" fill="var(--ink, #1b1916)" font-size="11">${part.value.toFixed(1)}</text>`;
   }).join('');
   return `<svg class="chart-svg chart-svg-compact" viewBox="0 0 280 ${height}" role="img" aria-label="${esc(aria)}">${body}</svg>`;
 }

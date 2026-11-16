@@ -8,8 +8,9 @@ interface Props {
   title: string;
   description: string;
   active?: 'home' | 'trending' | 'heat' | 'impact' | 'registry' | 'constitution' | 'api' | 'search';
+  readingProgress?: boolean;
 }
-const { title, description, active } = Astro.props;
+const { title, description, active, readingProgress = false } = Astro.props;
 const locale = currentLocale();
 const fullTitle = title === 'Benchmark Constitution' ? 'Benchmark Constitution' : `${title} — Benchmark Constitution`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -27,7 +28,21 @@ const zhHref = new URL(hrefForLocale(Astro.url.pathname, '', 'zh'), Astro.site).
     <link rel="alternate" hreflang="en" href={enHref} />
     <link rel="alternate" hreflang="zh-Hans" href={zhHref} />
     <link rel="alternate" hreflang="x-default" href={enHref} />
-    <meta name="theme-color" content="#f3efe6" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151411" media="(prefers-color-scheme: dark)" />
+    <script is:inline>
+      (function () {
+        var meta = document.querySelector('meta[name="color-scheme"]');
+        if (!meta) return;
+        var saved = null;
+        try { saved = localStorage.getItem('bc-theme'); } catch (error) { saved = null; }
+        if (saved === 'light' || saved === 'dark') {
+          meta.setAttribute('content', saved);
+          document.documentElement.dataset.theme = saved;
+        }
+      })();
+    </script>
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -39,6 +54,7 @@ const zhHref = new URL(hrefForLocale(Astro.url.pathname, '', 'zh'), Astro.site).
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
+    {readingProgress && <div class="scroll-progress" aria-hidden="true"></div>}
     <a class="skip" href="#content">{t(locale, 'skip')}</a>
     <Header active={active} />
     <main id="content">
@@ -47,6 +63,34 @@ const zhHref = new URL(hrefForLocale(Astro.url.pathname, '', 'zh'), Astro.site).
     <Footer />
     <script is:inline>
       document.documentElement.classList.add('js');
+      (function () {
+        document.addEventListener('click', function (event) {
+          var target = event.target;
+          var btn = target && target.closest ? target.closest('[data-copy-btn]') : null;
+          if (!btn) return;
+          var value = btn.getAttribute('data-copy-value') || '';
+          if (!value) {
+            var refId = btn.getAttribute('commandfor') || btn.getAttribute('data-copy-for');
+            var ref = refId ? document.getElementById(refId) : null;
+            value = ref ? (ref.textContent || '').trim() : '';
+          }
+          if (!value || !navigator.clipboard || !navigator.clipboard.writeText) return;
+          var baseLabel = btn.getAttribute('data-label') || btn.textContent || '';
+          var copiedLabel = btn.getAttribute('data-copied') || 'Copied';
+          var statusId = btn.getAttribute('data-copy-status');
+          var live = statusId ? document.getElementById(statusId) : null;
+          navigator.clipboard.writeText(value).then(function () {
+            btn.textContent = copiedLabel;
+            btn.classList.add('is-copied');
+            if (live) live.textContent = copiedLabel;
+            window.setTimeout(function () {
+              btn.textContent = baseLabel;
+              btn.classList.remove('is-copied');
+              if (live) live.textContent = '';
+            }, 1800);
+          }).catch(function () {});
+        });
+      })();
       (function () {
         var reduce = false;
         try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (error) { reduce = false; }

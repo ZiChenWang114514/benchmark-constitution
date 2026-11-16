@@ -20,7 +20,8 @@ import {
   trendingViews,
 } from '../lib/data';
 import { loadHeat, loadImpact } from '../lib/boards';
-import { dateStamp, displayName, page, publicText, safeUrl, textValue, tone } from '../lib/format';
+import { dateStamp, displayName, page, publicText, safeUrl, sectionPalette, sectionStyle, textValue, tone } from '../lib/format';
+import { resolveModelTheme } from '../lib/models';
 
 const locale = currentLocale();
 const ui = visualCopy(locale);
@@ -39,6 +40,7 @@ const hotPreview = hotList.slice(0, 6);
 const heat = loadHeat();
 const impact = loadImpact();
 const known = new Set(records.map((record) => record.index.id));
+const heatModelName = new Map((heat?.models ?? []).map((model) => [model.id, model.name]));
 const heatTop = (heat?.ranking ?? []).slice(0, 10);
 const impactTop = (impact?.ranking ?? []).filter((row) => row.score != null).slice(0, 10);
 const scoreById = new Map((impact?.ranking ?? []).filter((row) => row.score != null).map((row) => [row.id, row.score as number]));
@@ -59,6 +61,7 @@ const domainItems = groups.map((group) => ({
   count: group.items.length,
   href: `#sec-${sectionSlug(group.id)}`,
   slug: sectionSlug(group.id),
+  section: group.id,
 }));
 const windowText = trending.window?.from && trending.window?.through ? t(locale, 'home.window', { from: trending.window.from, through: trending.window.through }) : '';
 const stats = [
@@ -85,6 +88,7 @@ function coverFor(item: (typeof news)[number], wide = false): string {
   return newsCover({
     name: hit?.name || t(locale, 'home.news'),
     tone: hit ? tone(hit.section) : '#a87408',
+    toneDark: hit ? sectionPalette(hit.section).dark : '#e8b423',
     score: hit ? scoreById.get(hit.id) ?? null : null,
     heat: hit ? heatById.get(hit.id) ?? null : null,
     heatMax,
@@ -96,6 +100,10 @@ const heroBars = heatTop.map((row) => ({
   name: displayName(row.name),
   value: row.count,
   href: known.has(row.benchmark_id) ? page(`benchmarks/${row.benchmark_id}`) : page('frontier-heat'),
+  models: (row.models ?? []).map((id) => {
+    const theme = resolveModelTheme(id);
+    return { name: heatModelName.get(id) ?? id, theme };
+  }),
 }));
 const impactBars = impactTop.map((row) => ({
   rank: row.rank ?? 0,
@@ -133,16 +141,16 @@ const impactBars = impactTop.map((row) => ({
                 const peak = Math.max(...newsDates);
                 const slot = 120 / newsDates.length;
                 const bar = Math.max(4, (count / peak) * 16);
-                return <rect x={point * slot + 2} y={20 - bar} width={Math.max(3, slot - 4)} height={bar} rx="1.5" fill="#c4962a" />;
+                return <rect x={point * slot + 2} y={20 - bar} width={Math.max(3, slot - 4)} height={bar} rx="1.5" fill="var(--amber, #c4962a)" />;
               })}
               {item.href === page('impact') && (
                 <>
-                  <rect x="0" y="7" width="120" height="8" rx="4" fill="#efe4cc" />
-                  <rect x="0" y="7" width={Math.max(8, rankedShare * 120)} height="8" rx="4" fill="#e8b423" />
+                  <rect x="0" y="7" width="120" height="8" rx="4" fill="var(--amber-tint, #efe4cc)" />
+                  <rect x="0" y="7" width={Math.max(8, rankedShare * 120)} height="8" rx="4" fill="var(--amber, #e8b423)" />
                 </>
               )}
               {item.href === page('frontier-heat') && heatTop.slice(0, 5).map((row, bar) => (
-                <rect x={bar * 24} y={20 - (row.count / heatMax) * 16} width="16" height={(row.count / heatMax) * 16} rx="2" fill="#c4962a" />
+                <rect x={bar * 24} y={20 - (row.count / heatMax) * 16} width="16" height={(row.count / heatMax) * 16} rx="2" fill="var(--amber, #c4962a)" />
               ))}
             </svg>
           </a>
@@ -242,7 +250,7 @@ const impactBars = impactTop.map((row) => ({
       </header>
       <nav class="section-index" aria-label={t(locale, 'home.sections_aria')}>
         {groups.map((group) => (
-          <a href={`#sec-${sectionSlug(group.id)}`}>
+          <a href={`#sec-${sectionSlug(group.id)}`} style={sectionStyle(group.id)}>
             <span>{sectionLabel(group.id, locale)}</span>
             <strong>{group.items.length}</strong>
             <small>{group.blurb}</small>
@@ -287,7 +295,7 @@ const impactBars = impactTop.map((row) => ({
     </section>
 
     {groups.map((group) => (
-      <section class="group reveal" id={`sec-${sectionSlug(group.id)}`} data-group={sectionSlug(group.id)} aria-labelledby={`heading-${sectionSlug(group.id)}`}>
+      <section class="group reveal" id={`sec-${sectionSlug(group.id)}`} data-group={sectionSlug(group.id)} style={sectionStyle(group.id)} aria-labelledby={`heading-${sectionSlug(group.id)}`}>
         <header class="group-head">
           <div>
             <h2 id={`heading-${sectionSlug(group.id)}`}>{sectionLabel(group.id, locale)}</h2>
@@ -311,7 +319,7 @@ const impactBars = impactTop.map((row) => ({
                 data-tags={record.index.tags.join('|')}
                 data-search={record.search}
                 href={page(`benchmarks/${record.index.id}`)}
-                style={`--tone:${tone(record.index.section)}`}
+                style={`${sectionStyle(record.index.section)};--tone:${tone(record.index.section)}`}
               >
                 <span class="card-section">
                   <span class="domain-tag">{sectionLabel(record.index.section, locale)}</span>

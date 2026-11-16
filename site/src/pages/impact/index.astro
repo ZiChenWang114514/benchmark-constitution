@@ -6,8 +6,8 @@ import { visualCopy } from '../../i18n/visual';
 import { sectionLabel } from '../../lib/sections';
 import { loadImpact, type ImpactRow } from '../../lib/boards';
 import { loadIndex, loadRecords } from '../../lib/data';
-import { dateStamp, displayName, page, textValue } from '../../lib/format';
-import { AMBER_RAMP, isQualityPrior, profileHtml, profileParts, scoreTier } from '../../lib/profile';
+import { dateStamp, displayName, page, sectionPalette, sectionStyle, textValue } from '../../lib/format';
+import { isQualityPrior, profileHtml, profileParts, scoreTier } from '../../lib/profile';
 import BarChart from '../../components/BarChart.astro';
 import ScatterChart from '../../components/ScatterChart.astro';
 
@@ -36,6 +36,7 @@ function slim(row: ImpactRow, tier: 'ranked' | 'insufficient') {
     id: row.id,
     name: displayName(row.name),
     domain: sectionLabel(row.domain, locale),
+    domainStyle: sectionStyle(row.domain || ''),
     score: num(row.score),
     quality: qualityIsPrior ? null : quality,
     qualityPrior: qualityIsPrior,
@@ -81,20 +82,20 @@ for (const record of loadRecords()) {
   const match = /^(\d{4})/.exec(textValue(record.file.basic_info.release_date));
   if (match) yearById.set(record.index.id, Number(match[1]));
 }
-const domainOrder = [...new Set((impact?.ranking ?? []).map((row) => row.domain || ''))];
 const scatterPoints = (impact?.ranking ?? []).flatMap((row) => {
   const fromRow = /^(\d{4})/.exec(row.release_date || '');
   const year = yearById.get(row.id) || (fromRow ? Number(fromRow[1]) : 0);
   if (!year || typeof row.score !== 'number') return [];
   const citations = typeof row.raw?.citations === 'number' ? row.raw.citations : 0;
-  const colorIndex = Math.max(0, domainOrder.indexOf(row.domain || ''));
+  const palette = sectionPalette(row.domain || '');
   return [{
     name: displayName(row.name),
     href: known.has(row.id) ? page(`benchmarks/${row.id}`) : page('impact'),
     year,
     score: row.score,
     citations,
-    color: AMBER_RAMP[colorIndex % AMBER_RAMP.length],
+    color: palette.light,
+    style: `--dot-light:${palette.light};--dot-dark:${palette.dark}`,
   }];
 });
 const sortFields = [
@@ -184,7 +185,7 @@ function widthOf(value: number): number {
           <p id="impact-count" class="result-count" data-showing={ui.showing} data-unit={ui.rows} aria-live="polite">{ui.showing} {rankedCount} {ui.rows}</p>
         </form>
         <p id="impact-empty" class="empty" hidden>{ui.emptyFilter}</p>
-        <div class="board-scroll grow-root">
+        <div class="board-scroll grow-root" role="region" tabindex="0" aria-label={t(locale, 'table.scroll_label')}>
           <table
             class="board"
             id="impact-table"
@@ -215,11 +216,11 @@ function widthOf(value: number): number {
             <thead>
               <tr>
                 <th class="rank-col" scope="col" aria-sort="ascending"><button type="button" class="sort-btn" data-sort="rank" data-dir="asc">{ui.colRank}</button></th>
-                <th class="name-col" scope="col" aria-sort="none"><button type="button" class="sort-btn" data-sort="name">{ui.colName}</button></th>
-                <th scope="col" aria-sort="none"><button type="button" class="sort-btn" data-sort="domain">{ui.colDomain}</button></th>
-                <th scope="col" aria-sort="none"><button type="button" class="sort-btn" data-sort="score">{ui.colScore}</button></th>
-                <th scope="col" aria-sort="none"><button type="button" class="sort-btn" data-sort="community">{ui.evCommunity}</button></th>
-                <th scope="col" aria-sort="none"><button type="button" class="sort-btn" data-sort="github">{ui.evGithub}</button></th>
+                <th class="name-col" scope="col"><button type="button" class="sort-btn" data-sort="name">{ui.colName}</button></th>
+                <th scope="col"><button type="button" class="sort-btn" data-sort="domain">{ui.colDomain}</button></th>
+                <th scope="col"><button type="button" class="sort-btn" data-sort="score">{ui.colScore}</button></th>
+                <th scope="col"><button type="button" class="sort-btn" data-sort="community">{ui.evCommunity}</button></th>
+                <th scope="col"><button type="button" class="sort-btn" data-sort="github">{ui.evGithub}</button></th>
               </tr>
             </thead>
             {ranked.map((row) => (
@@ -227,7 +228,7 @@ function widthOf(value: number): number {
                 <tr>
                   <td class="rank-cell" data-label={ui.colRank}>{row.rank == null ? <span class="na" title={ui.unranked}>—</span> : <span class="rank-no">{row.rank}</span>}</td>
                   <td class="name-cell" data-label={ui.colName}>{row.href ? <a href={row.href}>{row.name}</a> : row.name}</td>
-                  <td data-label={ui.colDomain}>{row.domain ? <span class="domain-tag">{row.domain}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
+                  <td data-label={ui.colDomain}>{row.domain ? <span class="domain-tag" style={row.domainStyle}>{row.domain}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
                   <td class="score-cell" data-label={ui.colScore}>
                     {row.score == null || row.parts.length === 0 ? (
                       row.score == null ? <span class="na" title={ui.nullTip}>—</span> : (

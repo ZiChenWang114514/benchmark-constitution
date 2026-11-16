@@ -1,14 +1,23 @@
 ---
 import { currentLocale } from '../i18n';
+import type { ColorTheme } from '../lib/models';
+import BrandLogo from './BrandLogo.astro';
+
+interface ModelBead {
+  name: string;
+  theme: ColorTheme;
+}
 interface Item {
   rank: number;
   name: string;
   value: number;
   href: string;
+  models?: ModelBead[];
 }
 interface Props {
   items: Item[];
   strong?: boolean;
+  zero?: boolean;
 }
 const { items, strong = false, zero = false } = Astro.props;
 const locale = currentLocale();
@@ -70,7 +79,18 @@ function label(value: number): string {
       <li>
         <a class="bar-row" href={item.href}>
           <span class:list={['rank-no', item.rank <= 3 && `podium-${item.rank}`]}>{item.rank}</span>
-          <span class="bar-name">{item.name}</span>
+          <span class="bar-label-wrap">
+            <span class="bar-name">{item.name}</span>
+            {item.models && item.models.length > 0 && (
+              <span class="model-beads" aria-hidden="true">
+                {item.models.slice(0, 12).map((model) => (
+                  <span class="model-bead" style={model.theme.style} title={model.name}>
+                    <BrandLogo theme={model.theme} size={12} />
+                  </span>
+                ))}
+              </span>
+            )}
+          </span>
           <span class="bar-track" aria-hidden="true">
             <span class:list={[tier(item.value), 'grow']} style={`width:${widthOf(item.value)}%`}></span>
           </span>

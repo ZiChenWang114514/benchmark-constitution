@@ -1,0 +1,32 @@
+---
+import { asset } from '../lib/format';
+import type { ColorTheme } from '../lib/models';
+
+interface Props {
+  theme: ColorTheme;
+  size?: number;
+  eager?: boolean;
+  class?: string;
+}
+
+const { theme, size = 14, eager = false, class: className } = Astro.props;
+const src = theme.logo ? asset(`logos/${theme.logo}`) : '';
+---
+{theme.logo && theme.logoKind === 'color' && (
+  <img
+    class:list={['brand-logo', className]}
+    src={src}
+    alt=""
+    width={size}
+    height={size}
+    decoding="async"
+    loading={eager ? undefined : 'lazy'}
+  />
+)}
+{theme.logo && theme.logoKind === 'mask' && (
+  <span
+    class:list={['brand-mask', className]}
+    style={`--logo-mask:url("${src}");--logo-size:${size}px`}
+    aria-hidden="true"
+  ></span>
+)}

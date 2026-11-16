@@ -6,6 +6,7 @@ type Row = {
   id: string;
   name: string;
   domain: string;
+  domainStyle?: string;
   score: number | null;
   quality: number | null;
   qualityPrior?: boolean;
@@ -53,7 +54,6 @@ export function mountImpactBoard(): void {
     return [id, table.dataset[key] || id];
   })) as Record<ProfileGroupId, string>;
   const nullTip = table.dataset.nullTip || '';
-  const priorTip = table.dataset.priorTip || '';
   const unranked = table.dataset.unranked || nullTip;
   const expand = table.dataset.expand || '';
   const breakdown = table.dataset.breakdown || '';
@@ -93,7 +93,7 @@ export function mountImpactBoard(): void {
       : `<span class="rank-no">${row.rank}</span>`;
     const name = row.href ? `<a href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name);
     const domainText = row.domain
-      ? `<span class="domain-tag">${esc(row.domain)}</span>`
+      ? `<span class="domain-tag"${row.domainStyle ? ` style="${esc(row.domainStyle)}"` : ''}>${esc(row.domain)}</span>`
       : `<span class="na" title="${esc(nullTip)}">—</span>`;
     const width = Math.max(0, Math.min(100, row.score ?? 0));
     const score = row.score == null
@@ -154,7 +154,8 @@ export function mountImpactBoard(): void {
       const header = button.closest('th');
       const active = button.dataset.sort === sortKey;
       button.dataset.dir = active ? sortDir : '';
-      header?.setAttribute('aria-sort', active ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none');
+      if (active) header?.setAttribute('aria-sort', sortDir === 'asc' ? 'ascending' : 'descending');
+      else header?.removeAttribute('aria-sort');
     }
     if (sortSelect) sortSelect.value = `${sortKey}:${sortDir}`;
   };
@@ -196,8 +197,13 @@ export function mountImpactBoard(): void {
     for (const row of entries()) {
       if (row.dataset.tier !== tier || !matchedSet.has(row)) row.hidden = true;
     }
+    const moveNode = (parent: Element, node: Element) => {
+      const moveable = parent as Element & { moveBefore?: (child: Node, ref: Node | null) => void };
+      if (typeof moveable.moveBefore === 'function') moveable.moveBefore(node, null);
+      else parent.append(node);
+    };
     for (const row of matched) {
-      table.append(row);
+      moveNode(table, row);
       row.hidden = !visible.has(row);
     }
     table.classList.add('is-paged');

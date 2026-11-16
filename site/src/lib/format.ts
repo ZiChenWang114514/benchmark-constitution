@@ -272,24 +272,48 @@ export function displayName(name: string): string {
   return name.replace(/[\u2018\u2019\u201A\u201B\u2032\uFF07]/g, "'");
 }
 
-export const TONES: Record<string, string> = {
-  物理: '#7a4e08',
-  化学: '#6a430c',
-  '生物与医学': '#7a5608',
-  '地球与天文': '#6f4706',
-  材料: '#8a5a10',
-  综合科学: '#6a430c',
-  语言: '#7a4e08',
-  推理: '#7a5608',
-  数学: '#6f4706',
-  代码: '#8a5a10',
-  多模态: '#6a430c',
-  Agent: '#7a4e08',
-  安全: '#7a5608',
-  语音: '#6f4706',
-  '机器人与具身': '#8a5a10',
+export interface SectionPalette {
+  light: string;
+  dark: string;
+  style: string;
+}
+
+export const SECTION_PALETTES: Record<string, SectionPalette> = {
+  物理: { light: '#1d4ed8', dark: '#93c5fd', style: '--tone-light:#1d4ed8;--tone-dark:#93c5fd' },
+  化学: { light: '#0f766e', dark: '#5eead4', style: '--tone-light:#0f766e;--tone-dark:#5eead4' },
+  生物与医学: { light: '#15803d', dark: '#86efac', style: '--tone-light:#15803d;--tone-dark:#86efac' },
+  地球与天文: { light: '#0369a1', dark: '#7dd3fc', style: '--tone-light:#0369a1;--tone-dark:#7dd3fc' },
+  材料: { light: '#b45309', dark: '#fbbf24', style: '--tone-light:#b45309;--tone-dark:#fbbf24' },
+  综合科学: { light: '#4338ca', dark: '#a5b4fc', style: '--tone-light:#4338ca;--tone-dark:#a5b4fc' },
+  语言: { light: '#9a3412', dark: '#fdba74', style: '--tone-light:#9a3412;--tone-dark:#fdba74' },
+  推理: { light: '#6d28d9', dark: '#c4b5fd', style: '--tone-light:#6d28d9;--tone-dark:#c4b5fd' },
+  数学: { light: '#7e22ce', dark: '#d8b4fe', style: '--tone-light:#7e22ce;--tone-dark:#d8b4fe' },
+  代码: { light: '#047857', dark: '#6ee7b7', style: '--tone-light:#047857;--tone-dark:#6ee7b7' },
+  多模态: { light: '#be185d', dark: '#f9a8d4', style: '--tone-light:#be185d;--tone-dark:#f9a8d4' },
+  Agent: { light: '#c2410c', dark: '#fb923c', style: '--tone-light:#c2410c;--tone-dark:#fb923c' },
+  安全: { light: '#b91c1c', dark: '#fca5a5', style: '--tone-light:#b91c1c;--tone-dark:#fca5a5' },
+  语音: { light: '#0e7490', dark: '#67e8f9', style: '--tone-light:#0e7490;--tone-dark:#67e8f9' },
+  机器人与具身: { light: '#4d7c0f', dark: '#bef264', style: '--tone-light:#4d7c0f;--tone-dark:#bef264' },
 };
 
+const DEFAULT_SECTION_PALETTE: SectionPalette = {
+  light: '#7a4e08',
+  dark: '#eab308',
+  style: '--tone-light:#7a4e08;--tone-dark:#eab308',
+};
+
+export const TONES: Record<string, string> = Object.fromEntries(
+  Object.entries(SECTION_PALETTES).map(([key, palette]) => [key, palette.light]),
+);
+
+export function sectionPalette(section: string): SectionPalette {
+  return SECTION_PALETTES[section] ?? DEFAULT_SECTION_PALETTE;
+}
+
+export function sectionStyle(section: string): string {
+  return sectionPalette(section).style;
+}
+
 export function tone(section: string): string {
-  return TONES[section] ?? '#7a4e08';
+  return sectionPalette(section).light;
 }
