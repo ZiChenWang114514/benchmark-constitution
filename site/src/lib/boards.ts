@@ -144,10 +144,11 @@ export function loadMethodology(): string | null {
 export function rankArrow(change: HeatRank['rank_change']): { mark: string; label: string } {
   const locale = currentLocale();
   if (change === 'new') return { mark: t(locale, 'rank.new_mark'), label: t(locale, 'rank.new') };
+  // rank_change = previous rank minus current rank, so positive means the benchmark rose.
+  if (typeof change === 'number' && change > 0) return { mark: t(locale, 'rank.up_mark', { n: change }), label: t(locale, 'rank.up', { n: change }) };
   if (typeof change === 'number' && change < 0) {
     const n = Math.abs(change);
-    return { mark: t(locale, 'rank.up_mark', { n }), label: t(locale, 'rank.up', { n }) };
+    return { mark: t(locale, 'rank.down_mark', { n }), label: t(locale, 'rank.down', { n }) };
   }
-  if (typeof change === 'number' && change > 0) return { mark: t(locale, 'rank.down_mark', { n: change }), label: t(locale, 'rank.down', { n: change }) };
   return { mark: t(locale, 'rank.same_mark'), label: t(locale, 'rank.same') };
 }

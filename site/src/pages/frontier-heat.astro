@@ -267,7 +267,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                       <td class="rank-cell" data-label={ui.colRank}><span class="rank-no">{row.rank}</span></td>
                       {showMovement && (
                         <td data-label={t(locale, 'heat.col.change')}>
-                          {row.rank_change === 'new' ? <span class="move-new" title={arrow.label}>{t(locale, 'rank.new_mark')}</span> : <span class:list={['rank-change', typeof row.rank_change === 'number' && row.rank_change < 0 && 'move-up', typeof row.rank_change === 'number' && row.rank_change > 0 && 'move-down']} title={arrow.label}>{arrow.mark}</span>}
+                          {row.rank_change === 'new' ? <span class="move-new" title={arrow.label}>{t(locale, 'rank.new_mark')}</span> : <span class:list={['rank-change', typeof row.rank_change === 'number' && row.rank_change > 0 && 'move-up', typeof row.rank_change === 'number' && row.rank_change < 0 && 'move-down']} title={arrow.label}>{arrow.mark}</span>}
                         </td>
                       )}
                       <td class="name-cell" data-label={ui.colName}>
