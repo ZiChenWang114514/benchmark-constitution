@@ -86,7 +86,7 @@ def merge_mentions(old,extra):
 # name is put in front. No version is ever invented; a mention that names no version
 # yields the canonical family name. normalization.json may hold per-family
 # "version_labels" {exact variant/raw_name text: clean label} for messy source strings.
-_NOTE_PARENS=re.compile(r'\s*\((?:aa|elo|footnote \d+|net improvement|cheating-adjusted|relaxed(?: score)?|\d+ ?hr|pass@\d+)\)',re.I)
+_NOTE_PARENS=re.compile(r'\s*\((?:aa|elo|footnote \d+|net improvement|cheating-adjusted|relaxed(?: score)?|\d+ ?hr|pass@\d+|no safeguards)\)',re.I)
 _TOOLS=((re.compile(r'\(?\b(?:w/o|without|no) ?tools\)?',re.I),'no tools'),(re.compile(r'\(?\b(?:w/|with) ?tools\)?',re.I),'with tools'))
 _NOISE={'benchmark','bench','evaluation','eval'}
 def _nk(s):return re.sub(r'[^0-9a-z]','',s.replace('’',"'").lower())
@@ -138,8 +138,11 @@ def version_labels(mentions,reg,norm):
     for x in mentions:
         bid=x['benchmark_id'];canon=reg[bid]['name']
         aliases=list(dict.fromkeys([*norm.get(bid,{}).get('aliases',[]),*reg[bid].get('aliases',[])]))
-        lab=raw_version_label(x,canon,aliases,norm.get(bid,{}).get('version_labels'))
-        raw[(bid,x['model'])].add(lab);freq[bid][lab]+=1
+        v=x.get('variant')
+        parts=[{**x,'variant':part.strip()} for part in v.split(' / ')] if isinstance(v,str) and ' / ' in v else [x]  # "OfficeQA / OfficeQA Pro"
+        for part in parts:
+            lab=raw_version_label(part,canon,aliases,norm.get(bid,{}).get('version_labels'))
+            raw[(bid,x['model'])].add(lab);freq[bid][lab]+=1
     pick={}
     for bid,c in freq.items():
         groups=collections.defaultdict(list)

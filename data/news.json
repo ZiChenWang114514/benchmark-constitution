@@ -1,5 +1,49 @@
 [
   {
+    "id": "frontier-heat-model-card-recheck",
+    "observed_date": "2026-11-16",
+    "event_date": "2026-11-16",
+    "title": "前沿热度榜依据官方模型卡与系统卡复核全部窗口模型，HealthBench 升至第4名",
+    "body": "前沿热度榜逐一复核了窗口内20个模型的官方模型卡、系统卡与发布页，并修正了评测记录。此前未纳入的 Claude Fable 5.2 系统卡为该模型新增计入17项评测，包括 SWE-bench Pro、DeepSWE v1.1、Terminal-Bench 4.0、CursorBench 4.0、ProgramBench、OfficeQA、GDPval-AA v2.1、ARC-AGI-3、HealthBench Professional 与 PhysicianBench；系统卡中属于 Claude Mythos 5.2 的成绩不计入 Fable 5.2。同一厂商后续报告中的对比列按既有规则计入：Fable 5.2 的系统卡与发布页为 Claude Opus 5.5 补入 Remote Labor Index、De novo binder design、CVE Rediscovery 与 RoboDojo Sim，Gemini 4 Carbon 模型卡为 Gemini 4 Argon 补入 SWE-sweep、Vending-Bench 2、Blueprint-Bench 2、ExploitGym 与 SEC-Bench Pro。另一方面，只把题目用作思维链可控性测试题库的 GPQA、Humanity’s Last Exam 与 MMLU-Pro，仅顺带提到的 SWE-bench，以及参考文献条目，不再计入；Kimi K3.1 Pro 报告的 Frontier Finance 此前被误归入 Vals Finance Agent，现已改归其本身的评测族；Claude 系统卡中覆盖42种语言的 GMMLU 从 MMMLU 中分出，单列为 Global MMLU。复核后，计入的模型与评测组合由573个增至584个。前二十名中，HealthBench 由第6名升至第4名，Humanity’s Last Exam 由第4名降至第6名，ExploitGym 由第10名升至第8名，Indirect Prompt Injection 由第21名升至第16名，SEC-Bench 由第22名升至第17名；GPQA 由第16名降至第32名，FrontierSWE 由第20名降至第21名。前二十名以外，MMLU-Pro 由第25名降至第187名，SWE-bench 由第26名降至第41名，Global MMLU 由第88名升至第52名，PhysicianBench 由第201名升至第94名。在热力图中，鼠标悬停或用键盘移到某一格时，会显示该模型官方文档点名的具体版本，例如 Terminal-Bench 4.0。",
+    "sources": [
+      {
+        "url": "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf",
+        "accessed": "2026-11-07"
+      },
+      {
+        "url": "https://www.anthropic.com/claude-opus-5-5-system-card",
+        "accessed": "2026-11-07"
+      },
+      {
+        "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+        "accessed": "2026-11-07"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-astra",
+        "accessed": "2026-11-07"
+      },
+      {
+        "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "type": "榜单变化",
+    "sort_date": "2026-11-16",
+    "sort_date_basis": "event_date"
+  },
+  {
     "id": "qwen4-max-frontier-heat",
     "observed_date": "2026-11-16",
     "event_date": "2026-11-16",
