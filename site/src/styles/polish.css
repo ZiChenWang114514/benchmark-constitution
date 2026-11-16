@@ -460,3 +460,5 @@ ol.wire-list, ol.form-strip, ol.mover-grid { list-style: none; margin: 0; paddin
   .board.heat-models-table td > * { justify-self: start; }
   .board.heat-models-table td > .score-wrap, .board.heat-models-table td > .ctx-cell { justify-self: stretch; }
 }
+ol.bar-chart { padding: 0; list-style: none; }
+.data-band .bar-axis { display: none; }
