@@ -7480,7 +7480,6 @@
   "与 AISLE、LabRobotBench、LAB-Bench、Gamow LabBench、BioBasicsBench 等同属湿实验或实验室智能体评测可对照。": "Comparable wet-lab or laboratory-agent benchmarks include AISLE, LabRobotBench, LAB-Bench, Gamow LabBench, and BioBasicsBench.",
   "作者报告：代表性任务上最强策略平均成功率约 49.7%；人机协同评测暴露明显弱点。": "Authors report about 49.7% average success for the strongest policy on representative tasks, with clear human-agent coordination weaknesses.",
   "仅汇总技术报告公开数字，未复跑评测。": "Summarizes public figures from the technical report only; evaluation was not rerun.",
-  "本地 PDF 存档：/workspace/wetlab-intake-pdfs/scihorizon-elab.pdf（未纳入版本库）。": "Local PDF archive: (not committed).",
   "https://arxiv.org/abs/2609.30971；https://github.com/SciHorizon-elab/SciHorizon-elab": "https://arxiv.org/abs/2609.30971; https://github.com/SciHorizon-elab/SciHorizon-elab",
   "从科学家对已发表协议的真实修改中回收149道协议改写任务，覆盖九个湿实验生物学领域；Claude Opus 5 归一化细则分最高约59.2%。": "Recovers 149 protocol-modification tasks from real scientist edits to published protocols across nine wet-lab biology domains; Claude Opus 5 leads at about 59.2% normalized rubric score.",
   "149道任务；96份源协议": "149 tasks from 96 source protocols",
