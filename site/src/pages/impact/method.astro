@@ -9,7 +9,7 @@ const locale = currentLocale();
 const markdown = loadMethodology();
 const html = markdown ? renderMarkdownDocument(markdown) : '';
 ---
-<Base title={t(locale, 'method.title')} description={t(locale, 'method.description')} active="impact">
+<Base title={t(locale, 'method.title')} description={t(locale, 'method.description')} active="impact" readingProgress>
   <div class="wrap page-hero">
     <h1>{t(locale, 'method.heading')}</h1>
     <p class="meta-row"><a href={page('impact')}>{t(locale, 'method.back')}</a></p>

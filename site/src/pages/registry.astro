@@ -5,7 +5,7 @@ import { visualCopy } from '../i18n/visual';
 import { sectionLabel } from '../lib/sections';
 import { loadRegistry } from '../lib/boards';
 import { loadIndex } from '../lib/data';
-import { dateStamp, page } from '../lib/format';
+import { dateStamp, page, sectionStyle } from '../lib/format';
 
 const locale = currentLocale();
 const ui = visualCopy(locale);
@@ -17,6 +17,7 @@ const payload = (registry?.items ?? []).map((item) => ({
   name: item.name,
   aliases: item.aliases ?? [],
   domain: sectionLabel(item.domain, locale),
+  domain_style: sectionStyle(item.domain || ''),
   description_zh: locale === 'en' ? '' : (item.description_zh ?? ''),
   release_date: item.release_date ?? '',
   paper_url: item.paper_url ?? '',
@@ -61,7 +62,7 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
           </label>
         </div>
         <p id="reg-count" class="result-count"></p>
-        <div class="board-scroll">
+        <div class="board-scroll" role="region" tabindex="0" aria-label={t(locale, 'table.scroll_label')}>
           <table class="board" id="reg-table" data-null-tip={ui.nullTip} data-paper={t(locale, 'registry.paper')} data-code={t(locale, 'registry.code')} data-dataset={t(locale, 'registry.dataset')} data-home={t(locale, 'registry.home')} data-name={t(locale, 'registry.col.name')} data-domain={t(locale, 'registry.col.domain')} data-released={t(locale, 'registry.col.released')} data-citations={t(locale, 'registry.col.citations')} data-stars={t(locale, 'registry.col.stars')} data-links={t(locale, 'registry.col.links')} data-count-unit={t(locale, 'visual.rows')}>
             <thead>
               <tr>
@@ -84,7 +85,7 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
         <script id="reg-data" type="application/json" set:html={JSON.stringify(payload).replaceAll('<', '\\u003c')}></script>
         <script>
           type Row = {
-            id: string; name: string; aliases?: string[]; domain: string; description_zh: string;
+            id: string; name: string; aliases?: string[]; domain: string; domain_style?: string; description_zh: string;
             release_date: string; paper_url: string; github_url: string; hf_dataset: string;
             homepage: string; citations: number | null; stars: number | null; archive: string;
           };
@@ -161,13 +162,16 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
                 const labelCitations = table?.getAttribute('data-citations') || '';
                 const labelStars = table?.getAttribute('data-stars') || '';
                 const labelLinks = table?.getAttribute('data-links') || '';
-                return `<tr><td class="name-cell" data-label="${esc(labelName)}">${name}</td><td data-label="${esc(labelDomain)}">${item.domain ? `<span class="domain-tag">${esc(item.domain)}</span>` : dash}</td><td data-label="${esc(labelReleased)}">${esc(item.release_date || '') || dash}</td><td class="num" data-label="${esc(labelCitations)}">${item.citations ?? dash}</td><td class="num" data-label="${esc(labelStars)}">${item.stars ?? dash}</td><td data-label="${esc(labelLinks)}">${entry}</td></tr>`;
+                return `<tr><td class="name-cell" data-label="${esc(labelName)}">${name}</td><td data-label="${esc(labelDomain)}">${item.domain ? `<span class="domain-tag" style="${esc(item.domain_style || '')}">${esc(item.domain)}</span>` : dash}</td><td data-label="${esc(labelReleased)}">${esc(item.release_date || '') || dash}</td><td class="num" data-label="${esc(labelCitations)}">${item.citations ?? dash}</td><td class="num" data-label="${esc(labelStars)}">${item.stars ?? dash}</td><td data-label="${esc(labelLinks)}">${entry}</td></tr>`;
               }).join('');
             }
             if (count) count.textContent = `${rows.length} ${document.querySelector('#reg-table')?.getAttribute('data-count-unit') || ''}`.trim();
             if (pageLabel) pageLabel.textContent = `${page + 1} / ${pages}`;
           }
-          q?.addEventListener('input', () => { page = 0; draw(); });
+          let isComposing = false;
+          q?.addEventListener('compositionstart', () => { isComposing = true; });
+          q?.addEventListener('compositionend', () => { isComposing = false; page = 0; draw(); });
+          q?.addEventListener('input', () => { if (isComposing) return; page = 0; draw(); });
           domain?.addEventListener('change', () => { page = 0; draw(); });
           sort?.addEventListener('change', () => { page = 0; draw(); });
           prev?.addEventListener('click', () => { page = Math.max(0, page - 1); draw(); });

@@ -1,7 +1,9 @@
 ---
 import Value from './Value.astro';
+import BrandLogo from './BrandLogo.astro';
 import { currentLocale, t } from '../i18n';
 import { badgeClass, dateStamp, formatBytes, isEmail, isStatusWord, labelFor, publicText, safeUrl } from '../lib/format';
+import { resolveModelTheme } from '../lib/models';
 
 interface Props {
   value: unknown;
@@ -91,6 +93,10 @@ const isChangelog =
 const cols = scalarRows && !isChangelog ? columnsOf(scalarRows).filter((key) => key !== 'timezone') : [];
 const emailList = !!strings && strings.length > 0 && strings.every((item) => isEmail(item));
 const pillList = !!strings && !emailList && strings.length < 6 && strings.every((item) => item.length <= 16);
+const uid = typeof value === 'string' && /^[a-f0-9]{64}$/i.test(value) ? Math.random().toString(36).slice(2, 10) : '';
+const modelTheme = typeof value === 'string' && name === 'model' && !isStatusWord(value) && !href && !isEmail(value)
+  ? resolveModelTheme(value)
+  : null;
 
 function tight(cell: unknown): boolean {
   if (typeof cell === 'number') return true;
@@ -107,7 +113,26 @@ function tight(cell: unknown): boolean {
 ) : typeof value === 'string' && isEmail(value) ? (
   <a href={`mailto:${value}`}>{value}</a>
 ) : typeof value === 'string' && /^[a-f0-9]{64}$/i.test(value) ? (
-  <span class="mono">{value}</span>
+  <span class="copy-wrap">
+    <span class="mono" id={`sha-${uid}`}>{value}</span>
+    <button
+      type="button"
+      class="copy-btn"
+      command="--copy"
+      commandfor={`sha-${uid}`}
+      data-copy-btn
+      data-copy-for={`sha-${uid}`}
+      data-copy-status={`sha-status-${uid}`}
+      data-label={t(locale, 'copy.label')}
+      data-copied={t(locale, 'copy.copied')}
+    >{t(locale, 'copy.label')}</button>
+    <span class="sr-only" id={`sha-status-${uid}`} role="status" aria-live="polite"></span>
+  </span>
+) : modelTheme && typeof value === 'string' ? (
+  <span class="model-pill model-pill-table" style={modelTheme.style} data-model-family={modelTheme.family}>
+    <BrandLogo theme={modelTheme} size={14} />
+    <span class="model-name">{publicText(value)}</span>
+  </span>
 ) : typeof value === 'string' ? (
   <span>{publicText(value)}</span>
 ) : typeof value === 'number' && (name === 'pdf_bytes' || name === 'bytes') ? (
@@ -142,7 +167,7 @@ function tight(cell: unknown): boolean {
     ))}
   </ol>
 ) : scalarRows ? (
-  <div class="table-wrap">
+  <div class="table-wrap" role="region" tabindex="0" aria-label={t(locale, 'table.scroll_label')}>
     <table class="results">
       <thead>
         <tr>
@@ -150,15 +175,20 @@ function tight(cell: unknown): boolean {
         </tr>
       </thead>
       <tbody>
-        {scalarRows.map((row) => (
-          <tr>
-            {cols.map((column) => (
-              <td class:list={[{ tight: tight(row[column]), num: typeof row[column] === 'number' }]}>
-                <Value value={row[column]} name={column} />
-              </td>
-            ))}
-          </tr>
-        ))}
+        {scalarRows.map((row) => {
+          const rowModel = typeof row.model === 'string' && row.model.trim() && !isStatusWord(row.model)
+            ? resolveModelTheme(row.model)
+            : null;
+          return (
+            <tr class={rowModel ? 'model-row' : undefined} style={rowModel?.style}>
+              {cols.map((column) => (
+                <td class:list={[{ tight: tight(row[column]), num: typeof row[column] === 'number' }]}>
+                  <Value value={row[column]} name={column} />
+                </td>
+              ))}
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   </div>

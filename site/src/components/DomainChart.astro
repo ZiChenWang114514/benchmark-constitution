@@ -1,11 +1,14 @@
 ---
-const TILE_FILLS = ['#f8e7b8', '#f3d48a', '#f0c56a', '#e8b423', '#f6e2a8', '#e0b04a', '#edd9a4', '#f7e6c1', '#e4c98a', '#fbeed0', '#e6d3a1', '#f3ead8', '#f8efd2', '#e8d7a8', '#f6d48a'];
+import { SECTION_PALETTES, sectionStyle } from '../lib/format';
+
+const FALLBACK_PALETTES = Object.values(SECTION_PALETTES);
 
 interface Item {
   label: string;
   count: number;
   href: string;
   slug: string;
+  section?: string;
 }
 interface Props {
   items: Item[];
@@ -16,7 +19,9 @@ interface Props {
 const { items, title, aria, segment } = Astro.props;
 const tiles = items.map((item, index) => ({
   ...item,
-      color: TILE_FILLS[index % TILE_FILLS.length],
+  style: item.section
+    ? sectionStyle(item.section)
+    : FALLBACK_PALETTES[index % FALLBACK_PALETTES.length].style,
   text: segment.replace('{label}', item.label).replace('{n}', String(item.count)),
 }));
 ---
@@ -24,7 +29,7 @@ const tiles = items.map((item, index) => ({
   <figcaption>{title}</figcaption>
   <div class="treemap" role="group" aria-label={aria}>
     {tiles.map((item) => (
-      <a href={item.href} data-domain-link={item.slug} aria-label={item.text} style={`flex-grow:${item.count};background:${item.color}`}>
+      <a href={item.href} data-domain-link={item.slug} aria-label={item.text} style={`flex-grow:${item.count};${item.style}`}>
         <span>{item.label}</span>
         <b class="num">{item.count}</b>
       </a>

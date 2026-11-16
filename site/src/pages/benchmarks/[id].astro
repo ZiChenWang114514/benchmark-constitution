@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import BrandLogo from '../../components/BrandLogo.astro';
 import Chapter from '../../components/Chapter.astro';
 import Timeline from '../../components/Timeline.astro';
 import { currentLocale, t } from '../../i18n';
@@ -9,7 +10,6 @@ import { CHAPTERS } from '../../lib/chapters';
 import { sectionLabel, sectionSlug } from '../../lib/sections';
 import { loadNews, loadRecords, newsForBenchmark, trendingFor, type BenchmarkFile } from '../../lib/data';
 import {
-  PENDING_EXPLANATION,
   badgeClass,
   isField,
   labelFor,
@@ -21,10 +21,12 @@ import {
   hasPublicValue,
   isStatusWord,
   notableNote,
+  sectionStyle,
   statusOf,
   textValue,
   type Field,
 } from '../../lib/format';
+import { resolveModelTheme, resolveOrgTheme } from '../../lib/models';
 
 export function getStaticPaths() {
   return loadRecords().map((record) => ({ params: { id: record.index.id } }));
@@ -165,7 +167,7 @@ const timeline = [
   ...[dated(record.index.last_checked)].filter(Boolean).map((date) => ({ date, label: t(locale, 'field.checked_at') })),
 ].sort((a, b) => a.date.localeCompare(b.date) || a.label.localeCompare(b.label, locale === 'zh' ? 'zh' : 'en'));
 ---
-<Base title={record.index.name} description={summary} active="home">
+<Base title={record.index.name} description={summary} active="home" readingProgress>
   <div class="wrap detail-layout">
     <nav class="toc" aria-label={t(locale, 'detail.toc_aria')}>
       <p>{t(locale, 'detail.chapters')}</p>
@@ -179,7 +181,7 @@ const timeline = [
           <a href={`${page()}#sec-${sectionSlug(record.index.section)}`}>{sectionLabel(record.index.section, locale)}</a>
         </p>
         <div class="dossier-kicker">
-          <span class="domain-tag">{sectionLabel(record.index.section, locale)}</span>
+          <span class="domain-tag" style={sectionStyle(record.index.section)}>{sectionLabel(record.index.section, locale)}</span>
           {record.index.cited_2026h2 && <span class="badge badge-cite">{t(locale, 'home.cited')}</span>}
           {hot && <span class="badge badge-hot">🔥 {t(locale, 'home.hot', { grade: hot.heat_confidence })}</span>}
         </div>
@@ -219,8 +221,8 @@ const timeline = [
                 <p class="gauge-num">{impactRow.score.toFixed(1)}</p>
                 {percentile != null && <p class="gauge-note">{t(locale, 'detail.percentile', { n: percentile, domain: sectionLabel(record.index.section, locale) })}</p>}
                 <svg class="gauge" viewBox="0 0 120 64" role="img" aria-label={t(locale, 'detail.score_label')}>
-                  <path d="M12 54 A 48 48 0 0 1 108 54" fill="none" stroke="#efe4cc" stroke-width="8" stroke-linecap="round" />
-                  <path d="M12 54 A 48 48 0 0 1 108 54" fill="none" stroke="#e8b423" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray={`${Math.max(0, Math.min(100, impactRow.score))} 100`} />
+                  <path d="M12 54 A 48 48 0 0 1 108 54" fill="none" stroke="var(--amber-tint, #efe4cc)" stroke-width="8" stroke-linecap="round" />
+                  <path d="M12 54 A 48 48 0 0 1 108 54" fill="none" stroke="var(--amber, #e8b423)" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray={`${Math.max(0, Math.min(100, impactRow.score))} 100`} />
                 </svg>
               </section>
             )}
@@ -247,7 +249,15 @@ const timeline = [
                     <p class="gauge-note">{t(locale, 'detail.heat_count', { n: heatRow.count, total: heatFile.models.length })}</p>
                     <span class="track heat-share" aria-hidden="true"><span style={`width:${Math.round((heatRow.count / Math.max(heatFile.models.length, 1)) * 100)}%`}></span></span>
                     <ul class="heat-names">
-                      {(heatRow.models ?? []).slice(0, 6).map((modelId) => <li>{heatNames.get(modelId) ?? modelId}</li>)}
+                      {(heatRow.models ?? []).slice(0, 6).map((modelId) => {
+                        const mTheme = resolveModelTheme(modelId);
+                        return (
+                          <li class="model-pill model-pill-sm" style={mTheme.style} data-model-family={mTheme.family}>
+                            <BrandLogo theme={mTheme} size={14} />
+                            <span class="model-name">{heatNames.get(modelId) ?? modelId}</span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </>
                 ) : <p class="gauge-note">{t(locale, 'detail.heat_none')}</p>}
@@ -275,17 +285,28 @@ const timeline = [
           <ul class="trend-evidence">
             {hot.evidence.map((entry) => {
               const href = safeUrl(entry.url);
+              const orgTheme = entry.organization ? resolveOrgTheme(entry.organization) : null;
               return (
                 <li>
                   {href ? (
                     <a class="inline-meta" href={href} target="_blank" rel="noopener noreferrer">
-                      {entry.organization && <span>{entry.organization}</span>}
+                      {entry.organization && orgTheme && (
+                        <span class="org-pill" style={orgTheme.style}>
+                          <BrandLogo theme={orgTheme} size={14} />
+                          <span>{entry.organization}</span>
+                        </span>
+                      )}
                       {entry.date && <span>{entry.date}</span>}
                       {!entry.organization && !entry.date && <span>{entry.url}</span>}
                     </a>
                   ) : (
                     <span class="inline-meta">
-                      {entry.organization && <span>{entry.organization}</span>}
+                      {entry.organization && orgTheme && (
+                        <span class="org-pill" style={orgTheme.style}>
+                          <BrandLogo theme={orgTheme} size={14} />
+                          <span>{entry.organization}</span>
+                        </span>
+                      )}
                       {entry.date && <span>{entry.date}</span>}
                       {!entry.organization && !entry.date && <span>{entry.url}</span>}
                     </span>

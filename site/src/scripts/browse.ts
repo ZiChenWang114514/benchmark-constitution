@@ -56,7 +56,12 @@ function apply(writeUrl: boolean) {
       }
       return Number(a.dataset.order ?? 0) - Number(b.dataset.order ?? 0);
     });
-    for (const card of list) grid.append(card);
+    const moveNode = (parent: Element, node: Element) => {
+      const moveable = parent as Element & { moveBefore?: (child: Node, ref: Node | null) => void };
+      if (typeof moveable.moveBefore === 'function') moveable.moveBefore(node, null);
+      else parent.append(node);
+    };
+    for (const card of list) moveNode(grid, card);
   }
 
   const template = form.dataset.countTemplate || '{total} / {shown}';
@@ -95,17 +100,33 @@ function initBrowse() {
     for (const chip of chips) chip.setAttribute('aria-pressed', chip.dataset.sectionChip === section ? 'true' : 'false');
   }
   const run = () => apply(true);
+  const runTransition = () => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (typeof document.startViewTransition === 'function' && !reduce) {
+      document.startViewTransition(() => run());
+    } else {
+      run();
+    }
+  };
+  let isComposing = false;
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (!isComposing) run();
+  });
+  queryInput?.addEventListener('compositionstart', () => { isComposing = true; });
+  queryInput?.addEventListener('compositionend', () => {
+    isComposing = false;
     run();
   });
-  queryInput?.addEventListener('input', run);
-  tagSelect?.addEventListener('change', run);
-  sortSelect?.addEventListener('change', run);
+  queryInput?.addEventListener('input', () => {
+    if (!isComposing) run();
+  });
+  tagSelect?.addEventListener('change', runTransition);
+  sortSelect?.addEventListener('change', runTransition);
   for (const chip of chips) {
     chip.addEventListener('click', () => {
       for (const other of chips) other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
-      run();
+      runTransition();
     });
   }
   document.querySelectorAll<HTMLAnchorElement>('[data-domain-link]').forEach((link) => {

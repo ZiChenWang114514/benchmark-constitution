@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import { currentLocale, t } from '../../i18n';
 import { visualCopy } from '../../i18n/visual';
 import { benchmarksMentioned, loadNews, loadRecords, newsWhen, repoRoot, type NewsItem } from '../../lib/data';
-import { page, publicText, safeUrl } from '../../lib/format';
+import { page, publicText, safeUrl, sectionStyle } from '../../lib/format';
 import { sectionLabel } from '../../lib/sections';
 
 export function getStaticPaths() {
@@ -56,7 +56,7 @@ function hostOf(url: string): string {
         </header>
         <div class="card-grid">
           {related.map((entry) => (
-            <a class="card" href={page(`benchmarks/${entry.id}`)}>
+            <a class="card" href={page(`benchmarks/${entry.id}`)} style={sectionStyle(entry.section)}>
               <span class="card-section"><span class="domain-tag">{sectionLabel(entry.section, locale)}</span></span>
               <h3>{entry.name}</h3>
               <p class="card-summary">{publicText(entry.summary)}</p>

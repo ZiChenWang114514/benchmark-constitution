@@ -65,11 +65,19 @@ const windowText = trending.window?.from && trending.window?.through ? t(locale,
       if (count) count.textContent = template.replaceAll('{n}', String(shown));
       if (empty) empty.hidden = shown !== 0;
     }
+    const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     for (const chip of chips) {
       chip.addEventListener('click', () => {
         const section = chip.dataset.trendSection || 'all';
-        for (const other of chips) other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
-        apply(section);
+        const run = () => {
+          for (const other of chips) other.setAttribute('aria-pressed', other === chip ? 'true' : 'false');
+          apply(section);
+        };
+        if (typeof document.startViewTransition === 'function' && !reduceMotion()) {
+          document.startViewTransition(run);
+        } else {
+          run();
+        }
       });
     }
   </script>

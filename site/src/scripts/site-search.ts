@@ -133,24 +133,37 @@ function initHeaderSearch(root: HTMLElement) {
     setExpanded(hasQuery && ready);
   };
 
-  const ensure = () => {
-    if (ready) return Promise.resolve(items);
-    return loadIndex(indexUrl(root)).then((data) => {
-      items = data;
-      ready = true;
-      return items;
-    });
+  const ensure = async () => {
+    if (ready) return items;
+    items = await loadIndex(indexUrl(root));
+    ready = true;
+    return items;
   };
+
+  let isComposing = false;
+  let lastCompEnd = 0;
+  const isIme = (event: KeyboardEvent) =>
+    isComposing || event.isComposing || event.key === 'Process' || Date.now() - lastCompEnd < 50;
 
   input.addEventListener('focus', () => {
     void ensure().then(() => {
       if (input.value.trim()) render(input.value);
     });
   });
+  input.addEventListener('compositionstart', () => {
+    isComposing = true;
+  });
+  input.addEventListener('compositionend', () => {
+    isComposing = false;
+    lastCompEnd = Date.now();
+    void ensure().then(() => render(input.value));
+  });
   input.addEventListener('input', () => {
+    if (isComposing) return;
     void ensure().then(() => render(input.value));
   });
   input.addEventListener('keydown', (event) => {
+    if (isIme(event)) return;
     if (event.key === 'ArrowDown') {
       event.preventDefault();
       active = setActive(list, input, active < 0 ? 0 : active + 1);
@@ -167,6 +180,10 @@ function initHeaderSearch(root: HTMLElement) {
     }
   });
   form.addEventListener('submit', (event) => {
+    if (isComposing || Date.now() - lastCompEnd < 50) {
+      event.preventDefault();
+      return;
+    }
     if (open && openHit(list, active)) event.preventDefault();
   });
   document.addEventListener('click', (event) => {
@@ -251,8 +268,12 @@ function initSearchPage(root: HTMLElement) {
 
   void loadIndex(indexUrl(root)).then((items) => {
     const run = () => paint(input.value, items);
+    let pageComposing = false;
+    input.addEventListener('compositionstart', () => { pageComposing = true; });
+    input.addEventListener('compositionend', () => { pageComposing = false; });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
+      if (pageComposing) return;
       const next = new URL(window.location.href);
       const query = input.value.trim();
       if (query) next.searchParams.set('q', query);
@@ -261,6 +282,7 @@ function initSearchPage(root: HTMLElement) {
       run();
     });
     input.addEventListener('input', () => {
+      if (pageComposing) return;
       const next = new URL(window.location.href);
       const query = input.value.trim();
       if (query) next.searchParams.set('q', query);

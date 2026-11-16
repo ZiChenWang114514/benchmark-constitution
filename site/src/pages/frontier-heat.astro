@@ -6,8 +6,10 @@ import { visualCopy } from '../i18n/visual';
 import { sectionLabel, sectionSlug } from '../lib/sections';
 import { loadHeat, rankArrow, type HeatFile } from '../lib/boards';
 import { loadIndex } from '../lib/data';
-import { dateStamp, displayName, page, safeUrl } from '../lib/format';
+import { asset, dateStamp, displayName, page, safeUrl, sectionStyle } from '../lib/format';
+import { resolveModelTheme, resolveOrgTheme } from '../lib/models';
 import BarChart from '../components/BarChart.astro';
+import BrandLogo from '../components/BrandLogo.astro';
 
 const locale = currentLocale();
 const ui = visualCopy(locale);
@@ -53,13 +55,21 @@ const heatChart = (heat?.ranking ?? []).slice(0, 12).map((row) => ({
   name: displayName(row.name),
   value: row.count,
   href: known.has(row.benchmark_id) ? page('benchmarks/' + row.benchmark_id) : page('frontier-heat'),
+  models: (row.models ?? []).map((id) => {
+    const label = modelName.get(id) ?? id;
+    const theme = resolveModelTheme(id);
+    return { name: label, theme };
+  }),
 }));
 function shareOf(count: number, share: number | null | undefined, models: number): number {
   const value = typeof share === 'number' ? share : (models ? count / models : 0);
   return Math.max(0, Math.min(1, value));
 }
 const matrixMin = 4;
-const matrixModels = heat?.models ?? [];
+const matrixModels = (heat?.models ?? []).map((model) => ({
+  ...model,
+  theme: resolveModelTheme(model.id, model.organization),
+}));
 const reportedBy = new Map(matrixModels.map((model) => [model.id, new Set(model.benchmarks ?? [])]));
 const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin).map((row) => ({
   id: row.benchmark_id,
@@ -105,16 +115,21 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
               <span><i class="swatch on" aria-hidden="true"></i>{t(locale, 'heat.legend_on')}</span>
               <span><i class="swatch off" aria-hidden="true"></i>{t(locale, 'heat.legend_off')}</span>
             </p>
-            <p class="index-note">{t(locale, 'heat.matrix_scroll')}</p>
+            <p class="index-note">{t(locale, 'heat.matrix_scroll')} {t(locale, 'heat.matrix_models_hint')}</p>
             <p class="sr-only">{t(locale, 'heat.matrix_keys')}</p>
-            <div class="matrix-scroll" tabindex="0" aria-label={t(locale, 'heat.matrix_aria')}>
+            <div class="matrix-scroll" role="region" tabindex="0" aria-label={t(locale, 'heat.matrix_aria')}>
               <table class="matrix" id="heat-matrix">
                 <caption class="sr-only">{t(locale, 'heat.matrix_aria')}</caption>
                 <thead>
                   <tr>
                     <th class="bench" scope="col"></th>
                     {matrixModels.map((model, index) => (
-                      <th scope="col" data-col={index}><span class="vname">{model.name}</span></th>
+                      <th scope="col" data-col={index} style={model.theme.style} title={model.name}>
+                        <span class="vhead">
+                          <BrandLogo theme={model.theme} size={16} eager />
+                          <span class="vname">{model.name}</span>
+                        </span>
+                      </th>
                     ))}
                   </tr>
                 </thead>
@@ -125,11 +140,25 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                         {row.href ? <a href={row.href}>{row.name}</a> : row.name}
                       </th>
                       {row.cells.map((on, index) => {
-                        const modelName = matrixModels[index]?.name ?? '';
-                        const label = t(locale, on ? 'heat.cell_yes' : 'heat.cell_no', { model: modelName, benchmark: row.name });
+                        const model = matrixModels[index];
+                        const modelLabel = model?.name ?? '';
+                        const theme = model?.theme;
+                        const label = t(locale, on ? 'heat.cell_yes' : 'heat.cell_no', { model: modelLabel, benchmark: row.name });
+                        const cellStyle = theme
+                          ? `${theme.style}${theme.cellMask ? `;--m-mask:url("${asset(`logos/${theme.cellMask}`)}")` : ''}`
+                          : undefined;
                         return (
-                          <td data-col={index} class={on ? 'is-on' : 'is-off'}>
-                            <button type="button" class:list={['heat-cell', on && 'on']} tabindex={rowIndex === 0 && index === 0 ? 0 : -1} aria-label={label} data-col={index}></button>
+                          <td data-col={index} class={on ? 'is-on' : 'is-off'} style={theme?.style}>
+                            <button
+                              type="button"
+                              class:list={['heat-cell', on && 'on']}
+                              tabindex={rowIndex === 0 && index === 0 ? 0 : -1}
+                              aria-label={label}
+                              data-col={index}
+                              data-logo={theme?.logo ? asset(`logos/${theme.logo}`) : undefined}
+                              data-logo-kind={theme?.logoKind ?? undefined}
+                              style={cellStyle}
+                            ></button>
                           </td>
                         );
                       })}
@@ -152,7 +181,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
             <h2 id="heat-models">{t(locale, 'heat.models')}</h2>
             <p>{t(locale, 'heat.model_count', { n: heat.models.length })}</p>
           </header>
-          <div class="table-wrap">
+          <div class="table-wrap" role="region" tabindex="0" aria-label={t(locale, 'table.scroll_label')}>
             <table class="board">
               <thead>
                 <tr>
@@ -165,10 +194,26 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
               <tbody>
                 {heat.models.map((model) => {
                   const source = model.sources?.find((item) => item.url && safeUrl(item.url));
+                  const mTheme = resolveModelTheme(model.id, model.organization);
+                  const oTheme = model.organization ? resolveOrgTheme(model.organization) : null;
                   return (
-                    <tr>
-                      <td class="name-cell" data-label={ui.models}>{model.name}</td>
-                      <td data-label={ui.organization}>{model.organization || <span class="na" title={ui.nullTip}>—</span>}</td>
+                    <tr class="model-row" style={mTheme.style}>
+                      <td class="name-cell" data-label={ui.models}>
+                        <span class="model-pill" style={mTheme.style} data-model-family={mTheme.family}>
+                          <BrandLogo theme={mTheme} size={15} />
+                          <span class="model-name">{model.name}</span>
+                        </span>
+                      </td>
+                      <td data-label={ui.organization}>
+                        {model.organization && oTheme ? (
+                          <span class="org-pill" style={oTheme.style}>
+                            <BrandLogo theme={oTheme} size={14} />
+                            <span>{model.organization}</span>
+                          </span>
+                        ) : (
+                          <span class="na" title={ui.nullTip}>—</span>
+                        )}
+                      </td>
                       <td data-label={ui.release}>{dateStamp(model.release_date) || <span class="na" title={ui.nullTip}>—</span>}</td>
                       <td data-label={ui.source}>{source?.url && safeUrl(source.url) ? <a href={source.url} target="_blank" rel="noopener noreferrer">{ui.open}</a> : <span class="na" title={ui.nullTip}>—</span>}</td>
                     </tr>
@@ -228,7 +273,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                       <td class="name-cell" data-label={ui.colName}>
                         {known.has(row.benchmark_id) ? <a href={page('benchmarks/' + row.benchmark_id)}>{displayName(row.name)}</a> : displayName(row.name)}
                       </td>
-                      <td data-label={ui.colDomain}>{row.domain ? <span class="domain-tag">{sectionLabel(row.domain, locale)}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
+                      <td data-label={ui.colDomain}>{row.domain ? <span class="domain-tag" style={sectionStyle(row.domain)}>{sectionLabel(row.domain, locale)}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
                       <td class="num" data-label={ui.reported}>{row.count}</td>
                       <td data-label={ui.share}>
                         <span class="score-wrap" title={sharePct + '%'}>
@@ -243,9 +288,30 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                       )}
                       <td data-label={ui.reportedModels}>
                         <details>
-                          <summary>{t(locale, 'home.models', { n: (row.models ?? []).length })}</summary>
-                          <ul class="doc-list">
-                            {(row.models ?? []).map((id) => <li>{modelName.get(id) ?? id}</li>)}
+                          <summary>
+                            <span>{t(locale, 'home.models', { n: (row.models ?? []).length })}</span>
+                            <span class="model-beads" aria-hidden="true">
+                              {(row.models ?? []).map((id) => {
+                                const mTheme = resolveModelTheme(id);
+                                return (
+                                  <span class="model-bead" style={mTheme.style} title={modelName.get(id) ?? id}>
+                                    <BrandLogo theme={mTheme} size={12} />
+                                  </span>
+                                );
+                              })}
+                            </span>
+                          </summary>
+                          <ul class="doc-list model-pill-list">
+                            {(row.models ?? []).map((id) => {
+                              const label = modelName.get(id) ?? id;
+                              const mTheme = resolveModelTheme(id);
+                              return (
+                                <li class="model-pill model-pill-sm" style={mTheme.style} data-model-family={mTheme.family}>
+                                  <BrandLogo theme={mTheme} size={14} />
+                                  <span class="model-name">{label}</span>
+                                </li>
+                              );
+                            })}
                           </ul>
                         </details>
                       </td>
