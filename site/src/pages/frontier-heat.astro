@@ -76,6 +76,11 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
   name: displayName(row.name),
   href: known.has(row.benchmark_id) ? page('benchmarks/' + row.benchmark_id) : '',
   cells: matrixModels.map((model) => reportedBy.get(model.id)?.has(row.benchmark_id) ?? false),
+  // Version labels named by each model's official docs; a lone family name means no version was given.
+  versions: matrixModels.map((model) => {
+    const labels = row.versions?.[model.id] ?? [];
+    return labels.length === 1 && labels[0] === row.name ? [] : labels;
+  }),
 }));
 ---
 <Base title={t(locale, 'heat.title')} description={t(locale, 'heat.description')} active="heat">
@@ -118,7 +123,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
             <p class="index-note">{t(locale, 'heat.matrix_scroll')} {t(locale, 'heat.matrix_models_hint')}</p>
             <p class="sr-only">{t(locale, 'heat.matrix_keys')}</p>
             <div class="matrix-scroll" role="region" tabindex="0" aria-label={t(locale, 'heat.matrix_aria')}>
-              <table class="matrix" id="heat-matrix">
+              <table class="matrix" id="heat-matrix" data-versions-title={t(locale, 'heat.tip_versions')} data-no-version={t(locale, 'heat.tip_no_version')}>
                 <caption class="sr-only">{t(locale, 'heat.matrix_aria')}</caption>
                 <thead>
                   <tr>
@@ -144,6 +149,10 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                         const modelLabel = model?.name ?? '';
                         const theme = model?.theme;
                         const label = t(locale, on ? 'heat.cell_yes' : 'heat.cell_no', { model: modelLabel, benchmark: row.name });
+                        const versions = on ? row.versions[index] ?? [] : [];
+                        const aria = versions.length
+                          ? t(locale, 'heat.cell_versions', { model: modelLabel, benchmark: row.name, versions: versions.join(locale === 'zh' ? '、' : ', ') })
+                          : label;
                         const cellStyle = theme
                           ? `${theme.style}${theme.cellMask ? `;--m-mask:url("${asset(`logos/${theme.cellMask}`)}")` : ''}`
                           : undefined;
@@ -153,7 +162,9 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                               type="button"
                               class:list={['heat-cell', on && 'on']}
                               tabindex={rowIndex === 0 && index === 0 ? 0 : -1}
-                              aria-label={label}
+                              aria-label={aria}
+                              data-tip={label}
+                              data-versions={on ? JSON.stringify(versions) : undefined}
                               data-col={index}
                               data-logo={theme?.logo ? asset(`logos/${theme.logo}`) : undefined}
                               data-logo-kind={theme?.logoKind ?? undefined}

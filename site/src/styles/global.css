@@ -1690,7 +1690,7 @@ details[open] > .score-summary .score-wrap::after { transform: rotate(225deg) tr
 .swatch.off { background: var(--paper-2); }
 .heat-tip {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.45rem;
   position: fixed;
   z-index: 30;
@@ -1707,7 +1707,38 @@ details[open] > .score-summary .score-wrap::after { transform: rotate(225deg) tr
 }
 .heat-tip .tip-logo {
   flex: 0 0 auto;
+  margin-top: 0.12rem;
   color: light-dark(var(--m-light, var(--accent)), var(--m-dark, var(--amber)));
+}
+.heat-tip .tip-body {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+}
+.heat-tip .tip-label {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+.heat-tip .tip-versions {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.heat-tip .tip-versions li {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.heat-tip .tip-versions li::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.4rem;
+  border-radius: 2px;
+  background: var(--amber);
+  vertical-align: 0.08rem;
 }
 .dossier-viz {
   display: grid;

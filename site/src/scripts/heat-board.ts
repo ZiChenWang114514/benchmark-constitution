@@ -20,7 +20,7 @@ function mountMatrix(): void {
   };
 
   const place = (cell: HTMLButtonElement) => {
-    const text = cell.getAttribute('aria-label') || '';
+    const text = cell.dataset.tip || cell.getAttribute('aria-label') || '';
     const logo = cell.dataset.logo || '';
     const logoKind = cell.dataset.logoKind || '';
     const mLight = cell.style.getPropertyValue('--m-light');
@@ -45,7 +45,40 @@ function mountMatrix(): void {
       maskEl.style.setProperty('--logo-size', '15px');
       tip.append(maskEl);
     }
-    tip.append(document.createTextNode(text));
+    const body = document.createElement('span');
+    body.className = 'tip-body';
+    const main = document.createElement('span');
+    main.className = 'tip-main';
+    main.textContent = text;
+    body.append(main);
+    if (cell.dataset.versions != null) {
+      let versions: string[] = [];
+      try {
+        const parsed: unknown = JSON.parse(cell.dataset.versions);
+        if (Array.isArray(parsed)) versions = parsed.filter((item): item is string => typeof item === 'string' && item.trim() !== '');
+      } catch {
+        versions = [];
+      }
+      if (versions.length) {
+        const title = document.createElement('span');
+        title.className = 'tip-label';
+        title.textContent = table.dataset.versionsTitle || '';
+        const list = document.createElement('ul');
+        list.className = 'tip-versions';
+        for (const version of versions) {
+          const item = document.createElement('li');
+          item.textContent = version;
+          list.append(item);
+        }
+        body.append(title, list);
+      } else if (table.dataset.noVersion) {
+        const none = document.createElement('span');
+        none.className = 'tip-label';
+        none.textContent = table.dataset.noVersion;
+        body.append(none);
+      }
+    }
+    tip.append(body);
     tip.hidden = false;
     const rect = cell.getBoundingClientRect();
     const width = Math.min(tip.offsetWidth, window.innerWidth - 16);

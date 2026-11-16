@@ -1068,7 +1068,57 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "AutomationBench-AA"
+        ],
+        "claude-opus-5-5": [
+          "AutomationBench-AA"
+        ],
+        "claude-sonnet-5-5": [
+          "AutomationBench-AA"
+        ],
+        "deepseek-v4-1-flash": [
+          "AutomationBench-AA"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "AutomationBench v1.0.6"
+        ],
+        "gemini-4-argon": [
+          "AutomationBench-AA"
+        ],
+        "gemini-4-carbon": [
+          "AutomationBench-AA"
+        ],
+        "gemini-4-hydrogen": [
+          "AutomationBench-AA"
+        ],
+        "gpt-6-1-sol": [
+          "AutomationBench-AA"
+        ],
+        "gpt-6-astra": [
+          "AutomationBench-AA"
+        ],
+        "gpt-6-sol": [
+          "AutomationBench-AA"
+        ],
+        "kimi-k3-1-pro": [
+          "AutomationBench-AA"
+        ],
+        "longcat-2-5": [
+          "AutomationBench v1.0.6"
+        ],
+        "muse-wonder": [
+          "AutomationBench-AA"
+        ],
+        "muse-wonder-full": [
+          "AutomationBench-AA"
+        ],
+        "qwen4-max": [
+          "AutomationBench-AA"
+        ]
+      }
     },
     {
       "rank": 2,
@@ -1095,7 +1145,54 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "DeepSWE"
+        ],
+        "claude-sonnet-5-5": [
+          "DeepSWE"
+        ],
+        "deepseek-v4-1-flash": [
+          "DeepSWE"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "DeepSWE"
+        ],
+        "gemini-4-argon": [
+          "DeepSWE v1.1"
+        ],
+        "gpt-6-1-sol": [
+          "DeepSWE"
+        ],
+        "gpt-6-astra": [
+          "DeepSWE"
+        ],
+        "gpt-6-sol": [
+          "DeepSWE"
+        ],
+        "grok-4-7": [
+          "DeepSWE"
+        ],
+        "kimi-k3-1-pro": [
+          "DeepSWE"
+        ],
+        "longcat-2-5": [
+          "DeepSWE v1.1"
+        ],
+        "muse-wonder": [
+          "DeepSWE v1.1"
+        ],
+        "muse-wonder-full": [
+          "DeepSWE v1.1"
+        ],
+        "qwen3-8-omni-flash": [
+          "DeepSWE v1.1"
+        ],
+        "qwen4-max": [
+          "DeepSWE v1.1"
+        ]
+      }
     },
     {
       "rank": 3,
@@ -1122,7 +1219,57 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "Terminal-Bench 4.0"
+        ],
+        "claude-sonnet-5-5": [
+          "Terminal-Bench 4.0"
+        ],
+        "deepseek-v4-1-flash": [
+          "Terminal-Bench 2.1",
+          "Terminal-Bench 4.0"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-argon": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-carbon": [
+          "Terminal-Bench 4.0"
+        ],
+        "gemini-4-hydrogen": [
+          "Terminal-Bench 4.0",
+          "Terminal-Bench 4.1"
+        ],
+        "gpt-6-1-terra": [
+          "Terminal-Bench 4.0"
+        ],
+        "gpt-6-astra": [
+          "Terminal-Bench 4.0"
+        ],
+        "grok-4-7": [
+          "Terminal-Bench 4.0"
+        ],
+        "kimi-k3-1-pro": [
+          "Terminal-Bench 4.0"
+        ],
+        "longcat-2-5": [
+          "Terminal-Bench 2.1",
+          "Terminal-Bench 4.0"
+        ],
+        "muse-wonder": [
+          "Terminal-Bench 4.0"
+        ],
+        "muse-wonder-full": [
+          "Terminal-Bench 4.0"
+        ],
+        "qwen4-max": [
+          "Terminal-Bench 4.0"
+        ]
+      }
     },
     {
       "rank": 4,
@@ -1148,7 +1295,53 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "Humanity’s Last Exam with tools"
+        ],
+        "claude-opus-5-5": [
+          "Humanity’s Last Exam"
+        ],
+        "claude-sonnet-5-5": [
+          "Humanity’s Last Exam"
+        ],
+        "deepseek-v4-1-flash": [
+          "Humanity’s Last Exam"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Humanity’s Last Exam"
+        ],
+        "gemini-4-argon": [
+          "Humanity’s Last Exam"
+        ],
+        "gemini-4-hydrogen": [
+          "Humanity’s Last Exam Diamond"
+        ],
+        "gpt-6-astra": [
+          "Humanity’s Last Exam"
+        ],
+        "kimi-k3-1-pro": [
+          "Humanity’s Last Exam",
+          "Humanity’s Last Exam Diamond",
+          "Humanity’s Last Exam Full with tools"
+        ],
+        "longcat-2-5": [
+          "Humanity’s Last Exam with tools"
+        ],
+        "muse-wonder": [
+          "Humanity’s Last Exam"
+        ],
+        "muse-wonder-full": [
+          "Humanity’s Last Exam"
+        ],
+        "qwen3-8-omni-flash": [
+          "Humanity’s Last Exam"
+        ],
+        "qwen4-max": [
+          "Humanity’s Last Exam"
+        ]
+      }
     },
     {
       "rank": 5,
@@ -1173,7 +1366,48 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "Agents’ Last Exam"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Agents’ Last Exam"
+        ],
+        "gemini-4-argon": [
+          "Agents’ Last Exam"
+        ],
+        "gemini-4-carbon": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gemini-4-hydrogen": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6-1-terra": [
+          "Agents’ Last Exam"
+        ],
+        "gpt-6-astra": [
+          "Agents’ Last Exam"
+        ],
+        "gpt-6-sol": [
+          "Agents’ Last Exam"
+        ],
+        "kimi-k3-1-pro": [
+          "Agents’ Last Exam"
+        ],
+        "longcat-2-5": [
+          "Agents’ Last Exam"
+        ],
+        "muse-wonder": [
+          "Agents’ Last Exam"
+        ],
+        "muse-wonder-full": [
+          "Agents’ Last Exam"
+        ],
+        "qwen4-max": [
+          "Agents’ Last Exam v1.1"
+        ]
+      }
     },
     {
       "rank": 6,
@@ -1198,7 +1432,66 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "claude-opus-5-5": [
+          "HealthBench",
+          "HealthBench Professional"
+        ],
+        "claude-sonnet-5-5": [
+          "HealthBench",
+          "HealthBench Professional"
+        ],
+        "gemini-4-argon": [
+          "HealthBench",
+          "HealthBench Hard",
+          "HealthBench Pro"
+        ],
+        "gemini-4-carbon": [
+          "HealthBench",
+          "HealthBench Hard",
+          "HealthBench Pro"
+        ],
+        "gemini-4-hydrogen": [
+          "HealthBench Pro"
+        ],
+        "gpt-6-1-sol": [
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
+        ],
+        "gpt-6-1-terra": [
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
+        ],
+        "gpt-6-astra": [
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
+        ],
+        "gpt-6-sol": [
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
+        ],
+        "grok-4-7": [
+          "HealthBench Professional"
+        ],
+        "muse-wonder": [
+          "HealthBench Pro"
+        ],
+        "muse-wonder-full": [
+          "HealthBench Pro"
+        ],
+        "qwen4-max": [
+          "HealthBench Professional"
+        ]
+      }
     },
     {
       "rank": 7,
@@ -1223,7 +1516,48 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2
+      "rank_change": -2,
+      "versions": {
+        "claude-fable-5-2": [
+          "OSWorld 2.1 offline subset"
+        ],
+        "claude-opus-5-5": [
+          "OSWorld 2.1"
+        ],
+        "claude-sonnet-5-5": [
+          "OSWorld 2.1"
+        ],
+        "gemini-4-argon": [
+          "OSWorld 2.0"
+        ],
+        "gemini-4-carbon": [
+          "OSWorld 2.1"
+        ],
+        "gemini-4-hydrogen": [
+          "OSWorld 2.1 offline subset"
+        ],
+        "gpt-6-1-sol": [
+          "OSWorld"
+        ],
+        "gpt-6-1-terra": [
+          "OSWorld 2.1"
+        ],
+        "gpt-6-astra": [
+          "OSWorld"
+        ],
+        "gpt-6-sol": [
+          "OSWorld"
+        ],
+        "kimi-k3-1-pro": [
+          "OSWorld 2.1"
+        ],
+        "muse-wonder": [
+          "OSWorld 2.1"
+        ],
+        "muse-wonder-full": [
+          "OSWorld 2.1"
+        ]
+      }
     },
     {
       "rank": 8,
@@ -1245,7 +1579,40 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3
+      "rank_change": 3,
+      "versions": {
+        "claude-fable-5-2": [
+          "Chartography no tools"
+        ],
+        "claude-opus-5-5": [
+          "Chartography"
+        ],
+        "claude-sonnet-5-5": [
+          "Chartography"
+        ],
+        "deepseek-v4-1-flash": [
+          "Chartography"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Chartography"
+        ],
+        "gemini-4-argon": [
+          "Chartography"
+        ],
+        "gemini-4-carbon": [
+          "Chartography"
+        ],
+        "gemini-4-hydrogen": [
+          "Chartography"
+        ],
+        "kimi-k3-1-pro": [
+          "Chartography",
+          "Chartography with tools"
+        ],
+        "qwen4-max": [
+          "Chartography"
+        ]
+      }
     },
     {
       "rank": 9,
@@ -1267,7 +1634,39 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "ExploitBench"
+        ],
+        "claude-sonnet-5-5": [
+          "ExploitBench"
+        ],
+        "gemini-4-argon": [
+          "ExploitBench"
+        ],
+        "gemini-4-carbon": [
+          "ExploitBench"
+        ],
+        "gpt-6-1-sol": [
+          "ExploitBench"
+        ],
+        "gpt-6-1-terra": [
+          "ExploitBench"
+        ],
+        "gpt-6-astra": [
+          "ExploitBench"
+        ],
+        "gpt-6-sol": [
+          "ExploitBench"
+        ],
+        "kimi-k3-1-pro": [
+          "ExploitBench"
+        ],
+        "muse-wonder-full": [
+          "ExploitBench"
+        ]
+      }
     },
     {
       "rank": 10,
@@ -1289,7 +1688,39 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "ExploitGym"
+        ],
+        "claude-sonnet-5-5": [
+          "ExploitGym"
+        ],
+        "deepseek-v4-1-flash": [
+          "ExploitGym"
+        ],
+        "gemini-4-carbon": [
+          "ExploitGym"
+        ],
+        "gpt-6-1-sol": [
+          "ExploitGym"
+        ],
+        "gpt-6-1-terra": [
+          "ExploitGym"
+        ],
+        "gpt-6-astra": [
+          "ExploitGym"
+        ],
+        "gpt-6-sol": [
+          "ExploitGym"
+        ],
+        "kimi-k3-1-pro": [
+          "ExploitGym"
+        ],
+        "muse-wonder-full": [
+          "ExploitGym"
+        ]
+      }
     },
     {
       "rank": 11,
@@ -1311,7 +1742,39 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-fable-5-2": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "claude-opus-5-5": [
+          "Terminal-Bench-Science"
+        ],
+        "claude-sonnet-5-5": [
+          "Terminal-Bench-Science"
+        ],
+        "gemini-4-argon": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-carbon": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-hydrogen": [
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gpt-6-1-sol": [
+          "Terminal-Bench-Science"
+        ],
+        "gpt-6-1-terra": [
+          "Terminal-Bench-Science"
+        ],
+        "gpt-6-astra": [
+          "Terminal-Bench-Science"
+        ],
+        "kimi-k3-1-pro": [
+          "Terminal-Bench-Science 0.1"
+        ]
+      }
     },
     {
       "rank": 12,
@@ -1332,7 +1795,36 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "ProgramBench"
+        ],
+        "claude-sonnet-5-5": [
+          "ProgramBench"
+        ],
+        "deepseek-v4-1-flash": [
+          "ProgramBench"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "ProgramBench"
+        ],
+        "kimi-k3-1-pro": [
+          "ProgramBench"
+        ],
+        "longcat-2-5": [
+          "ProgramBench"
+        ],
+        "muse-wonder": [
+          "ProgramBench"
+        ],
+        "muse-wonder-full": [
+          "ProgramBench"
+        ],
+        "qwen4-max": [
+          "ProgramBench"
+        ]
+      }
     },
     {
       "rank": 13,
@@ -1352,7 +1844,33 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "AA-Briefcase v1.1"
+        ],
+        "claude-opus-5-5": [
+          "AA-Briefcase"
+        ],
+        "claude-sonnet-5-5": [
+          "AA-Briefcase"
+        ],
+        "grok-4-7": [
+          "AA-Briefcase"
+        ],
+        "kimi-k3-1-pro": [
+          "AA-Briefcase"
+        ],
+        "muse-wonder": [
+          "AA-Briefcase"
+        ],
+        "muse-wonder-full": [
+          "AA-Briefcase"
+        ],
+        "qwen4-max": [
+          "AA-Briefcase v1.1"
+        ]
+      }
     },
     {
       "rank": 14,
@@ -1372,7 +1890,35 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "claude-opus-5-5": [
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "claude-sonnet-5-5": [
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "gemini-4-argon": [
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "grok-4-7": [
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "kimi-k3-1-pro": [
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "muse-wonder": [
+          "Harvey LAB-AA",
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "muse-wonder-full": [
+          "Harvey LAB-AA",
+          "Harvey's Legal Agent Benchmark"
+        ],
+        "qwen4-max": [
+          "Harvey LAB-Vals 1.1"
+        ]
+      }
     },
     {
       "rank": 15,
@@ -1391,7 +1937,33 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "GDPval",
+          "GDPval-AA"
+        ],
+        "claude-sonnet-5-5": [
+          "GDPval",
+          "GDPval-AA"
+        ],
+        "grok-4-7": [
+          "GDPval"
+        ],
+        "kimi-k3-1-pro": [
+          "GDPval-AA",
+          "GDPval-AA v2.1"
+        ],
+        "longcat-2-5": [
+          "GDPval-AA"
+        ],
+        "muse-wonder": [
+          "GDPval-AA"
+        ],
+        "muse-wonder-full": [
+          "GDPval-AA"
+        ]
+      }
     },
     {
       "rank": 16,
@@ -1410,7 +1982,31 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "GPQA"
+        ],
+        "claude-sonnet-5-5": [
+          "GPQA"
+        ],
+        "deepseek-v4-1-flash": [
+          "GPQA Diamond"
+        ],
+        "gemini-4-argon": [
+          "GPQA"
+        ],
+        "gpt-6-astra": [
+          "GPQA",
+          "GPQA Diamond"
+        ],
+        "kimi-k3-1-pro": [
+          "GPQA Diamond"
+        ],
+        "qwen3-8-omni-flash": [
+          "GPQA Diamond"
+        ]
+      }
     },
     {
       "rank": 17,
@@ -1428,7 +2024,27 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "AA-Omniscience"
+        ],
+        "claude-sonnet-5-5": [
+          "AA-Omniscience"
+        ],
+        "gemini-4-argon": [
+          "AA-Omniscience"
+        ],
+        "gemini-4-carbon": [
+          "AA-Omniscience"
+        ],
+        "muse-wonder": [
+          "AA-Omniscience"
+        ],
+        "muse-wonder-full": [
+          "AA-Omniscience"
+        ]
+      }
     },
     {
       "rank": 18,
@@ -1446,7 +2062,27 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "claude-sonnet-5-5": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-1-sol": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-1-terra": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-astra": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-sol": [
+          "AAV Capsid Packaging Prediction"
+        ]
+      }
     },
     {
       "rank": 19,
@@ -1464,7 +2100,27 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "CyScenarioBench"
+        ],
+        "claude-opus-5-5": [
+          "CyScenarioBench"
+        ],
+        "claude-sonnet-5-5": [
+          "CyScenarioBench"
+        ],
+        "gemini-4-argon": [
+          "CyScenarioBench v2"
+        ],
+        "gemini-4-carbon": [
+          "CyScenarioBench v2"
+        ],
+        "gpt-6-astra": [
+          "CyScenarioBench"
+        ]
+      }
     },
     {
       "rank": 20,
@@ -1482,7 +2138,27 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "FrontierSWE v2"
+        ],
+        "claude-opus-5-5": [
+          "FrontierSWE v2"
+        ],
+        "claude-sonnet-5-5": [
+          "FrontierSWE v2"
+        ],
+        "deepseek-v4-1-flash": [
+          "FrontierSWE v2"
+        ],
+        "gemini-4-argon": [
+          "FrontierSWE v2"
+        ],
+        "gemini-4-carbon": [
+          "FrontierSWE v2"
+        ]
+      }
     },
     {
       "rank": 21,
@@ -1500,7 +2176,27 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "Indirect Prompt Injection"
+        ],
+        "claude-sonnet-5-5": [
+          "Indirect Prompt Injection"
+        ],
+        "gemini-4-argon": [
+          "Indirect Prompt Injection"
+        ],
+        "gemini-4-carbon": [
+          "Indirect Prompt Injection"
+        ],
+        "gemini-4-hydrogen": [
+          "Indirect Prompt Injection"
+        ],
+        "gpt-6-astra": [
+          "Indirect Prompt Injection"
+        ]
+      }
     },
     {
       "rank": 22,
@@ -1518,7 +2214,27 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "SEC-Bench Pro"
+        ],
+        "gemini-4-carbon": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-1-sol": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-1-terra": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-astra": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-sol": [
+          "SEC-Bench Pro"
+        ]
+      }
     },
     {
       "rank": 23,
@@ -1535,7 +2251,25 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "BenchCAD 2.1 with tools"
+        ],
+        "claude-opus-5-5": [
+          "BenchCAD"
+        ],
+        "claude-sonnet-5-5": [
+          "BenchCAD"
+        ],
+        "gpt-6-astra": [
+          "BenchCAD"
+        ],
+        "kimi-k3-1-pro": [
+          "BenchCAD",
+          "BenchCAD with tools"
+        ]
+      }
     },
     {
       "rank": 24,
@@ -1552,7 +2286,24 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "FrontierCode v2.0"
+        ],
+        "claude-opus-5-5": [
+          "FrontierCode v1.1"
+        ],
+        "claude-sonnet-5-5": [
+          "FrontierCode v1.1"
+        ],
+        "gpt-6-astra": [
+          "FrontierCode v1.1"
+        ],
+        "gpt-6-sol": [
+          "FrontierCode v1.1"
+        ]
+      }
     },
     {
       "rank": 25,
@@ -1569,7 +2320,24 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "claude-opus-5-5": [
+          "MMLU-Pro"
+        ],
+        "claude-sonnet-5-5": [
+          "MMLU-Pro"
+        ],
+        "deepseek-v4-1-flash": [
+          "MMLU-Pro"
+        ],
+        "gemini-4-argon": [
+          "MMLU-Pro"
+        ],
+        "gpt-6-astra": [
+          "MMLU-Pro"
+        ]
+      }
     },
     {
       "rank": 26,
@@ -1586,7 +2354,28 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "claude-opus-5-5": [
+          "SWE-bench",
+          "SWE-bench Multilingual",
+          "SWE-bench Multimodal"
+        ],
+        "claude-sonnet-5-5": [
+          "SWE-bench",
+          "SWE-bench Multilingual",
+          "SWE-bench Multimodal"
+        ],
+        "gemini-4-argon": [
+          "SWE-bench"
+        ],
+        "gpt-6-astra": [
+          "SWE-bench Verified"
+        ],
+        "qwen3-8-omni-flash": [
+          "SWE-bench Multilingual"
+        ]
+      }
     },
     {
       "rank": 27,
@@ -1603,7 +2392,24 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "claude-opus-5-5": [
+          "SWE-Bench Pro"
+        ],
+        "claude-sonnet-5-5": [
+          "SWE-Bench Pro"
+        ],
+        "deepseek-v4-1-flash": [
+          "SWE-Bench Pro"
+        ],
+        "gemini-4-argon": [
+          "SWE-Bench Pro"
+        ],
+        "qwen3-8-omni-flash": [
+          "SWE-Bench Pro"
+        ]
+      }
     },
     {
       "rank": 28,
@@ -1619,7 +2425,21 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 21
+      "rank_change": 21,
+      "versions": {
+        "claude-opus-5-5": [
+          "BioMysteryBench"
+        ],
+        "claude-sonnet-5-5": [
+          "BioMysteryBench"
+        ],
+        "kimi-k3-1-pro": [
+          "BioMysteryBench"
+        ],
+        "qwen4-max": [
+          "BioMysteryBench"
+        ]
+      }
     },
     {
       "rank": 29,
@@ -1635,7 +2455,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Broken Search Tool"
+        ],
+        "gpt-6-1-terra": [
+          "Broken Search Tool"
+        ],
+        "gpt-6-astra": [
+          "Broken Search Tool"
+        ],
+        "gpt-6-sol": [
+          "Broken Search Tool"
+        ]
+      }
     },
     {
       "rank": 30,
@@ -1651,7 +2485,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3
+      "rank_change": 3,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Coding Deception"
+        ],
+        "gpt-6-1-terra": [
+          "Coding Deception"
+        ],
+        "gpt-6-astra": [
+          "Coding Deception"
+        ],
+        "gpt-6-sol": [
+          "Coding Deception"
+        ]
+      }
     },
     {
       "rank": 31,
@@ -1667,7 +2515,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3
+      "rank_change": 3,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ],
+        "gpt-6-1-terra": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ],
+        "gpt-6-astra": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ],
+        "gpt-6-sol": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ]
+      }
     },
     {
       "rank": 32,
@@ -1683,7 +2545,21 @@
         "grok-4-7"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3
+      "rank_change": 3,
+      "versions": {
+        "claude-opus-5-5": [
+          "CursorBench 4.0"
+        ],
+        "claude-sonnet-5-5": [
+          "CursorBench 4.0"
+        ],
+        "gemini-4-carbon": [
+          "CursorBench 4.0"
+        ],
+        "grok-4-7": [
+          "CursorBench 4.0"
+        ]
+      }
     },
     {
       "rank": 33,
@@ -1699,7 +2575,21 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4
+      "rank_change": 4,
+      "versions": {
+        "claude-opus-5-5": [
+          "DRACO"
+        ],
+        "claude-sonnet-5-5": [
+          "DRACO"
+        ],
+        "muse-wonder": [
+          "DRACO"
+        ],
+        "muse-wonder-full": [
+          "DRACO"
+        ]
+      }
     },
     {
       "rank": 34,
@@ -1715,7 +2605,21 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 4
+      "rank_change": 4,
+      "versions": {
+        "gemini-4-argon": [
+          "Finance Agent"
+        ],
+        "kimi-k3-1-pro": [
+          "Finance Agent v2"
+        ],
+        "muse-wonder": [
+          "Finance Agent"
+        ],
+        "muse-wonder-full": [
+          "Finance Agent"
+        ]
+      }
     },
     {
       "rank": 35,
@@ -1731,7 +2635,21 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -10
+      "rank_change": -10,
+      "versions": {
+        "gpt-6-1-sol": [
+          "GDP.pdf"
+        ],
+        "kimi-k3-1-pro": [
+          "GDP.pdf"
+        ],
+        "muse-wonder": [
+          "GDP.pdf"
+        ],
+        "muse-wonder-full": [
+          "GDP.pdf"
+        ]
+      }
     },
     {
       "rank": 36,
@@ -1747,7 +2665,21 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 15
+      "rank_change": 15,
+      "versions": {
+        "longcat-2-5": [
+          "JobBench"
+        ],
+        "muse-wonder": [
+          "JobBench"
+        ],
+        "muse-wonder-full": [
+          "JobBench"
+        ],
+        "qwen4-max": [
+          "JobBench"
+        ]
+      }
     },
     {
       "rank": 37,
@@ -1763,7 +2695,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gpt-6-1-sol": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-1-terra": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-astra": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-sol": [
+          "KernelGen 1P"
+        ]
+      }
     },
     {
       "rank": 38,
@@ -1779,7 +2725,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Multimodal Troubleshooting Virology"
+        ],
+        "gpt-6-1-terra": [
+          "Multimodal Troubleshooting Virology"
+        ],
+        "gpt-6-astra": [
+          "Multimodal Troubleshooting Virology"
+        ],
+        "gpt-6-sol": [
+          "Multimodal Troubleshooting Virology"
+        ]
+      }
     },
     {
       "rank": 39,
@@ -1795,7 +2755,21 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -12
+      "rank_change": -12,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "NL2Repo-Bench"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "NL2Repo-Bench"
+        ],
+        "longcat-2-5": [
+          "NL2Repo-Bench"
+        ],
+        "qwen3-8-omni-flash": [
+          "NL2Repo-Bench"
+        ]
+      }
     },
     {
       "rank": 40,
@@ -1811,7 +2785,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gemini-4-argon": [
+          "OAI-repo Sabotage"
+        ],
+        "gpt-6-1-sol": [
+          "OAI-repo Sabotage"
+        ],
+        "gpt-6-astra": [
+          "OAI-repo Sabotage"
+        ],
+        "gpt-6-sol": [
+          "OAI-repo Sabotage"
+        ]
+      }
     },
     {
       "rank": 41,
@@ -1827,7 +2815,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-1-terra": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-astra": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-sol": [
+          "Phage–plasmid Co-evolution"
+        ]
+      }
     },
     {
       "rank": 42,
@@ -1843,7 +2845,23 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gpt-6-1-sol": [
+          "ProtocolQA",
+          "ProtocolQA Open-Ended"
+        ],
+        "gpt-6-astra": [
+          "ProtocolQA",
+          "ProtocolQA Open-Ended"
+        ],
+        "gpt-6-sol": [
+          "ProtocolQA Open-Ended"
+        ],
+        "muse-wonder-full": [
+          "ProtocolQA"
+        ]
+      }
     },
     {
       "rank": 43,
@@ -1859,7 +2877,21 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gpt-6-1-sol": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-1-terra": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-astra": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-sol": [
+          "SHP2 Protein Function Prediction"
+        ]
+      }
     },
     {
       "rank": 44,
@@ -1875,7 +2907,21 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "claude-opus-5-5": [
+          "Virology Capabilities Test"
+        ],
+        "claude-sonnet-5-5": [
+          "Virology Capabilities Test"
+        ],
+        "gpt-6-astra": [
+          "Virology Capabilities Test"
+        ],
+        "muse-wonder-full": [
+          "Virology Capabilities Test"
+        ]
+      }
     },
     {
       "rank": 45,
@@ -1891,7 +2937,21 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "claude-fable-5-2": [
+          "WANDR"
+        ],
+        "claude-opus-5-5": [
+          "WANDR"
+        ],
+        "claude-sonnet-5-5": [
+          "WANDR"
+        ],
+        "gemini-4-carbon": [
+          "WANDR"
+        ]
+      }
     },
     {
       "rank": 46,
@@ -1906,7 +2966,18 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 2
+      "rank_change": 2,
+      "versions": {
+        "gemini-4-argon": [
+          "Agentic honesty benchmark"
+        ],
+        "gemini-4-carbon": [
+          "Agentic honesty benchmark"
+        ],
+        "gemini-4-hydrogen": [
+          "Agentic honesty benchmark"
+        ]
+      }
     },
     {
       "rank": 47,
@@ -1921,7 +2992,18 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 17
+      "rank_change": 17,
+      "versions": {
+        "deepseek-v4-1-flash-1017": [
+          "APEX-Agents"
+        ],
+        "kimi-k3-1-pro": [
+          "APEX-Agents"
+        ],
+        "qwen4-max": [
+          "APEX-Agents v1.1"
+        ]
+      }
     },
     {
       "rank": 48,
@@ -1936,7 +3018,18 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -18
+      "rank_change": -18,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "BabyVision"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "BabyVision"
+        ],
+        "kimi-k3-1-pro": [
+          "BabyVision"
+        ]
+      }
     },
     {
       "rank": 49,
@@ -1951,7 +3044,18 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gpt-6-astra": [
+          "BrowseComp"
+        ],
+        "kimi-k3-1-pro": [
+          "BrowseComp"
+        ],
+        "longcat-2-5": [
+          "BrowseComp"
+        ]
+      }
     },
     {
       "rank": 50,
@@ -1966,7 +3070,18 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -18
+      "rank_change": -18,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "CharXiv"
+        ],
+        "longcat-2-5": [
+          "CharXiv-RQ with tools"
+        ],
+        "qwen3-8-omni-flash": [
+          "CharXiv-RQ"
+        ]
+      }
     },
     {
       "rank": 51,
@@ -1981,7 +3096,18 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -15
+      "rank_change": -15,
+      "versions": {
+        "claude-opus-5-5": [
+          "CyberGym"
+        ],
+        "deepseek-v4-1-flash": [
+          "CyberGym"
+        ],
+        "muse-wonder-full": [
+          "CyberGym"
+        ]
+      }
     },
     {
       "rank": 52,
@@ -1996,7 +3122,18 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "LinuxArena"
+        ],
+        "claude-sonnet-5-5": [
+          "LinuxArena"
+        ],
+        "gemini-4-argon": [
+          "LinuxArena"
+        ]
+      }
     },
     {
       "rank": 53,
@@ -2011,7 +3148,18 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "MASK"
+        ],
+        "claude-sonnet-5-5": [
+          "MASK"
+        ],
+        "muse-wonder-full": [
+          "MASK"
+        ]
+      }
     },
     {
       "rank": 54,
@@ -2026,7 +3174,18 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MMMU-Pro"
+        ],
+        "gpt-6-1-terra": [
+          "MMMU-Pro"
+        ],
+        "kimi-k3-1-pro": [
+          "MMMU-Pro"
+        ]
+      }
     },
     {
       "rank": 55,
@@ -2041,7 +3200,21 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "OfficeQA",
+          "OfficeQA Pro"
+        ],
+        "claude-sonnet-5-5": [
+          "OfficeQA",
+          "OfficeQA Pro"
+        ],
+        "kimi-k3-1-pro": [
+          "OfficeQA Pro",
+          "OfficeQA Pro v2"
+        ]
+      }
     },
     {
       "rank": 56,
@@ -2056,7 +3229,19 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -13
+      "rank_change": -13,
+      "versions": {
+        "gemini-4-argon": [
+          "PostTrainBench"
+        ],
+        "gpt-6-astra": [
+          "PostTrainBench",
+          "PostTrainBench Lite"
+        ],
+        "kimi-k3-1-pro": [
+          "PostTrainBench"
+        ]
+      }
     },
     {
       "rank": 57,
@@ -2071,7 +3256,18 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-1-terra": [
+          "Sandbox Bench"
+        ],
+        "gpt-6-astra": [
+          "Sandbox Bench"
+        ],
+        "gpt-6-sol": [
+          "Sandbox Bench"
+        ]
+      }
     },
     {
       "rank": 58,
@@ -2086,7 +3282,19 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "SimpleQA",
+          "SimpleQA Verified"
+        ],
+        "gemini-4-argon": [
+          "SimpleQA Verified"
+        ],
+        "gemini-4-carbon": [
+          "SimpleQA Verified"
+        ]
+      }
     },
     {
       "rank": 59,
@@ -2101,7 +3309,18 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "SRE-Bench"
+        ],
+        "gemini-4-carbon": [
+          "SRE-Bench"
+        ],
+        "gpt-6-astra": [
+          "SRE-Bench"
+        ]
+      }
     },
     {
       "rank": 60,
@@ -2116,7 +3335,18 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "SWE-Marathon v1.1"
+        ],
+        "muse-wonder": [
+          "SWE-Marathon"
+        ],
+        "muse-wonder-full": [
+          "SWE-Marathon"
+        ]
+      }
     },
     {
       "rank": 61,
@@ -2131,7 +3361,18 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-1-sol": [
+          "TroubleshootingBench"
+        ],
+        "gpt-6-astra": [
+          "TroubleshootingBench"
+        ],
+        "gpt-6-sol": [
+          "TroubleshootingBench"
+        ]
+      }
     },
     {
       "rank": 62,
@@ -2146,7 +3387,20 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "ZeroBench",
+          "ZeroBench-main"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "ZeroBench-main"
+        ],
+        "kimi-k3-1-pro": [
+          "ZeroBench",
+          "ZeroBench-main with tools"
+        ]
+      }
     },
     {
       "rank": 63,
@@ -2160,7 +3414,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "AA-LCR"
+        ],
+        "muse-wonder-full": [
+          "AA-LCR"
+        ]
+      }
     },
     {
       "rank": 64,
@@ -2174,7 +3436,15 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-13",
-      "rank_change": 38
+      "rank_change": 38,
+      "versions": {
+        "gemini-4-hydrogen": [
+          "Agent Arena"
+        ],
+        "qwen4-max": [
+          "Agent Arena"
+        ]
+      }
     },
     {
       "rank": 65,
@@ -2188,7 +3458,15 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2
+      "rank_change": -2,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "AIME 2026"
+        ],
+        "gpt-6-astra": [
+          "AIME 2025"
+        ]
+      }
     },
     {
       "rank": 66,
@@ -2202,7 +3480,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "ArXivMath"
+        ],
+        "claude-sonnet-5-5": [
+          "ArXivMath"
+        ]
+      }
     },
     {
       "rank": 67,
@@ -2216,7 +3502,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "Bias Benchmark for Question Answering"
+        ],
+        "claude-sonnet-5-5": [
+          "Bias Benchmark for Question Answering"
+        ]
+      }
     },
     {
       "rank": 68,
@@ -2230,7 +3524,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "BioTIER"
+        ],
+        "muse-wonder-full": [
+          "BioTIER"
+        ]
+      }
     },
     {
       "rank": 69,
@@ -2244,7 +3546,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "CritPt"
+        ],
+        "muse-wonder-full": [
+          "CritPt"
+        ]
+      }
     },
     {
       "rank": 70,
@@ -2258,7 +3568,15 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "CWE-bench v1"
+        ],
+        "gemini-4-carbon": [
+          "CWE-bench v1"
+        ]
+      }
     },
     {
       "rank": 71,
@@ -2272,7 +3590,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "FocusBench"
+        ],
+        "muse-wonder-full": [
+          "FocusBench"
+        ]
+      }
     },
     {
       "rank": 72,
@@ -2286,7 +3612,15 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "GraphWalks"
+        ],
+        "gemini-4-carbon": [
+          "GraphWalks"
+        ]
+      }
     },
     {
       "rank": 73,
@@ -2300,7 +3634,15 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "GSM8K"
+        ],
+        "gpt-6-astra": [
+          "GSM8K"
+        ]
+      }
     },
     {
       "rank": 74,
@@ -2314,7 +3656,15 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "HelpBench"
+        ],
+        "gemini-4-carbon": [
+          "HelpBench"
+        ]
+      }
     },
     {
       "rank": 75,
@@ -2328,7 +3678,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "Human Pathogens Capabilities Test"
+        ],
+        "muse-wonder-full": [
+          "Human Pathogens Capabilities Test"
+        ]
+      }
     },
     {
       "rank": 76,
@@ -2342,7 +3700,15 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "HumanEval"
+        ],
+        "gpt-6-astra": [
+          "HumanEval"
+        ]
+      }
     },
     {
       "rank": 77,
@@ -2356,7 +3722,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "LAB-Bench 2"
+        ],
+        "muse-wonder-full": [
+          "LAB-Bench"
+        ]
+      }
     },
     {
       "rank": 78,
@@ -2370,7 +3744,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "LatchBio Bioinformatics"
+        ],
+        "claude-sonnet-5-5": [
+          "LatchBio Bioinformatics"
+        ]
+      }
     },
     {
       "rank": 79,
@@ -2384,7 +3766,15 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "LiveCodeBench"
+        ],
+        "qwen3-8-omni-flash": [
+          "LiveCodeBench v6"
+        ]
+      }
     },
     {
       "rank": 80,
@@ -2398,7 +3788,15 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "LVBench"
+        ],
+        "qwen3-8-omni-flash": [
+          "LVBench"
+        ]
+      }
     },
     {
       "rank": 81,
@@ -2412,7 +3810,15 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "longcat-2-5": [
+          "MathVision with tools"
+        ],
+        "qwen3-8-omni-flash": [
+          "MathVision"
+        ]
+      }
     },
     {
       "rank": 82,
@@ -2426,7 +3832,15 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "MCP Atlas"
+        ],
+        "longcat-2-5": [
+          "MCP Atlas"
+        ]
+      }
     },
     {
       "rank": 83,
@@ -2440,7 +3854,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "MemoryBench"
+        ],
+        "muse-wonder-full": [
+          "MemoryBench"
+        ]
+      }
     },
     {
       "rank": 84,
@@ -2454,7 +3876,15 @@
         "gpt-6-1-terra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-1-sol": [
+          "MentalHealthBench"
+        ],
+        "gpt-6-1-terra": [
+          "MentalHealthBench"
+        ]
+      }
     },
     {
       "rank": 85,
@@ -2468,7 +3898,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "MILU"
+        ],
+        "claude-sonnet-5-5": [
+          "MILU"
+        ]
+      }
     },
     {
       "rank": 86,
@@ -2482,7 +3920,15 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-carbon": [
+          "Multimodal Knowledge Agent"
+        ],
+        "gemini-4-hydrogen": [
+          "Multimodal Knowledge Agent"
+        ]
+      }
     },
     {
       "rank": 87,
@@ -2496,7 +3942,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "MMLU"
+        ],
+        "claude-sonnet-5-5": [
+          "MMLU"
+        ]
+      }
     },
     {
       "rank": 88,
@@ -2510,7 +3964,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "MMMLU"
+        ],
+        "claude-sonnet-5-5": [
+          "MMMLU"
+        ]
+      }
     },
     {
       "rank": 89,
@@ -2524,7 +3986,15 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "NanoGPT (OpenAI research evaluation)"
+        ],
+        "gpt-6-astra": [
+          "NanoGPT (OpenAI research evaluation)"
+        ]
+      }
     },
     {
       "rank": 90,
@@ -2538,7 +4008,15 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-argon": [
+          "RiemannBench"
+        ],
+        "gemini-4-carbon": [
+          "RiemannBench"
+        ]
+      }
     },
     {
       "rank": 91,
@@ -2552,7 +4030,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "SciCode"
+        ],
+        "muse-wonder-full": [
+          "SciCode"
+        ]
+      }
     },
     {
       "rank": 92,
@@ -2566,7 +4052,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "SHADE-Arena"
+        ],
+        "claude-sonnet-5-5": [
+          "SHADE-Arena"
+        ]
+      }
     },
     {
       "rank": 93,
@@ -2580,7 +4074,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "SingleCellBench"
+        ],
+        "claude-sonnet-5-5": [
+          "SingleCellBench"
+        ]
+      }
     },
     {
       "rank": 94,
@@ -2594,7 +4096,15 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "SpatialBench Verified"
+        ],
+        "claude-sonnet-5-5": [
+          "SpatialBench Verified"
+        ]
+      }
     },
     {
       "rank": 95,
@@ -2608,7 +4118,15 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-carbon": [
+          "SWE-sweep"
+        ],
+        "gemini-4-hydrogen": [
+          "SWE-sweep"
+        ]
+      }
     },
     {
       "rank": 96,
@@ -2622,7 +4140,16 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "claude-opus-5-5": [
+          "Toolathlon",
+          "Toolathlon Verified"
+        ],
+        "claude-sonnet-5-5": [
+          "Toolathlon"
+        ]
+      }
     },
     {
       "rank": 97,
@@ -2636,7 +4163,15 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder": [
+          "Verifiable Browsing Task"
+        ],
+        "muse-wonder-full": [
+          "Verifiable Browsing Task"
+        ]
+      }
     },
     {
       "rank": 98,
@@ -2650,7 +4185,15 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-carbon": [
+          "Vending-Bench 2"
+        ],
+        "gemini-4-hydrogen": [
+          "Vending-Bench 2"
+        ]
+      }
     },
     {
       "rank": 99,
@@ -2664,7 +4207,15 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "longcat-2-5": [
+          "Video-MME"
+        ],
+        "qwen3-8-omni-flash": [
+          "Video-MME-v2"
+        ]
+      }
     },
     {
       "rank": 100,
@@ -2678,7 +4229,15 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "longcat-2-5": [
+          "Vision2Web"
+        ],
+        "qwen3-8-omni-flash": [
+          "Vision2Web"
+        ]
+      }
     },
     {
       "rank": 101,
@@ -2692,7 +4251,15 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 127
+      "rank_change": 127,
+      "versions": {
+        "gemini-4-carbon": [
+          "WebDev Arena"
+        ],
+        "qwen4-max": [
+          "WebDev Arena"
+        ]
+      }
     },
     {
       "rank": 102,
@@ -2705,7 +4272,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -2
+      "rank_change": -2,
+      "versions": {
+        "longcat-2-5": [
+          "3DCodeBench Text→3D"
+        ]
+      }
     },
     {
       "rank": 103,
@@ -2718,7 +4290,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2
+      "rank_change": -2,
+      "versions": {
+        "muse-wonder-full": [
+          "Agentic Bio-Capabilities Benchmark"
+        ]
+      }
     },
     {
       "rank": 104,
@@ -2731,7 +4308,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "muse-wonder-full": [
+          "Agentic Misalignment"
+        ]
+      }
     },
     {
       "rank": 105,
@@ -2744,7 +4326,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "AgenticVBench"
+        ]
+      }
     },
     {
       "rank": 106,
@@ -2757,7 +4344,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "AGIEval"
+        ]
+      }
     },
     {
       "rank": 107,
@@ -2770,7 +4362,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "AISHELL-4"
+        ]
+      }
     },
     {
       "rank": 108,
@@ -2783,7 +4380,13 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "AliMeeting",
+          "AliMeeting-test"
+        ]
+      }
     },
     {
       "rank": 109,
@@ -2796,7 +4399,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "AndroidWorld"
+        ]
+      }
     },
     {
       "rank": 110,
@@ -2809,7 +4417,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "Apex 2025 Shortlist"
+        ]
+      }
     },
     {
       "rank": 111,
@@ -2822,7 +4435,13 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "ARC-AGI-1",
+          "ARC-AGI-2"
+        ]
+      }
     },
     {
       "rank": 112,
@@ -2835,7 +4454,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "ARC-AGI-3"
+        ]
+      }
     },
     {
       "rank": 113,
@@ -2848,7 +4472,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "Atomic Challenges"
+        ]
+      }
     },
     {
       "rank": 114,
@@ -2861,7 +4490,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "Audio-MultiChallenge"
+        ]
+      }
     },
     {
       "rank": 115,
@@ -2874,7 +4508,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "AVUT"
+        ]
+      }
     },
     {
       "rank": 116,
@@ -2887,7 +4526,12 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-carbon": [
+          "General Financial Intelligence"
+        ]
+      }
     },
     {
       "rank": 117,
@@ -2900,7 +4544,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "BIG-Bench Extra Hard"
+        ]
+      }
     },
     {
       "rank": 118,
@@ -2913,7 +4562,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "BIG-Bench Hard"
+        ]
+      }
     },
     {
       "rank": 119,
@@ -2926,7 +4580,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "BigCodeBench"
+        ]
+      }
     },
     {
       "rank": 120,
@@ -2939,7 +4598,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "BioDesign Tools"
+        ]
+      }
     },
     {
       "rank": 121,
@@ -2952,7 +4616,12 @@
         "gpt-6-1-terra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-1-terra": [
+          "Blocker Deception"
+        ]
+      }
     },
     {
       "rank": 122,
@@ -2965,7 +4634,12 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-carbon": [
+          "Blueprint-Bench 2"
+        ]
+      }
     },
     {
       "rank": 123,
@@ -2978,7 +4652,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "C-Eval"
+        ]
+      }
     },
     {
       "rank": 124,
@@ -2991,7 +4670,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "Claw-Eval"
+        ]
+      }
     },
     {
       "rank": 125,
@@ -3004,7 +4688,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "ClawEval-MM"
+        ]
+      }
     },
     {
       "rank": 126,
@@ -3017,7 +4706,12 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-opus-5-5": [
+          "CoBench 2.1"
+        ]
+      }
     },
     {
       "rank": 127,
@@ -3030,7 +4724,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "Codeforces"
+        ]
+      }
     },
     {
       "rank": 128,
@@ -3043,7 +4742,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "CoWorkBench"
+        ]
+      }
     },
     {
       "rank": 129,
@@ -3056,7 +4760,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "CV-Bench"
+        ]
+      }
     },
     {
       "rank": 130,
@@ -3069,7 +4778,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "CVE-Bench"
+        ]
+      }
     },
     {
       "rank": 131,
@@ -3082,7 +4796,12 @@
         "claude-fable-5-2"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "CVE Rediscovery"
+        ]
+      }
     },
     {
       "rank": 132,
@@ -3095,7 +4814,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "CyberBench"
+        ]
+      }
     },
     {
       "rank": 133,
@@ -3108,7 +4832,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "DailyOmni"
+        ]
+      }
     },
     {
       "rank": 134,
@@ -3121,7 +4850,12 @@
         "claude-fable-5-2"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "De novo binder design"
+        ]
+      }
     },
     {
       "rank": 135,
@@ -3134,7 +4868,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "DECK-Arena"
+        ]
+      }
     },
     {
       "rank": 136,
@@ -3147,7 +4886,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Design Bench"
+        ]
+      }
     },
     {
       "rank": 137,
@@ -3160,7 +4904,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "DocVQA"
+        ]
+      }
     },
     {
       "rank": 138,
@@ -3173,7 +4922,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "DROP"
+        ]
+      }
     },
     {
       "rank": 139,
@@ -3186,7 +4940,12 @@
         "grok-4-7"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "grok-4-7": [
+          "EEBench"
+        ]
+      }
     },
     {
       "rank": 140,
@@ -3199,7 +4958,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "ERQA"
+        ]
+      }
     },
     {
       "rank": 141,
@@ -3212,7 +4976,12 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-carbon": [
+          "FACTS Grounding"
+        ]
+      }
     },
     {
       "rank": 142,
@@ -3225,7 +4994,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "FinSearchComp T3"
+        ]
+      }
     },
     {
       "rank": 143,
@@ -3238,7 +5012,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "FLEURS-60"
+        ]
+      }
     },
     {
       "rank": 144,
@@ -3251,7 +5030,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Frontier Finance"
+        ]
+      }
     },
     {
       "rank": 145,
@@ -3264,7 +5048,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "FrontierCyber"
+        ]
+      }
     },
     {
       "rank": 146,
@@ -3277,7 +5066,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "FrontierMath"
+        ]
+      }
     },
     {
       "rank": 147,
@@ -3290,7 +5084,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "FrontierScience"
+        ]
+      }
     },
     {
       "rank": 148,
@@ -3303,7 +5102,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "GeneBench Pro"
+        ]
+      }
     },
     {
       "rank": 149,
@@ -3316,7 +5120,12 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-argon": [
+          "Google RE-Bench"
+        ]
+      }
     },
     {
       "rank": 150,
@@ -3329,7 +5138,12 @@
         "grok-4-7"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "grok-4-7": [
+          "HackerBench"
+        ]
+      }
     },
     {
       "rank": 151,
@@ -3342,7 +5156,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "HANDBOOK.md"
+        ]
+      }
     },
     {
       "rank": 152,
@@ -3355,7 +5174,12 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-carbon": [
+          "Hebbia E2E Financial Agentic evaluation"
+        ]
+      }
     },
     {
       "rank": 153,
@@ -3368,7 +5192,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "HellaSwag"
+        ]
+      }
     },
     {
       "rank": 154,
@@ -3381,7 +5210,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "HumMusQA"
+        ]
+      }
     },
     {
       "rank": 155,
@@ -3394,7 +5228,12 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "hy4": [
+          "GameDev (Hy)"
+        ]
+      }
     },
     {
       "rank": 156,
@@ -3407,7 +5246,12 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "hy4": [
+          "GameLogic (Hy)"
+        ]
+      }
     },
     {
       "rank": 157,
@@ -3420,7 +5264,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "IFBench"
+        ]
+      }
     },
     {
       "rank": 158,
@@ -3433,7 +5282,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "IMO-AnswerBench"
+        ]
+      }
     },
     {
       "rank": 159,
@@ -3446,7 +5300,12 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "hy4": [
+          "iRaB"
+        ]
+      }
     },
     {
       "rank": 160,
@@ -3459,7 +5318,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "JointAVBench"
+        ]
+      }
     },
     {
       "rank": 161,
@@ -3472,7 +5336,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Business Operation"
+        ]
+      }
     },
     {
       "rank": 162,
@@ -3485,7 +5354,14 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Kimi Code Bench 2.0",
+          "Kimi Code Bench 3.0",
+          "Kimi Code Bench 3.0 Long-horizon"
+        ]
+      }
     },
     {
       "rank": 163,
@@ -3498,7 +5374,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Financial Modeling"
+        ]
+      }
     },
     {
       "rank": 164,
@@ -3511,7 +5392,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Financial Research"
+        ]
+      }
     },
     {
       "rank": 165,
@@ -3524,7 +5410,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "Kimi Hallu Bench Hard"
+        ]
+      }
     },
     {
       "rank": 166,
@@ -3537,7 +5428,12 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new"
+      "rank_change": "new",
+      "versions": {
+        "qwen4-max": [
+          "Last Secure Code Bench"
+        ]
+      }
     },
     {
       "rank": 167,
@@ -3550,7 +5446,12 @@
         "grok-4-7"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "grok-4-7": [
+          "LatchBio’s biosafety benchmark"
+        ]
+      }
     },
     {
       "rank": 168,
@@ -3563,7 +5464,12 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-13",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gemini-4-hydrogen": [
+          "Legal Research Bench"
+        ]
+      }
     },
     {
       "rank": 169,
@@ -3576,7 +5482,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1
+      "rank_change": -1,
+      "versions": {
+        "gpt-6-astra": [
+          "LifeSciBench"
+        ]
+      }
     },
     {
       "rank": 170,
@@ -3589,7 +5500,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "LongAudioSpan"
+        ]
+      }
     },
     {
       "rank": 171,
@@ -3602,7 +5518,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "LongBench-V2"
+        ]
+      }
     },
     {
       "rank": 172,
@@ -3615,7 +5536,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "LongCat AppDev Internal"
+        ]
+      }
     },
     {
       "rank": 173,
@@ -3628,7 +5554,13 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "LongCatClawBench FORTE",
+          "LongCatClawBench-MM FORTE-MM"
+        ]
+      }
     },
     {
       "rank": 174,
@@ -3641,7 +5573,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "LVOmniBench"
+        ]
+      }
     },
     {
       "rank": 175,
@@ -3654,7 +5591,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MagicData-RAMC"
+        ]
+      }
     },
     {
       "rank": 176,
@@ -3667,7 +5609,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MATH"
+        ]
+      }
     },
     {
       "rank": 177,
@@ -3680,7 +5627,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MathArena Apex"
+        ]
+      }
     },
     {
       "rank": 178,
@@ -3693,7 +5645,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "Molecular Biology Capabilities Test"
+        ]
+      }
     },
     {
       "rank": 179,
@@ -3706,7 +5663,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "MedChemBench"
+        ]
+      }
     },
     {
       "rank": 180,
@@ -3719,7 +5681,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MGSM"
+        ]
+      }
     },
     {
       "rank": 181,
@@ -3732,7 +5699,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "Mind2Web"
+        ]
+      }
     },
     {
       "rank": 182,
@@ -3745,7 +5717,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MLC-SLM"
+        ]
+      }
     },
     {
       "rank": 183,
@@ -3758,7 +5735,13 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "MLE-Bench",
+          "MLE-Bench Revised"
+        ]
+      }
     },
     {
       "rank": 184,
@@ -3771,7 +5754,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MMAR"
+        ]
+      }
     },
     {
       "rank": 185,
@@ -3784,7 +5772,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MMAU"
+        ]
+      }
     },
     {
       "rank": 186,
@@ -3797,7 +5790,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MMSU"
+        ]
+      }
     },
     {
       "rank": 187,
@@ -3810,7 +5808,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "Monorepo-Bench"
+        ]
+      }
     },
     {
       "rank": 188,
@@ -3823,7 +5826,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "OpenAI MRCR"
+        ]
+      }
     },
     {
       "rank": 189,
@@ -3836,7 +5844,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MuchoMusic-RUL"
+        ]
+      }
     },
     {
       "rank": 190,
@@ -3849,7 +5862,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "MultiLoKo"
+        ]
+      }
     },
     {
       "rank": 191,
@@ -3862,7 +5880,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "MusTBench"
+        ]
+      }
     },
     {
       "rank": 192,
@@ -3875,7 +5898,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "Nucleobench"
+        ]
+      }
     },
     {
       "rank": 193,
@@ -3888,7 +5916,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "OmniCap-IF"
+        ]
+      }
     },
     {
       "rank": 194,
@@ -3901,7 +5934,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "OmniCloze"
+        ]
+      }
     },
     {
       "rank": 195,
@@ -3914,7 +5952,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "OmniGAIA"
+        ]
+      }
     },
     {
       "rank": 196,
@@ -3927,7 +5970,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "OmniVideoBench"
+        ]
+      }
     },
     {
       "rank": 197,
@@ -3940,7 +5988,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "OpenScore String Quartets"
+        ]
+      }
     },
     {
       "rank": 198,
@@ -3953,7 +6006,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "OPQA"
+        ]
+      }
     },
     {
       "rank": 199,
@@ -3966,7 +6024,12 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-argon": [
+          "OR-Bench"
+        ]
+      }
     },
     {
       "rank": 200,
@@ -3979,7 +6042,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "PaperBench"
+        ]
+      }
     },
     {
       "rank": 201,
@@ -3992,7 +6060,12 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-sonnet-5-5": [
+          "PhysicianBench"
+        ]
+      }
     },
     {
       "rank": 202,
@@ -4005,7 +6078,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "PolyGuard"
+        ]
+      }
     },
     {
       "rank": 203,
@@ -4018,7 +6096,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "PosterBench"
+        ]
+      }
     },
     {
       "rank": 204,
@@ -4031,7 +6114,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "QIVD"
+        ]
+      }
     },
     {
       "rank": 205,
@@ -4044,7 +6132,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "RealWorldQA"
+        ]
+      }
     },
     {
       "rank": 206,
@@ -4057,7 +6150,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "RecreationBench"
+        ]
+      }
     },
     {
       "rank": 207,
@@ -4070,7 +6168,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "RedCode"
+        ]
+      }
     },
     {
       "rank": 208,
@@ -4083,7 +6186,13 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "RefCOCO",
+          "RefCOCO-g"
+        ]
+      }
     },
     {
       "rank": 209,
@@ -4096,7 +6205,12 @@
         "claude-fable-5-2"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "Remote Labor Index"
+        ]
+      }
     },
     {
       "rank": 210,
@@ -4109,7 +6223,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "ResearchRubrics"
+        ]
+      }
     },
     {
       "rank": 211,
@@ -4122,7 +6241,12 @@
         "claude-fable-5-2"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "claude-fable-5-2": [
+          "RoboDojo Sim"
+        ]
+      }
     },
     {
       "rank": 212,
@@ -4135,7 +6259,12 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gemini-4-argon": [
+          "ControlArena"
+        ]
+      }
     },
     {
       "rank": 213,
@@ -4148,7 +6277,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "ScreenSpot-Pro"
+        ]
+      }
     },
     {
       "rank": 214,
@@ -4161,7 +6295,12 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "muse-wonder-full": [
+          "SeqQA"
+        ]
+      }
     },
     {
       "rank": 215,
@@ -4174,7 +6313,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "SkillsBench"
+        ]
+      }
     },
     {
       "rank": 216,
@@ -4187,7 +6331,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "gpt-6-astra": [
+          "Sneaky Sandbox Escape"
+        ]
+      }
     },
     {
       "rank": 217,
@@ -4200,7 +6349,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "SpotSoundBench"
+        ]
+      }
     },
     {
       "rank": 218,
@@ -4213,7 +6367,12 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "SpreadsheetBench 2"
+        ]
+      }
     },
     {
       "rank": 219,
@@ -4226,7 +6385,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "StreamingBench"
+        ]
+      }
     },
     {
       "rank": 220,
@@ -4239,7 +6403,12 @@
         "deepseek-v4-1-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "deepseek-v4-1-flash": [
+          "SuperGPQA"
+        ]
+      }
     },
     {
       "rank": 221,
@@ -4252,7 +6421,14 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "longcat-2-5": [
+          "SWE-Atlas Codebase QnA",
+          "SWE-Atlas Refactoring",
+          "SWE-Atlas Test Writing"
+        ]
+      }
     },
     {
       "rank": 222,
@@ -4265,7 +6441,12 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "hy4": [
+          "TenureTrail"
+        ]
+      }
     },
     {
       "rank": 223,
@@ -4278,7 +6459,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "UniClawBench"
+        ]
+      }
     },
     {
       "rank": 224,
@@ -4291,7 +6477,12 @@
         "gemini-4-hydrogen"
       ],
       "first_seen": "2026-11-13",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gemini-4-hydrogen": [
+          "Tax Agent Bench"
+        ]
+      }
     },
     {
       "rank": 225,
@@ -4304,7 +6495,12 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gemini-4-argon": [
+          "Vibe Code Bench"
+        ]
+      }
     },
     {
       "rank": 226,
@@ -4317,7 +6513,12 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new"
+      "rank_change": "new",
+      "versions": {
+        "qwen4-max": [
+          "Video-Index"
+        ]
+      }
     },
     {
       "rank": 227,
@@ -4330,7 +6531,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "VoiceBench"
+        ]
+      }
     },
     {
       "rank": 228,
@@ -4343,7 +6549,13 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "WenetSpeech",
+          "WenetSpeech-Chuan"
+        ]
+      }
     },
     {
       "rank": 229,
@@ -4356,7 +6568,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "WildClawBench-MM"
+        ]
+      }
     },
     {
       "rank": 230,
@@ -4369,7 +6586,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "WildSpeech"
+        ]
+      }
     },
     {
       "rank": 231,
@@ -4382,7 +6604,12 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1
+      "rank_change": 1,
+      "versions": {
+        "gpt-6-astra": [
+          "WMDP"
+        ]
+      }
     },
     {
       "rank": 232,
@@ -4395,7 +6622,12 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new"
+      "rank_change": "new",
+      "versions": {
+        "qwen4-max": [
+          "Work360"
+        ]
+      }
     },
     {
       "rank": 233,
@@ -4408,7 +6640,12 @@
         "qwen3-8-omni-flash"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "qwen3-8-omni-flash": [
+          "WorldSense"
+        ]
+      }
     },
     {
       "rank": 234,
@@ -4421,7 +6658,12 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0
+      "rank_change": 0,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "xdev-bench-hard"
+        ]
+      }
     }
   ],
   "history": [

@@ -22,6 +22,8 @@ export type HeatRank = {
   models?: string[];
   first_seen?: string | null;
   rank_change?: number | 'new' | null;
+  /** model_id -> clean benchmark version labels named in that model's official docs, e.g. ["Terminal-Bench 4.0"]. */
+  versions?: Record<string, string[]>;
 };
 
 export type HeatFile = {
