@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-16",
   "status": "provisional_lower_bound",
   "latest20_verified_globally": false,
   "models": 20,
-  "benchmark_families": 234,
+  "benchmark_families": 231,
   "mentions": 2596,
   "counted_mentions": 2416,
   "excluded_mentions": 180,

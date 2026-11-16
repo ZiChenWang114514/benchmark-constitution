@@ -101,7 +101,8 @@
       }
     ],
     "benchmarks": [],
-    "note": null
+    "note": "按窗口取舍不计入窗口，并非轻量级、垂直专用或同智力加速版本：在当前窗口与 Muse Wonder、GPT-6 Astra 中、已列出 Artificial Analysis 智能指数的模型里，其最佳公开设置得分29为最低（https://artificialanalysis.ai/models/minimax-m3-1-flash ，https://artificialanalysis.ai/leaderboards/models ，查阅于 2026-11-16）。",
+    "eligible": false
   },
   {
     "id": "deepseek-v4-1-flash-1017",
@@ -494,7 +495,7 @@
       }
     ],
     "benchmarks": [],
-    "note": "限时预览版，官方文档未公布任何评测成绩或模型卡，暂不计入窗口；正式发布并公布评测后再评估。"
+    "note": "限时预览版，官方文档未公布任何评测成绩或模型卡，暂不计入窗口；正式发布并公布评测后再评估。正式版 qwen4-max 已于 2026-11-16 上线并另行计入窗口，本预览条目仍不计入。"
   },
   {
     "id": "gemini-4-hydrogen",
@@ -533,5 +534,40 @@
     ],
     "benchmarks": [],
     "note": "官方发布页与模型卡均署日期2026-11-12，当日即面向开发者、企业和消费者全面开放，首发日与正式开放日相同。模型卡说明其改编自Gemini 4 Carbon，但定位、定价与官方评测成绩均独立，不属于同智力加速版本。"
+  },
+  {
+    "id": "qwen4-max",
+    "name": "Qwen4-Max",
+    "organization": "Alibaba Qwen",
+    "release_date": "2026-11-16",
+    "eligible": true,
+    "sources": [
+      {
+        "url": "https://help.aliyun.com/zh/model-studio/newly-released-models",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://help.aliyun.com/zh/model-studio/qwen4-max",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://help.aliyun.com/en/model-studio/qwen4-max",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://qwen.ai/blog?id=qwen4-max",
+        "accessed": "2026-11-16"
+      }
+    ],
+    "benchmarks": [],
+    "note": "官方产品页与模型服务上架说明署日期2026-11-16，当日在中国内地与国际范围正式上线，与11月11日的限时预览版 qwen4-max-preview 分列，属于独立正式版本，不与窗口内已有的 Qwen3.8-Omni-Flash 合并。查阅的官方产品说明介绍输入输出模态、工具调用与100万 token 上下文等能力，但未给出厂商评测成绩表，因此本次暂不计入厂商自报评测提及。"
   }
 ]

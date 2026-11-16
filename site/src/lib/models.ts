@@ -60,6 +60,7 @@ const FRONTIER_EXACT: Record<string, ThemeSpec> = {
 
   // Alibaba Qwen
   'qwen3-8-omni-flash': { id: 'qwen3-8-omni-flash', family: 'Qwen', logo: 'qwen-color.svg', logoKind: 'color', cellMask: 'qwen.svg', light: '#6d28d9', dark: '#c084fc' },
+  'qwen4-max': { id: 'qwen4-max', family: 'Qwen', logo: 'qwen-color.svg', logoKind: 'color', cellMask: 'qwen.svg', light: '#6d28d9', dark: '#c084fc' },
   'qwen4-max-preview': { id: 'qwen4-max-preview', family: 'Qwen', logo: 'qwen-color.svg', logoKind: 'color', cellMask: 'qwen.svg', light: '#7e22ce', dark: '#d8b4fe' },
 
   // Moonshot AI / Kimi
@@ -109,7 +110,8 @@ const FAMILY_RULES: (ThemeSpec & { match: RegExp })[] = [
   { ...FRONTIER_EXACT['deepseek-v4-1-flash-1017'], match: /\bdeepseek[- ]?v?4[p._-]?1[- ]?flash[- ]?1017\b/i },
   { ...FRONTIER_EXACT['deepseek-v4-1-flash'], match: /\bdeepseek[- ]?v?4[p._-]?1[- ]?flash\b/i },
   { ...FRONTIER_EXACT['qwen3-8-omni-flash'], match: /\bqwen[- ]?3[._-]?8[- ]?omni[- ]?flash\b/i },
-  { ...FRONTIER_EXACT['qwen4-max-preview'], match: /\bqwen[- ]?4\b/i },
+  { ...FRONTIER_EXACT['qwen4-max-preview'], match: /\bqwen[- ]?4[- ]?max[- ]?preview\b/i },
+  { ...FRONTIER_EXACT['qwen4-max'], match: /\bqwen[- ]?4(?:[- ]?max)?\b/i },
   { ...FRONTIER_EXACT['kimi-k3-1-pro'], match: /\bkimi[- ]?k3[._-]?1[- ]?pro\b/i },
   { ...FRONTIER_EXACT['minimax-m3-1-flash'], match: /\bminimax[- ]?m3[p._-]?1[- ]?flash\b/i },
   { ...FRONTIER_EXACT['mistral-large-4'], match: /\bmistral[- ]?large[- ]?4\b/i },
