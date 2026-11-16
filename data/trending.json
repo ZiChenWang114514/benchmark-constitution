@@ -5,7 +5,7 @@
     "through": "2026-11-07",
     "frontier_launch_extension_from": "2026-07-01"
   },
-  "note": "近期热门：2026-08 起被评测机构、前沿模型发布或快速采纳的 benchmark。A=多家机构共同采用；B=主要单一机构在用。",
+  "note": "近期热门：2026 年 8 月起被评测机构采用、出现在前沿模型发布中，或被快速采纳的基准。A＝多家机构共同采用；B＝主要由单一机构使用。",
   "items": [
     {
       "slug": "terminal-bench-science",
