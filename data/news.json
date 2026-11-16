@@ -4,7 +4,7 @@
     "observed_date": "2026-11-16",
     "event_date": "2026-11-16",
     "title": "前沿热度榜依据官方模型卡、系统卡与发布页复核全部窗口模型，Terminal-Bench 升至第1名",
-    "body": "前沿热度榜逐一复核了窗口内20个模型的官方模型卡、系统卡与发布页，并修正了评测记录。此前未纳入的 Claude Fable 5.2 系统卡为该模型新增计入17项评测，包括 SWE-bench Pro、DeepSWE v1.1、Terminal-Bench 4.0、CursorBench 4.0、ProgramBench、OfficeQA、GDPval-AA v2.1、ARC-AGI-3、HealthBench Professional 与 PhysicianBench；系统卡中属于 Claude Mythos 5.2 的成绩不计入 Fable 5.2。OpenAI 的 GPT-6.1 Terra、GPT-6.1 Sol、GPT-6 Sol 与 GPT-6 Astra 发布页也已完整核对：版本标注细化为 OSWorld 2.0 离线集、OSWorld 2.1 离线集、Terminal-Bench-Science 0.1、AutomationBench v1.0.6、FrontierCode v1.1 Main 与 Extended、带工具的 Humanity’s Last Exam、FrontierMath Tier 4 (v2) 与 OpenAI MRCR v2 8-needle。同一厂商发布页或后续报告中的对比列按既有规则计入：OpenAI 发布页为 GPT-6.1 Sol 补入 Agents’ Last Exam、MMMU-Pro 与 Terminal-Bench，为 GPT-6 Astra 补入 MMMU-Pro 与 GDP.pdf，为 GPT-6 Sol 补入 GDP.pdf 与 Terminal-Bench-Science；Fable 5.2 的系统卡与发布页为 Claude Opus 5.5 补入 Remote Labor Index、De novo binder design、CVE Rediscovery 与 RoboDojo Sim；Gemini 4 Carbon 模型卡为 Gemini 4 Argon 补入 SWE-sweep、Vending-Bench 2、Blueprint-Bench 2、ExploitGym 与 SEC-Bench Pro。其他厂商的对比列不计入。另一方面，只把题目用作思维链可控性测试题库的 GPQA、Humanity’s Last Exam 与 MMLU-Pro，仅顺带提到的 SWE-bench，以及参考文献条目，不再计入；Kimi K3.1 Pro 报告的 Frontier Finance 此前被误归入 Vals Finance Agent，现已改归其本身的评测族；Claude 系统卡中覆盖42种语言的 GMMLU 从 MMMLU 中分出，单列为 Global MMLU。复核后，计入的模型与评测组合由573个增至591个。前二十名中，Terminal-Bench 由第3名升至第1名，AutomationBench-AA 与 DeepSWE 分别降至第2和第3名，Agents’ Last Exam 由第5名升至第4名，HealthBench 由第6名升至第5名，Humanity’s Last Exam 由第4名降至第6名，ExploitGym 由第10名升至第8名，Terminal-Bench-Science 由第11名升至第9名，Indirect Prompt Injection 由第21名升至第16名，SEC-Bench 由第22名升至第17名；GPQA 由第16名降至第33名，FrontierSWE 由第20名降至第21名。前二十名以外，MMLU-Pro 由第25名降至第187名，SWE-bench 由第26名降至第42名，MMMU-Pro 由第54名升至第27名，GDP.pdf 由第35名升至第22名，Global MMLU 由第88名升至第53名，PhysicianBench 由第201名升至第94名。在热力图中，鼠标悬停或用键盘移到某一格时，会显示该模型官方文档点名的具体版本，例如 Terminal-Bench 4.0。",
+    "body": "前沿热度榜逐一复核了窗口内20个模型的官方模型卡、系统卡与发布页，并修正了评测记录。此前未纳入的 Claude Fable 5.2 系统卡为该模型新增计入17项评测，包括 SWE-bench Pro、DeepSWE v1.1、Terminal-Bench 4.0、CursorBench 4.0、ProgramBench、OfficeQA、GDPval-AA v2.1、ARC-AGI-3、HealthBench Professional 与 PhysicianBench；系统卡中属于 Claude Mythos 5.2 的成绩不计入 Fable 5.2。OpenAI 的 GPT-6.1 Terra、GPT-6.1 Sol、GPT-6 Sol 与 GPT-6 Astra 发布页也已完整核对：版本标注细化为 OSWorld 2.0 离线集、OSWorld 2.1 离线集、Terminal-Bench-Science 0.1、AutomationBench v1.0.6、FrontierCode v1.1 Main 与 Extended、带工具的 Humanity’s Last Exam、FrontierMath Tier 4 (v2) 与 OpenAI MRCR v2 8-needle。LongCat-2.5、腾讯 Hy4 与 Qwen3.8-Omni-Flash 的官方发布页同样已核对：Hy4 发布页的附录评测表为该模型新增计入14项公开评测，包括 DeepSWE v1.1、SWE-Marathon v1.1、ProgramBench、Terminal-Bench 4.0、FrontierCode 2.0、APEX-Agents v1.1、Agents’ Last Exam v1.1、AutomationBench v1.0.6、带工具的 Humanity’s Last Exam 全集、Terminal-Bench-Science 0.1、PostTrainBench v1.2、OSWorld 2.1、MMMU-Pro 与 ZeroBench，表中新出现的内部评测不计入；LongCat-2.5 的 SkillsBench 标注为 v1.1；Qwen3.8-Omni-Flash 发布页中的 RecreationBench 只出现在脚注里，没有任何模型的成绩，因此不再计入。同一厂商发布页或后续报告中的对比列按既有规则计入：OpenAI 发布页为 GPT-6.1 Sol 补入 Agents’ Last Exam、MMMU-Pro 与 Terminal-Bench，为 GPT-6 Astra 补入 MMMU-Pro 与 GDP.pdf，为 GPT-6 Sol 补入 GDP.pdf 与 Terminal-Bench-Science；Fable 5.2 的系统卡与发布页为 Claude Opus 5.5 补入 Remote Labor Index、De novo binder design、CVE Rediscovery 与 RoboDojo Sim；Gemini 4 Carbon 模型卡为 Gemini 4 Argon 补入 SWE-sweep、Vending-Bench 2、Blueprint-Bench 2、ExploitGym 与 SEC-Bench Pro。其他厂商的对比列不计入。另一方面，只把题目用作思维链可控性测试题库的 GPQA、Humanity’s Last Exam 与 MMLU-Pro，仅顺带提到的 SWE-bench，以及参考文献条目，不再计入；Kimi K3.1 Pro 报告的 Frontier Finance 此前被误归入 Vals Finance Agent，现已改归其本身的评测族；Claude 系统卡中覆盖42种语言的 GMMLU 从 MMMLU 中分出，单列为 Global MMLU。复核后，计入的模型与评测组合由573个增至604个。前二十名中，Terminal-Bench 由第3名升至第1名，AutomationBench-AA 与 DeepSWE 分别降至第2和第3名，Agents’ Last Exam 由第5名升至第4名，HealthBench 由第6名升至第5名，Humanity’s Last Exam 由第4名降至第6名，Terminal-Bench-Science 由第11名升至第8名，ExploitGym 由第10名升至第9名，ProgramBench 由第12名升至第10名，Chartography 由第8名降至第11名，ExploitBench 由第9名降至第12名，Indirect Prompt Injection 由第21名升至第16名，SEC-Bench 由第22名升至第17名；GPQA 由第16名降至第34名，FrontierSWE 由第20名降至第22名。前二十名以外，MMLU-Pro 由第25名降至第187名，SWE-bench 由第26名降至第44名，MMMU-Pro 由第54名升至第24名，GDP.pdf 由第35名升至第23名，FrontierCode 由第24名升至第21名，APEX-Agents 由第47名升至第29名，Global MMLU 由第88名升至第56名，PhysicianBench 由第201名升至第94名。在热力图中，鼠标悬停或用键盘移到某一格时，会显示该模型官方文档点名的具体版本，例如 Terminal-Bench 4.0。",
     "sources": [
       {
         "url": "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
@@ -32,6 +32,18 @@
       },
       {
         "url": "https://openai.com/index/gpt-6-astra/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://hy.tencent.ai/research/hy4",
+        "accessed": "2026-11-16"
+      },
+      {
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
         "accessed": "2026-11-16"
       },
       {

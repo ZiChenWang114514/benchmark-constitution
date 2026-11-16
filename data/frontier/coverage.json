@@ -3,10 +3,10 @@
   "status": "provisional_lower_bound",
   "latest20_verified_globally": false,
   "models": 20,
-  "benchmark_families": 233,
-  "mentions": 2684,
-  "counted_mentions": 2426,
-  "excluded_mentions": 258,
+  "benchmark_families": 232,
+  "mentions": 2699,
+  "counted_mentions": 2439,
+  "excluded_mentions": 260,
   "source_failures": [
     {
       "url": "https://openai.com/index/introducing-gpt-6-cyber/",

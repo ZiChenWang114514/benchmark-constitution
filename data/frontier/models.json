@@ -941,6 +941,10 @@
     "release_date": "2026-09-18",
     "sources": [
       {
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
         "url": "https://www.alibabacloud.com/en/news/product/qwen38-omni-flash-officially-released-o86",
         "accessed": "2026-11-07"
       },
@@ -958,7 +962,7 @@
       }
     ],
     "benchmarks": [],
-    "note": "官方发布新闻9月18日；英语完整转载博客日期9月20日。原qwen.ai页面只有JS空壳。",
+    "note": "官方博客署日期2026/09/18，与官方发布新闻一致；英语转载博客日期9月20日。",
     "facts": [
       {
         "key": "modalities",
@@ -982,6 +986,48 @@
         "key": "pricing_usd_per_mtok",
         "value": "International: $0.15 input / $0.016 cache hit / $0.47 output; Global: $0.113 / $0.014 / $0.382",
         "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "date_printed",
+        "value": "2026/09/18",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "modalities",
+        "value": "input: text, image, audio, video",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "context_window",
+        "value": "1M",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "api_model_id",
+        "value": "qwen3.8-omni-flash; qwen3.8-omni-flash-realtime",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $0.15 / output $0.47 (text tokens, international)",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_hour",
+        "value": "audio input <$0.01; video with audio input $0.20 (720p, 1 fps)",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "availability",
+        "value": "Qianwen AI Platform API and Realtime API",
+        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
         "accessed": "2026-11-16"
       }
     ]
@@ -1182,7 +1228,7 @@
     "sources": [
       {
         "url": "https://longcat.ai/blog/longcat-2.5/",
-        "accessed": "2026-11-09"
+        "accessed": "2026-11-16"
       },
       {
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
@@ -1218,6 +1264,36 @@
         "key": "eval_max_seq_length",
         "value": "512K in Claude Code harness for TB/ProgramBench/NL2Repo",
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "date_printed",
+        "value": "2026-11-1",
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "parameters",
+        "value": "1.6T total, ~48B activated per token",
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "modalities",
+        "value": "native multimodal (visual signals as multi-level discrete tokens)",
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "inference",
+        "value": "W4A4 on domestic AI accelerators (<80 GB memory each)",
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "availability",
+        "value": "API access; GitHub listed as coming soon",
+        "url": "https://longcat.ai/blog/longcat-2.5/",
         "accessed": "2026-11-16"
       }
     ]
@@ -1310,7 +1386,7 @@
       },
       {
         "url": "https://hy.tencent.ai/research/hy4",
-        "accessed": "2026-11-10"
+        "accessed": "2026-11-16"
       }
     ],
     "benchmarks": [],
@@ -1344,6 +1420,36 @@
         "key": "availability",
         "value": "TokenHub, WorkBuddy, CodeBuddy, Yuanbao and others",
         "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "date_printed",
+        "value": "November 4, 2026",
+        "url": "https://hy.tencent.ai/research/hy4",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "input $0.834 / cached input $0.042 / output $2.501",
+        "url": "https://hy.tencent.ai/research/hy4",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "availability",
+        "value": "Tencent Cloud, OpenRouter; CodeBuddy, WorkBuddy, Yuanbao, ima",
+        "url": "https://hy.tencent.ai/research/hy4",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "modalities",
+        "value": "text and vision (vision added in Hy4; computer use via CLI and GUI)",
+        "url": "https://hy.tencent.ai/research/hy4",
+        "accessed": "2026-11-16"
+      },
+      {
+        "key": "weights",
+        "value": "open-sourcing of model weights planned; system card to follow with weights release",
+        "url": "https://hy.tencent.ai/research/hy4",
         "accessed": "2026-11-16"
       }
     ]
