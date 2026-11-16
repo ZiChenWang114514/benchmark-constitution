@@ -3,9 +3,9 @@
   "status": "provisional_lower_bound",
   "latest20_verified_globally": false,
   "models": 20,
-  "benchmark_families": 231,
-  "mentions": 2596,
-  "counted_mentions": 2416,
+  "benchmark_families": 234,
+  "mentions": 2618,
+  "counted_mentions": 2438,
   "excluded_mentions": 180,
   "source_failures": [
     {

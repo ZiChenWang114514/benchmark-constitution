@@ -568,6 +568,6 @@
       }
     ],
     "benchmarks": [],
-    "note": "官方产品页与模型服务上架说明署日期2026-11-16，当日在中国内地与国际范围正式上线，与11月11日的限时预览版 qwen4-max-preview 分列，属于独立正式版本，不与窗口内已有的 Qwen3.8-Omni-Flash 合并。查阅的官方产品说明介绍输入输出模态、工具调用与100万 token 上下文等能力，但未给出厂商评测成绩表，因此本次暂不计入厂商自报评测提及。"
+    "note": "官方产品页与模型服务上架说明署日期2026-11-16，当日在中国内地与国际范围正式上线，与11月11日的限时预览版 qwen4-max-preview 分列，属于独立正式版本，不与窗口内已有的 Qwen3.8-Omni-Flash 合并。同日发布的官方博客附有综合评测成绩图，与 Qwen3.8-Max-0902、Opus 5.5、GPT-6.1 Sol、GPT-6 Astra 和 Kimi K3.1 对比16项评测，例如 DeepSWE v1.1 得分75.7、Terminal-Bench 4.0 得分48.5、Humanity’s Last Exam 得分51.7、BioMysteryBench 得分85.0；正文另报告 Work360 得分52.69（Qwen3.8-Max 为47.74），以及 Last Secure Code Bench 函数级功能与安全双通过率31.8%（Qwen3.8-Max 为22.0%）。官方公布的规格：100万 token 上下文，原生视觉能力，骨干参数2.4万亿、每个 token 激活710亿，另有3280亿 N-gram 嵌入参数。API 价格低于 Qwen3.8-Max，博客未列逐 token 价格表；在 Work360 评测中平均每任务成本由4.43美元降至1.67美元，token 用量在 Work360 上约减少24%（Xhigh）与35%（High），在 Terminal-Bench 4.0 上约减少48%与49%。可通过 QwenCloud（Token Plan 与 API）、QwenWork、Qoder 与 QwenStudio 使用。"
   }
 ]
