@@ -32,6 +32,14 @@ const { groups } = sectionGroups(records);
 const tags = allTags(records);
 const chips = [{ id: 'all', label: t(locale, 'home.all_sections') }, ...groups.map((group) => ({ id: sectionSlug(group.id), label: sectionLabel(group.id, locale) }))];
 const [lead, ...rest] = news;
+const tiles = rest.slice(0, 6);
+const wire = rest.slice(6);
+const latest = news.slice(0, 4);
+function shortDate(value: string): string {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || '');
+  if (!match) return value || '';
+  return locale === 'zh' ? `${Number(match[2])}月${Number(match[3])}日` : `${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(match[2]) - 1]} ${Number(match[3])}`;
+}
 const catalog = records.map((record) => record.index);
 const trending = loadTrending();
 const hotList = trendingViews();
@@ -99,6 +107,7 @@ const heroBars = heatTop.map((row) => ({
   rank: row.rank,
   name: displayName(row.name),
   value: row.count,
+  move: row.rank_change ?? null,
   href: known.has(row.benchmark_id) ? page(`benchmarks/${row.benchmark_id}`) : page('frontier-heat'),
   models: (row.models ?? []).map((id) => {
     const theme = resolveModelTheme(id);
@@ -118,63 +127,87 @@ const impactBars = impactTop.map((row) => ({
   active="home"
 >
   <div class="wrap">
-    <header class="masthead">
-      <h1>Benchmark Constitution</h1>
-      <p class="lede">{t(locale, 'home.lede')}</p>
-      <p class="meta-row">
-        {stamp && <span>{ui.snapshot} {stamp}</span>}
-        <span>{t(locale, 'home.records', { n: records.length })}</span>
-        <a href={page('constitution')}>{t(locale, 'home.constitution_link')}</a>
-      </p>
-      <div class="stat-row">
-        {stats.map((item) => (
-          <a class="stat" href={item.href}>
-            <span>{item.label}</span>
-            <strong>{nf.format(item.value)}</strong>
-            <svg class="stat-viz" viewBox="0 0 120 22" aria-hidden="true">
-              {item.href === '#browse' && groups.map((group, groupIndex) => {
-                const previous = groups.slice(0, groupIndex).reduce((sum, entry) => sum + entry.items.length, 0);
-                const width = records.length ? (group.items.length / records.length) * 120 : 0;
-                return <rect x={(previous / Math.max(records.length, 1)) * 120} y="6" width={Math.max(width - 1, 1)} height="10" rx="2" fill={tone(group.id)} />;
-              })}
-              {item.href === '#news' && newsDates.length > 0 && newsDates.map((count, point) => {
-                const peak = Math.max(...newsDates);
-                const slot = 120 / newsDates.length;
-                const bar = Math.max(4, (count / peak) * 16);
-                return <rect x={point * slot + 2} y={20 - bar} width={Math.max(3, slot - 4)} height={bar} rx="1.5" fill="var(--amber, #c4962a)" />;
-              })}
-              {item.href === page('impact') && (
-                <>
-                  <rect x="0" y="7" width="120" height="8" rx="4" fill="var(--amber-tint, #efe4cc)" />
-                  <rect x="0" y="7" width={Math.max(8, rankedShare * 120)} height="8" rx="4" fill="var(--amber, #e8b423)" />
-                </>
-              )}
-              {item.href === page('frontier-heat') && heatTop.slice(0, 5).map((row, bar) => (
-                <rect x={bar * 24} y={20 - (row.count / heatMax) * 16} width="16" height={(row.count / heatMax) * 16} rx="2" fill="var(--amber, #c4962a)" />
+    <header class="masthead hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{t(locale, 'home.eyebrow')}</p>
+        <h1>Benchmark Constitution</h1>
+        <p class="lede">{t(locale, 'home.lede')}</p>
+        <p class="meta-row">
+          {stamp && <span>{ui.snapshot} {stamp}</span>}
+          <span>{t(locale, 'home.records', { n: records.length })}</span>
+          <a href={page('constitution')}>{t(locale, 'home.constitution_link')}</a>
+        </p>
+        <div class="stat-row hero-stats">
+          {stats.map((item) => (
+            <a class="stat" href={item.href}>
+              <span>{item.label}</span>
+              <strong>{nf.format(item.value)}</strong>
+              <svg class="stat-viz" viewBox="0 0 120 22" preserveAspectRatio="none" aria-hidden="true">
+                {item.href === '#browse' && groups.map((group, groupIndex) => {
+                  const previous = groups.slice(0, groupIndex).reduce((sum, entry) => sum + entry.items.length, 0);
+                  const width = records.length ? (group.items.length / records.length) * 120 : 0;
+                  return <rect x={(previous / Math.max(records.length, 1)) * 120} y="7" width={Math.max(width - 1, 1)} height="8" rx="1.5" fill={tone(group.id)} />;
+                })}
+                {item.href === '#news' && newsDates.length > 0 && newsDates.map((count, point) => {
+                  const peak = Math.max(...newsDates);
+                  const slot = 120 / newsDates.length;
+                  const bar = Math.max(3, (count / peak) * 18);
+                  return <rect x={point * slot + 1} y={21 - bar} width={Math.max(2, slot - 2)} height={bar} rx="1" fill="var(--amber, #c4962a)" />;
+                })}
+                {item.href === page('impact') && (
+                  <>
+                    <rect x="0" y="8" width="120" height="6" rx="3" fill="var(--amber-tint, #efe4cc)" />
+                    <rect x="0" y="8" width={Math.max(6, rankedShare * 120)} height="6" rx="3" fill="var(--amber, #e8b423)" />
+                  </>
+                )}
+                {item.href === page('frontier-heat') && heatTop.map((row, bar) => (
+                  <rect x={bar * 12 + 1} y={21 - (row.count / heatMax) * 18} width="9" height={(row.count / heatMax) * 18} rx="1.5" fill="var(--amber, #c4962a)" opacity={1 - bar * 0.06} />
+                ))}
+              </svg>
+            </a>
+          ))}
+        </div>
+        {latest.length > 0 && (
+          <div class="hero-wire" aria-labelledby="hero-latest">
+            <p class="hero-wire-head" id="hero-latest">{t(locale, 'home.latest')}</p>
+            <ul>
+              {latest.map((item) => (
+                <li>
+                  <time datetime={item.observed_date}>{shortDate(item.observed_date)}</time>
+                  <a href={page(`news/${item.id}`)}>{item.title}</a>
+                </li>
               ))}
-            </svg>
-          </a>
-        ))}
+            </ul>
+          </div>
+        )}
       </div>
       {heroBars.length > 0 && (
-        <figure class="hero-chart">
-          <figcaption>{t(locale, 'home.hero_chart')}</figcaption>
+        <figure class="hero-chart hero-board">
+          <figcaption>
+            <span class="hero-board-title">
+              <strong>{t(locale, 'home.hero_chart')}</strong>
+              <a href={page('frontier-heat')}>{t(locale, 'home.board_link')}</a>
+            </span>
+            <span class="hero-board-note">{t(locale, 'home.hero_chart_note', { n: heat?.models.length ?? 20 })}</span>
+          </figcaption>
           <BarChart items={heroBars} strong zero />
         </figure>
       )}
     </header>
-    {domainItems.length > 0 && (
-      <DomainChart items={domainItems} title={t(locale, 'home.domain_chart')} aria={t(locale, 'home.domain_chart_aria')} segment={t(locale, 'home.segment')} />
-    )}
-    {(impactBars.length > 0) && (
-      <section class="section chart-band" aria-labelledby="home-charts">
-        <header class="flag">
-          <h2 id="home-charts">{t(locale, 'home.charts')}</h2>
-          <p><a href={page('impact')}>{t(locale, 'nav.impact')}</a></p>
-        </header>
-        <BarChart items={impactBars} strong />
-      </section>
-    )}
+    <div class="data-band">
+      {domainItems.length > 0 && (
+        <DomainChart items={domainItems} title={t(locale, 'home.domain_chart')} aria={t(locale, 'home.domain_chart_aria')} segment={t(locale, 'home.segment')} />
+      )}
+      {(impactBars.length > 0) && (
+        <section class="chart-band" aria-labelledby="home-charts">
+          <header class="flag">
+            <h2 id="home-charts">{t(locale, 'home.charts')}</h2>
+            <p><a href={page('impact')}>{t(locale, 'nav.impact')}</a></p>
+          </header>
+          <BarChart items={impactBars} strong />
+        </section>
+      )}
+    </div>
 
     <section class="section reveal" id="news" aria-labelledby="news-title">
       <header class="flag">
@@ -205,7 +238,7 @@ const impactBars = impactTop.map((row) => ({
               </div>
             </article>
           )}
-          {rest.map((item) => (
+          {tiles.map((item) => (
             <article class="news-tile is-linked" data-news>
               <a class="card-cover" href={newsHref(item)}><span class="sr-only">{item.title}</span></a>
               <div class="news-visual" set:html={coverFor(item)} />
@@ -225,6 +258,30 @@ const impactBars = impactTop.map((row) => ({
               </div>
             </article>
           ))}
+        </div>
+      )}
+      {wire.length > 0 && (
+        <div class="news-wire">
+          <header class="news-wire-head">
+            <h3>{t(locale, 'home.wire')}</h3>
+            <p>{t(locale, 'home.wire_note', { n: wire.length })}</p>
+          </header>
+          <ol class="wire-list">
+            {wire.map((item) => {
+              const hits = benchmarksMentioned(`${item.title}\n${item.body}`, catalog);
+              const hit = hits[0];
+              return (
+                <li style={hit ? sectionStyle(hit.section) : undefined}>
+                  <time datetime={item.observed_date}>{shortDate(item.observed_date)}</time>
+                  <span class="wire-main">
+                    {item.type && <span class="wire-kind">{item.type}</span>}
+                    <a href={page(`news/${item.id}`)}>{item.title}</a>
+                  </span>
+                  {hit && <a class="domain-tag wire-tag" href={page(`benchmarks/${hit.id}`)}>{hit.name}</a>}
+                </li>
+              );
+            })}
+          </ol>
         </div>
       )}
     </section>
