@@ -22,6 +22,7 @@ if (!item) throw new Error(`missing news item ${id}`);
 const records = loadRecords();
 const catalog = records.map((record) => record.index);
 const related = benchmarksMentioned(`${item.title}\n${item.body}`, catalog);
+const more = news.filter((entry) => entry.id !== item.id).slice(0, 8);
 
 function hostOf(url: string): string {
   try {
@@ -64,6 +65,24 @@ function hostOf(url: string): string {
             </a>
           ))}
         </div>
+      </section>
+    )}
+    {more.length > 0 && (
+      <section class="section news-wire" aria-labelledby="news-more">
+        <header class="news-wire-head">
+          <h2 id="news-more">{t(locale, 'news.more')}</h2>
+        </header>
+        <ol class="wire-list">
+          {more.map((entry) => (
+            <li>
+              <time datetime={entry.observed_date}>{entry.observed_date}</time>
+              <span class="wire-main">
+                {entry.type && <span class="wire-kind">{entry.type}</span>}
+                <a href={page(`news/${entry.id}`)}>{entry.title}</a>
+              </span>
+            </li>
+          ))}
+        </ol>
       </section>
     )}
   </div>

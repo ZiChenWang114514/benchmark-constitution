@@ -10,6 +10,7 @@ export type HeatModel = {
   release_date?: string | null;
   sources?: { url?: string; accessed?: string }[];
   benchmarks?: string[];
+  facts?: { key: string; value: string; url?: string; accessed?: string }[];
 };
 
 export type HeatRank = {
