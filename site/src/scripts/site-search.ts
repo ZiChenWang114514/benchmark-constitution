@@ -111,7 +111,11 @@ function initHeaderSearch(root: HTMLElement) {
       toggle.setAttribute('aria-expanded', value ? 'true' : 'false');
       const close = toggle.dataset.close || '';
       const openLabel = toggle.dataset.open || '';
-      if (close && openLabel) toggle.textContent = value ? close : openLabel;
+      if (close && openLabel) {
+        const label = value ? close : openLabel;
+        toggle.setAttribute('aria-label', label);
+        toggle.setAttribute('title', label);
+      }
     }
     if (value) input.focus();
   };

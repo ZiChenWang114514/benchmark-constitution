@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/polish.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { currentLocale, hrefForLocale, t } from '../i18n';
@@ -51,7 +52,7 @@ const zhHref = new URL(hrefForLocale(Astro.url.pathname, '', 'zh'), Astro.site).
     <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     {readingProgress && <div class="scroll-progress" aria-hidden="true"></div>}

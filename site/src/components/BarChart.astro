@@ -2,6 +2,7 @@
 import { currentLocale } from '../i18n';
 import type { ColorTheme } from '../lib/models';
 import BrandLogo from './BrandLogo.astro';
+import { rankArrow } from '../lib/boards';
 
 interface ModelBead {
   name: string;
@@ -13,6 +14,8 @@ interface Item {
   value: number;
   href: string;
   models?: ModelBead[];
+  /** Rank movement since the previous snapshot: positive means the item rose. */
+  move?: number | 'new' | null;
 }
 interface Props {
   items: Item[];
@@ -80,7 +83,14 @@ function label(value: number): string {
         <a class="bar-row" href={item.href}>
           <span class:list={['rank-no', item.rank <= 3 && `podium-${item.rank}`]}>{item.rank}</span>
           <span class="bar-label-wrap">
-            <span class="bar-name">{item.name}</span>
+            <span class="bar-name-line">
+              <span class="bar-name">{item.name}</span>
+              {item.move !== undefined && (() => {
+                const arrow = rankArrow(item.move);
+                const kind = item.move === 'new' ? 'new' : typeof item.move === 'number' && item.move > 0 ? 'up' : typeof item.move === 'number' && item.move < 0 ? 'down' : 'same';
+                return <span class:list={['move-chip', `move-chip-${kind}`]} title={arrow.label}><span class="sr-only">{arrow.label}</span><span aria-hidden="true">{arrow.mark}</span></span>;
+              })()}
+            </span>
             {item.models && item.models.length > 0 && (
               <span class="model-beads" aria-hidden="true">
                 {item.models.slice(0, 12).map((model) => (

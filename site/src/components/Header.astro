@@ -37,7 +37,12 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
         aria-controls="site-q"
         data-open={t(locale, 'search.open')}
         data-close={t(locale, 'search.close')}
-      >{t(locale, 'search.open')}</button>
+        aria-label={t(locale, 'search.open')}
+        title={t(locale, 'search.open')}
+      >
+        <svg class="icon icon-search" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.9" /><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+        <svg class="icon icon-close" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+      </button>
       <form class="site-search-form" action={searchAction} method="get">
         <label class="sr-only" for="site-q">{t(locale, 'search.label')}</label>
         <input
@@ -87,7 +92,12 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
       aria-controls="site-nav"
       data-open={ui.menu}
       data-close={ui.close}
-    >{ui.menu}</button>
+      aria-label={ui.menu}
+      title={ui.menu}
+    >
+      <svg class="icon icon-menu" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+      <svg class="icon icon-close" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+    </button>
     <nav class="nav" id="site-nav" aria-label={t(locale, 'nav.aria')}>
       {items.map((item) => (
         <a href={item.href} aria-current={active === item.id ? 'page' : undefined}>{item.label}</a>
@@ -147,7 +157,8 @@ const searchIndex = `${searchAction.replace(/\/$/, '')}.json`;
       header.classList.toggle('nav-open', open);
       document.body.classList.toggle('nav-lock', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.textContent = open ? closeLabel : openLabel;
+      toggle.setAttribute('aria-label', open ? closeLabel : openLabel);
+      toggle.setAttribute('title', open ? closeLabel : openLabel);
       for (const el of outside) el.inert = open;
       if (open) {
         lastTrigger = document.activeElement instanceof HTMLElement ? document.activeElement : toggle;
