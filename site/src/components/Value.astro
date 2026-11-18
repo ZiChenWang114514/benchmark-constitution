@@ -1,8 +1,10 @@
 ---
 import Value from './Value.astro';
 import BrandLogo from './BrandLogo.astro';
+import NameText from './NameText.astro';
 import { currentLocale, t } from '../i18n';
 import { badgeClass, dateStamp, formatBytes, isEmail, isStatusWord, labelFor, publicText, safeUrl } from '../lib/format';
+import { breakHtml } from '../lib/name-text';
 import { resolveModelTheme } from '../lib/models';
 
 interface Props {
@@ -91,6 +93,13 @@ const isChangelog =
   scalarRows.every((row) => typeof row.date === 'string' && typeof row.change === 'string') &&
   scalarRows.every((row) => Object.keys(row).every((key) => changelogKeys.has(key)));
 const cols = scalarRows && !isChangelog ? columnsOf(scalarRows).filter((key) => key !== 'timezone') : [];
+const DATE_KEYS = new Set(['evaluation_date', 'result_date', 'snapshot_date', 'source_date', 'model_date', 'model_release', 'release_date', 'observed_on', 'last_modified', 'date', 'submitted_at', 'run_started_at', 'evaluation_started_at', 'started_at', 'paper_first_submission', 'collected_at']);
+const NAME_KEYS = new Set(['model', 'model_version', 'name', 'benchmark', 'benchmark_version']);
+function numericColumn(column: string): boolean {
+  if (!scalarRows) return false;
+  const values = scalarRows.map((row) => row[column]).filter((item) => item != null && item !== '');
+  return values.length > 0 && values.every((item) => typeof item === 'number');
+}
 const emailList = !!strings && strings.length > 0 && strings.every((item) => isEmail(item));
 const pillList = !!strings && !emailList && strings.length < 6 && strings.every((item) => item.length <= 16);
 const uid = typeof value === 'string' && /^[a-f0-9]{64}$/i.test(value) ? Math.random().toString(36).slice(2, 10) : '';
@@ -131,10 +140,12 @@ function tight(cell: unknown): boolean {
 ) : modelTheme && typeof value === 'string' ? (
   <span class="model-pill model-pill-table" style={modelTheme.style} data-model-family={modelTheme.family}>
     <BrandLogo theme={modelTheme} size={14} />
-    <span class="model-name">{publicText(value)}</span>
+    <NameText name={publicText(value)} class="model-name" mode="compact" />
   </span>
+) : typeof value === 'string' && NAME_KEYS.has(name || '') ? (
+  <NameText name={publicText(value)} />
 ) : typeof value === 'string' ? (
-  <span>{publicText(value)}</span>
+  <span set:html={breakHtml(publicText(value))} />
 ) : typeof value === 'number' && (name === 'pdf_bytes' || name === 'bytes') ? (
   <span class="num">{formatBytes(value)}</span>
 ) : typeof value === 'number' ? (
@@ -171,7 +182,7 @@ function tight(cell: unknown): boolean {
     <table class="results">
       <thead>
         <tr>
-          {cols.map((column) => <th scope="col">{labelFor(column)}</th>)}
+          {cols.map((column) => <th scope="col" class:list={[{ num: numericColumn(column), 'date-col': DATE_KEYS.has(column) }]}>{labelFor(column)}</th>)}
         </tr>
       </thead>
       <tbody>
@@ -182,7 +193,7 @@ function tight(cell: unknown): boolean {
           return (
             <tr class={rowModel ? 'model-row' : undefined} style={rowModel?.style}>
               {cols.map((column) => (
-                <td class:list={[{ tight: tight(row[column]), num: typeof row[column] === 'number' }]}>
+                <td class:list={[{ tight: tight(row[column]), num: typeof row[column] === 'number', 'date-cell': DATE_KEYS.has(column), 'cell-url': typeof row[column] === 'string' && !!safeUrl(row[column]) }]}>
                   <Value value={row[column]} name={column} />
                 </td>
               ))}

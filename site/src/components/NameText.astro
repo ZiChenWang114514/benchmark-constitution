@@ -1,0 +1,18 @@
+---
+import { breakHtml, plainName, splitName, type NameMode } from '../lib/name-text';
+
+interface Props {
+  name: string;
+  href?: string;
+  mode?: NameMode;
+  class?: string;
+}
+const { name, href, mode = 'table' } = Astro.props;
+const extra = Astro.props.class ?? '';
+const parts = splitName(name, mode);
+const Tag = href ? 'a' : 'span';
+---
+<Tag class:list={['name-block', extra]} href={href} data-full={plainName(name)}>
+  <span class="name-primary" set:html={breakHtml(parts.primary)} />
+  {parts.secondary && <span class="name-secondary" set:html={breakHtml(parts.secondary)} />}
+</Tag>

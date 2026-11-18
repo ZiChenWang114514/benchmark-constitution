@@ -9,6 +9,7 @@ import { loadIndex, loadRecords } from '../../lib/data';
 import { dateStamp, displayName, page, sectionPalette, sectionStyle, textValue } from '../../lib/format';
 import { isQualityPrior, profileHtml, profileParts, scoreTier } from '../../lib/profile';
 import BarChart from '../../components/BarChart.astro';
+import NameText from '../../components/NameText.astro';
 import ScatterChart from '../../components/ScatterChart.astro';
 
 const locale = currentLocale();
@@ -218,18 +219,18 @@ function widthOf(value: number): number {
                 <th class="rank-col" scope="col" aria-sort="ascending"><button type="button" class="sort-btn" data-sort="rank" data-dir="asc">{ui.colRank}</button></th>
                 <th class="name-col" scope="col"><button type="button" class="sort-btn" data-sort="name">{ui.colName}</button></th>
                 <th scope="col"><button type="button" class="sort-btn" data-sort="domain">{ui.colDomain}</button></th>
-                <th scope="col"><button type="button" class="sort-btn" data-sort="score">{ui.colScore}</button></th>
-                <th scope="col"><button type="button" class="sort-btn" data-sort="community">{ui.evCommunity}</button></th>
-                <th scope="col"><button type="button" class="sort-btn" data-sort="github">{ui.evGithub}</button></th>
+                <th class="num-col" scope="col"><button type="button" class="sort-btn" data-sort="score">{ui.colScore}</button></th>
+                <th class="num-col" scope="col"><button type="button" class="sort-btn" data-sort="community">{ui.evCommunity}</button></th>
+                <th class="num-col" scope="col"><button type="button" class="sort-btn" data-sort="github">{ui.evGithub}</button></th>
               </tr>
             </thead>
             {ranked.map((row) => (
               <tbody class:list={['entry', row.rank != null && row.rank <= 3 && `podium-${row.rank}`]} data-tier="ranked" data-rank={row.rank ?? ''} data-name={row.name} data-domain={row.domain} data-score={row.score ?? ''} data-quality={row.quality ?? ''} data-community={row.community ?? ''} data-headroom={row.saturation ?? ''} data-github={row.github ?? ''} data-search={row.search}>
                 <tr>
                   <td class="rank-cell" data-label={ui.colRank}>{row.rank == null ? <span class="na" title={ui.unranked}>—</span> : <span class="rank-no">{row.rank}</span>}</td>
-                  <td class="name-cell" data-label={ui.colName}>{row.href ? <a href={row.href}>{row.name}</a> : row.name}</td>
+                  <td class="name-cell" data-label={ui.colName}><NameText name={row.name} href={row.href || undefined} /></td>
                   <td data-label={ui.colDomain}>{row.domain ? <span class="domain-tag" style={row.domainStyle}>{row.domain}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
-                  <td class="score-cell" data-label={ui.colScore}>
+                  <td class="score-cell num" data-label={ui.colScore}>
                     {row.score == null || row.parts.length === 0 ? (
                       row.score == null ? <span class="na" title={ui.nullTip}>—</span> : (
                         <span class="score-wrap">
@@ -258,8 +259,8 @@ function widthOf(value: number): number {
                       </div>
                     )}
                   </td>
-                  <td data-label={ui.evCommunity}>{row.community == null ? <span class="na" title={ui.nullTip}>—</span> : <span class="mini"><b class="num">{row.community.toFixed(1)}</b><span class="track" aria-hidden="true"><span class:list={[scoreTier(row.community), 'grow']} style={`width:${widthOf(row.community)}%`}></span></span></span>}</td>
-                  <td data-label={ui.evGithub}>{row.github == null ? <span class="na" title={ui.nullTip}>—</span> : <span class="mini"><b class="num">{row.github.toFixed(1)}</b><span class="track" aria-hidden="true"><span class:list={[scoreTier(row.github), 'grow']} style={`width:${widthOf(row.github)}%`}></span></span></span>}</td>
+                  <td class="num" data-label={ui.evCommunity}>{row.community == null ? <span class="na" title={ui.nullTip}>—</span> : <span class="mini"><b class="num">{row.community.toFixed(1)}</b><span class="track" aria-hidden="true"><span class:list={[scoreTier(row.community), 'grow']} style={`width:${widthOf(row.community)}%`}></span></span></span>}</td>
+                  <td class="num" data-label={ui.evGithub}>{row.github == null ? <span class="na" title={ui.nullTip}>—</span> : <span class="mini"><b class="num">{row.github.toFixed(1)}</b><span class="track" aria-hidden="true"><span class:list={[scoreTier(row.github), 'grow']} style={`width:${widthOf(row.github)}%`}></span></span></span>}</td>
                 </tr>
                 {row.parts.length > 0 && row.score != null && (
                   <tr class="detail" id={`bd-${row.id}`}>

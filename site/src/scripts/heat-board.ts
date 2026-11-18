@@ -117,6 +117,8 @@ function mountMatrix(): void {
   };
 
   const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  let fromPointer = false;
+  table.addEventListener('pointerdown', () => { fromPointer = true; });
   const hoverCell = (event: Event) => {
     if (!fine) return;
     const cell = (event.target as HTMLElement | null)?.closest<HTMLButtonElement>('.heat-cell');
@@ -131,9 +133,14 @@ function mountMatrix(): void {
     if (fine) hide();
   });
   table.addEventListener('focusin', (event) => {
-    if (!fine) return;
     const cell = (event.target as HTMLElement | null)?.closest<HTMLButtonElement>('.heat-cell');
-    if (cell) show(cell);
+    if (!cell) return;
+    if (!fine && fromPointer) {
+      fromPointer = false;
+      return;
+    }
+    fromPointer = false;
+    show(cell);
   });
   table.addEventListener('click', (event) => {
     if (fine) return;

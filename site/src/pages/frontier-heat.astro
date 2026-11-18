@@ -10,6 +10,7 @@ import { asset, dateStamp, displayName, page, safeUrl, sectionStyle } from '../l
 import { resolveModelTheme, resolveOrgTheme } from '../lib/models';
 import BarChart from '../components/BarChart.astro';
 import BrandLogo from '../components/BrandLogo.astro';
+import NameText from '../components/NameText.astro';
 
 const locale = currentLocale();
 const ui = visualCopy(locale);
@@ -170,7 +171,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
           {topRow && (
             <div class="stat stat-wide">
               <span>{t(locale, 'heat.stat_top')}</span>
-              <strong class="stat-name">{displayName(topRow.name)}</strong>
+              <strong class="stat-name"><NameText name={displayName(topRow.name)} /></strong>
               <span class="stat-meter" aria-hidden="true"><span style={`width:${Math.round((topRow.count / Math.max(heat.models.length, 1)) * 100)}%`}></span></span>
               <small class="stat-sub">{t(locale, 'heat.stat_top_of', { n: topRow.count, total: heat.models.length })}</small>
             </div>
@@ -202,10 +203,10 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                   <tr>
                     <th class="bench" scope="col"></th>
                     {matrixModels.map((model, index) => (
-                      <th scope="col" data-col={index} style={model.theme.style} title={model.name}>
-                        <span class="vhead">
+                      <th scope="col" data-col={index} style={model.theme.style}>
+                        <span class="col-head">
                           <BrandLogo theme={model.theme} size={16} eager />
-                          <span class="vname">{model.name}</span>
+                          <NameText name={model.name} mode="compact" />
                         </span>
                       </th>
                     ))}
@@ -216,7 +217,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                   {matrixRows.map((row, rowIndex) => (
                     <tr>
                       <th class="bench" scope="row">
-                        {row.href ? <a href={row.href}>{row.name}</a> : row.name}
+                        <NameText name={row.name} href={row.href || undefined} mode="compact" />
                       </th>
                       {row.cells.map((on, index) => {
                         const model = matrixModels[index];
@@ -280,11 +281,11 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
             <table class="board heat-models-table">
               <thead>
                 <tr>
-                  <th scope="col">{ui.models}</th>
+                  <th class="name-col" scope="col">{ui.models}</th>
                   <th scope="col">{ui.organization}</th>
-                  <th scope="col">{ui.release}</th>
-                  <th scope="col">{t(locale, 'heat.col.named')}</th>
-                  <th scope="col">{t(locale, 'heat.col.context')}</th>
+                  <th class="date-col" scope="col">{ui.release}</th>
+                  <th class="num-col" scope="col">{t(locale, 'heat.col.named')}</th>
+                  <th class="num-col" scope="col">{t(locale, 'heat.col.context')}</th>
                   <th scope="col">{ui.source}</th>
                 </tr>
               </thead>
@@ -298,7 +299,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                       <td class="name-cell" data-label={ui.models}>
                         <span class="model-pill" style={mTheme.style} data-model-family={mTheme.family}>
                           <BrandLogo theme={mTheme} size={15} />
-                          <span class="model-name">{model.name}</span>
+                          <NameText name={model.name} class="model-name" mode="compact" />
                         </span>
                       </td>
                       <td data-label={ui.organization}>
@@ -311,14 +312,14 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                           <span class="na" title={ui.nullTip}>—</span>
                         )}
                       </td>
-                      <td data-label={ui.release}>{dateStamp(model.release_date) || <span class="na" title={ui.nullTip}>—</span>}</td>
-                      <td data-label={t(locale, 'heat.col.named')}>
+                      <td class="date-cell" data-label={ui.release}>{dateStamp(model.release_date) || <span class="na" title={ui.nullTip}>—</span>}</td>
+                      <td class="num" data-label={t(locale, 'heat.col.named')}>
                         <span class="score-wrap" title={String(model.benchmarks?.length ?? 0)}>
                           <span class="score-num">{model.benchmarks?.length ?? 0}</span>
                           <span class="track" aria-hidden="true"><span style={`width:${Math.round(((model.benchmarks?.length ?? 0) / namedMax) * 100)}%`}></span></span>
                         </span>
                       </td>
-                      <td data-label={t(locale, 'heat.col.context')}>
+                      <td class="num" data-label={t(locale, 'heat.col.context')}>
                         {(() => {
                           const tokens = contextTokens(model);
                           return tokens == null
@@ -356,11 +357,11 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
               <thead>
                 <tr>
                   <th class="rank-col" scope="col">{ui.colRank}</th>
-                  {showMovement && <th scope="col">{t(locale, 'heat.col.change')}</th>}
                   <th class="name-col" scope="col">{ui.colName}</th>
+                  {showMovement && <th scope="col">{t(locale, 'heat.col.change')}</th>}
                   <th scope="col">{ui.colDomain}</th>
-                  <th scope="col">{ui.reported}</th>
-                  <th scope="col">{ui.share}</th>
+                  <th class="num-col" scope="col">{ui.reported}</th>
+                  <th class="num-col" scope="col">{ui.share}</th>
                   {showSpark && <th scope="col" title={t(locale, 'heat.form_note', { n: formHistory.length })}>{t(locale, 'heat.col.form')}</th>}
                   <th scope="col">{ui.reportedModels}</th>
                 </tr>
@@ -375,17 +376,17 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                   return (
                     <tr class={podium} data-heat-row data-domain={sectionSlug(row.domain)} data-search={search}>
                       <td class="rank-cell" data-label={ui.colRank}><span class="rank-no">{row.rank}</span></td>
+                      <td class="name-cell" data-label={ui.colName}>
+                        <NameText name={displayName(row.name)} href={known.has(row.benchmark_id) ? page('benchmarks/' + row.benchmark_id) : undefined} />
+                      </td>
                       {showMovement && (
                         <td class="chg-cell" data-label={t(locale, 'heat.col.change')}>
                           {row.rank_change === 'new' ? <span class="move-chip move-chip-new" title={arrow.label}>{t(locale, 'rank.new_mark')}</span> : <span class:list={['move-chip', typeof row.rank_change === 'number' && row.rank_change > 0 ? 'move-chip-up' : typeof row.rank_change === 'number' && row.rank_change < 0 ? 'move-chip-down' : 'move-chip-same']} title={arrow.label}>{arrow.mark}</span>}
                         </td>
                       )}
-                      <td class="name-cell" data-label={ui.colName}>
-                        {known.has(row.benchmark_id) ? <a href={page('benchmarks/' + row.benchmark_id)}>{displayName(row.name)}</a> : displayName(row.name)}
-                      </td>
                       <td class="domain-cell" data-label={ui.colDomain}>{row.domain ? <span class="domain-tag" style={sectionStyle(row.domain)}>{sectionLabel(row.domain, locale)}</span> : <span class="na" title={ui.nullTip}>—</span>}</td>
                       <td class="num count-cell" data-label={ui.reported}>{row.count}</td>
-                      <td class="share-cell" data-label={ui.share}>
+                      <td class="num share-cell" data-label={ui.share}>
                         <span class="score-wrap" title={sharePct + '%'}>
                           <span class="score-num">{sharePct}%</span>
                           <span class="track" aria-hidden="true"><span class="grow" style={'width:' + sharePct + '%'}></span></span>
@@ -423,7 +424,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                               return (
                                 <li class="model-pill model-pill-sm" style={mTheme.style} data-model-family={mTheme.family}>
                                   <BrandLogo theme={mTheme} size={14} />
-                                  <span class="model-name">{label}</span>
+                                  <NameText name={label} class="model-name" mode="compact" />
                                 </li>
                               );
                             })}
@@ -454,7 +455,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                   <li>
                     <Tag class="mover-card" href={href || undefined}>
                       <span class="mover-place">{index + 1}</span>
-                      <span class="mover-name">{displayName(row.name)}</span>
+                      <NameText name={displayName(row.name)} class="mover-name" />
                       <span class="move-chip move-chip-up" title={t(locale, 'rank.up', { n: row.delta ?? 0 })}>{t(locale, 'rank.up_mark', { n: row.delta ?? 0 })}</span>
                       {now && <span class="mover-now">{ui.colRank} {now.rank}</span>}
                     </Tag>

@@ -1,3 +1,4 @@
+import { nameBlockHtml } from '../lib/name-text';
 import { profileHtml, scoreTier, type ProfileGroupId } from '../lib/profile';
 
 type Part = { id: ProfileGroupId; value: number };
@@ -28,10 +29,10 @@ function esc(value: unknown): string {
 }
 
 function metric(value: number | null, label: string, prior = false, priorTip = '', nullTip = ''): string {
-  if (prior) return `<td data-label="${esc(label)}"><span class="na prior" title="${esc(priorTip)}">—</span></td>`;
-  if (value == null || Number.isNaN(value)) return `<td data-label="${esc(label)}"><span class="na" title="${esc(nullTip)}">—</span></td>`;
+  if (prior) return `<td class="num" data-label="${esc(label)}"><span class="na prior" title="${esc(priorTip)}">—</span></td>`;
+  if (value == null || Number.isNaN(value)) return `<td class="num" data-label="${esc(label)}"><span class="na" title="${esc(nullTip)}">—</span></td>`;
   const width = Math.max(0, Math.min(100, value));
-  return `<td data-label="${esc(label)}"><span class="mini"><b class="num">${value.toFixed(1)}</b><span class="track" aria-hidden="true"><span class="${scoreTier(value)} grow" style="width:${width}%"></span></span></span></td>`;
+  return `<td class="num" data-label="${esc(label)}"><span class="mini"><b class="num">${value.toFixed(1)}</b><span class="track" aria-hidden="true"><span class="${scoreTier(value)} grow" style="width:${width}%"></span></span></span></td>`;
 }
 
 export function mountImpactBoard(): void {
@@ -91,7 +92,7 @@ export function mountImpactBoard(): void {
     const rank = row.rank == null
       ? `<span class="na" title="${esc(unranked)}">—</span>`
       : `<span class="rank-no">${row.rank}</span>`;
-    const name = row.href ? `<a href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name);
+    const name = nameBlockHtml(row.name, row.href);
     const domainText = row.domain
       ? `<span class="domain-tag"${row.domainStyle ? ` style="${esc(row.domainStyle)}"` : ''}>${esc(row.domain)}</span>`
       : `<span class="na" title="${esc(nullTip)}">—</span>`;
@@ -111,7 +112,7 @@ export function mountImpactBoard(): void {
         <td class="rank-cell" data-label="${esc(label.rank)}">${rank}</td>
         <td class="name-cell" data-label="${esc(label.name)}">${name}</td>
         <td data-label="${esc(label.domain)}">${domainText}</td>
-        <td class="score-cell" data-label="${esc(label.score)}"><div class="tip-host">${score}${tip}</div></td>
+        <td class="score-cell num" data-label="${esc(label.score)}"><div class="tip-host">${score}${tip}</div></td>
         ${metric(row.community, label.community, false, '', nullTip)}
         ${metric(row.github, label.github, false, '', nullTip)}
       </tr>

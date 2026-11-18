@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { Marked } from 'marked';
-import { currentLocale } from '../i18n';
+import { currentLocale, t } from '../i18n';
 import { repoRoot } from './data';
 
 export type TocItem = { id: string; text: string };
@@ -50,7 +50,7 @@ export function loadConstitution(): { title: string; html: string; toc: TocItem[
   if (typeof parsed !== 'string') {
     throw new Error('宪法 Markdown 没有同步渲染');
   }
-  return { title, html: parsed, toc };
+  return { title, html: containTables(parsed), toc };
 }
 
 export function renderMarkdownDocument(markdown: string): string {
@@ -65,5 +65,12 @@ export function renderMarkdownDocument(markdown: string): string {
   });
   const parsed = marked.parse(markdown, { async: false });
   if (typeof parsed !== 'string') throw new Error('Markdown 没有同步渲染');
-  return parsed;
+  return containTables(parsed);
+}
+
+function containTables(html: string): string {
+  const label = escapeHtml(t(currentLocale(), 'table.scroll_label'));
+  return html
+    .replaceAll('<table>', `<div class="table-wrap prose-table" role="region" tabindex="0" aria-label="${label}"><table>`)
+    .replaceAll('</table>', '</table></div>');
 }

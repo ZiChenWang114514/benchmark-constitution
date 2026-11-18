@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import BrandLogo from '../../components/BrandLogo.astro';
 import Chapter from '../../components/Chapter.astro';
+import NameText from '../../components/NameText.astro';
 import Timeline from '../../components/Timeline.astro';
 import { currentLocale, t } from '../../i18n';
 import { impactById, loadHeat, loadImpact } from '../../lib/boards';
@@ -232,7 +233,7 @@ const timeline = [
                 <ol class="peer-bars">
                   {peerShown.map((row) => (
                     <li class:list={[row.id === record.index.id && 'is-self']}>
-                      <span>{displayName(row.name)}</span>
+                      <NameText name={displayName(row.name)} />
                       <span class="track" aria-hidden="true"><span style={`width:${((row.score ?? 0) / peerMax) * 100}%`}></span></span>
                       <b class="num">{(row.score ?? 0).toFixed(1)}</b>
                     </li>
@@ -249,12 +250,12 @@ const timeline = [
                     <p class="gauge-note">{t(locale, 'detail.heat_count', { n: heatRow.count, total: heatFile.models.length })}</p>
                     <span class="track heat-share" aria-hidden="true"><span style={`width:${Math.round((heatRow.count / Math.max(heatFile.models.length, 1)) * 100)}%`}></span></span>
                     <ul class="heat-names">
-                      {(heatRow.models ?? []).slice(0, 6).map((modelId) => {
+                      {(heatRow.models ?? []).map((modelId) => {
                         const mTheme = resolveModelTheme(modelId);
                         return (
                           <li class="model-pill model-pill-sm" style={mTheme.style} data-model-family={mTheme.family}>
                             <BrandLogo theme={mTheme} size={14} />
-                            <span class="model-name">{heatNames.get(modelId) ?? modelId}</span>
+                            <NameText name={heatNames.get(modelId) ?? modelId} class="model-name" mode="compact" />
                           </li>
                         );
                       })}

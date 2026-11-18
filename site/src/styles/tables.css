@@ -1,0 +1,414 @@
+/*
+ * Scoreboard tables: two-line names, tabular figures, scroll inside the table.
+ * Loaded after polish.css.
+ */
+
+.name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.08rem;
+  min-width: 0;
+  max-width: 22rem;
+  color: inherit;
+  font-weight: 450;
+  line-height: 1.3;
+  text-align: start;
+  text-decoration: none;
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+.name-primary,
+.name-secondary {
+  display: block;
+  min-width: 0;
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+.name-primary {
+  color: var(--ink);
+  font-weight: 640;
+  font-size: 0.92rem;
+}
+.name-secondary {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 450;
+  line-height: 1.35;
+}
+a.name-block:hover,
+a.name-block:focus-visible { text-decoration: none; }
+a.name-block:hover .name-primary,
+a.name-block:focus-visible .name-primary {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+.name-reveal {
+  position: fixed;
+  z-index: 35;
+  max-width: min(22rem, calc(100vw - 1rem));
+  padding: 0.45rem 0.65rem;
+  background: var(--paper-2);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  box-shadow: var(--elev);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+  pointer-events: none;
+}
+
+.board-scroll,
+.table-wrap {
+  max-width: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scroll-padding: 0;
+}
+.board-scroll {
+  max-height: min(72vh, 44rem);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper-2);
+}
+.table-wrap { max-height: min(72vh, 40rem); }
+.matrix-scroll { max-height: min(72vh, 44rem); }
+
+.board,
+.results,
+.matrix,
+.prose-table table {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.board thead th,
+.results thead th,
+.matrix thead th,
+.prose-table th {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+:lang(en) .board thead th,
+:lang(en) .results thead th,
+:lang(en) .prose-table th {
+  font-size: 0.72rem;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+:lang(zh-Hans) .board thead th,
+:lang(zh-Hans) .results thead th,
+:lang(zh-Hans) .matrix thead th {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+.sort-btn {
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  min-height: 2.25rem;
+  white-space: nowrap;
+}
+@media (pointer: coarse) {
+  .sort-btn { min-height: 44px; }
+}
+
+@media (min-width: 861px) {
+  .board-scroll > .board,
+  .table-wrap > .board,
+  .table-wrap > table.results {
+    width: max-content;
+    min-width: 100%;
+  }
+  .board thead th,
+  .results thead th {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: var(--head);
+    box-shadow: inset 0 -1px 0 var(--line-strong);
+  }
+  .board th.rank-col,
+  .board td.rank-cell {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    width: 3.4rem;
+    min-width: 3.4rem;
+    max-width: 3.4rem;
+    text-align: center;
+    box-shadow: inset -1px 0 0 var(--line);
+  }
+  .board:has(th.rank-col) th.name-col,
+  .board:has(th.rank-col) td.name-cell {
+    position: sticky;
+    left: 3.4rem;
+    z-index: 2;
+  }
+  .board th.name-col,
+  .board td.name-cell {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    min-width: 12rem;
+    max-width: 20rem;
+    width: 16rem;
+    box-shadow: inset -1px 0 0 var(--line-strong);
+  }
+  .board thead th.rank-col,
+  .board thead th.name-col {
+    z-index: 6;
+    background: var(--head);
+  }
+  .board tr.podium-1 td.rank-cell { box-shadow: inset 3px 0 0 var(--gold-edge), inset -1px 0 0 var(--line); }
+  .board tr.podium-2 td.rank-cell { box-shadow: inset 3px 0 0 var(--silver-edge), inset -1px 0 0 var(--line); }
+  .board tr.podium-3 td.rank-cell { box-shadow: inset 3px 0 0 var(--bronze-edge), inset -1px 0 0 var(--line); }
+  .board td.num,
+  .board th.num-col,
+  .results td.num,
+  .results th.num {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  .board th.num-col .sort-btn,
+  .results th.num .sort-btn { text-align: right; }
+  .board td.num .score-wrap,
+  .board td.num .ctx-cell,
+  .board td.num .mini { justify-content: flex-end; margin-left: auto; }
+  .board td.date-cell,
+  .board th.date-col,
+  .results td.date-cell,
+  .results th.date-col {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  .results thead th:first-child,
+  .results tbody td:first-child:not(.provenance) {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    min-width: 8.5rem;
+    max-width: 18rem;
+    background: var(--paper-2);
+    box-shadow: inset -1px 0 0 var(--line-strong);
+  }
+  .results tbody tr.model-row td:first-child {
+    box-shadow: inset 3px 0 0 light-dark(var(--m-light, var(--accent)), var(--m-dark, var(--amber))), inset -1px 0 0 var(--line-strong);
+  }
+  .results thead th:first-child {
+    z-index: 6;
+    background: var(--head);
+  }
+  .results tbody tr:nth-child(even) td:first-child:not(.provenance) { background: var(--row-alt); }
+}
+
+.table-wrap .results thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--head);
+  box-shadow: inset 0 -1px 0 var(--line-strong);
+}
+.matrix thead th { z-index: 3; }
+.matrix .bench { z-index: 2; }
+.matrix thead .bench,
+.matrix tfoot .bench { z-index: 5; }
+.matrix .row-total { z-index: 2; }
+.matrix thead .row-total,
+.matrix tfoot .row-total { z-index: 5; }
+.matrix .bench {
+  min-width: 11rem;
+  max-width: 15rem;
+  width: 12.5rem;
+  background: var(--paper-2);
+  box-shadow: inset -1px 0 0 var(--line-strong);
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+.matrix .bench a,
+.matrix .vname {
+  display: block;
+  max-width: none;
+  max-height: none;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  writing-mode: horizontal-tb;
+  transform: none;
+}
+.matrix thead th[data-col] {
+  min-width: 5.6rem;
+  max-width: 7.6rem;
+  width: 6.2rem;
+  white-space: normal;
+  text-align: center;
+}
+.matrix .col-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.28rem;
+  max-width: 7.2rem;
+  margin: 0 auto;
+}
+.matrix .col-head .name-block {
+  align-items: center;
+  max-width: 7.2rem;
+  text-align: center;
+}
+.matrix .col-head .name-primary {
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+.matrix .col-head .name-secondary {
+  font-size: 0.68rem;
+}
+.matrix .bench .name-block { max-width: 14rem; }
+.matrix .bench .name-primary { font-size: 0.8rem; }
+.matrix .row-total,
+.matrix .col-total,
+.matrix tfoot .bench {
+  white-space: nowrap;
+  word-break: keep-all;
+  writing-mode: horizontal-tb;
+  text-overflow: unset;
+  overflow: visible;
+}
+.matrix th.row-total,
+.matrix td.row-total { right: auto; }
+.matrix tbody td.row-total { position: static; background: var(--paper-2); }
+.matrix tbody tr:nth-child(even) td.row-total { background: var(--row-alt); }
+.matrix tr.is-hot td.row-total,
+.matrix tr.is-hot .bench { background: var(--row-hover); }
+.matrix thead .row-total,
+.matrix thead .bench,
+.matrix tfoot th,
+.matrix tfoot td { background: var(--head); }
+
+.bar-name,
+.stat-name,
+.mover-name {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+.bar-name-line { align-items: flex-start; }
+.bar-label-wrap .name-block { max-width: none; }
+.bar-label-wrap .name-primary { font-size: inherit; font-weight: 600; }
+.hero-board .bar-label-wrap,
+.heat-top-board .bar-label-wrap { align-items: flex-start; }
+.stat-name {
+  display: block;
+  font-size: clamp(1.15rem, 2vw, 1.5rem) !important;
+  line-height: 1.25;
+}
+.stat-name .name-primary { font-size: inherit; font-family: var(--serif); }
+.mover-name.name-block,
+.mover-card .name-block { max-width: none; overflow-wrap: break-word; word-break: keep-all; }
+
+.model-pill,
+.org-pill { align-items: center; height: auto; white-space: normal; }
+.model-pill .model-name,
+.model-pill .name-block { overflow-wrap: break-word; word-break: keep-all; line-break: strict; }
+.peer-bars li > :first-child { min-width: 0; }
+.peer-bars .name-block { max-width: none; }
+.peer-bars .name-primary { font-size: 0.82rem; }
+.model-pill .name-primary { color: inherit; font-size: inherit; font-weight: 600; }
+.model-pill .name-secondary { font-size: 0.72rem; }
+
+.results td,
+.results th,
+.board td,
+.prose-table td,
+.prose-table th {
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+.results td.cell-url,
+.results td.cell-url a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.prose, .doc-section { min-width: 0; max-width: 100%; }
+.prose a, .prose code { overflow-wrap: anywhere; word-break: break-word; }
+.prose-table {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.prose-table table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+}
+.prose-table th,
+.prose-table td {
+  min-width: 7.5rem;
+  max-width: 24rem;
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+.prose-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--head);
+}
+.prose-table td:nth-child(n + 2) { font-variant-numeric: tabular-nums lining-nums; }
+
+@media (max-width: 860px) {
+  .board-scroll {
+    max-height: none;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+  .table-wrap,
+  .prose-table {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .table-wrap:has(table.results) {
+    max-height: min(70vh, 36rem);
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+  }
+  .board th,
+  .board td { position: static; box-shadow: none; width: auto; max-width: none; }
+  .board td,
+  .name-block,
+  .mover-name { overflow-wrap: break-word; word-break: keep-all; }
+  .board .name-block { max-width: none; }
+  .board.heat-rank-table td.share-cell {
+    display: flex;
+    flex: 1 1 100%;
+    order: 6;
+    margin-left: 2.45rem;
+  }
+  .matrix .bench { min-width: 8.6rem; width: 8.6rem; max-width: 10.5rem; }
+  .matrix thead th[data-col] { min-width: 4.8rem; width: 5.2rem; }
+}
+
+@media (max-width: 390px) {
+  .wrap, .header-inner { width: min(var(--content), calc(100% - 1.25rem)); }
+}

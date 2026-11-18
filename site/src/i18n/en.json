@@ -635,6 +635,6 @@
   "heat.not_disclosed": "Not disclosed",
   "heat.row_total": "Models",
   "heat.col_total": "Total named",
-  "heat.legend_hover": "Hover or focus a cell to see the exact versions named",
+  "heat.legend_hover": "Hover, focus, or tap a cell to see the exact versions named",
   "news.more": "More news"
 }

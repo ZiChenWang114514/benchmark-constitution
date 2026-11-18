@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/polish.css';
+import '../styles/tables.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { currentLocale, hrefForLocale, t } from '../i18n';
@@ -62,6 +63,10 @@ const zhHref = new URL(hrefForLocale(Astro.url.pathname, '', 'zh'), Astro.site).
       <slot />
     </main>
     <Footer />
+    <script>
+      import { mountNameReveal } from '../scripts/name-reveal.ts';
+      mountNameReveal();
+    </script>
     <script is:inline>
       document.documentElement.classList.add('js');
       (function () {

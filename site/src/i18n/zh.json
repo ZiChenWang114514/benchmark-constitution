@@ -635,6 +635,6 @@
   "heat.not_disclosed": "未公开",
   "heat.row_total": "模型数",
   "heat.col_total": "点名总数",
-  "heat.legend_hover": "悬停或聚焦格子，可查看官方点名的具体版本",
+  "heat.legend_hover": "悬停、聚焦或点按格子，可查看官方点名的具体版本",
   "news.more": "更多动态"
 }

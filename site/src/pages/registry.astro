@@ -68,9 +68,9 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
               <tr>
                 <th class="name-col" scope="col">{t(locale, 'registry.col.name')}</th>
                 <th scope="col">{t(locale, 'registry.col.domain')}</th>
-                <th scope="col">{t(locale, 'registry.col.released')}</th>
-                <th scope="col">{t(locale, 'registry.col.citations')}</th>
-                <th scope="col">{t(locale, 'registry.col.stars')}</th>
+                <th class="date-col" scope="col">{t(locale, 'registry.col.released')}</th>
+                <th class="num-col" scope="col">{t(locale, 'registry.col.citations')}</th>
+                <th class="num-col" scope="col">{t(locale, 'registry.col.stars')}</th>
                 <th scope="col">{t(locale, 'registry.col.links')}</th>
               </tr>
             </thead>
@@ -84,6 +84,7 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
         </div>
         <script id="reg-data" type="application/json" set:html={JSON.stringify(payload).replaceAll('<', '\\u003c')}></script>
         <script>
+          import { nameBlockHtml } from '../lib/name-text';
           type Row = {
             id: string; name: string; aliases?: string[]; domain: string; domain_style?: string; description_zh: string;
             release_date: string; paper_url: string; github_url: string; hf_dataset: string;
@@ -133,6 +134,15 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
             } catch { return ''; }
             return '';
           }
+          function rawHref(url: string) {
+            if (!url) return '';
+            if (url.startsWith('/')) return url;
+            try {
+              const parsed = new URL(url);
+              if (parsed.protocol === 'http:' || parsed.protocol === 'https:') return parsed.href;
+            } catch { return ''; }
+            return '';
+          }
           function link(href: string, label: string) {
             const safe = safeHref(href);
             if (!safe) return '';
@@ -145,7 +155,7 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
             const slice = rows.slice(page * pageSize, page * pageSize + pageSize);
             if (body) {
               body.innerHTML = slice.map((item) => {
-                const name = item.archive ? `<a href="${safeHref(item.archive)}">${esc(item.name)}</a>` : esc(item.name);
+                const name = nameBlockHtml(item.name, rawHref(item.archive));
                 const hf = item.hf_dataset ? `https://huggingface.co/datasets/${item.hf_dataset}` : '';
                 const table = document.querySelector('#reg-table');
                 const paper = table?.getAttribute('data-paper') || '';
@@ -162,7 +172,7 @@ const domains = [...new Set(payload.map((item) => item.domain).filter(Boolean))]
                 const labelCitations = table?.getAttribute('data-citations') || '';
                 const labelStars = table?.getAttribute('data-stars') || '';
                 const labelLinks = table?.getAttribute('data-links') || '';
-                return `<tr><td class="name-cell" data-label="${esc(labelName)}">${name}</td><td data-label="${esc(labelDomain)}">${item.domain ? `<span class="domain-tag" style="${esc(item.domain_style || '')}">${esc(item.domain)}</span>` : dash}</td><td data-label="${esc(labelReleased)}">${esc(item.release_date || '') || dash}</td><td class="num" data-label="${esc(labelCitations)}">${item.citations ?? dash}</td><td class="num" data-label="${esc(labelStars)}">${item.stars ?? dash}</td><td data-label="${esc(labelLinks)}">${entry}</td></tr>`;
+                return `<tr><td class="name-cell" data-label="${esc(labelName)}">${name}</td><td data-label="${esc(labelDomain)}">${item.domain ? `<span class="domain-tag" style="${esc(item.domain_style || '')}">${esc(item.domain)}</span>` : dash}</td><td class="date-cell" data-label="${esc(labelReleased)}">${esc(item.release_date || '') || dash}</td><td class="num" data-label="${esc(labelCitations)}">${item.citations ?? dash}</td><td class="num" data-label="${esc(labelStars)}">${item.stars ?? dash}</td><td data-label="${esc(labelLinks)}">${entry}</td></tr>`;
               }).join('');
             }
             if (count) count.textContent = `${rows.length} ${document.querySelector('#reg-table')?.getAttribute('data-count-unit') || ''}`.trim();

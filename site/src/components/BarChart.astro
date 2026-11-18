@@ -2,6 +2,7 @@
 import { currentLocale } from '../i18n';
 import type { ColorTheme } from '../lib/models';
 import BrandLogo from './BrandLogo.astro';
+import NameText from './NameText.astro';
 import { rankArrow } from '../lib/boards';
 
 interface ModelBead {
@@ -84,7 +85,7 @@ function label(value: number): string {
           <span class:list={['rank-no', item.rank <= 3 && `podium-${item.rank}`]}>{item.rank}</span>
           <span class="bar-label-wrap">
             <span class="bar-name-line">
-              <span class="bar-name">{item.name}</span>
+              <NameText name={item.name} class="bar-name" />
               {item.move !== undefined && (() => {
                 const arrow = rankArrow(item.move);
                 const kind = item.move === 'new' ? 'new' : typeof item.move === 'number' && item.move > 0 ? 'up' : typeof item.move === 'number' && item.move < 0 ? 'down' : 'same';
