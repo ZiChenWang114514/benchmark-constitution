@@ -229,9 +229,9 @@ a.name-block:focus-visible .name-primary {
 .matrix thead .row-total,
 .matrix tfoot .row-total { z-index: 5; }
 .matrix .bench {
-  min-width: 11rem;
-  max-width: 15rem;
-  width: 12.5rem;
+  min-width: 13rem;
+  max-width: 18rem;
+  width: 15rem;
   background: var(--paper-2);
   box-shadow: inset -1px 0 0 var(--line-strong);
   word-break: keep-all;
@@ -250,18 +250,21 @@ a.name-block:focus-visible .name-primary {
   transform: none;
 }
 .matrix thead th[data-col] {
-  min-width: 5.6rem;
+  min-width: 6.35rem;
   max-width: 7.6rem;
-  width: 6.2rem;
+  width: 6.6rem;
   white-space: normal;
   text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
 }
 .matrix .col-head {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.28rem;
-  max-width: 7.2rem;
+  gap: 0.35rem;
+  max-width: 8rem;
   margin: 0 auto;
 }
 .matrix .col-head .name-block {
@@ -270,14 +273,18 @@ a.name-block:focus-visible .name-primary {
   text-align: center;
 }
 .matrix .col-head .name-primary {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
+  font-weight: 640;
   line-height: 1.25;
+  letter-spacing: 0;
+  color: var(--ink);
 }
 .matrix .col-head .name-secondary {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
 }
-.matrix .bench .name-block { max-width: 14rem; }
-.matrix .bench .name-primary { font-size: 0.8rem; }
+.matrix .bench .name-block { max-width: 16rem; }
+.matrix .bench .name-primary { font-size: 0.92rem; font-weight: 600; letter-spacing: 0; }
 .matrix .row-total,
 .matrix .col-total,
 .matrix tfoot .bench {
@@ -405,10 +412,143 @@ a.name-block:focus-visible .name-primary {
     order: 6;
     margin-left: 2.45rem;
   }
-  .matrix .bench { min-width: 8.6rem; width: 8.6rem; max-width: 10.5rem; }
-  .matrix thead th[data-col] { min-width: 4.8rem; width: 5.2rem; }
+  .matrix .bench { min-width: 10rem; width: 10.4rem; max-width: 12rem; }
+  .matrix.show-all thead th[data-col] { min-width: 4.8rem; width: 5.1rem; max-width: 5.6rem; }
+  .matrix:not(.show-all) thead th[data-col] { min-width: 2.3rem; width: 2.4rem; max-width: 2.55rem; }
+  .matrix:not(.show-all) .col-head .name-block {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
 }
 
 @media (max-width: 390px) {
   .wrap, .header-inner { width: min(var(--content), calc(100% - 1.25rem)); }
+}
+
+/* Quieter heatmap: a presence mark, not a logo tile. */
+.matrix td, .matrix th {
+  border-bottom-color: color-mix(in oklab, var(--line) 85%, transparent);
+}
+.matrix .heat-cell,
+.matrix .heat-cell.on {
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 0;
+  border-radius: 2px;
+  padding: 0;
+  background: color-mix(in oklab, var(--line) 55%, var(--paper-2));
+  box-shadow: none;
+  color: transparent;
+  transform: none;
+}
+.matrix .heat-cell.on {
+  background: color-mix(in oklab, var(--m-color, var(--amber)) 78%, var(--paper-2));
+}
+.matrix-scroll tfoot th,
+.matrix-scroll tfoot td { position: static; bottom: auto; }
+.matrix .heat-cell.on::after,
+.matrix .heat-cell.on[style*="--m-mask"]::after {
+  content: none !important;
+  display: none !important;
+}
+.matrix tr.is-hot .heat-cell { background: color-mix(in oklab, var(--line) 80%, var(--paper-2)); }
+.matrix tr.is-hot .heat-cell.on,
+.matrix td.is-hot .heat-cell.on,
+.matrix tr.is-hot td.is-hot .heat-cell.on {
+  background: color-mix(in oklab, var(--m-color, var(--amber)) 82%, var(--paper));
+  outline: none;
+  border: 0;
+}
+.matrix td.row-total span {
+  background: none;
+  min-width: 1.4rem;
+  height: auto;
+  border-radius: 0;
+  color: var(--ink);
+  font-weight: 650;
+}
+.matrix .col-total { color: var(--ink-soft); font-weight: 600; }
+.swatch.on { background: color-mix(in oklab, var(--amber) 72%, var(--paper-2)); }
+.swatch.off { background: color-mix(in oklab, var(--line) 55%, var(--paper-2)); }
+
+.matrix-picker { display: none; }
+.matrix-picker-note {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.matrix-picker-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  overflow-x: auto;
+  overscroll-behavior: contain;
+  padding-bottom: 0.2rem;
+}
+.matrix-pick span { white-space: nowrap; }
+.matrix-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 36px;
+  padding: 0.15rem 0.6rem 0.15rem 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+.matrix-pick[aria-pressed="true"] {
+  border-color: color-mix(in oklab, var(--m-color, var(--accent)) 45%, var(--line-strong));
+  background: color-mix(in oklab, var(--m-color, var(--amber)) 10%, var(--paper-2));
+  color: var(--ink);
+  font-weight: 600;
+}
+.matrix-pick-all[aria-pressed="true"] {
+  border-color: var(--line-strong);
+  background: var(--head);
+}
+
+.heat-rank-table .model-beads { display: none; }
+.board .domain-tag {
+  background: transparent;
+  border-color: color-mix(in oklab, var(--d-color) 32%, var(--line));
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.heat-models-table .model-pill,
+.heat-models-table .org-pill {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+.heat-models-table .org-pill { color: var(--ink-soft); font-weight: 500; }
+.board tbody tr:hover td { background: color-mix(in oklab, var(--amber) 8%, var(--row)); }
+
+@media (max-width: 860px) {
+  .matrix-picker { display: block; }
+  .matrix [data-col].is-col-hidden { display: none; }
+  .board tr,
+  .board tbody.entry {
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  .board.heat-rank-table tr { padding: 0.65rem 0.75rem; }
+  .board.heat-rank-table td.name-cell {
+    flex: 1 1 100%;
+    order: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .board.heat-rank-table td.count-cell { margin-left: 2.45rem; }
 }

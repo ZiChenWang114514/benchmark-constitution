@@ -13,17 +13,19 @@ function wordKey(word: string): string {
   return word.toLowerCase().replace(/[^a-z]/g, '');
 }
 
-function hyphenSplit(name: string): NameParts | null {
+function headerSplit(name: string): NameParts | null {
   if (name.includes(' ') || name.length < 18) return null;
   const parts = name.split('-').filter(Boolean);
   if (parts.length < 3) return null;
-  const mid = Math.ceil(parts.length / 2);
-  return { primary: parts.slice(0, mid).join('-'), secondary: parts.slice(mid).join('-') };
+  return { primary: parts[0] ?? name, secondary: parts.slice(1).join(' ') };
 }
 
 function splitPhrase(name: string, mode: NameMode): NameParts {
-  const limit = mode === 'compact' ? 22 : 36;
-  if (!name.includes(' ')) return hyphenSplit(name) ?? { primary: name, secondary: '' };
+  const limit = mode === 'compact' ? 28 : 48;
+  if (!name.includes(' ')) {
+    if (mode === 'compact') return headerSplit(name) ?? { primary: name, secondary: '' };
+    return { primary: name, secondary: '' };
+  }
   const words = name.split(' ');
   const last = words[words.length - 1] ?? '';
   if (name.length > 18 && words.length >= 2 && /^v?\d+(?:\.\d+)*$/i.test(last)) {
@@ -88,12 +90,15 @@ export function escapeHtml(value: string): string {
   });
 }
 
-/** Soft breaks at hyphens, slashes, and camel boundaries. CJK runs stay intact. */
+/** Soft breaks at long hyphens and punctuation. Proper names and CJK runs stay intact. */
 export function breakHtml(value: string): string {
-  return escapeHtml(value)
-    .replace(/([-_/·・、，])/g, '$1<wbr>')
-    .replace(/([a-z\d])([A-Z])/g, '$1<wbr>$2')
-    .replace(/([A-Za-z])(\d)/g, '$1<wbr>$2');
+  let text = escapeHtml(value);
+  let previous = '';
+  while (text !== previous) {
+    previous = text;
+    text = text.replace(/([^-\s<]{4,})-([^-\s<]{4,})/, '$1-<wbr>$2');
+  }
+  return text.replace(/([/·・、，])/g, '$1<wbr>');
 }
 
 export function nameBlockHtml(name: string, href = '', mode: NameMode = 'table'): string {

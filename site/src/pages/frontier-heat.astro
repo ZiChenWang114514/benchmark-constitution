@@ -195,6 +195,18 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
               <span class="legend-hint">{t(locale, 'heat.legend_hover')}</span>
             </p>
             <p class="index-note">{t(locale, 'heat.matrix_scroll')} {t(locale, 'heat.matrix_models_hint')}</p>
+            <div class="matrix-picker" id="matrix-picker">
+              <p class="matrix-picker-note">{t(locale, 'heat.matrix_pick_note')}</p>
+              <div class="matrix-picker-row" role="group" aria-label={t(locale, 'heat.matrix_pick')}>
+                {matrixModels.map((model, index) => (
+                  <button type="button" class="matrix-pick" data-col={index} style={model.theme.style} aria-pressed={index < 4 ? 'true' : 'false'}>
+                    <BrandLogo theme={model.theme} size={14} />
+                    <span>{model.name}</span>
+                  </button>
+                ))}
+                <button type="button" class="matrix-pick matrix-pick-all" data-all aria-pressed="false">{t(locale, 'heat.matrix_all')}</button>
+              </div>
+            </div>
             <p class="sr-only">{t(locale, 'heat.matrix_keys')}</p>
             <div class="matrix-scroll" role="region" tabindex="0" aria-label={t(locale, 'heat.matrix_aria')}>
               <table class="matrix" id="heat-matrix" data-versions-title={t(locale, 'heat.tip_versions')} data-no-version={t(locale, 'heat.tip_no_version')}>
@@ -205,7 +217,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                     {matrixModels.map((model, index) => (
                       <th scope="col" data-col={index} style={model.theme.style}>
                         <span class="col-head">
-                          <BrandLogo theme={model.theme} size={16} eager />
+                          <BrandLogo theme={model.theme} size={18} eager />
                           <NameText name={model.name} mode="compact" />
                         </span>
                       </th>
@@ -217,7 +229,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                   {matrixRows.map((row, rowIndex) => (
                     <tr>
                       <th class="bench" scope="row">
-                        <NameText name={row.name} href={row.href || undefined} mode="compact" />
+                        <NameText name={row.name} href={row.href || undefined} />
                       </th>
                       {row.cells.map((on, index) => {
                         const model = matrixModels[index];
@@ -228,9 +240,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                         const aria = versions.length
                           ? t(locale, 'heat.cell_versions', { model: modelLabel, benchmark: row.name, versions: versions.join(locale === 'zh' ? '、' : ', ') })
                           : label;
-                        const cellStyle = theme
-                          ? `${theme.style}${theme.cellMask ? `;--m-mask:url("${asset(`logos/${theme.cellMask}`)}")` : ''}`
-                          : undefined;
+                        const cellStyle = theme?.style;
                         return (
                           <td data-col={index} class={on ? 'is-on' : 'is-off'} style={theme?.style}>
                             <button
@@ -299,7 +309,7 @@ const matrixRows = (heat?.ranking ?? []).filter((row) => row.count >= matrixMin)
                       <td class="name-cell" data-label={ui.models}>
                         <span class="model-pill" style={mTheme.style} data-model-family={mTheme.family}>
                           <BrandLogo theme={mTheme} size={15} />
-                          <NameText name={model.name} class="model-name" mode="compact" />
+                          <NameText name={model.name} class="model-name" />
                         </span>
                       </td>
                       <td data-label={ui.organization}>

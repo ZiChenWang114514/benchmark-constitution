@@ -10,9 +10,12 @@ function mountMatrix(): void {
   if (current < 0) current = 0;
   let shownAt = 0;
 
+  const hidden = (cell: HTMLButtonElement) => cell.closest('td')?.classList.contains('is-col-hidden') === true;
+  const shownCells = () => cells.filter((cell) => !hidden(cell));
   const columns = () => {
     const first = table.querySelector('tbody tr');
-    return first ? first.querySelectorAll<HTMLButtonElement>('.heat-cell').length : 0;
+    if (!first) return 0;
+    return [...first.querySelectorAll<HTMLButtonElement>('.heat-cell')].filter((cell) => !hidden(cell)).length;
   };
 
   const clear = () => {
@@ -106,11 +109,9 @@ function mountMatrix(): void {
     place(cell);
   };
 
-  const move = (next: number) => {
-    if (next < 0 || next >= cells.length) return;
+  const focusCell = (cell: HTMLButtonElement) => {
     cells[current]?.setAttribute('tabindex', '-1');
-    current = next;
-    const cell = cells[current];
+    current = cells.indexOf(cell);
     cell.setAttribute('tabindex', '0');
     cell.focus();
     show(cell);
@@ -154,30 +155,80 @@ function mountMatrix(): void {
     const cell = (event.target as HTMLElement | null)?.closest<HTMLButtonElement>('.heat-cell');
     if (!cell) return;
     const width = columns();
-    const index = cells.indexOf(cell);
+    const shown = shownCells();
+    const index = shown.indexOf(cell);
     if (index < 0 || !width) return;
-    let next = index;
-    if (event.key === 'ArrowRight') next = index + 1;
-    else if (event.key === 'ArrowLeft') next = index - 1;
-    else if (event.key === 'ArrowDown') next = index + width;
-    else if (event.key === 'ArrowUp') next = index - width;
-    else if (event.key === 'Home') next = index - (index % width);
-    else if (event.key === 'End') next = index - (index % width) + width - 1;
+    const col = index % width;
+    const row = Math.floor(index / width);
+    let nextCol = col;
+    let nextRow = row;
+    if (event.key === 'ArrowRight') nextCol = col + 1;
+    else if (event.key === 'ArrowLeft') nextCol = col - 1;
+    else if (event.key === 'ArrowDown') nextRow = row + 1;
+    else if (event.key === 'ArrowUp') nextRow = row - 1;
+    else if (event.key === 'Home') nextCol = 0;
+    else if (event.key === 'End') nextCol = width - 1;
     else if (event.key === 'Escape') {
       hide();
       return;
     } else return;
     event.preventDefault();
-    move(Math.max(0, Math.min(cells.length - 1, next)));
+    if (nextCol < 0 || nextCol >= width || nextRow < 0) return;
+    const next = shown[nextRow * width + nextCol];
+    if (next) focusCell(next);
+  });
+  mountMatrixPicker(table, () => {
+    const shown = shownCells();
+    if (!shown.length) return;
+    if (hidden(cells[current] ?? shown[0])) focusCell(shown[0]);
   });
   const scroller = table.closest('.matrix-scroll');
-  scroller?.addEventListener('scroll', () => {
+  const hideAfterScroll = () => {
     if (performance.now() - shownAt < 180) return;
     hide();
-  }, { passive: true });
+  };
+  scroller?.addEventListener('scroll', hideAfterScroll, { passive: true });
+  window.addEventListener('scroll', hideAfterScroll, { passive: true });
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') hide();
   });
+}
+
+function mountMatrixPicker(table: HTMLTableElement, onChange: () => void): void {
+  const picker = document.querySelector<HTMLElement>('#matrix-picker');
+  if (!picker) return;
+  const buttons = [...picker.querySelectorAll<HTMLButtonElement>('button[data-col]')];
+  const allButton = picker.querySelector<HTMLButtonElement>('button[data-all]');
+  const narrow = () => window.matchMedia('(max-width: 860px)').matches;
+
+  const apply = () => {
+    const showAll = !narrow() || table.classList.contains('show-all');
+    const selected = new Set(buttons.filter((button) => button.getAttribute('aria-pressed') === 'true').map((button) => button.dataset.col));
+    table.querySelectorAll<HTMLElement>('[data-col]').forEach((node) => {
+      const on = showAll || selected.has(node.dataset.col);
+      node.classList.toggle('is-col-hidden', !on);
+    });
+    onChange();
+  };
+
+  for (const button of buttons) {
+    button.addEventListener('click', () => {
+      table.classList.remove('show-all');
+      allButton?.setAttribute('aria-pressed', 'false');
+      const pressed = button.getAttribute('aria-pressed') === 'true';
+      button.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+      if (!buttons.some((item) => item.getAttribute('aria-pressed') === 'true')) button.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+  allButton?.addEventListener('click', () => {
+    const next = !table.classList.contains('show-all');
+    table.classList.toggle('show-all', next);
+    allButton.setAttribute('aria-pressed', next ? 'true' : 'false');
+    apply();
+  });
+  window.addEventListener('resize', apply);
+  apply();
 }
 
 export function mountHeatBoard(): void {

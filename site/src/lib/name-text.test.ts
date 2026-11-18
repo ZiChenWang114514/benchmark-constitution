@@ -10,10 +10,16 @@ test('short proper names stay on one line', () => {
   }
 });
 
-test('long hyphenated model ids split on a hyphen, not inside a token', () => {
-  const parts = splitName('DeepSeek-V4.1-Flash-1017', 'compact');
-  assert.equal(parts.primary, 'DeepSeek-V4.1');
-  assert.equal(parts.secondary, 'Flash-1017');
+test('long hyphenated model ids keep every token, and only column headers split', () => {
+  const compact = splitName('DeepSeek-V4.1-Flash-1017', 'compact');
+  assert.equal(compact.primary, 'DeepSeek');
+  assert.equal(compact.secondary, 'V4.1 Flash 1017');
+  const table = splitName('DeepSeek-V4.1-Flash-1017');
+  assert.equal(table.primary, 'DeepSeek-V4.1-Flash-1017');
+  assert.equal(table.secondary, '');
+  assert.equal(splitName('Terminal-Bench-Science').primary, 'Terminal-Bench-Science');
+  assert.equal(splitName('GPT-6 Astra').primary, 'GPT-6 Astra');
+  assert.equal(splitName('Muse Wonder').primary, 'Muse Wonder');
 });
 
 test('parenthetical qualifiers become the secondary line', () => {
@@ -46,6 +52,8 @@ test('break opportunities respect CJK and markup', () => {
   assert.equal(breakHtml('模型数'), '模型数');
   assert.equal(breakHtml('用于评估模型知识应用、逻辑或常识推理能力的评测集。'), '用于评估模型知识应用、<wbr>逻辑或常识推理能力的评测集。');
   assert.equal(breakHtml('Terminal-Bench-Science'), 'Terminal-<wbr>Bench-<wbr>Science');
-  assert.equal(breakHtml('BrowseCompPlusRetrieval'), 'Browse<wbr>Comp<wbr>Plus<wbr>Retrieval');
+  assert.equal(breakHtml('GPT-6 Astra'), 'GPT-6 Astra');
+  assert.equal(breakHtml('BrowseCompPlusRetrieval'), 'BrowseCompPlusRetrieval');
+  assert.equal(breakHtml('AutomationBench-AA'), 'AutomationBench-AA');
   assert.equal(breakHtml('<script>'), '&lt;script&gt;');
 });
