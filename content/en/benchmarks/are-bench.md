@@ -208,7 +208,7 @@ Sources: [1](https://arxiv.org/abs/2611.14364) [2](https://arxiv.org/pdf/2611.14
 
 ## Contact
 
-**Public email**：Unverified
+**Public email**：Contact email stated on the official homepage: 25213050261@m.fudan.edu.cn
 
 Sources: [1](https://arxiv.org/abs/2611.14364) [2](https://arxiv.org/pdf/2611.14364) [3](https://arebench.com) (accessed 2026-11-16)
 
@@ -249,3 +249,5 @@ Sources: [1](https://arxiv.org/abs/2611.14364) [2](https://arxiv.org/pdf/2611.14
 ## Changelog
 
 2026-11-16: Initial filing.
+
+2026-11-19: Added public contact email.

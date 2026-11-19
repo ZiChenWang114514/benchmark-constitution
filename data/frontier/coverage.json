@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-19",
   "status": "provisional_lower_bound",
   "latest20_verified_globally": false,
   "models": 20,
-  "benchmark_families": 232,
-  "mentions": 2699,
-  "counted_mentions": 2439,
-  "excluded_mentions": 260,
+  "benchmark_families": 179,
+  "mentions": 2916,
+  "counted_mentions": 2573,
+  "excluded_mentions": 343,
   "source_failures": [
     {
       "url": "https://openai.com/index/introducing-gpt-6-cyber/",

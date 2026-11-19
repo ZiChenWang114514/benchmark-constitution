@@ -208,7 +208,7 @@ Sources: [1](https://arxiv.org/abs/2605.10912) [2](https://github.com/InternLM/W
 
 ## Contact
 
-**Public email**：Unverified
+**Public email**：The official code-repository README asks that evaluation results be sent to wildclawbench@proton.me
 
 Sources: [1](https://arxiv.org/abs/2605.10912) [2](https://github.com/InternLM/WildClawBench) [3](https://huggingface.co/datasets/internlm/WildClawBench) [4](https://www.alibabacloud.com/blog/qwen3-8-omni-flash-omni-senses--agentic-delivery-_603580) (accessed 2026-11-16)
 
@@ -249,3 +249,5 @@ Sources: [1](https://arxiv.org/abs/2605.10912) [2](https://github.com/InternLM/W
 ## Changelog
 
 2026-11-16: Initial filing.
+
+2026-11-19: Added public contact email.

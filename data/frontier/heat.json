@@ -1,11 +1,382 @@
 {
-  "generated_at": "2026-11-16",
+  "generated_at": "2026-11-19",
   "window": {
     "n_models": 20,
     "target_n_models": 20,
     "rule": "最近20个已审核eligible前沿级通用/代码/原生多模态独立模型checkpoint，按首发日倒序，同日按id升序。排除轻量级Haiku/Luna、纯图像/语音、垂直专用Cyber/Legal及同智力加速SKU；同厂可多项；不设厂商配额。仅为已审核发布宇宙内的窗口，全球最新20完整性仍待复核。"
   },
   "models": [
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "organization": "Google DeepMind",
+      "release_date": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deepmind.google/models/evals-methodology/gemini-4-neon",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deepmind.google/models/gemini/",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "benchmarks": [
+        "agent-arena",
+        "agents-last-exam",
+        "autobaxbench",
+        "automationbench-aa",
+        "chartography",
+        "cursorbench",
+        "cwe-bench",
+        "exploitgym",
+        "frontiercode",
+        "graphwalks",
+        "hle",
+        "indirect-prompt-injection-gray-swan",
+        "legal-research-bench",
+        "lvbench",
+        "mka",
+        "riemannbench",
+        "sec-bench",
+        "swe-sweep",
+        "terminal-bench",
+        "terminal-bench-science",
+        "vals-tax-agent-bench",
+        "vending-bench",
+        "webexploitbench"
+      ],
+      "note": "官方发布页与模型卡均署日期2026-11-18，当日向Gemini API/AI Studio、企业与付费Pro/Ultra用户开放，首发日与正式开放日相同。模型卡说明其改编自Gemini 4 Carbon，但定位、定价与官方评测表均独立，处理方式与窗口内已有的Gemini 4 Hydrogen相同，不属于同智力加速版本。Gemini 4 Neon for cyber是面向Fairwind可信防护方的配置，不另计为基础模型。官方安全与安保报告在2026-11-19查阅时仍标注即将发布。",
+      "facts": [
+        {
+          "key": "model_card_published",
+          "value": "18 Nov 2026",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "context_window",
+          "value": "1M combined input-output",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "max_output",
+          "value": "64K default synchronous; up to 1M via background long decode",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "modalities",
+          "value": "input: text, images, audio, video; output: text",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "$3 input / $0.15 cached input / $15 output",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "knowledge_cutoff",
+          "value": "March 2026",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "availability",
+          "value": "Gemini API / AI Studio, Gemini for business, Antigravity (Pro/Ultra), Gemini app (Pro/Ultra)",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "parameters",
+          "value": "not stated",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "base_model",
+          "value": "adapted from Gemini 4 Carbon",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.2-astra",
+      "name": "GPT-6.2 Astra",
+      "organization": "OpenAI",
+      "release_date": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/safety-overview",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/changelog.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "benchmarks": [
+        "aa-3d",
+        "aa-analystagent",
+        "aav-capsid-packaging",
+        "agents-last-exam",
+        "automationbench-aa",
+        "benchcad",
+        "blocker-deception-openai",
+        "coronavirus-ace2-screen",
+        "deepbinary",
+        "exploitbench",
+        "frontiercode",
+        "gdpval",
+        "gpqa",
+        "harvey-lab",
+        "healthbench",
+        "improper-actions-workplace-openai",
+        "kernelgen",
+        "lifeval",
+        "mentalhealthbench",
+        "mle-bench",
+        "nanogpt-evaluation",
+        "patchbench",
+        "phage-plasmid-coevolution",
+        "posttrainbench",
+        "sec-bench",
+        "shp2-function-prediction",
+        "terminal-bench-science",
+        "vct"
+      ],
+      "note": "官方发布日以Changelog、系统卡封面与ChatGPT Learn页的2026-11-17为准，与已有窗口模型GPT-6 Astra（2026-09-03）及GPT-6 Sol / GPT-6.1 Sol不是同一checkpoint。同日发布的Astra for Law（gpt-6.2-astra-law）是GPT-6.2 Astra的法律配置，不另计为第三个基础模型。页面未给出精确到小时的首发时刻。",
+      "facts": [
+        {
+          "key": "api_model_id",
+          "value": "gpt-6.2-astra",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "context_window",
+          "value": "1,050,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "max_input",
+          "value": "922,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "max_output",
+          "value": "128,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "modalities",
+          "value": "input: text, image; output: text (no audio/video)",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "knowledge_cutoff",
+          "value": "2026-05-18",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "short context: input $8 / cached input $0.40 / cache write 30m $10 / 12h $20 / output $40",
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "long_context_pricing",
+          "value": "prompts >272K input tokens: 2x input and cache prices, 1.5x output",
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "parameters",
+          "value": "not stated",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "preparedness",
+          "value": "Cybersecurity Critical; Biological/Chemical High; AI Self-Improvement High (Astra only)",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.2-sol",
+      "name": "GPT-6.2 Sol",
+      "organization": "OpenAI",
+      "release_date": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/safety-overview",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/changelog.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "benchmarks": [
+        "aa-3d",
+        "aav-capsid-packaging",
+        "agents-last-exam",
+        "automationbench-aa",
+        "benchcad",
+        "blocker-deception-openai",
+        "coronavirus-ace2-screen",
+        "deepbinary",
+        "exploitbench",
+        "frontiercode",
+        "gdpval",
+        "gpqa",
+        "harvey-lab",
+        "healthbench",
+        "improper-actions-workplace-openai",
+        "kernelgen",
+        "lifeval",
+        "mentalhealthbench",
+        "mle-bench",
+        "nanogpt-evaluation",
+        "patchbench",
+        "phage-plasmid-coevolution",
+        "posttrainbench",
+        "sec-bench",
+        "shp2-function-prediction",
+        "terminal-bench-science",
+        "vct"
+      ],
+      "note": "官方发布日2026-11-17，与已有窗口模型GPT-6 Sol（2026-09-23）及GPT-6.1 Sol（2026-09-29）不是同一checkpoint。官方定位为日常工作、编码与规模化智能体的主力模型，标准短上下文价格与GPT-6.1 Sol相同。页面未给出精确到小时的首发时刻。",
+      "facts": [
+        {
+          "key": "api_model_id",
+          "value": "gpt-6.2-sol",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "context_window",
+          "value": "1,050,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "max_input",
+          "value": "922,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "max_output",
+          "value": "128,000 tokens",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "modalities",
+          "value": "input: text, image; output: text (no audio/video)",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "knowledge_cutoff",
+          "value": "2026-06-01",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "pricing_usd_per_mtok",
+          "value": "short context: input $2 / cached input $0.10 / cache write 30m $2.50 / 12h $5 / output $10",
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "long_context_pricing",
+          "value": "prompts >272K input tokens: 2x input and cache prices, 1.5x output",
+          "url": "https://developers.openai.com/api/docs/pricing.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "parameters",
+          "value": "not stated",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+          "accessed": "2026-11-19"
+        },
+        {
+          "key": "preparedness",
+          "value": "Cybersecurity Critical; Biological/Chemical High; AI Self-Improvement High not reached",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
     {
       "id": "qwen4-max",
       "name": "Qwen4-Max",
@@ -680,12 +1051,16 @@
         "exploitbench",
         "exploitgym",
         "healthbench",
+        "improper-actions-workplace-openai",
         "kernelgen",
         "mentalhealthbench",
+        "mle-bench",
         "mmmu-pro",
         "multimodal-troubleshooting-virology",
+        "nanogpt-evaluation",
         "osworld",
         "phage-plasmid-coevolution",
+        "posttrainbench",
         "sandbox-bench-openai",
         "sec-bench",
         "shp2-function-prediction",
@@ -1233,20 +1608,29 @@
         "aav-capsid-packaging",
         "agents-last-exam",
         "automationbench-aa",
+        "benchcad",
+        "blocker-deception-openai",
         "broken-search-tool-openai",
         "coding-deception-openai",
         "coronavirus-ace2-screen",
+        "deepbinary",
         "deepswe",
         "exploitbench",
         "exploitgym",
+        "frontiercode",
         "gdp-pdf",
+        "gdpval",
+        "harvey-lab",
         "healthbench",
+        "improper-actions-workplace-openai",
         "kernelgen",
+        "lifeval",
         "mentalhealthbench",
         "mmmu-pro",
         "multimodal-troubleshooting-virology",
         "oai-repo-sabotage",
         "osworld",
+        "patchbench",
         "phage-plasmid-coevolution",
         "protocolqa",
         "sec-bench",
@@ -1475,7 +1859,9 @@
         "frontiercode",
         "gdp-pdf",
         "healthbench",
+        "improper-actions-workplace-openai",
         "kernelgen",
+        "mentalhealthbench",
         "multimodal-troubleshooting-virology",
         "oai-repo-sabotage",
         "osworld",
@@ -1686,348 +2072,6 @@
       ]
     },
     {
-      "id": "grok-4-7",
-      "name": "Grok 4.7",
-      "organization": "xAI",
-      "release_date": "2026-09-21",
-      "sources": [
-        {
-          "url": "https://x.ai/news/grok-4-7",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-07"
-        }
-      ],
-      "benchmarks": [
-        "aa-briefcase",
-        "cursorbench",
-        "deepswe",
-        "eebench",
-        "gdpval",
-        "hackerbench-xai",
-        "harvey-lab",
-        "healthbench",
-        "latchbio-biosafety",
-        "terminal-bench"
-      ],
-      "note": null,
-      "facts": [
-        {
-          "key": "release",
-          "value": "Sep 21, 2026",
-          "url": "https://x.ai/news/grok-4-7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "context_window",
-          "value": "500,000 tokens",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "modalities",
-          "value": "input: text, image; output: text",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pricing_usd_per_mtok",
-          "value": "$2 input / $0.50 cached / $6 output; higher rate above 200K context",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "reasoning_effort",
-          "value": "low / medium / high / xhigh",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "fast_variant",
-          "value": "fast variant at 2x price",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "parameters",
-          "value": "not stated",
-          "url": "https://docs.x.ai/developers/models/grok-4.7",
-          "accessed": "2026-11-16"
-        }
-      ]
-    },
-    {
-      "id": "qwen3-8-omni-flash",
-      "name": "Qwen3.8-Omni-Flash",
-      "organization": "Alibaba Qwen",
-      "release_date": "2026-09-18",
-      "sources": [
-        {
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "url": "https://www.alibabacloud.com/en/news/product/qwen38-omni-flash-officially-released-o86",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://www.alibabacloud.com/blog/qwen3-8-omni-flash-omni-senses--agentic-delivery-_603580",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-          "accessed": "2026-11-16"
-        }
-      ],
-      "benchmarks": [
-        "agenticvbench",
-        "aishell-4",
-        "alimeeting",
-        "androidworld",
-        "audio-multichallenge",
-        "avut",
-        "charxiv",
-        "claweval-mm",
-        "coworkbench",
-        "dailyomni",
-        "deepswe",
-        "erqa",
-        "fleurs",
-        "gpqa",
-        "hle",
-        "hummusqa",
-        "ifbench",
-        "jointavbench",
-        "livecodebench",
-        "longaudiospan",
-        "lvbench",
-        "lvomnibench",
-        "magicdata-ramc",
-        "mathvision",
-        "mlc-slm",
-        "mmar",
-        "mmau",
-        "mmsu",
-        "muchomusic-rul",
-        "mustbench",
-        "nl2repo-bench",
-        "omnicap-if",
-        "omnicloze",
-        "omnigaia",
-        "omnivideobench",
-        "qivd",
-        "realworldqa",
-        "spotsoundbench",
-        "streamingbench",
-        "swe-bench",
-        "swe-bench-pro",
-        "uniclawbench",
-        "video-mme",
-        "vision2web",
-        "voicebench",
-        "wenetspeech",
-        "wildclawbench-mm",
-        "wildspeech",
-        "worldsense"
-      ],
-      "note": "官方博客署日期2026/09/18，与官方发布新闻一致；英语转载博客日期9月20日。",
-      "facts": [
-        {
-          "key": "modalities",
-          "value": "input: text, images, audio, video; output: text",
-          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "context_window",
-          "value": "1M",
-          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "max_output",
-          "value": "131,072",
-          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pricing_usd_per_mtok",
-          "value": "International: $0.15 input / $0.016 cache hit / $0.47 output; Global: $0.113 / $0.014 / $0.382",
-          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "date_printed",
-          "value": "2026/09/18",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "modalities",
-          "value": "input: text, image, audio, video",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "context_window",
-          "value": "1M",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "api_model_id",
-          "value": "qwen3.8-omni-flash; qwen3.8-omni-flash-realtime",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pricing_usd_per_mtok",
-          "value": "input $0.15 / output $0.47 (text tokens, international)",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pricing_usd_per_hour",
-          "value": "audio input <$0.01; video with audio input $0.20 (720p, 1 fps)",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "availability",
-          "value": "Qianwen AI Platform API and Realtime API",
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "accessed": "2026-11-16"
-        }
-      ]
-    },
-    {
-      "id": "deepseek-v4-1-flash",
-      "name": "DeepSeek-V4.1-Flash",
-      "organization": "DeepSeek",
-      "release_date": "2026-09-10",
-      "sources": [
-        {
-          "url": "https://api-docs.deepseek.com/news/news260910",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/main/README.md",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/DeepSeek_V41_Tech_Report.pdf",
-          "accessed": "2026-11-07"
-        },
-        {
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "url": "https://api-docs.deepseek.com/quick_start/pricing",
-          "accessed": "2026-11-16"
-        },
-        {
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-          "accessed": "2026-11-16"
-        }
-      ],
-      "benchmarks": [
-        "agents-last-exam",
-        "agieval",
-        "aime",
-        "apex-2025-shortlist",
-        "automationbench-aa",
-        "babyvision",
-        "bbeh",
-        "bbh",
-        "bigcodebench",
-        "c-eval",
-        "chartography",
-        "codeforces",
-        "cv-bench",
-        "cybergym",
-        "deepswe",
-        "docvqa",
-        "drop",
-        "exploitgym",
-        "frontierswe",
-        "gpqa",
-        "gsm8k",
-        "hellaswag",
-        "hle",
-        "humaneval",
-        "imo-answerbench",
-        "livecodebench",
-        "longbench-v2",
-        "math",
-        "matharena-apex",
-        "mgsm",
-        "mmlu-pro",
-        "mmmu-pro",
-        "multiloko",
-        "nl2repo-bench",
-        "programbench",
-        "refcoco",
-        "sec-bench",
-        "simpleqa",
-        "supergpqa",
-        "swe-bench-pro",
-        "terminal-bench",
-        "zerobench"
-      ],
-      "note": null,
-      "facts": [
-        {
-          "key": "release",
-          "value": "2026/09/10",
-          "url": "https://api-docs.deepseek.com/news/news260910",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "architecture",
-          "value": "552B MoE; 8B activated for input tokens / 16B for output tokens",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pretraining_tokens",
-          "value": "45T",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "context_window",
-          "value": "1M",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "modalities",
-          "value": "native multimodal",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "license",
-          "value": "MIT",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-          "accessed": "2026-11-16"
-        },
-        {
-          "key": "pricing_note",
-          "value": "current API price is served by V4.1-Flash-1017; no separate current price for the 0910 release",
-          "url": "https://api-docs.deepseek.com/quick_start/pricing",
-          "accessed": "2026-11-16"
-        }
-      ]
-    },
-    {
       "id": "gpt-6-astra",
       "name": "GPT-6 Astra",
       "organization": "OpenAI",
@@ -2056,12 +2100,14 @@
         "automationbench-aa",
         "benchcad",
         "biotier",
+        "blocker-deception-openai",
         "broken-search-tool-openai",
         "browsecomp",
         "coding-deception-openai",
         "coronavirus-ace2-screen",
         "cve-bench",
         "cy-scenario-bench",
+        "deepbinary",
         "deepswe",
         "exploitbench",
         "exploitgym",
@@ -2069,17 +2115,22 @@
         "frontiercyber",
         "frontiermath",
         "gdp-pdf",
+        "gdpval",
         "genebench",
         "gpqa",
         "gsm8k",
+        "harvey-lab",
         "healthbench",
         "hle",
         "hpct",
         "humaneval",
+        "improper-actions-workplace-openai",
         "indirect-prompt-injection-gray-swan",
         "kernelgen",
         "lifescibench",
+        "lifeval",
         "medchembench",
+        "mentalhealthbench",
         "mind2web",
         "mle-bench",
         "mmmu-pro",
@@ -2092,6 +2143,7 @@
         "open-score-string-quartets",
         "opqa",
         "osworld",
+        "patchbench",
         "phage-plasmid-coevolution",
         "posttrainbench",
         "protocolqa",
@@ -2169,24 +2221,113 @@
   "ranking": [
     {
       "rank": 1,
-      "benchmark_id": "terminal-bench",
-      "name": "Terminal-Bench",
-      "domain": "代码",
-      "count": 18,
-      "share": 0.9,
+      "benchmark_id": "automationbench-aa",
+      "name": "AutomationBench-AA",
+      "domain": "Agent",
+      "count": 19,
+      "share": 0.95,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
         "deepseek-v4-1-flash-1017",
         "gemini-4-argon",
         "gemini-4-carbon",
         "gemini-4-hydrogen",
+        "gemini-4-neon",
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "hy4",
+        "kimi-k3-1-pro",
+        "longcat-2-5",
+        "muse-wonder",
+        "muse-wonder-full",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 1,
+      "versions": {
+        "claude-fable-5-2": [
+          "AutomationBench"
+        ],
+        "claude-opus-5-5": [
+          "AutomationBench"
+        ],
+        "claude-sonnet-5-5": [
+          "AutomationBench"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "AutomationBench v1.0.6"
+        ],
+        "gemini-4-argon": [
+          "AutomationBench"
+        ],
+        "gemini-4-carbon": [
+          "AutomationBench"
+        ],
+        "gemini-4-hydrogen": [
+          "AutomationBench-AA"
+        ],
+        "gemini-4-neon": [
+          "AutomationBench"
+        ],
+        "gpt-6-1-sol": [
+          "AutomationBench v1.0.6"
+        ],
+        "gpt-6-astra": [
+          "AutomationBench v1.0.6"
+        ],
+        "gpt-6-sol": [
+          "AutomationBench v1.0.6"
+        ],
+        "gpt-6.2-astra": [
+          "AutomationBench v1.0.6"
+        ],
+        "gpt-6.2-sol": [
+          "AutomationBench v1.0.6"
+        ],
+        "hy4": [
+          "AutomationBench v1.0.6"
+        ],
+        "kimi-k3-1-pro": [
+          "AutomationBench-AA"
+        ],
+        "longcat-2-5": [
+          "AutomationBench v1.0.6"
+        ],
+        "muse-wonder": [
+          "AutomationBench-AA"
+        ],
+        "muse-wonder-full": [
+          "AutomationBench-AA"
+        ],
+        "qwen4-max": [
+          "AutomationBench-AA"
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "benchmark_id": "agents-last-exam",
+      "name": "Agents’ Last Exam",
+      "domain": "Agent",
+      "count": 17,
+      "share": 0.85,
+      "models": [
+        "deepseek-v4-1-flash-1017",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon",
         "gpt-6-1-sol",
         "gpt-6-1-terra",
         "gpt-6-astra",
-        "grok-4-7",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
         "hy4",
         "kimi-k3-1-pro",
         "longcat-2-5",
@@ -2197,6 +2338,90 @@
       "first_seen": "2026-11-07",
       "rank_change": 2,
       "versions": {
+        "deepseek-v4-1-flash-1017": [
+          "Agents’ Last Exam"
+        ],
+        "gemini-4-argon": [
+          "Agents’ Last Exam"
+        ],
+        "gemini-4-carbon": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gemini-4-hydrogen": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gemini-4-neon": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6-1-sol": [
+          "Agents’ Last Exam v1",
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6-1-terra": [
+          "Agents’ Last Exam v1"
+        ],
+        "gpt-6-astra": [
+          "Agents’ Last Exam v1",
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6-sol": [
+          "Agents’ Last Exam"
+        ],
+        "gpt-6.2-astra": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "gpt-6.2-sol": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "hy4": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "kimi-k3-1-pro": [
+          "Agents’ Last Exam"
+        ],
+        "longcat-2-5": [
+          "Agents’ Last Exam v1.1"
+        ],
+        "muse-wonder": [
+          "Agents’ Last Exam"
+        ],
+        "muse-wonder-full": [
+          "Agents’ Last Exam"
+        ],
+        "qwen4-max": [
+          "Agents’ Last Exam v1.1"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "benchmark_id": "terminal-bench",
+      "name": "Terminal-Bench",
+      "domain": "代码",
+      "count": 17,
+      "share": 0.85,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "deepseek-v4-1-flash-1017",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "hy4",
+        "kimi-k3-1-pro",
+        "longcat-2-5",
+        "muse-wonder",
+        "muse-wonder-full",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -2,
+      "versions": {
         "claude-fable-5-2": [
           "Terminal-Bench 4.0"
         ],
@@ -2204,11 +2429,6 @@
           "Terminal-Bench 4.0"
         ],
         "claude-sonnet-5-5": [
-          "Terminal-Bench 4.0"
-        ],
-        "deepseek-v4-1-flash": [
-          "Terminal-Bench 2.1",
-          "Terminal-Bench 3.0",
           "Terminal-Bench 4.0"
         ],
         "deepseek-v4-1-flash-1017": [
@@ -2224,6 +2444,10 @@
           "Terminal-Bench 4.0",
           "Terminal-Bench 4.1"
         ],
+        "gemini-4-neon": [
+          "Terminal-Bench 4.0",
+          "Terminal-Bench 4.1"
+        ],
         "gpt-6-1-sol": [
           "Terminal-Bench 4.0"
         ],
@@ -2231,9 +2455,6 @@
           "Terminal-Bench 4.0"
         ],
         "gpt-6-astra": [
-          "Terminal-Bench 4.0"
-        ],
-        "grok-4-7": [
           "Terminal-Bench 4.0"
         ],
         "hy4": [
@@ -2258,179 +2479,16 @@
       }
     },
     {
-      "rank": 2,
-      "benchmark_id": "automationbench-aa",
-      "name": "AutomationBench-AA",
-      "domain": "Agent",
-      "count": 17,
-      "share": 0.85,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen",
-        "gpt-6-1-sol",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "hy4",
-        "kimi-k3-1-pro",
-        "longcat-2-5",
-        "muse-wonder",
-        "muse-wonder-full",
-        "qwen4-max"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "claude-fable-5-2": [
-          "AutomationBench"
-        ],
-        "claude-opus-5-5": [
-          "AutomationBench"
-        ],
-        "claude-sonnet-5-5": [
-          "AutomationBench"
-        ],
-        "deepseek-v4-1-flash": [
-          "AutomationBench v1.0.6"
-        ],
-        "deepseek-v4-1-flash-1017": [
-          "AutomationBench v1.0.6"
-        ],
-        "gemini-4-argon": [
-          "AutomationBench"
-        ],
-        "gemini-4-carbon": [
-          "AutomationBench"
-        ],
-        "gemini-4-hydrogen": [
-          "AutomationBench-AA"
-        ],
-        "gpt-6-1-sol": [
-          "AutomationBench v1.0.6"
-        ],
-        "gpt-6-astra": [
-          "AutomationBench v1.0.6"
-        ],
-        "gpt-6-sol": [
-          "AutomationBench v1.0.6"
-        ],
-        "hy4": [
-          "AutomationBench v1.0.6"
-        ],
-        "kimi-k3-1-pro": [
-          "AutomationBench-AA"
-        ],
-        "longcat-2-5": [
-          "AutomationBench v1.0.6"
-        ],
-        "muse-wonder": [
-          "AutomationBench-AA"
-        ],
-        "muse-wonder-full": [
-          "AutomationBench-AA"
-        ],
-        "qwen4-max": [
-          "AutomationBench-AA"
-        ]
-      }
-    },
-    {
-      "rank": 3,
-      "benchmark_id": "deepswe",
-      "name": "DeepSWE",
-      "domain": "其他",
-      "count": 17,
-      "share": 0.85,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "gemini-4-argon",
-        "gpt-6-1-sol",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "grok-4-7",
-        "hy4",
-        "kimi-k3-1-pro",
-        "longcat-2-5",
-        "muse-wonder",
-        "muse-wonder-full",
-        "qwen3-8-omni-flash",
-        "qwen4-max"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "claude-fable-5-2": [
-          "DeepSWE v1.1"
-        ],
-        "claude-opus-5-5": [
-          "DeepSWE v1.1"
-        ],
-        "claude-sonnet-5-5": [
-          "DeepSWE v1.1"
-        ],
-        "deepseek-v4-1-flash": [
-          "DeepSWE v1.1"
-        ],
-        "deepseek-v4-1-flash-1017": [
-          "DeepSWE v1.1"
-        ],
-        "gemini-4-argon": [
-          "DeepSWE v1.1"
-        ],
-        "gpt-6-1-sol": [
-          "DeepSWE v1.1"
-        ],
-        "gpt-6-astra": [
-          "DeepSWE v1.1"
-        ],
-        "gpt-6-sol": [
-          "DeepSWE v1.1"
-        ],
-        "grok-4-7": [
-          "DeepSWE v1.1"
-        ],
-        "hy4": [
-          "DeepSWE v1.1"
-        ],
-        "kimi-k3-1-pro": [
-          "DeepSWE v1.1"
-        ],
-        "longcat-2-5": [
-          "DeepSWE v1.1"
-        ],
-        "muse-wonder": [
-          "DeepSWE v1.1"
-        ],
-        "muse-wonder-full": [
-          "DeepSWE v1.1"
-        ],
-        "qwen3-8-omni-flash": [
-          "DeepSWE v1.1"
-        ],
-        "qwen4-max": [
-          "DeepSWE v1.1"
-        ]
-      }
-    },
-    {
       "rank": 4,
-      "benchmark_id": "agents-last-exam",
-      "name": "Agents’ Last Exam",
-      "domain": "Agent",
+      "benchmark_id": "healthbench",
+      "name": "HealthBench",
+      "domain": "生物与医学",
       "count": 15,
       "share": 0.75,
       "models": [
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
         "gemini-4-argon",
         "gemini-4-carbon",
         "gemini-4-hydrogen",
@@ -2438,70 +2496,85 @@
         "gpt-6-1-terra",
         "gpt-6-astra",
         "gpt-6-sol",
-        "hy4",
-        "kimi-k3-1-pro",
-        "longcat-2-5",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
         "muse-wonder",
         "muse-wonder-full",
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 1,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "Agents’ Last Exam"
+        "claude-fable-5-2": [
+          "HealthBench",
+          "HealthBench Professional"
         ],
-        "deepseek-v4-1-flash-1017": [
-          "Agents’ Last Exam"
+        "claude-opus-5-5": [
+          "HealthBench Professional"
+        ],
+        "claude-sonnet-5-5": [
+          "HealthBench Professional"
         ],
         "gemini-4-argon": [
-          "Agents’ Last Exam"
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
         "gemini-4-carbon": [
-          "Agents’ Last Exam v1.1"
+          "HealthBench",
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
         "gemini-4-hydrogen": [
-          "Agents’ Last Exam v1.1"
+          "HealthBench Professional"
         ],
         "gpt-6-1-sol": [
-          "Agents’ Last Exam v1"
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
         "gpt-6-1-terra": [
-          "Agents’ Last Exam v1"
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
         "gpt-6-astra": [
-          "Agents’ Last Exam v1"
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
         "gpt-6-sol": [
-          "Agents’ Last Exam"
+          "HealthBench",
+          "HealthBench Consensus",
+          "HealthBench Hard",
+          "HealthBench Professional"
         ],
-        "hy4": [
-          "Agents’ Last Exam v1.1"
+        "gpt-6.2-astra": [
+          "HealthBench Professional"
         ],
-        "kimi-k3-1-pro": [
-          "Agents’ Last Exam"
-        ],
-        "longcat-2-5": [
-          "Agents’ Last Exam v1.1"
+        "gpt-6.2-sol": [
+          "HealthBench Professional"
         ],
         "muse-wonder": [
-          "Agents’ Last Exam"
+          "HealthBench Professional"
         ],
         "muse-wonder-full": [
-          "Agents’ Last Exam"
+          "HealthBench Professional"
         ],
         "qwen4-max": [
-          "Agents’ Last Exam v1.1"
+          "HealthBench Professional"
         ]
       }
     },
     {
       "rank": 5,
-      "benchmark_id": "healthbench",
-      "name": "HealthBench",
-      "domain": "生物与医学",
-      "count": 14,
-      "share": 0.7,
+      "benchmark_id": "terminal-bench-science",
+      "name": "Terminal-Bench-Science",
+      "domain": "综合科学",
+      "count": 15,
+      "share": 0.75,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
@@ -2509,147 +2582,133 @@
         "gemini-4-argon",
         "gemini-4-carbon",
         "gemini-4-hydrogen",
+        "gemini-4-neon",
         "gpt-6-1-sol",
         "gpt-6-1-terra",
         "gpt-6-astra",
         "gpt-6-sol",
-        "grok-4-7",
-        "muse-wonder",
-        "muse-wonder-full",
-        "qwen4-max"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "hy4",
+        "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 3,
       "versions": {
         "claude-fable-5-2": [
-          "HealthBench",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "claude-opus-5-5": [
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "claude-sonnet-5-5": [
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gemini-4-argon": [
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gemini-4-carbon": [
-          "HealthBench",
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gemini-4-hydrogen": [
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
+        ],
+        "gemini-4-neon": [
+          "Terminal-Bench-Science 0.1"
         ],
         "gpt-6-1-sol": [
-          "HealthBench",
-          "HealthBench Consensus",
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gpt-6-1-terra": [
-          "HealthBench",
-          "HealthBench Consensus",
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gpt-6-astra": [
-          "HealthBench",
-          "HealthBench Consensus",
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
         "gpt-6-sol": [
-          "HealthBench",
-          "HealthBench Consensus",
-          "HealthBench Hard",
-          "HealthBench Professional"
+          "Terminal-Bench-Science 0.1"
         ],
-        "grok-4-7": [
-          "HealthBench Professional"
+        "gpt-6.2-astra": [
+          "Terminal-Bench-Science 0.1"
         ],
-        "muse-wonder": [
-          "HealthBench Professional"
+        "gpt-6.2-sol": [
+          "Terminal-Bench-Science 0.1"
         ],
-        "muse-wonder-full": [
-          "HealthBench Professional"
+        "hy4": [
+          "Terminal-Bench-Science 0.1"
         ],
-        "qwen4-max": [
-          "HealthBench Professional"
+        "kimi-k3-1-pro": [
+          "Terminal-Bench-Science 0.1"
         ]
       }
     },
     {
       "rank": 6,
-      "benchmark_id": "hle",
-      "name": "Humanity’s Last Exam",
-      "domain": "推理",
+      "benchmark_id": "deepswe",
+      "name": "DeepSWE",
+      "domain": "其他",
       "count": 14,
       "share": 0.7,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
         "deepseek-v4-1-flash-1017",
-        "gemini-4-hydrogen",
+        "gemini-4-argon",
+        "gpt-6-1-sol",
         "gpt-6-astra",
+        "gpt-6-sol",
         "hy4",
         "kimi-k3-1-pro",
         "longcat-2-5",
         "muse-wonder",
         "muse-wonder-full",
-        "qwen3-8-omni-flash",
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": -3,
       "versions": {
         "claude-fable-5-2": [
-          "Humanity’s Last Exam with tools"
+          "DeepSWE v1.1"
         ],
         "claude-opus-5-5": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ],
         "claude-sonnet-5-5": [
-          "Humanity’s Last Exam"
-        ],
-        "deepseek-v4-1-flash": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ],
         "deepseek-v4-1-flash-1017": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ],
-        "gemini-4-hydrogen": [
-          "Humanity’s Last Exam Diamond"
+        "gemini-4-argon": [
+          "DeepSWE v1.1"
+        ],
+        "gpt-6-1-sol": [
+          "DeepSWE v1.1"
         ],
         "gpt-6-astra": [
-          "Humanity’s Last Exam with tools"
+          "DeepSWE v1.1"
+        ],
+        "gpt-6-sol": [
+          "DeepSWE v1.1"
         ],
         "hy4": [
-          "Humanity’s Last Exam Full with tools"
+          "DeepSWE v1.1"
         ],
         "kimi-k3-1-pro": [
-          "Humanity’s Last Exam",
-          "Humanity’s Last Exam Diamond",
-          "Humanity’s Last Exam Full with tools"
+          "DeepSWE v1.1"
         ],
         "longcat-2-5": [
-          "Humanity’s Last Exam with tools"
+          "DeepSWE v1.1"
         ],
         "muse-wonder": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ],
         "muse-wonder-full": [
-          "Humanity’s Last Exam"
-        ],
-        "qwen3-8-omni-flash": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ],
         "qwen4-max": [
-          "Humanity’s Last Exam"
+          "DeepSWE v1.1"
         ]
       }
     },
@@ -2677,7 +2736,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 0,
       "versions": {
         "claude-fable-5-2": [
           "OSWorld 2.1 offline set"
@@ -2728,137 +2787,19 @@
     },
     {
       "rank": 8,
-      "benchmark_id": "terminal-bench-science",
-      "name": "Terminal-Bench-Science",
-      "domain": "综合科学",
-      "count": 12,
-      "share": 0.6,
+      "benchmark_id": "hle",
+      "name": "Humanity’s Last Exam",
+      "domain": "推理",
+      "count": 13,
+      "share": 0.65,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen",
-        "gpt-6-1-sol",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "hy4",
-        "kimi-k3-1-pro"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "claude-fable-5-2": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "claude-opus-5-5": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "claude-sonnet-5-5": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-argon": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-carbon": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gemini-4-hydrogen": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-1-sol": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-1-terra": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-astra": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "gpt-6-sol": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "hy4": [
-          "Terminal-Bench-Science 0.1"
-        ],
-        "kimi-k3-1-pro": [
-          "Terminal-Bench-Science 0.1"
-        ]
-      }
-    },
-    {
-      "rank": 9,
-      "benchmark_id": "exploitgym",
-      "name": "ExploitGym",
-      "domain": "其他",
-      "count": 11,
-      "share": 0.55,
-      "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gpt-6-1-sol",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "kimi-k3-1-pro",
-        "muse-wonder-full"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 0,
-      "versions": {
-        "claude-opus-5-5": [
-          "ExploitGym"
-        ],
-        "claude-sonnet-5-5": [
-          "ExploitGym"
-        ],
-        "deepseek-v4-1-flash": [
-          "ExploitGym"
-        ],
-        "gemini-4-argon": [
-          "ExploitGym"
-        ],
-        "gemini-4-carbon": [
-          "ExploitGym"
-        ],
-        "gpt-6-1-sol": [
-          "ExploitGym"
-        ],
-        "gpt-6-1-terra": [
-          "ExploitGym"
-        ],
-        "gpt-6-astra": [
-          "ExploitGym"
-        ],
-        "gpt-6-sol": [
-          "ExploitGym"
-        ],
-        "kimi-k3-1-pro": [
-          "ExploitGym"
-        ],
-        "muse-wonder-full": [
-          "ExploitGym"
-        ]
-      }
-    },
-    {
-      "rank": 10,
-      "benchmark_id": "programbench",
-      "name": "ProgramBench",
-      "domain": "其他",
-      "count": 11,
-      "share": 0.55,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
         "deepseek-v4-1-flash-1017",
+        "gemini-4-hydrogen",
+        "gemini-4-neon",
+        "gpt-6-astra",
         "hy4",
         "kimi-k3-1-pro",
         "longcat-2-5",
@@ -2867,105 +2808,58 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": -2,
       "versions": {
         "claude-fable-5-2": [
-          "ProgramBench"
+          "Humanity’s Last Exam with tools"
         ],
         "claude-opus-5-5": [
-          "ProgramBench"
+          "Humanity’s Last Exam"
         ],
         "claude-sonnet-5-5": [
-          "ProgramBench"
-        ],
-        "deepseek-v4-1-flash": [
-          "ProgramBench"
+          "Humanity’s Last Exam"
         ],
         "deepseek-v4-1-flash-1017": [
-          "ProgramBench"
-        ],
-        "hy4": [
-          "ProgramBench"
-        ],
-        "kimi-k3-1-pro": [
-          "ProgramBench"
-        ],
-        "longcat-2-5": [
-          "ProgramBench"
-        ],
-        "muse-wonder": [
-          "ProgramBench"
-        ],
-        "muse-wonder-full": [
-          "ProgramBench"
-        ],
-        "qwen4-max": [
-          "ProgramBench"
-        ]
-      }
-    },
-    {
-      "rank": 11,
-      "benchmark_id": "chartography",
-      "name": "Chartography",
-      "domain": "多模态",
-      "count": 10,
-      "share": 0.5,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen",
-        "kimi-k3-1-pro",
-        "qwen4-max"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 0,
-      "versions": {
-        "claude-fable-5-2": [
-          "Chartography no tools"
-        ],
-        "claude-opus-5-5": [
-          "Chartography"
-        ],
-        "claude-sonnet-5-5": [
-          "Chartography"
-        ],
-        "deepseek-v4-1-flash": [
-          "Chartography"
-        ],
-        "deepseek-v4-1-flash-1017": [
-          "Chartography"
-        ],
-        "gemini-4-argon": [
-          "Chartography"
-        ],
-        "gemini-4-carbon": [
-          "Chartography"
+          "Humanity’s Last Exam"
         ],
         "gemini-4-hydrogen": [
-          "Chartography"
+          "Humanity’s Last Exam Diamond"
+        ],
+        "gemini-4-neon": [
+          "Humanity’s Last Exam Diamond"
+        ],
+        "gpt-6-astra": [
+          "Humanity’s Last Exam with tools"
+        ],
+        "hy4": [
+          "Humanity’s Last Exam Full with tools"
         ],
         "kimi-k3-1-pro": [
-          "Chartography",
-          "Chartography with tools"
+          "Humanity’s Last Exam",
+          "Humanity’s Last Exam Diamond",
+          "Humanity’s Last Exam Full with tools"
+        ],
+        "longcat-2-5": [
+          "Humanity’s Last Exam with tools"
+        ],
+        "muse-wonder": [
+          "Humanity’s Last Exam"
+        ],
+        "muse-wonder-full": [
+          "Humanity’s Last Exam"
         ],
         "qwen4-max": [
-          "Chartography"
+          "Humanity’s Last Exam"
         ]
       }
     },
     {
-      "rank": 12,
+      "rank": 9,
       "benchmark_id": "exploitbench",
       "name": "ExploitBench",
       "domain": "安全",
-      "count": 10,
-      "share": 0.5,
+      "count": 12,
+      "share": 0.6,
       "models": [
         "claude-opus-5-5",
         "claude-sonnet-5-5",
@@ -2975,11 +2869,13 @@
         "gpt-6-1-terra",
         "gpt-6-astra",
         "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
         "kimi-k3-1-pro",
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -4,
+      "rank_change": 3,
       "versions": {
         "claude-opus-5-5": [
           "ExploitBench"
@@ -2994,17 +2890,28 @@
           "ExploitBench"
         ],
         "gpt-6-1-sol": [
-          "ExploitBench"
+          "ExploitBench Internal Port (June–August 2026)",
+          "ExploitBench v8"
         ],
         "gpt-6-1-terra": [
-          "ExploitBench"
+          "ExploitBench Internal Port (June–August 2026)",
+          "ExploitBench v8"
         ],
         "gpt-6-astra": [
-          "ExploitBench",
-          "ExploitBench (June-Aug 2026)"
+          "ExploitBench (June-Aug 2026)",
+          "ExploitBench Internal Port (June–August 2026)",
+          "ExploitBench v8"
         ],
         "gpt-6-sol": [
           "ExploitBench"
+        ],
+        "gpt-6.2-astra": [
+          "ExploitBench Internal Port (June–August 2026)",
+          "ExploitBench v8"
+        ],
+        "gpt-6.2-sol": [
+          "ExploitBench Internal Port (June–August 2026)",
+          "ExploitBench v8"
         ],
         "kimi-k3-1-pro": [
           "ExploitBench"
@@ -3015,18 +2922,21 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 10,
       "benchmark_id": "harvey-lab",
       "name": "Harvey's Legal Agent Benchmark",
       "domain": "Agent",
-      "count": 9,
-      "share": 0.45,
+      "count": 12,
+      "share": 0.6,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
         "gemini-4-argon",
-        "grok-4-7",
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
         "kimi-k3-1-pro",
         "muse-wonder",
         "muse-wonder-full",
@@ -3047,8 +2957,17 @@
         "gemini-4-argon": [
           "Harvey's Legal Agent Benchmark"
         ],
-        "grok-4-7": [
-          "Harvey's Legal Agent Benchmark"
+        "gpt-6-1-sol": [
+          "Harvey's Legal Agent Benchmark AA v1.1"
+        ],
+        "gpt-6-astra": [
+          "Harvey's Legal Agent Benchmark AA v1.1"
+        ],
+        "gpt-6.2-astra": [
+          "Harvey's Legal Agent Benchmark AA v1.1"
+        ],
+        "gpt-6.2-sol": [
+          "Harvey's Legal Agent Benchmark AA v1.1"
         ],
         "kimi-k3-1-pro": [
           "Harvey's Legal Agent Benchmark"
@@ -3067,70 +2986,85 @@
       }
     },
     {
-      "rank": 14,
-      "benchmark_id": "aa-briefcase",
-      "name": "AA-Briefcase",
-      "domain": "Agent",
-      "count": 8,
-      "share": 0.4,
+      "rank": 11,
+      "benchmark_id": "exploitgym",
+      "name": "ExploitGym",
+      "domain": "其他",
+      "count": 11,
+      "share": 0.55,
       "models": [
-        "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "grok-4-7",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-neon",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
         "kimi-k3-1-pro",
-        "muse-wonder",
-        "muse-wonder-full",
-        "qwen4-max"
+        "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -2,
       "versions": {
-        "claude-fable-5-2": [
-          "AA-Briefcase v1.1"
-        ],
         "claude-opus-5-5": [
-          "AA-Briefcase v1.1"
+          "ExploitGym"
         ],
         "claude-sonnet-5-5": [
-          "AA-Briefcase v1.1"
+          "ExploitGym"
         ],
-        "grok-4-7": [
-          "AA-Briefcase v1.1"
+        "gemini-4-argon": [
+          "ExploitGym"
+        ],
+        "gemini-4-carbon": [
+          "ExploitGym"
+        ],
+        "gemini-4-neon": [
+          "ExploitGym"
+        ],
+        "gpt-6-1-sol": [
+          "ExploitGym"
+        ],
+        "gpt-6-1-terra": [
+          "ExploitGym"
+        ],
+        "gpt-6-astra": [
+          "ExploitGym"
+        ],
+        "gpt-6-sol": [
+          "ExploitGym"
         ],
         "kimi-k3-1-pro": [
-          "AA-Briefcase v1.1"
-        ],
-        "muse-wonder": [
-          "AA-Briefcase"
+          "ExploitGym"
         ],
         "muse-wonder-full": [
-          "AA-Briefcase"
-        ],
-        "qwen4-max": [
-          "AA-Briefcase v1.1"
+          "ExploitGym"
         ]
       }
     },
     {
-      "rank": 15,
+      "rank": 12,
       "benchmark_id": "gdpval",
       "name": "GDPval",
       "domain": "Agent",
-      "count": 8,
-      "share": 0.4,
+      "count": 11,
+      "share": 0.55,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "grok-4-7",
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
         "kimi-k3-1-pro",
         "longcat-2-5",
         "muse-wonder",
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 3,
       "versions": {
         "claude-fable-5-2": [
           "GDPval-AA v2.1"
@@ -3143,8 +3077,17 @@
           "GDPval",
           "GDPval-AA"
         ],
-        "grok-4-7": [
-          "GDPval"
+        "gpt-6-1-sol": [
+          "GDPval v2 (Internal)"
+        ],
+        "gpt-6-astra": [
+          "GDPval v2 (Internal)"
+        ],
+        "gpt-6.2-astra": [
+          "GDPval v2 (Internal)"
+        ],
+        "gpt-6.2-sol": [
+          "GDPval v2 (Internal)"
         ],
         "kimi-k3-1-pro": [
           "GDPval-AA v2.1"
@@ -3161,12 +3104,322 @@
       }
     },
     {
+      "rank": 13,
+      "benchmark_id": "chartography",
+      "name": "Chartography",
+      "domain": "多模态",
+      "count": 10,
+      "share": 0.5,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "deepseek-v4-1-flash-1017",
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon",
+        "kimi-k3-1-pro",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -2,
+      "versions": {
+        "claude-fable-5-2": [
+          "Chartography no tools"
+        ],
+        "claude-opus-5-5": [
+          "Chartography"
+        ],
+        "claude-sonnet-5-5": [
+          "Chartography"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "Chartography"
+        ],
+        "gemini-4-argon": [
+          "Chartography"
+        ],
+        "gemini-4-carbon": [
+          "Chartography"
+        ],
+        "gemini-4-hydrogen": [
+          "Chartography"
+        ],
+        "gemini-4-neon": [
+          "Chartography"
+        ],
+        "kimi-k3-1-pro": [
+          "Chartography",
+          "Chartography with tools"
+        ],
+        "qwen4-max": [
+          "Chartography"
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "benchmark_id": "frontiercode",
+      "name": "FrontierCode",
+      "domain": "代码",
+      "count": 10,
+      "share": 0.5,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "gemini-4-neon",
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "hy4"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 7,
+      "versions": {
+        "claude-fable-5-2": [
+          "FrontierCode v2.0"
+        ],
+        "claude-opus-5-5": [
+          "FrontierCode v1.1",
+          "FrontierCode v2.0"
+        ],
+        "claude-sonnet-5-5": [
+          "FrontierCode v1.1"
+        ],
+        "gemini-4-neon": [
+          "FrontierCode v2.0"
+        ],
+        "gpt-6-1-sol": [
+          "FrontierCode v2.0"
+        ],
+        "gpt-6-astra": [
+          "FrontierCode v1.1 Extended",
+          "FrontierCode v1.1 Main",
+          "FrontierCode v2.0"
+        ],
+        "gpt-6-sol": [
+          "FrontierCode v1.1 Main"
+        ],
+        "gpt-6.2-astra": [
+          "FrontierCode v2.0"
+        ],
+        "gpt-6.2-sol": [
+          "FrontierCode v2.0"
+        ],
+        "hy4": [
+          "FrontierCode v2.0"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "benchmark_id": "programbench",
+      "name": "ProgramBench",
+      "domain": "其他",
+      "count": 10,
+      "share": 0.5,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "deepseek-v4-1-flash-1017",
+        "hy4",
+        "kimi-k3-1-pro",
+        "longcat-2-5",
+        "muse-wonder",
+        "muse-wonder-full",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -5,
+      "versions": {
+        "claude-fable-5-2": [
+          "ProgramBench"
+        ],
+        "claude-opus-5-5": [
+          "ProgramBench"
+        ],
+        "claude-sonnet-5-5": [
+          "ProgramBench"
+        ],
+        "deepseek-v4-1-flash-1017": [
+          "ProgramBench"
+        ],
+        "hy4": [
+          "ProgramBench"
+        ],
+        "kimi-k3-1-pro": [
+          "ProgramBench"
+        ],
+        "longcat-2-5": [
+          "ProgramBench"
+        ],
+        "muse-wonder": [
+          "ProgramBench"
+        ],
+        "muse-wonder-full": [
+          "ProgramBench"
+        ],
+        "qwen4-max": [
+          "ProgramBench"
+        ]
+      }
+    },
+    {
       "rank": 16,
+      "benchmark_id": "sec-bench",
+      "name": "SEC-Bench",
+      "domain": "安全",
+      "count": 9,
+      "share": 0.45,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-neon",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 1,
+      "versions": {
+        "gemini-4-argon": [
+          "SEC-Bench Pro"
+        ],
+        "gemini-4-carbon": [
+          "SEC-Bench Pro"
+        ],
+        "gemini-4-neon": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-1-sol": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-1-terra": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-astra": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6-sol": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6.2-astra": [
+          "SEC-Bench Pro"
+        ],
+        "gpt-6.2-sol": [
+          "SEC-Bench Pro"
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "benchmark_id": "aav-capsid-packaging",
+      "name": "AAV Capsid Packaging Prediction",
+      "domain": "生物与医学",
+      "count": 8,
+      "share": 0.4,
+      "models": [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 2,
+      "versions": {
+        "claude-opus-5-5": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "claude-sonnet-5-5": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-1-sol": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-1-terra": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-astra": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6-sol": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6.2-astra": [
+          "AAV Capsid Packaging Prediction"
+        ],
+        "gpt-6.2-sol": [
+          "AAV Capsid Packaging Prediction"
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "benchmark_id": "benchcad",
+      "name": "BenchCAD",
+      "domain": "多模态",
+      "count": 8,
+      "share": 0.4,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 7,
+      "versions": {
+        "claude-fable-5-2": [
+          "BenchCAD 2.1"
+        ],
+        "claude-opus-5-5": [
+          "BenchCAD"
+        ],
+        "claude-sonnet-5-5": [
+          "BenchCAD"
+        ],
+        "gpt-6-1-sol": [
+          "BenchCAD 2.1 Core"
+        ],
+        "gpt-6-astra": [
+          "BenchCAD",
+          "BenchCAD 2.1 Core"
+        ],
+        "gpt-6.2-astra": [
+          "BenchCAD 2.1 Core"
+        ],
+        "gpt-6.2-sol": [
+          "BenchCAD 2.1 Core"
+        ],
+        "kimi-k3-1-pro": [
+          "BenchCAD",
+          "BenchCAD with tools"
+        ]
+      }
+    },
+    {
+      "rank": 19,
       "benchmark_id": "indirect-prompt-injection-gray-swan",
       "name": "Indirect Prompt Injection",
       "domain": "安全",
-      "count": 7,
-      "share": 0.35,
+      "count": 8,
+      "share": 0.4,
       "models": [
         "claude-fable-5-2",
         "claude-opus-5-5",
@@ -3174,10 +3427,11 @@
         "gemini-4-argon",
         "gemini-4-carbon",
         "gemini-4-hydrogen",
+        "gemini-4-neon",
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": -3,
       "versions": {
         "claude-fable-5-2": [
           "Indirect Prompt Injection"
@@ -3197,55 +3451,100 @@
         "gemini-4-hydrogen": [
           "Indirect Prompt Injection"
         ],
+        "gemini-4-neon": [
+          "Indirect Prompt Injection"
+        ],
         "gpt-6-astra": [
           "Indirect Prompt Injection"
         ]
       }
     },
     {
-      "rank": 17,
-      "benchmark_id": "sec-bench",
-      "name": "SEC-Bench",
-      "domain": "安全",
+      "rank": 20,
+      "benchmark_id": "aa-briefcase",
+      "name": "AA-Briefcase",
+      "domain": "Agent",
       "count": 7,
       "share": 0.35,
       "models": [
-        "deepseek-v4-1-flash",
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gpt-6-1-sol",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol"
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "kimi-k3-1-pro",
+        "muse-wonder",
+        "muse-wonder-full",
+        "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 5,
+      "rank_change": -6,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "SEC-Bench Pro"
+        "claude-fable-5-2": [
+          "AA-Briefcase v1.1"
         ],
-        "gemini-4-argon": [
-          "SEC-Bench Pro"
+        "claude-opus-5-5": [
+          "AA-Briefcase v1.1"
         ],
-        "gemini-4-carbon": [
-          "SEC-Bench Pro"
+        "claude-sonnet-5-5": [
+          "AA-Briefcase v1.1"
         ],
-        "gpt-6-1-sol": [
-          "SEC-Bench Pro"
+        "kimi-k3-1-pro": [
+          "AA-Briefcase v1.1"
         ],
-        "gpt-6-1-terra": [
-          "SEC-Bench Pro"
+        "muse-wonder": [
+          "AA-Briefcase"
         ],
-        "gpt-6-astra": [
-          "SEC-Bench Pro"
+        "muse-wonder-full": [
+          "AA-Briefcase"
         ],
-        "gpt-6-sol": [
-          "SEC-Bench Pro"
+        "qwen4-max": [
+          "AA-Briefcase v1.1"
         ]
       }
     },
     {
-      "rank": 18,
+      "rank": 21,
+      "benchmark_id": "posttrainbench",
+      "name": "PostTrainBench",
+      "domain": "代码",
+      "count": 7,
+      "share": 0.35,
+      "models": [
+        "gemini-4-argon",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "hy4",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 20,
+      "versions": {
+        "gemini-4-argon": [
+          "PostTrainBench"
+        ],
+        "gpt-6-1-terra": [
+          "PostTrainBench Lite"
+        ],
+        "gpt-6-astra": [
+          "PostTrainBench Lite"
+        ],
+        "gpt-6.2-astra": [
+          "PostTrainBench Lite"
+        ],
+        "gpt-6.2-sol": [
+          "PostTrainBench Lite"
+        ],
+        "hy4": [
+          "PostTrainBench v1.2"
+        ],
+        "kimi-k3-1-pro": [
+          "PostTrainBench"
+        ]
+      }
+    },
+    {
+      "rank": 22,
       "benchmark_id": "aa-omniscience",
       "name": "AA-Omniscience",
       "domain": "Agent",
@@ -3260,7 +3559,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -4,
       "versions": {
         "claude-opus-5-5": [
           "AA-Omniscience"
@@ -3283,45 +3582,45 @@
       }
     },
     {
-      "rank": 19,
-      "benchmark_id": "aav-capsid-packaging",
-      "name": "AAV Capsid Packaging Prediction",
+      "rank": 23,
+      "benchmark_id": "coronavirus-ace2-screen",
+      "name": "Coronavirus–ACE2 Cell-Entry Screen",
       "domain": "生物与医学",
       "count": 6,
       "share": 0.3,
       "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
         "gpt-6-1-sol",
         "gpt-6-1-terra",
         "gpt-6-astra",
-        "gpt-6-sol"
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 10,
       "versions": {
-        "claude-opus-5-5": [
-          "AAV Capsid Packaging Prediction"
-        ],
-        "claude-sonnet-5-5": [
-          "AAV Capsid Packaging Prediction"
-        ],
         "gpt-6-1-sol": [
-          "AAV Capsid Packaging Prediction"
+          "Coronavirus–ACE2 Cell-Entry Screen"
         ],
         "gpt-6-1-terra": [
-          "AAV Capsid Packaging Prediction"
+          "Coronavirus–ACE2 Cell-Entry Screen"
         ],
         "gpt-6-astra": [
-          "AAV Capsid Packaging Prediction"
+          "Coronavirus–ACE2 Cell-Entry Screen"
         ],
         "gpt-6-sol": [
-          "AAV Capsid Packaging Prediction"
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ],
+        "gpt-6.2-astra": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
+        ],
+        "gpt-6.2-sol": [
+          "Coronavirus–ACE2 Cell-Entry Screen"
         ]
       }
     },
     {
-      "rank": 20,
+      "rank": 24,
       "benchmark_id": "cy-scenario-bench",
       "name": "CyScenarioBench",
       "domain": "安全",
@@ -3336,7 +3635,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -4,
       "versions": {
         "claude-fable-5-2": [
           "CyScenarioBench"
@@ -3359,85 +3658,7 @@
       }
     },
     {
-      "rank": 21,
-      "benchmark_id": "frontiercode",
-      "name": "FrontierCode",
-      "domain": "代码",
-      "count": 6,
-      "share": 0.3,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "gpt-6-astra",
-        "gpt-6-sol",
-        "hy4"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 3,
-      "versions": {
-        "claude-fable-5-2": [
-          "FrontierCode v2.0"
-        ],
-        "claude-opus-5-5": [
-          "FrontierCode v1.1",
-          "FrontierCode v2.0"
-        ],
-        "claude-sonnet-5-5": [
-          "FrontierCode v1.1"
-        ],
-        "gpt-6-astra": [
-          "FrontierCode v1.1 Extended",
-          "FrontierCode v1.1 Main"
-        ],
-        "gpt-6-sol": [
-          "FrontierCode v1.1 Main"
-        ],
-        "hy4": [
-          "FrontierCode v2.0"
-        ]
-      }
-    },
-    {
-      "rank": 22,
-      "benchmark_id": "frontierswe",
-      "name": "FrontierSWE",
-      "domain": "代码",
-      "count": 6,
-      "share": 0.3,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "gemini-4-argon",
-        "gemini-4-carbon"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "claude-fable-5-2": [
-          "FrontierSWE v2"
-        ],
-        "claude-opus-5-5": [
-          "FrontierSWE v2"
-        ],
-        "claude-sonnet-5-5": [
-          "FrontierSWE v2"
-        ],
-        "deepseek-v4-1-flash": [
-          "FrontierSWE v2"
-        ],
-        "gemini-4-argon": [
-          "FrontierSWE v2"
-        ],
-        "gemini-4-carbon": [
-          "FrontierSWE v2"
-        ]
-      }
-    },
-    {
-      "rank": 23,
+      "rank": 25,
       "benchmark_id": "gdp-pdf",
       "name": "GDP.pdf",
       "domain": "其他",
@@ -3452,7 +3673,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": -2,
       "versions": {
         "gpt-6-1-sol": [
           "GDP.pdf"
@@ -3475,80 +3696,271 @@
       }
     },
     {
-      "rank": 24,
-      "benchmark_id": "mmmu-pro",
-      "name": "MMMU-Pro",
-      "domain": "多模态",
+      "rank": 26,
+      "benchmark_id": "improper-actions-workplace-openai",
+      "name": "Improper actions in workplace tasks",
+      "domain": "安全",
       "count": 6,
       "share": 0.3,
       "models": [
-        "deepseek-v4-1-flash",
         "gpt-6-1-sol",
         "gpt-6-1-terra",
         "gpt-6-astra",
-        "hy4",
-        "kimi-k3-1-pro"
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": 30,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
-        "deepseek-v4-1-flash": [
-          "MMMU-Pro"
-        ],
         "gpt-6-1-sol": [
-          "MMMU-Pro (Vision)"
+          "Improper actions in workplace tasks"
         ],
         "gpt-6-1-terra": [
-          "MMMU-Pro (Vision)"
+          "Improper actions in workplace tasks"
         ],
         "gpt-6-astra": [
-          "MMMU-Pro (Vision)"
+          "Improper actions in workplace tasks"
         ],
-        "hy4": [
-          "MMMU-Pro"
+        "gpt-6-sol": [
+          "Improper actions in workplace tasks"
         ],
-        "kimi-k3-1-pro": [
-          "MMMU-Pro"
+        "gpt-6.2-astra": [
+          "Improper actions in workplace tasks"
+        ],
+        "gpt-6.2-sol": [
+          "Improper actions in workplace tasks"
         ]
       }
     },
     {
-      "rank": 25,
-      "benchmark_id": "benchcad",
-      "name": "BenchCAD",
-      "domain": "多模态",
-      "count": 5,
-      "share": 0.25,
+      "rank": 27,
+      "benchmark_id": "kernelgen",
+      "name": "KernelGen 1P",
+      "domain": "代码",
+      "count": 6,
+      "share": 0.3,
       "models": [
-        "claude-fable-5-2",
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 9,
+      "versions": {
+        "gpt-6-1-sol": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-1-terra": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-astra": [
+          "KernelGen 1P"
+        ],
+        "gpt-6-sol": [
+          "KernelGen 1P"
+        ],
+        "gpt-6.2-astra": [
+          "KernelGen 1P"
+        ],
+        "gpt-6.2-sol": [
+          "KernelGen 1P"
+        ]
+      }
+    },
+    {
+      "rank": 28,
+      "benchmark_id": "mentalhealthbench",
+      "name": "MentalHealthBench",
+      "domain": "生物与医学",
+      "count": 6,
+      "share": 0.3,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 63,
+      "versions": {
+        "gpt-6-1-sol": [
+          "MentalHealthBench",
+          "MentalHealthBench (overall)"
+        ],
+        "gpt-6-1-terra": [
+          "MentalHealthBench",
+          "MentalHealthBench (overall)"
+        ],
+        "gpt-6-astra": [
+          "MentalHealthBench (overall)"
+        ],
+        "gpt-6-sol": [
+          "MentalHealthBench (overall)"
+        ],
+        "gpt-6.2-astra": [
+          "MentalHealthBench (overall)"
+        ],
+        "gpt-6.2-sol": [
+          "MentalHealthBench (overall)"
+        ]
+      }
+    },
+    {
+      "rank": 29,
+      "benchmark_id": "phage-plasmid-coevolution",
+      "name": "Phage–plasmid Co-evolution",
+      "domain": "生物与医学",
+      "count": 6,
+      "share": 0.3,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 11,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-1-terra": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-astra": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6-sol": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6.2-astra": [
+          "Phage–plasmid Co-evolution"
+        ],
+        "gpt-6.2-sol": [
+          "Phage–plasmid Co-evolution"
+        ]
+      }
+    },
+    {
+      "rank": 30,
+      "benchmark_id": "shp2-function-prediction",
+      "name": "SHP2 Protein Function Prediction",
+      "domain": "生物与医学",
+      "count": 6,
+      "share": 0.3,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 13,
+      "versions": {
+        "gpt-6-1-sol": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-1-terra": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-astra": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6-sol": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6.2-astra": [
+          "SHP2 Protein Function Prediction"
+        ],
+        "gpt-6.2-sol": [
+          "SHP2 Protein Function Prediction"
+        ]
+      }
+    },
+    {
+      "rank": 31,
+      "benchmark_id": "vct",
+      "name": "Virology Capabilities Test",
+      "domain": "安全",
+      "count": 6,
+      "share": 0.3,
+      "models": [
         "claude-opus-5-5",
         "claude-sonnet-5-5",
         "gpt-6-astra",
-        "kimi-k3-1-pro"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 15,
       "versions": {
-        "claude-fable-5-2": [
-          "BenchCAD 2.1"
-        ],
         "claude-opus-5-5": [
-          "BenchCAD"
+          "Virology Capabilities Test"
         ],
         "claude-sonnet-5-5": [
-          "BenchCAD"
+          "Virology Capabilities Test"
         ],
         "gpt-6-astra": [
-          "BenchCAD"
+          "Virology Capabilities Test"
         ],
-        "kimi-k3-1-pro": [
-          "BenchCAD",
-          "BenchCAD with tools"
+        "gpt-6.2-astra": [
+          "Virology Capabilities Test"
+        ],
+        "gpt-6.2-sol": [
+          "Virology Capabilities Test"
+        ],
+        "muse-wonder-full": [
+          "Virology Capabilities Test"
         ]
       }
     },
     {
-      "rank": 26,
+      "rank": 32,
+      "benchmark_id": "blocker-deception-openai",
+      "name": "Blocker Deception",
+      "domain": "安全",
+      "count": 5,
+      "share": 0.25,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 93,
+      "versions": {
+        "gpt-6-1-sol": [
+          "Blocker Deception"
+        ],
+        "gpt-6-1-terra": [
+          "Blocker Deception"
+        ],
+        "gpt-6-astra": [
+          "Blocker Deception"
+        ],
+        "gpt-6.2-astra": [
+          "Blocker Deception"
+        ],
+        "gpt-6.2-sol": [
+          "Blocker Deception"
+        ]
+      }
+    },
+    {
+      "rank": 33,
       "benchmark_id": "cursorbench",
       "name": "CursorBench",
       "domain": "代码",
@@ -3559,10 +3971,10 @@
         "claude-opus-5-5",
         "claude-sonnet-5-5",
         "gemini-4-carbon",
-        "grok-4-7"
+        "gemini-4-neon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 9,
+      "rank_change": -7,
       "versions": {
         "claude-fable-5-2": [
           "CursorBench 4.0"
@@ -3576,13 +3988,13 @@
         "gemini-4-carbon": [
           "CursorBench 4.0"
         ],
-        "grok-4-7": [
-          "CursorBench 4.0"
+        "gemini-4-neon": [
+          "CursorBench 4.1"
         ]
       }
     },
     {
-      "rank": 27,
+      "rank": 34,
       "benchmark_id": "draco",
       "name": "DRACO",
       "domain": "Agent",
@@ -3596,7 +4008,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 10,
+      "rank_change": -7,
       "versions": {
         "claude-fable-5-2": [
           "DRACO"
@@ -3616,9 +4028,9 @@
       }
     },
     {
-      "rank": 28,
-      "benchmark_id": "swe-bench-pro",
-      "name": "SWE-Bench Pro",
+      "rank": 35,
+      "benchmark_id": "frontierswe",
+      "name": "FrontierSWE",
       "domain": "代码",
       "count": 5,
       "share": 0.25,
@@ -3626,31 +4038,99 @@
         "claude-fable-5-2",
         "claude-opus-5-5",
         "claude-sonnet-5-5",
-        "deepseek-v4-1-flash",
-        "qwen3-8-omni-flash"
+        "gemini-4-argon",
+        "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1,
+      "rank_change": -13,
       "versions": {
         "claude-fable-5-2": [
-          "SWE-Bench Pro"
+          "FrontierSWE v2"
         ],
         "claude-opus-5-5": [
-          "SWE-Bench Pro"
+          "FrontierSWE v2"
         ],
         "claude-sonnet-5-5": [
-          "SWE-Bench Pro"
+          "FrontierSWE v2"
         ],
-        "deepseek-v4-1-flash": [
-          "SWE-Bench Pro"
+        "gemini-4-argon": [
+          "FrontierSWE v2"
         ],
-        "qwen3-8-omni-flash": [
-          "SWE-Bench Pro"
+        "gemini-4-carbon": [
+          "FrontierSWE v2"
         ]
       }
     },
     {
-      "rank": 29,
+      "rank": 36,
+      "benchmark_id": "mmmu-pro",
+      "name": "MMMU-Pro",
+      "domain": "多模态",
+      "count": 5,
+      "share": 0.25,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "hy4",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -12,
+      "versions": {
+        "gpt-6-1-sol": [
+          "MMMU-Pro (Vision)"
+        ],
+        "gpt-6-1-terra": [
+          "MMMU-Pro (Vision)"
+        ],
+        "gpt-6-astra": [
+          "MMMU-Pro (Vision)"
+        ],
+        "hy4": [
+          "MMMU-Pro"
+        ],
+        "kimi-k3-1-pro": [
+          "MMMU-Pro"
+        ]
+      }
+    },
+    {
+      "rank": 37,
+      "benchmark_id": "nanogpt-evaluation",
+      "name": "NanoGPT (OpenAI research evaluation)",
+      "domain": "代码",
+      "count": 5,
+      "share": 0.25,
+      "models": [
+        "claude-opus-5-5",
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 56,
+      "versions": {
+        "claude-opus-5-5": [
+          "NanoGPT (OpenAI research evaluation)"
+        ],
+        "gpt-6-1-terra": [
+          "NanoGPT (OpenAI research evaluation)"
+        ],
+        "gpt-6-astra": [
+          "NanoGPT (OpenAI research evaluation)"
+        ],
+        "gpt-6.2-astra": [
+          "NanoGPT (OpenAI research evaluation)"
+        ],
+        "gpt-6.2-sol": [
+          "NanoGPT (OpenAI research evaluation)"
+        ]
+      }
+    },
+    {
+      "rank": 38,
       "benchmark_id": "apex-agents",
       "name": "APEX-Agents",
       "domain": "Agent",
@@ -3663,7 +4143,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 35,
+      "rank_change": -9,
       "versions": {
         "deepseek-v4-1-flash-1017": [
           "APEX-Agents"
@@ -3680,7 +4160,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 39,
       "benchmark_id": "biomysterybench",
       "name": "BioMysteryBench",
       "domain": "其他",
@@ -3693,7 +4173,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 19,
+      "rank_change": -9,
       "versions": {
         "claude-opus-5-5": [
           "BioMysteryBench"
@@ -3710,7 +4190,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 40,
       "benchmark_id": "broken-search-tool-openai",
       "name": "Broken Search Tool",
       "domain": "安全",
@@ -3723,7 +4203,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": -9,
       "versions": {
         "gpt-6-1-sol": [
           "Broken Search Tool"
@@ -3740,7 +4220,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 41,
       "benchmark_id": "coding-deception-openai",
       "name": "Coding Deception",
       "domain": "安全",
@@ -3753,7 +4233,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 1,
+      "rank_change": -9,
       "versions": {
         "gpt-6-1-sol": [
           "Coding Deception"
@@ -3770,67 +4250,68 @@
       }
     },
     {
-      "rank": 33,
-      "benchmark_id": "coronavirus-ace2-screen",
-      "name": "Coronavirus–ACE2 Cell-Entry Screen",
-      "domain": "生物与医学",
+      "rank": 42,
+      "benchmark_id": "deepbinary",
+      "name": "DeepBinary",
+      "domain": "安全",
       "count": 4,
       "share": 0.2,
       "models": [
         "gpt-6-1-sol",
-        "gpt-6-1-terra",
         "gpt-6-astra",
-        "gpt-6-sol"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": 1,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
         "gpt-6-1-sol": [
-          "Coronavirus–ACE2 Cell-Entry Screen"
-        ],
-        "gpt-6-1-terra": [
-          "Coronavirus–ACE2 Cell-Entry Screen"
+          "DeepBinary"
         ],
         "gpt-6-astra": [
-          "Coronavirus–ACE2 Cell-Entry Screen"
+          "DeepBinary"
         ],
-        "gpt-6-sol": [
-          "Coronavirus–ACE2 Cell-Entry Screen"
+        "gpt-6.2-astra": [
+          "DeepBinary"
+        ],
+        "gpt-6.2-sol": [
+          "DeepBinary"
         ]
       }
     },
     {
-      "rank": 34,
+      "rank": 43,
       "benchmark_id": "gpqa",
       "name": "GPQA",
       "domain": "推理",
       "count": 4,
       "share": 0.2,
       "models": [
-        "deepseek-v4-1-flash",
         "gpt-6-astra",
-        "kimi-k3-1-pro",
-        "qwen3-8-omni-flash"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol",
+        "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -19,
+      "rank_change": -9,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "GPQA Diamond"
-        ],
         "gpt-6-astra": [
-          "GPQA Diamond"
+          "GPQA Diamond",
+          "GPQA Diamond no tools"
+        ],
+        "gpt-6.2-astra": [
+          "GPQA Diamond no tools"
+        ],
+        "gpt-6.2-sol": [
+          "GPQA Diamond no tools"
         ],
         "kimi-k3-1-pro": [
-          "GPQA Diamond"
-        ],
-        "qwen3-8-omni-flash": [
           "GPQA Diamond"
         ]
       }
     },
     {
-      "rank": 35,
+      "rank": 44,
       "benchmark_id": "jobbench",
       "name": "JobBench",
       "domain": "Agent",
@@ -3843,7 +4324,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 16,
+      "rank_change": -9,
       "versions": {
         "longcat-2-5": [
           "JobBench"
@@ -3860,37 +4341,67 @@
       }
     },
     {
-      "rank": 36,
-      "benchmark_id": "kernelgen",
-      "name": "KernelGen 1P",
-      "domain": "代码",
+      "rank": 45,
+      "benchmark_id": "lifeval",
+      "name": "LifeVal",
+      "domain": "Agent",
       "count": 4,
       "share": 0.2,
       "models": [
         "gpt-6-1-sol",
-        "gpt-6-1-terra",
         "gpt-6-astra",
-        "gpt-6-sol"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
         "gpt-6-1-sol": [
-          "KernelGen 1P"
-        ],
-        "gpt-6-1-terra": [
-          "KernelGen 1P"
+          "LifeVal"
         ],
         "gpt-6-astra": [
-          "KernelGen 1P"
+          "LifeVal"
         ],
-        "gpt-6-sol": [
-          "KernelGen 1P"
+        "gpt-6.2-astra": [
+          "LifeVal"
+        ],
+        "gpt-6.2-sol": [
+          "LifeVal"
         ]
       }
     },
     {
-      "rank": 37,
+      "rank": 46,
+      "benchmark_id": "mle-bench",
+      "name": "MLE-Bench",
+      "domain": "代码",
+      "count": 4,
+      "share": 0.2,
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 138,
+      "versions": {
+        "gpt-6-1-terra": [
+          "MLE-Bench Revised"
+        ],
+        "gpt-6-astra": [
+          "MLE-Bench Revised"
+        ],
+        "gpt-6.2-astra": [
+          "MLE-Bench Revised"
+        ],
+        "gpt-6.2-sol": [
+          "MLE-Bench Revised"
+        ]
+      }
+    },
+    {
+      "rank": 47,
       "benchmark_id": "multimodal-troubleshooting-virology",
       "name": "Multimodal Troubleshooting Virology",
       "domain": "生物与医学",
@@ -3903,7 +4414,7 @@
         "gpt-6-sol"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": -10,
       "versions": {
         "gpt-6-1-sol": [
           "Multimodal Troubleshooting Virology"
@@ -3920,37 +4431,7 @@
       }
     },
     {
-      "rank": 38,
-      "benchmark_id": "nl2repo-bench",
-      "name": "NL2Repo-Bench",
-      "domain": "代码",
-      "count": 4,
-      "share": 0.2,
-      "models": [
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "longcat-2-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -11,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "NL2Repo-Bench"
-        ],
-        "deepseek-v4-1-flash-1017": [
-          "NL2Repo-Bench"
-        ],
-        "longcat-2-5": [
-          "NL2Repo-Bench"
-        ],
-        "qwen3-8-omni-flash": [
-          "NL2Repo-Bench"
-        ]
-      }
-    },
-    {
-      "rank": 39,
+      "rank": 48,
       "benchmark_id": "officeqa",
       "name": "OfficeQA",
       "domain": "Agent",
@@ -3963,7 +4444,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 16,
+      "rank_change": -9,
       "versions": {
         "claude-fable-5-2": [
           "OfficeQA",
@@ -3981,67 +4462,37 @@
       }
     },
     {
-      "rank": 40,
-      "benchmark_id": "phage-plasmid-coevolution",
-      "name": "Phage–plasmid Co-evolution",
-      "domain": "生物与医学",
+      "rank": 49,
+      "benchmark_id": "patchbench",
+      "name": "PatchBench",
+      "domain": "安全",
       "count": 4,
       "share": 0.2,
       "models": [
         "gpt-6-1-sol",
-        "gpt-6-1-terra",
         "gpt-6-astra",
-        "gpt-6-sol"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
         "gpt-6-1-sol": [
-          "Phage–plasmid Co-evolution"
-        ],
-        "gpt-6-1-terra": [
-          "Phage–plasmid Co-evolution"
+          "PatchBench"
         ],
         "gpt-6-astra": [
-          "Phage–plasmid Co-evolution"
+          "PatchBench"
         ],
-        "gpt-6-sol": [
-          "Phage–plasmid Co-evolution"
+        "gpt-6.2-astra": [
+          "PatchBench"
+        ],
+        "gpt-6.2-sol": [
+          "PatchBench"
         ]
       }
     },
     {
-      "rank": 41,
-      "benchmark_id": "posttrainbench",
-      "name": "PostTrainBench",
-      "domain": "代码",
-      "count": 4,
-      "share": 0.2,
-      "models": [
-        "gemini-4-argon",
-        "gpt-6-astra",
-        "hy4",
-        "kimi-k3-1-pro"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "gemini-4-argon": [
-          "PostTrainBench"
-        ],
-        "gpt-6-astra": [
-          "PostTrainBench Lite"
-        ],
-        "hy4": [
-          "PostTrainBench v1.2"
-        ],
-        "kimi-k3-1-pro": [
-          "PostTrainBench"
-        ]
-      }
-    },
-    {
-      "rank": 42,
+      "rank": 50,
       "benchmark_id": "protocolqa",
       "name": "ProtocolQA",
       "domain": "生物与医学",
@@ -4054,7 +4505,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": -8,
       "versions": {
         "gpt-6-1-sol": [
           "ProtocolQA Open-Ended"
@@ -4071,72 +4522,7 @@
       }
     },
     {
-      "rank": 43,
-      "benchmark_id": "shp2-function-prediction",
-      "name": "SHP2 Protein Function Prediction",
-      "domain": "生物与医学",
-      "count": 4,
-      "share": 0.2,
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "gpt-6-1-sol": [
-          "SHP2 Protein Function Prediction"
-        ],
-        "gpt-6-1-terra": [
-          "SHP2 Protein Function Prediction"
-        ],
-        "gpt-6-astra": [
-          "SHP2 Protein Function Prediction"
-        ],
-        "gpt-6-sol": [
-          "SHP2 Protein Function Prediction"
-        ]
-      }
-    },
-    {
-      "rank": 44,
-      "benchmark_id": "swe-bench",
-      "name": "SWE-bench",
-      "domain": "代码",
-      "count": 4,
-      "share": 0.2,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -16,
-      "versions": {
-        "claude-fable-5-2": [
-          "SWE-bench Multilingual",
-          "SWE-bench Multimodal"
-        ],
-        "claude-opus-5-5": [
-          "SWE-bench",
-          "SWE-bench Multilingual",
-          "SWE-bench Multimodal"
-        ],
-        "claude-sonnet-5-5": [
-          "SWE-bench",
-          "SWE-bench Multilingual",
-          "SWE-bench Multimodal"
-        ],
-        "qwen3-8-omni-flash": [
-          "SWE-bench Multilingual"
-        ]
-      }
-    },
-    {
-      "rank": 45,
+      "rank": 51,
       "benchmark_id": "swe-marathon",
       "name": "SWE-Marathon",
       "domain": "代码",
@@ -4149,7 +4535,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 14,
+      "rank_change": -6,
       "versions": {
         "hy4": [
           "SWE-Marathon v1.1"
@@ -4166,37 +4552,68 @@
       }
     },
     {
-      "rank": 46,
-      "benchmark_id": "vct",
-      "name": "Virology Capabilities Test",
-      "domain": "安全",
+      "rank": 52,
+      "benchmark_id": "swe-sweep",
+      "name": "SWE-sweep",
+      "domain": "代码",
       "count": 4,
       "share": 0.2,
       "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "gpt-6-astra",
-        "muse-wonder-full"
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": 12,
       "versions": {
-        "claude-opus-5-5": [
-          "Virology Capabilities Test"
+        "gemini-4-argon": [
+          "SWE-sweep"
         ],
-        "claude-sonnet-5-5": [
-          "Virology Capabilities Test"
+        "gemini-4-carbon": [
+          "SWE-sweep"
         ],
-        "gpt-6-astra": [
-          "Virology Capabilities Test"
+        "gemini-4-hydrogen": [
+          "SWE-sweep"
         ],
-        "muse-wonder-full": [
-          "Virology Capabilities Test"
+        "gemini-4-neon": [
+          "SWE-sweep (mini-SWE harness)",
+          "SWE-sweep (provider harness)"
         ]
       }
     },
     {
-      "rank": 47,
+      "rank": 53,
+      "benchmark_id": "vending-bench",
+      "name": "Vending-Bench",
+      "domain": "Agent",
+      "count": 4,
+      "share": 0.2,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 13,
+      "versions": {
+        "gemini-4-argon": [
+          "Vending-Bench 2"
+        ],
+        "gemini-4-carbon": [
+          "Vending-Bench 2"
+        ],
+        "gemini-4-hydrogen": [
+          "Vending-Bench 2"
+        ],
+        "gemini-4-neon": [
+          "Vending-Bench 2"
+        ]
+      }
+    },
+    {
+      "rank": 54,
       "benchmark_id": "wandr",
       "name": "WANDR",
       "domain": "Agent",
@@ -4209,7 +4626,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": -7,
       "versions": {
         "claude-fable-5-2": [
           "WANDR"
@@ -4226,24 +4643,519 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 55,
+      "benchmark_id": "agent-arena",
+      "name": "Agent Arena",
+      "domain": "Agent",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-hydrogen",
+        "gemini-4-neon",
+        "qwen4-max"
+      ],
+      "first_seen": "2026-11-13",
+      "rank_change": 13,
+      "versions": {
+        "gemini-4-hydrogen": [
+          "Agent Arena"
+        ],
+        "gemini-4-neon": [
+          "Agent Arena Index"
+        ],
+        "qwen4-max": [
+          "Agent Arena"
+        ]
+      }
+    },
+    {
+      "rank": 56,
+      "benchmark_id": "agentic-honesty",
+      "name": "Agentic honesty benchmark",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen"
+      ],
+      "first_seen": "2026-11-11",
+      "rank_change": -7,
+      "versions": {
+        "gemini-4-argon": [
+          "Agentic honesty benchmark"
+        ],
+        "gemini-4-carbon": [
+          "Agentic honesty benchmark"
+        ],
+        "gemini-4-hydrogen": [
+          "Agentic honesty benchmark"
+        ]
+      }
+    },
+    {
+      "rank": 57,
+      "benchmark_id": "bbq",
+      "name": "Bias Benchmark for Question Answering",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -6,
+      "versions": {
+        "claude-fable-5-2": [
+          "Bias Benchmark for Question Answering"
+        ],
+        "claude-opus-5-5": [
+          "Bias Benchmark for Question Answering"
+        ],
+        "claude-sonnet-5-5": [
+          "Bias Benchmark for Question Answering"
+        ]
+      }
+    },
+    {
+      "rank": 58,
+      "benchmark_id": "browsecomp",
+      "name": "BrowseComp",
+      "domain": "其他",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gpt-6-astra",
+        "kimi-k3-1-pro",
+        "longcat-2-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -6,
+      "versions": {
+        "gpt-6-astra": [
+          "BrowseComp"
+        ],
+        "kimi-k3-1-pro": [
+          "BrowseComp"
+        ],
+        "longcat-2-5": [
+          "BrowseComp"
+        ]
+      }
+    },
+    {
+      "rank": 59,
+      "benchmark_id": "cwe-bench",
+      "name": "CWE-bench",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 17,
+      "versions": {
+        "gemini-4-argon": [
+          "CWE-bench v1"
+        ],
+        "gemini-4-carbon": [
+          "CWE-bench v1"
+        ],
+        "gemini-4-neon": [
+          "CWE-bench v2"
+        ]
+      }
+    },
+    {
+      "rank": 60,
+      "benchmark_id": "finance-agent",
+      "name": "Finance Agent",
+      "domain": "Agent",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "muse-wonder",
+        "muse-wonder-full"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -5,
+      "versions": {
+        "gemini-4-argon": [
+          "Finance Agent"
+        ],
+        "muse-wonder": [
+          "Finance Agent"
+        ],
+        "muse-wonder-full": [
+          "Finance Agent"
+        ]
+      }
+    },
+    {
+      "rank": 61,
+      "benchmark_id": "global-mmlu",
+      "name": "Global MMLU",
+      "domain": "语言",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -5,
+      "versions": {
+        "claude-fable-5-2": [
+          "Global MMLU"
+        ],
+        "claude-opus-5-5": [
+          "Global MMLU"
+        ],
+        "claude-sonnet-5-5": [
+          "Global MMLU"
+        ]
+      }
+    },
+    {
+      "rank": 62,
+      "benchmark_id": "graphwalks",
+      "name": "GraphWalks",
+      "domain": "推理",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 17,
+      "versions": {
+        "gemini-4-argon": [
+          "GraphWalks"
+        ],
+        "gemini-4-carbon": [
+          "GraphWalks"
+        ],
+        "gemini-4-neon": [
+          "GraphWalks 256k to 1M, BFS (F1)"
+        ]
+      }
+    },
+    {
+      "rank": 63,
+      "benchmark_id": "linuxarena",
+      "name": "LinuxArena",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "gemini-4-argon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -6,
+      "versions": {
+        "claude-opus-5-5": [
+          "LinuxArena"
+        ],
+        "claude-sonnet-5-5": [
+          "LinuxArena"
+        ],
+        "gemini-4-argon": [
+          "LinuxArena"
+        ]
+      }
+    },
+    {
+      "rank": 64,
+      "benchmark_id": "mask",
+      "name": "MASK",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "muse-wonder-full"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -6,
+      "versions": {
+        "claude-opus-5-5": [
+          "MASK"
+        ],
+        "claude-sonnet-5-5": [
+          "MASK"
+        ],
+        "muse-wonder-full": [
+          "MASK"
+        ]
+      }
+    },
+    {
+      "rank": 65,
+      "benchmark_id": "milu",
+      "name": "MILU",
+      "domain": "语言",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -6,
+      "versions": {
+        "claude-fable-5-2": [
+          "MILU"
+        ],
+        "claude-opus-5-5": [
+          "MILU"
+        ],
+        "claude-sonnet-5-5": [
+          "MILU"
+        ]
+      }
+    },
+    {
+      "rank": 66,
+      "benchmark_id": "mka",
+      "name": "Multimodal Knowledge Agent",
+      "domain": "多模态",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-carbon",
+        "gemini-4-hydrogen",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-11",
+      "rank_change": 26,
+      "versions": {
+        "gemini-4-carbon": [
+          "Multimodal Knowledge Agent"
+        ],
+        "gemini-4-hydrogen": [
+          "Multimodal Knowledge Agent"
+        ],
+        "gemini-4-neon": [
+          "Multimodal Knowledge Agent Climb WSR"
+        ]
+      }
+    },
+    {
+      "rank": 67,
+      "benchmark_id": "oai-repo-sabotage",
+      "name": "OAI-repo Sabotage",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -7,
+      "versions": {
+        "gpt-6-1-sol": [
+          "OAI-repo Sabotage"
+        ],
+        "gpt-6-astra": [
+          "OAI-repo Sabotage"
+        ],
+        "gpt-6-sol": [
+          "OAI-repo Sabotage"
+        ]
+      }
+    },
+    {
+      "rank": 68,
+      "benchmark_id": "riemannbench",
+      "name": "RiemannBench",
+      "domain": "数学",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": 28,
+      "versions": {
+        "gemini-4-argon": [
+          "RiemannBench"
+        ],
+        "gemini-4-carbon": [
+          "RiemannBench"
+        ],
+        "gemini-4-neon": [
+          "RiemannBench"
+        ]
+      }
+    },
+    {
+      "rank": 69,
+      "benchmark_id": "sandbox-bench-openai",
+      "name": "Sandbox Bench",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-astra",
+        "gpt-6-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -8,
+      "versions": {
+        "gpt-6-1-terra": [
+          "Sandbox Bench"
+        ],
+        "gpt-6-astra": [
+          "Sandbox Bench"
+        ],
+        "gpt-6-sol": [
+          "Sandbox Bench"
+        ]
+      }
+    },
+    {
+      "rank": 70,
+      "benchmark_id": "sre-bench",
+      "name": "SRE-Bench",
+      "domain": "安全",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon",
+        "gpt-6-astra"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -7,
+      "versions": {
+        "gemini-4-argon": [
+          "SRE-Bench"
+        ],
+        "gemini-4-carbon": [
+          "SRE-Bench"
+        ],
+        "gpt-6-astra": [
+          "SRE-Bench"
+        ]
+      }
+    },
+    {
+      "rank": 71,
+      "benchmark_id": "swe-bench",
+      "name": "SWE-bench",
+      "domain": "代码",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -27,
+      "versions": {
+        "claude-fable-5-2": [
+          "SWE-bench Multilingual",
+          "SWE-bench Multimodal"
+        ],
+        "claude-opus-5-5": [
+          "SWE-bench",
+          "SWE-bench Multilingual",
+          "SWE-bench Multimodal"
+        ],
+        "claude-sonnet-5-5": [
+          "SWE-bench",
+          "SWE-bench Multilingual",
+          "SWE-bench Multimodal"
+        ]
+      }
+    },
+    {
+      "rank": 72,
+      "benchmark_id": "swe-bench-pro",
+      "name": "SWE-Bench Pro",
+      "domain": "代码",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "claude-fable-5-2",
+        "claude-opus-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -44,
+      "versions": {
+        "claude-fable-5-2": [
+          "SWE-Bench Pro"
+        ],
+        "claude-opus-5-5": [
+          "SWE-Bench Pro"
+        ],
+        "claude-sonnet-5-5": [
+          "SWE-Bench Pro"
+        ]
+      }
+    },
+    {
+      "rank": 73,
+      "benchmark_id": "troubleshootingbench",
+      "name": "TroubleshootingBench",
+      "domain": "生物与医学",
+      "count": 3,
+      "share": 0.15,
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -8,
+      "versions": {
+        "gpt-6-1-sol": [
+          "TroubleshootingBench"
+        ],
+        "gpt-6-astra": [
+          "TroubleshootingBench"
+        ],
+        "gpt-6-sol": [
+          "TroubleshootingBench"
+        ]
+      }
+    },
+    {
+      "rank": 74,
       "benchmark_id": "zerobench",
       "name": "ZeroBench",
       "domain": "多模态",
-      "count": 4,
-      "share": 0.2,
+      "count": 3,
+      "share": 0.15,
       "models": [
-        "deepseek-v4-1-flash",
         "deepseek-v4-1-flash-1017",
         "hy4",
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 13,
+      "rank_change": -26,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "ZeroBench (main)"
-        ],
         "deepseek-v4-1-flash-1017": [
           "ZeroBench (main)"
         ],
@@ -4258,475 +5170,29 @@
       }
     },
     {
-      "rank": 49,
-      "benchmark_id": "agentic-honesty",
-      "name": "Agentic honesty benchmark",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-11",
-      "rank_change": -1,
-      "versions": {
-        "gemini-4-argon": [
-          "Agentic honesty benchmark"
-        ],
-        "gemini-4-carbon": [
-          "Agentic honesty benchmark"
-        ],
-        "gemini-4-hydrogen": [
-          "Agentic honesty benchmark"
-        ]
-      }
-    },
-    {
-      "rank": 50,
-      "benchmark_id": "babyvision",
-      "name": "BabyVision",
+      "rank": 75,
+      "benchmark_id": "aa-3d",
+      "name": "AA-3D",
       "domain": "多模态",
-      "count": 3,
-      "share": 0.15,
+      "count": 2,
+      "share": 0.1,
       "models": [
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017",
-        "kimi-k3-1-pro"
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": -20,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
-        "deepseek-v4-1-flash": [
-          "BabyVision"
+        "gpt-6.2-astra": [
+          "AA-3D"
         ],
-        "deepseek-v4-1-flash-1017": [
-          "BabyVision"
-        ],
-        "kimi-k3-1-pro": [
-          "BabyVision"
+        "gpt-6.2-sol": [
+          "AA-3D"
         ]
       }
     },
     {
-      "rank": 51,
-      "benchmark_id": "bbq",
-      "name": "Bias Benchmark for Question Answering",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 15,
-      "versions": {
-        "claude-fable-5-2": [
-          "Bias Benchmark for Question Answering"
-        ],
-        "claude-opus-5-5": [
-          "Bias Benchmark for Question Answering"
-        ],
-        "claude-sonnet-5-5": [
-          "Bias Benchmark for Question Answering"
-        ]
-      }
-    },
-    {
-      "rank": 52,
-      "benchmark_id": "browsecomp",
-      "name": "BrowseComp",
-      "domain": "其他",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gpt-6-astra",
-        "kimi-k3-1-pro",
-        "longcat-2-5"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "gpt-6-astra": [
-          "BrowseComp"
-        ],
-        "kimi-k3-1-pro": [
-          "BrowseComp"
-        ],
-        "longcat-2-5": [
-          "BrowseComp"
-        ]
-      }
-    },
-    {
-      "rank": 53,
-      "benchmark_id": "charxiv",
-      "name": "CharXiv",
-      "domain": "其他",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "kimi-k3-1-pro",
-        "longcat-2-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -21,
-      "versions": {
-        "kimi-k3-1-pro": [
-          "CharXiv Reasoning"
-        ],
-        "longcat-2-5": [
-          "CharXiv Reasoning with tools"
-        ],
-        "qwen3-8-omni-flash": [
-          "CharXiv Reasoning"
-        ]
-      }
-    },
-    {
-      "rank": 54,
-      "benchmark_id": "cybergym",
-      "name": "CyberGym",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-opus-5-5",
-        "deepseek-v4-1-flash",
-        "muse-wonder-full"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -18,
-      "versions": {
-        "claude-opus-5-5": [
-          "CyberGym"
-        ],
-        "deepseek-v4-1-flash": [
-          "CyberGym"
-        ],
-        "muse-wonder-full": [
-          "CyberGym"
-        ]
-      }
-    },
-    {
-      "rank": 55,
-      "benchmark_id": "finance-agent",
-      "name": "Finance Agent",
-      "domain": "Agent",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gemini-4-argon",
-        "muse-wonder",
-        "muse-wonder-full"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -17,
-      "versions": {
-        "gemini-4-argon": [
-          "Finance Agent"
-        ],
-        "muse-wonder": [
-          "Finance Agent"
-        ],
-        "muse-wonder-full": [
-          "Finance Agent"
-        ]
-      }
-    },
-    {
-      "rank": 56,
-      "benchmark_id": "global-mmlu",
-      "name": "Global MMLU",
-      "domain": "语言",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 31,
-      "versions": {
-        "claude-fable-5-2": [
-          "Global MMLU"
-        ],
-        "claude-opus-5-5": [
-          "Global MMLU"
-        ],
-        "claude-sonnet-5-5": [
-          "Global MMLU"
-        ]
-      }
-    },
-    {
-      "rank": 57,
-      "benchmark_id": "linuxarena",
-      "name": "LinuxArena",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "gemini-4-argon"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "claude-opus-5-5": [
-          "LinuxArena"
-        ],
-        "claude-sonnet-5-5": [
-          "LinuxArena"
-        ],
-        "gemini-4-argon": [
-          "LinuxArena"
-        ]
-      }
-    },
-    {
-      "rank": 58,
-      "benchmark_id": "mask",
-      "name": "MASK",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "muse-wonder-full"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "claude-opus-5-5": [
-          "MASK"
-        ],
-        "claude-sonnet-5-5": [
-          "MASK"
-        ],
-        "muse-wonder-full": [
-          "MASK"
-        ]
-      }
-    },
-    {
-      "rank": 59,
-      "benchmark_id": "milu",
-      "name": "MILU",
-      "domain": "语言",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "claude-fable-5-2",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 25,
-      "versions": {
-        "claude-fable-5-2": [
-          "MILU"
-        ],
-        "claude-opus-5-5": [
-          "MILU"
-        ],
-        "claude-sonnet-5-5": [
-          "MILU"
-        ]
-      }
-    },
-    {
-      "rank": 60,
-      "benchmark_id": "oai-repo-sabotage",
-      "name": "OAI-repo Sabotage",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-astra",
-        "gpt-6-sol"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -19,
-      "versions": {
-        "gpt-6-1-sol": [
-          "OAI-repo Sabotage"
-        ],
-        "gpt-6-astra": [
-          "OAI-repo Sabotage"
-        ],
-        "gpt-6-sol": [
-          "OAI-repo Sabotage"
-        ]
-      }
-    },
-    {
-      "rank": 61,
-      "benchmark_id": "sandbox-bench-openai",
-      "name": "Sandbox Bench",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gpt-6-1-terra",
-        "gpt-6-astra",
-        "gpt-6-sol"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "gpt-6-1-terra": [
-          "Sandbox Bench"
-        ],
-        "gpt-6-astra": [
-          "Sandbox Bench"
-        ],
-        "gpt-6-sol": [
-          "Sandbox Bench"
-        ]
-      }
-    },
-    {
-      "rank": 62,
-      "benchmark_id": "simpleqa",
-      "name": "SimpleQA",
-      "domain": "语言",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "deepseek-v4-1-flash",
-        "gemini-4-argon",
-        "gemini-4-carbon"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "SimpleQA Verified"
-        ],
-        "gemini-4-argon": [
-          "SimpleQA Verified"
-        ],
-        "gemini-4-carbon": [
-          "SimpleQA Verified"
-        ]
-      }
-    },
-    {
-      "rank": 63,
-      "benchmark_id": "sre-bench",
-      "name": "SRE-Bench",
-      "domain": "安全",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gpt-6-astra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "gemini-4-argon": [
-          "SRE-Bench"
-        ],
-        "gemini-4-carbon": [
-          "SRE-Bench"
-        ],
-        "gpt-6-astra": [
-          "SRE-Bench"
-        ]
-      }
-    },
-    {
-      "rank": 64,
-      "benchmark_id": "swe-sweep",
-      "name": "SWE-sweep",
-      "domain": "代码",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 30,
-      "versions": {
-        "gemini-4-argon": [
-          "SWE-sweep"
-        ],
-        "gemini-4-carbon": [
-          "SWE-sweep"
-        ],
-        "gemini-4-hydrogen": [
-          "SWE-sweep"
-        ]
-      }
-    },
-    {
-      "rank": 65,
-      "benchmark_id": "troubleshootingbench",
-      "name": "TroubleshootingBench",
-      "domain": "生物与医学",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-astra",
-        "gpt-6-sol"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "gpt-6-1-sol": [
-          "TroubleshootingBench"
-        ],
-        "gpt-6-astra": [
-          "TroubleshootingBench"
-        ],
-        "gpt-6-sol": [
-          "TroubleshootingBench"
-        ]
-      }
-    },
-    {
-      "rank": 66,
-      "benchmark_id": "vending-bench",
-      "name": "Vending-Bench",
-      "domain": "Agent",
-      "count": 3,
-      "share": 0.15,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon",
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 31,
-      "versions": {
-        "gemini-4-argon": [
-          "Vending-Bench 2"
-        ],
-        "gemini-4-carbon": [
-          "Vending-Bench 2"
-        ],
-        "gemini-4-hydrogen": [
-          "Vending-Bench 2"
-        ]
-      }
-    },
-    {
-      "rank": 67,
+      "rank": 76,
       "benchmark_id": "aa-lcr",
       "name": "AA-LCR",
       "domain": "Agent",
@@ -4737,7 +5203,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -5,
+      "rank_change": -9,
       "versions": {
         "muse-wonder": [
           "AA-LCR"
@@ -4748,51 +5214,7 @@
       }
     },
     {
-      "rank": 68,
-      "benchmark_id": "agent-arena",
-      "name": "Agent Arena",
-      "domain": "Agent",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "gemini-4-hydrogen",
-        "qwen4-max"
-      ],
-      "first_seen": "2026-11-13",
-      "rank_change": 34,
-      "versions": {
-        "gemini-4-hydrogen": [
-          "Agent Arena"
-        ],
-        "qwen4-max": [
-          "Agent Arena"
-        ]
-      }
-    },
-    {
-      "rank": 69,
-      "benchmark_id": "aime",
-      "name": "AIME",
-      "domain": "数学",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "deepseek-v4-1-flash",
-        "gpt-6-astra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "AIME 2026"
-        ],
-        "gpt-6-astra": [
-          "AIME 2025"
-        ]
-      }
-    },
-    {
-      "rank": 70,
+      "rank": 77,
       "benchmark_id": "arc-agi-3",
       "name": "ARC-AGI-3",
       "domain": "其他",
@@ -4803,7 +5225,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 41,
+      "rank_change": -7,
       "versions": {
         "claude-fable-5-2": [
           "ARC-AGI-3"
@@ -4814,7 +5236,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 78,
       "benchmark_id": "arxivmath",
       "name": "ArXivMath",
       "domain": "数学",
@@ -4825,7 +5247,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -6,
+      "rank_change": -7,
       "versions": {
         "claude-opus-5-5": [
           "ArXivMath"
@@ -4836,7 +5258,29 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 79,
+      "benchmark_id": "babyvision",
+      "name": "BabyVision",
+      "domain": "多模态",
+      "count": 2,
+      "share": 0.1,
+      "models": [
+        "deepseek-v4-1-flash-1017",
+        "kimi-k3-1-pro"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -29,
+      "versions": {
+        "deepseek-v4-1-flash-1017": [
+          "BabyVision"
+        ],
+        "kimi-k3-1-pro": [
+          "BabyVision"
+        ]
+      }
+    },
+    {
+      "rank": 80,
       "benchmark_id": "biotier",
       "name": "BioTIER",
       "domain": "安全",
@@ -4847,7 +5291,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -5,
+      "rank_change": -8,
       "versions": {
         "gpt-6-astra": [
           "BioTIER"
@@ -4858,7 +5302,7 @@
       }
     },
     {
-      "rank": 73,
+      "rank": 81,
       "benchmark_id": "blueprint-bench",
       "name": "Blueprint-Bench",
       "domain": "多模态",
@@ -4869,7 +5313,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 49,
+      "rank_change": -8,
       "versions": {
         "gemini-4-argon": [
           "Blueprint-Bench 2"
@@ -4880,7 +5324,29 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 82,
+      "benchmark_id": "charxiv",
+      "name": "CharXiv",
+      "domain": "其他",
+      "count": 2,
+      "share": 0.1,
+      "models": [
+        "kimi-k3-1-pro",
+        "longcat-2-5"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -29,
+      "versions": {
+        "kimi-k3-1-pro": [
+          "CharXiv Reasoning"
+        ],
+        "longcat-2-5": [
+          "CharXiv Reasoning with tools"
+        ]
+      }
+    },
+    {
+      "rank": 83,
       "benchmark_id": "critpt",
       "name": "CritPt",
       "domain": "推理",
@@ -4891,7 +5357,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -6,
+      "rank_change": -9,
       "versions": {
         "muse-wonder": [
           "CritPt"
@@ -4902,7 +5368,7 @@
       }
     },
     {
-      "rank": 75,
+      "rank": 84,
       "benchmark_id": "cve-rediscovery-anthropic",
       "name": "CVE Rediscovery",
       "domain": "安全",
@@ -4913,7 +5379,7 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 56,
+      "rank_change": -9,
       "versions": {
         "claude-fable-5-2": [
           "CVE Rediscovery"
@@ -4924,29 +5390,29 @@
       }
     },
     {
-      "rank": 76,
-      "benchmark_id": "cwe-bench",
-      "name": "CWE-bench",
+      "rank": 85,
+      "benchmark_id": "cybergym",
+      "name": "CyberGym",
       "domain": "安全",
       "count": 2,
       "share": 0.1,
       "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon"
+        "claude-opus-5-5",
+        "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -7,
+      "rank_change": -31,
       "versions": {
-        "gemini-4-argon": [
-          "CWE-bench v1"
+        "claude-opus-5-5": [
+          "CyberGym"
         ],
-        "gemini-4-carbon": [
-          "CWE-bench v1"
+        "muse-wonder-full": [
+          "CyberGym"
         ]
       }
     },
     {
-      "rank": 77,
+      "rank": 86,
       "benchmark_id": "de-novo-binder-design-anthropic",
       "name": "De novo binder design",
       "domain": "生物与医学",
@@ -4957,7 +5423,7 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 57,
+      "rank_change": -9,
       "versions": {
         "claude-fable-5-2": [
           "De novo binder design"
@@ -4968,7 +5434,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 87,
       "benchmark_id": "focusbench",
       "name": "FocusBench",
       "domain": "Agent",
@@ -4979,7 +5445,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -9,
       "versions": {
         "muse-wonder": [
           "FocusBench"
@@ -4990,51 +5456,7 @@
       }
     },
     {
-      "rank": 79,
-      "benchmark_id": "graphwalks",
-      "name": "GraphWalks",
-      "domain": "推理",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
-      "versions": {
-        "gemini-4-argon": [
-          "GraphWalks"
-        ],
-        "gemini-4-carbon": [
-          "GraphWalks"
-        ]
-      }
-    },
-    {
-      "rank": 80,
-      "benchmark_id": "gsm8k",
-      "name": "GSM8K",
-      "domain": "其他",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "deepseek-v4-1-flash",
-        "gpt-6-astra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "GSM8K"
-        ],
-        "gpt-6-astra": [
-          "GSM8K"
-        ]
-      }
-    },
-    {
-      "rank": 81,
+      "rank": 88,
       "benchmark_id": "helpbench",
       "name": "HelpBench",
       "domain": "语言",
@@ -5045,7 +5467,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -7,
       "versions": {
         "gemini-4-argon": [
           "HelpBench"
@@ -5056,7 +5478,7 @@
       }
     },
     {
-      "rank": 82,
+      "rank": 89,
       "benchmark_id": "hpct",
       "name": "Human Pathogens Capabilities Test",
       "domain": "安全",
@@ -5067,7 +5489,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -7,
       "versions": {
         "gpt-6-astra": [
           "Human Pathogens Capabilities Test"
@@ -5078,29 +5500,7 @@
       }
     },
     {
-      "rank": 83,
-      "benchmark_id": "humaneval",
-      "name": "HumanEval",
-      "domain": "代码",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "deepseek-v4-1-flash",
-        "gpt-6-astra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "HumanEval"
-        ],
-        "gpt-6-astra": [
-          "HumanEval"
-        ]
-      }
-    },
-    {
-      "rank": 84,
+      "rank": 90,
       "benchmark_id": "lab-bench",
       "name": "LAB-Bench",
       "domain": "生物与医学",
@@ -5111,7 +5511,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -6,
       "versions": {
         "gemini-4-argon": [
           "LAB-Bench 2"
@@ -5122,7 +5522,7 @@
       }
     },
     {
-      "rank": 85,
+      "rank": 91,
       "benchmark_id": "latchbio-bioinformatics",
       "name": "LatchBio Bioinformatics",
       "domain": "生物与医学",
@@ -5133,7 +5533,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -6,
       "versions": {
         "claude-opus-5-5": [
           "LatchBio Bioinformatics"
@@ -5144,29 +5544,29 @@
       }
     },
     {
-      "rank": 86,
-      "benchmark_id": "livecodebench",
-      "name": "LiveCodeBench",
-      "domain": "其他",
+      "rank": 92,
+      "benchmark_id": "legal-research-bench",
+      "name": "Legal Research Bench",
+      "domain": "Agent",
       "count": 2,
       "share": 0.1,
       "models": [
-        "deepseek-v4-1-flash",
-        "qwen3-8-omni-flash"
+        "gemini-4-hydrogen",
+        "gemini-4-neon"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "first_seen": "2026-11-13",
+      "rank_change": 77,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "LiveCodeBench"
+        "gemini-4-hydrogen": [
+          "Legal Research Bench"
         ],
-        "qwen3-8-omni-flash": [
-          "LiveCodeBench v6"
+        "gemini-4-neon": [
+          "Legal Research Bench"
         ]
       }
     },
     {
-      "rank": 87,
+      "rank": 93,
       "benchmark_id": "lvbench",
       "name": "LVBench",
       "domain": "多模态",
@@ -5174,43 +5574,21 @@
       "share": 0.1,
       "models": [
         "gemini-4-argon",
-        "qwen3-8-omni-flash"
+        "gemini-4-neon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -6,
       "versions": {
         "gemini-4-argon": [
           "LVBench"
         ],
-        "qwen3-8-omni-flash": [
+        "gemini-4-neon": [
           "LVBench"
         ]
       }
     },
     {
-      "rank": 88,
-      "benchmark_id": "mathvision",
-      "name": "MathVision",
-      "domain": "数学",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "longcat-2-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
-      "versions": {
-        "longcat-2-5": [
-          "MathVision with tools"
-        ],
-        "qwen3-8-omni-flash": [
-          "MathVision"
-        ]
-      }
-    },
-    {
-      "rank": 89,
+      "rank": 94,
       "benchmark_id": "mcp-atlas",
       "name": "MCP Atlas",
       "domain": "Agent",
@@ -5221,7 +5599,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -5,
       "versions": {
         "kimi-k3-1-pro": [
           "MCP Atlas"
@@ -5232,7 +5610,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 95,
       "benchmark_id": "memorybench-meta",
       "name": "MemoryBench",
       "domain": "Agent",
@@ -5243,7 +5621,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -5,
       "versions": {
         "muse-wonder": [
           "MemoryBench"
@@ -5254,73 +5632,29 @@
       }
     },
     {
-      "rank": 91,
-      "benchmark_id": "mentalhealthbench",
-      "name": "MentalHealthBench",
-      "domain": "生物与医学",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-terra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -8,
-      "versions": {
-        "gpt-6-1-sol": [
-          "MentalHealthBench"
-        ],
-        "gpt-6-1-terra": [
-          "MentalHealthBench"
-        ]
-      }
-    },
-    {
-      "rank": 92,
-      "benchmark_id": "mka",
-      "name": "Multimodal Knowledge Agent",
-      "domain": "多模态",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "gemini-4-carbon",
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-11",
-      "rank_change": -7,
-      "versions": {
-        "gemini-4-carbon": [
-          "Multimodal Knowledge Agent"
-        ],
-        "gemini-4-hydrogen": [
-          "Multimodal Knowledge Agent"
-        ]
-      }
-    },
-    {
-      "rank": 93,
-      "benchmark_id": "nanogpt-evaluation",
-      "name": "NanoGPT (OpenAI research evaluation)",
+      "rank": 96,
+      "benchmark_id": "nl2repo-bench",
+      "name": "NL2Repo-Bench",
       "domain": "代码",
       "count": 2,
       "share": 0.1,
       "models": [
-        "claude-opus-5-5",
-        "gpt-6-astra"
+        "deepseek-v4-1-flash-1017",
+        "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -5,
+      "rank_change": -58,
       "versions": {
-        "claude-opus-5-5": [
-          "NanoGPT (OpenAI research evaluation)"
+        "deepseek-v4-1-flash-1017": [
+          "NL2Repo-Bench"
         ],
-        "gpt-6-astra": [
-          "NanoGPT (OpenAI research evaluation)"
+        "longcat-2-5": [
+          "NL2Repo-Bench"
         ]
       }
     },
     {
-      "rank": 94,
+      "rank": 97,
       "benchmark_id": "physicianbench",
       "name": "PhysicianBench",
       "domain": "生物与医学",
@@ -5331,7 +5665,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 107,
+      "rank_change": -3,
       "versions": {
         "claude-fable-5-2": [
           "PhysicianBench"
@@ -5342,7 +5676,7 @@
       }
     },
     {
-      "rank": 95,
+      "rank": 98,
       "benchmark_id": "remote-labor-index",
       "name": "Remote Labor Index",
       "domain": "Agent",
@@ -5353,7 +5687,7 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 114,
+      "rank_change": -3,
       "versions": {
         "claude-fable-5-2": [
           "Remote Labor Index"
@@ -5364,29 +5698,7 @@
       }
     },
     {
-      "rank": 96,
-      "benchmark_id": "riemannbench",
-      "name": "RiemannBench",
-      "domain": "数学",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "gemini-4-argon",
-        "gemini-4-carbon"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -7,
-      "versions": {
-        "gemini-4-argon": [
-          "RiemannBench"
-        ],
-        "gemini-4-carbon": [
-          "RiemannBench"
-        ]
-      }
-    },
-    {
-      "rank": 97,
+      "rank": 99,
       "benchmark_id": "robodojo",
       "name": "RoboDojo",
       "domain": "机器人与具身",
@@ -5397,7 +5709,7 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 114,
+      "rank_change": -2,
       "versions": {
         "claude-fable-5-2": [
           "RoboDojo Sim"
@@ -5408,7 +5720,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 100,
       "benchmark_id": "scicode",
       "name": "SciCode",
       "domain": "其他",
@@ -5419,7 +5731,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -2,
       "versions": {
         "muse-wonder": [
           "SciCode"
@@ -5430,7 +5742,7 @@
       }
     },
     {
-      "rank": 99,
+      "rank": 101,
       "benchmark_id": "shade-arena",
       "name": "SHADE-Arena",
       "domain": "安全",
@@ -5441,7 +5753,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -2,
       "versions": {
         "claude-opus-5-5": [
           "SHADE-Arena"
@@ -5452,7 +5764,29 @@
       }
     },
     {
-      "rank": 100,
+      "rank": 102,
+      "benchmark_id": "simpleqa",
+      "name": "SimpleQA",
+      "domain": "语言",
+      "count": 2,
+      "share": 0.1,
+      "models": [
+        "gemini-4-argon",
+        "gemini-4-carbon"
+      ],
+      "first_seen": "2026-11-07",
+      "rank_change": -40,
+      "versions": {
+        "gemini-4-argon": [
+          "SimpleQA Verified"
+        ],
+        "gemini-4-carbon": [
+          "SimpleQA Verified"
+        ]
+      }
+    },
+    {
+      "rank": 103,
       "benchmark_id": "singlecellbench",
       "name": "SingleCellBench",
       "domain": "生物与医学",
@@ -5463,7 +5797,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -3,
       "versions": {
         "claude-opus-5-5": [
           "SingleCellBench"
@@ -5474,7 +5808,7 @@
       }
     },
     {
-      "rank": 101,
+      "rank": 104,
       "benchmark_id": "spatialbench",
       "name": "SpatialBench",
       "domain": "生物与医学",
@@ -5485,7 +5819,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -8,
+      "rank_change": -3,
       "versions": {
         "claude-opus-5-5": [
           "SpatialBench Verified"
@@ -5496,7 +5830,7 @@
       }
     },
     {
-      "rank": 102,
+      "rank": 105,
       "benchmark_id": "toolathlon",
       "name": "Toolathlon",
       "domain": "Agent",
@@ -5507,7 +5841,7 @@
         "claude-sonnet-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -7,
+      "rank_change": -3,
       "versions": {
         "claude-opus-5-5": [
           "Toolathlon Verified"
@@ -5518,7 +5852,29 @@
       }
     },
     {
-      "rank": 103,
+      "rank": 106,
+      "benchmark_id": "vals-tax-agent-bench",
+      "name": "Tax Agent Bench",
+      "domain": "Agent",
+      "count": 2,
+      "share": 0.1,
+      "models": [
+        "gemini-4-hydrogen",
+        "gemini-4-neon"
+      ],
+      "first_seen": "2026-11-13",
+      "rank_change": 116,
+      "versions": {
+        "gemini-4-hydrogen": [
+          "Tax Agent Bench"
+        ],
+        "gemini-4-neon": [
+          "Tax Agent Bench"
+        ]
+      }
+    },
+    {
+      "rank": 107,
       "benchmark_id": "vbt",
       "name": "Verifiable Browsing Task",
       "domain": "Agent",
@@ -5529,7 +5885,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -7,
+      "rank_change": -4,
       "versions": {
         "muse-wonder": [
           "Verifiable Browsing Task"
@@ -5540,51 +5896,7 @@
       }
     },
     {
-      "rank": 104,
-      "benchmark_id": "video-mme",
-      "name": "Video-MME",
-      "domain": "多模态",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "longcat-2-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "longcat-2-5": [
-          "Video-MME"
-        ],
-        "qwen3-8-omni-flash": [
-          "Video-MME v2"
-        ]
-      }
-    },
-    {
-      "rank": 105,
-      "benchmark_id": "vision2web",
-      "name": "Vision2Web",
-      "domain": "代码",
-      "count": 2,
-      "share": 0.1,
-      "models": [
-        "longcat-2-5",
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "longcat-2-5": [
-          "Vision2Web"
-        ],
-        "qwen3-8-omni-flash": [
-          "Vision2Web"
-        ]
-      }
-    },
-    {
-      "rank": 106,
+      "rank": 108,
       "benchmark_id": "webdev-arena",
       "name": "WebDev Arena",
       "domain": "代码",
@@ -5595,7 +5907,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": 122,
+      "rank_change": -2,
       "versions": {
         "gemini-4-carbon": [
           "WebDev Arena"
@@ -5606,7 +5918,7 @@
       }
     },
     {
-      "rank": 107,
+      "rank": 109,
       "benchmark_id": "3dcodebench",
       "name": "3DCodeBench",
       "domain": "多模态",
@@ -5616,7 +5928,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -7,
+      "rank_change": -2,
       "versions": {
         "longcat-2-5": [
           "3DCodeBench Text→3D"
@@ -5624,7 +5936,25 @@
       }
     },
     {
-      "rank": 108,
+      "rank": 110,
+      "benchmark_id": "aa-analystagent",
+      "name": "AA-AnalystAgent",
+      "domain": "Agent",
+      "count": 1,
+      "share": 0.05,
+      "models": [
+        "gpt-6.2-astra"
+      ],
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
+      "versions": {
+        "gpt-6.2-astra": [
+          "AA-AnalystAgent"
+        ]
+      }
+    },
+    {
+      "rank": 111,
       "benchmark_id": "abc-bench",
       "name": "Agentic Bio-Capabilities Benchmark",
       "domain": "安全",
@@ -5634,7 +5964,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -7,
+      "rank_change": -3,
       "versions": {
         "muse-wonder-full": [
           "Agentic Bio-Capabilities Benchmark"
@@ -5642,7 +5972,7 @@
       }
     },
     {
-      "rank": 109,
+      "rank": 112,
       "benchmark_id": "agentic-misalignment",
       "name": "Agentic Misalignment",
       "domain": "安全",
@@ -5652,7 +5982,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -6,
+      "rank_change": -3,
       "versions": {
         "muse-wonder-full": [
           "Agentic Misalignment"
@@ -5660,116 +5990,25 @@
       }
     },
     {
-      "rank": 110,
-      "benchmark_id": "agenticvbench",
-      "name": "AgenticVBench",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "AgenticVBench"
-        ]
-      }
-    },
-    {
-      "rank": 111,
-      "benchmark_id": "agieval",
-      "name": "AGIEval",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "AGIEval"
-        ]
-      }
-    },
-    {
-      "rank": 112,
-      "benchmark_id": "aishell-4",
-      "name": "AISHELL-4",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "AISHELL-4"
-        ]
-      }
-    },
-    {
       "rank": 113,
-      "benchmark_id": "alimeeting",
-      "name": "AliMeeting",
-      "domain": "语音",
+      "benchmark_id": "aime",
+      "name": "AIME",
+      "domain": "数学",
       "count": 1,
       "share": 0.05,
       "models": [
-        "qwen3-8-omni-flash"
+        "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -6,
+      "rank_change": -44,
       "versions": {
-        "qwen3-8-omni-flash": [
-          "AliMeeting",
-          "AliMeeting-test"
+        "gpt-6-astra": [
+          "AIME 2025"
         ]
       }
     },
     {
       "rank": 114,
-      "benchmark_id": "androidworld",
-      "name": "AndroidWorld",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "AndroidWorld"
-        ]
-      }
-    },
-    {
-      "rank": 115,
-      "benchmark_id": "apex-2025-shortlist",
-      "name": "Apex 2025 Shortlist",
-      "domain": "数学",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -6,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "Apex 2025 Shortlist"
-        ]
-      }
-    },
-    {
-      "rank": 116,
       "benchmark_id": "arc-agi",
       "name": "ARC-AGI",
       "domain": "推理",
@@ -5779,7 +6018,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -6,
+      "rank_change": 2,
       "versions": {
         "gpt-6-astra": [
           "ARC-AGI-1",
@@ -5788,7 +6027,7 @@
       }
     },
     {
-      "rank": 117,
+      "rank": 115,
       "benchmark_id": "atomic-challenges",
       "name": "Atomic Challenges",
       "domain": "安全",
@@ -5798,7 +6037,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -5,
+      "rank_change": 2,
       "versions": {
         "gpt-6-astra": [
           "Atomic Challenges"
@@ -5806,43 +6045,25 @@
       }
     },
     {
-      "rank": 118,
-      "benchmark_id": "audio-multichallenge",
-      "name": "Audio-MultiChallenge",
-      "domain": "语音",
+      "rank": 116,
+      "benchmark_id": "autobaxbench",
+      "name": "AutoBaxBench",
+      "domain": "安全",
       "count": 1,
       "share": 0.05,
       "models": [
-        "qwen3-8-omni-flash"
+        "gemini-4-neon"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
-        "qwen3-8-omni-flash": [
-          "Audio-MultiChallenge"
+        "gemini-4-neon": [
+          "AutoBaxBench (hard)"
         ]
       }
     },
     {
-      "rank": 119,
-      "benchmark_id": "avut",
-      "name": "AVUT",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -5,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "AVUT"
-        ]
-      }
-    },
-    {
-      "rank": 120,
+      "rank": 117,
       "benchmark_id": "balyasny-gfi",
       "name": "General Financial Intelligence",
       "domain": "Agent",
@@ -5852,7 +6073,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": -5,
+      "rank_change": 3,
       "versions": {
         "gemini-4-carbon": [
           "General Financial Intelligence"
@@ -5860,61 +6081,7 @@
       }
     },
     {
-      "rank": 121,
-      "benchmark_id": "bbeh",
-      "name": "BIG-Bench Extra Hard",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -4,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "BIG-Bench Extra Hard"
-        ]
-      }
-    },
-    {
-      "rank": 122,
-      "benchmark_id": "bbh",
-      "name": "BIG-Bench Hard",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -4,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "BIG-Bench Hard"
-        ]
-      }
-    },
-    {
-      "rank": 123,
-      "benchmark_id": "bigcodebench",
-      "name": "BigCodeBench",
-      "domain": "代码",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -4,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "BigCodeBench"
-        ]
-      }
-    },
-    {
-      "rank": 124,
+      "rank": 118,
       "benchmark_id": "bio-design-tools-meta",
       "name": "BioDesign Tools",
       "domain": "安全",
@@ -5924,7 +6091,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -4,
+      "rank_change": 6,
       "versions": {
         "muse-wonder-full": [
           "BioDesign Tools"
@@ -5932,43 +6099,7 @@
       }
     },
     {
-      "rank": 125,
-      "benchmark_id": "blocker-deception-openai",
-      "name": "Blocker Deception",
-      "domain": "安全",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "gpt-6-1-terra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -4,
-      "versions": {
-        "gpt-6-1-terra": [
-          "Blocker Deception"
-        ]
-      }
-    },
-    {
-      "rank": 126,
-      "benchmark_id": "c-eval",
-      "name": "C-Eval",
-      "domain": "其他",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -3,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "C-Eval"
-        ]
-      }
-    },
-    {
-      "rank": 127,
+      "rank": 119,
       "benchmark_id": "claw-eval",
       "name": "Claw-Eval",
       "domain": "Agent",
@@ -5978,7 +6109,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -3,
+      "rank_change": 8,
       "versions": {
         "longcat-2-5": [
           "Claw-Eval"
@@ -5986,25 +6117,7 @@
       }
     },
     {
-      "rank": 128,
-      "benchmark_id": "claweval-mm",
-      "name": "ClawEval-MM",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -3,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "ClawEval-MM"
-        ]
-      }
-    },
-    {
-      "rank": 129,
+      "rank": 120,
       "benchmark_id": "cobench",
       "name": "CoBench",
       "domain": "代码",
@@ -6014,7 +6127,7 @@
         "claude-opus-5-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -3,
+      "rank_change": 9,
       "versions": {
         "claude-opus-5-5": [
           "CoBench 2.1"
@@ -6022,61 +6135,7 @@
       }
     },
     {
-      "rank": 130,
-      "benchmark_id": "codeforces",
-      "name": "Codeforces",
-      "domain": "代码",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -3,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "Codeforces"
-        ]
-      }
-    },
-    {
-      "rank": 131,
-      "benchmark_id": "coworkbench",
-      "name": "CoWorkBench",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -3,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "CoWorkBench"
-        ]
-      }
-    },
-    {
-      "rank": 132,
-      "benchmark_id": "cv-bench",
-      "name": "CV-Bench",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -3,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "CV-Bench"
-        ]
-      }
-    },
-    {
-      "rank": 133,
+      "rank": 121,
       "benchmark_id": "cve-bench",
       "name": "CVE-Bench",
       "domain": "安全",
@@ -6086,7 +6145,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -3,
+      "rank_change": 12,
       "versions": {
         "gpt-6-astra": [
           "CVE-Bench"
@@ -6094,7 +6153,7 @@
       }
     },
     {
-      "rank": 134,
+      "rank": 122,
       "benchmark_id": "cyberbench",
       "name": "CyberBench",
       "domain": "安全",
@@ -6104,7 +6163,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 12,
       "versions": {
         "muse-wonder-full": [
           "CyberBench"
@@ -6112,25 +6171,7 @@
       }
     },
     {
-      "rank": 135,
-      "benchmark_id": "dailyomni",
-      "name": "DailyOmni",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "DailyOmni"
-        ]
-      }
-    },
-    {
-      "rank": 136,
+      "rank": 123,
       "benchmark_id": "deck-arena",
       "name": "DECK-Arena",
       "domain": "Agent",
@@ -6140,7 +6181,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 13,
       "versions": {
         "kimi-k3-1-pro": [
           "DECK-Arena"
@@ -6148,7 +6189,7 @@
       }
     },
     {
-      "rank": 137,
+      "rank": 124,
       "benchmark_id": "design-bench-kimi",
       "name": "Design Bench",
       "domain": "Agent",
@@ -6158,7 +6199,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 13,
       "versions": {
         "kimi-k3-1-pro": [
           "Design Bench"
@@ -6166,79 +6207,7 @@
       }
     },
     {
-      "rank": 138,
-      "benchmark_id": "docvqa",
-      "name": "DocVQA",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "DocVQA"
-        ]
-      }
-    },
-    {
-      "rank": 139,
-      "benchmark_id": "drop",
-      "name": "DROP",
-      "domain": "其他",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "DROP"
-        ]
-      }
-    },
-    {
-      "rank": 140,
-      "benchmark_id": "eebench",
-      "name": "EEBench",
-      "domain": "其他",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "grok-4-7"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "grok-4-7": [
-          "EEBench"
-        ]
-      }
-    },
-    {
-      "rank": 141,
-      "benchmark_id": "erqa",
-      "name": "ERQA",
-      "domain": "机器人与具身",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "ERQA"
-        ]
-      }
-    },
-    {
-      "rank": 142,
+      "rank": 125,
       "benchmark_id": "facts-grounding",
       "name": "FACTS Grounding",
       "domain": "语言",
@@ -6248,7 +6217,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": -1,
+      "rank_change": 17,
       "versions": {
         "gemini-4-carbon": [
           "FACTS Grounding"
@@ -6256,7 +6225,7 @@
       }
     },
     {
-      "rank": 143,
+      "rank": 126,
       "benchmark_id": "finsearchcomp",
       "name": "FinSearchComp",
       "domain": "Agent",
@@ -6266,7 +6235,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -1,
+      "rank_change": 17,
       "versions": {
         "longcat-2-5": [
           "FinSearchComp T3"
@@ -6274,25 +6243,7 @@
       }
     },
     {
-      "rank": 144,
-      "benchmark_id": "fleurs",
-      "name": "FLEURS-60",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "FLEURS-60"
-        ]
-      }
-    },
-    {
-      "rank": 145,
+      "rank": 127,
       "benchmark_id": "frontier-finance",
       "name": "Frontier Finance",
       "domain": "Agent",
@@ -6302,7 +6253,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "kimi-k3-1-pro": [
           "Frontier Finance"
@@ -6310,7 +6261,7 @@
       }
     },
     {
-      "rank": 146,
+      "rank": 128,
       "benchmark_id": "frontiercyber",
       "name": "FrontierCyber",
       "domain": "安全",
@@ -6320,7 +6271,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "gpt-6-astra": [
           "FrontierCyber"
@@ -6328,7 +6279,7 @@
       }
     },
     {
-      "rank": 147,
+      "rank": 129,
       "benchmark_id": "frontiermath",
       "name": "FrontierMath",
       "domain": "代码",
@@ -6338,7 +6289,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "gpt-6-astra": [
           "FrontierMath Tier 4 (v2)"
@@ -6346,7 +6297,7 @@
       }
     },
     {
-      "rank": 148,
+      "rank": 130,
       "benchmark_id": "frontierscience",
       "name": "FrontierScience",
       "domain": "推理",
@@ -6356,7 +6307,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "longcat-2-5": [
           "FrontierScience"
@@ -6364,7 +6315,7 @@
       }
     },
     {
-      "rank": 149,
+      "rank": 131,
       "benchmark_id": "genebench",
       "name": "GeneBench",
       "domain": "生物与医学",
@@ -6374,7 +6325,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "gpt-6-astra": [
           "GeneBench Pro"
@@ -6382,7 +6333,7 @@
       }
     },
     {
-      "rank": 150,
+      "rank": 132,
       "benchmark_id": "google-re-bench",
       "name": "Google RE-Bench",
       "domain": "代码",
@@ -6392,7 +6343,7 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "gemini-4-argon": [
           "Google RE-Bench"
@@ -6400,25 +6351,25 @@
       }
     },
     {
-      "rank": 151,
-      "benchmark_id": "hackerbench-xai",
-      "name": "HackerBench",
-      "domain": "安全",
+      "rank": 133,
+      "benchmark_id": "gsm8k",
+      "name": "GSM8K",
+      "domain": "其他",
       "count": 1,
       "share": 0.05,
       "models": [
-        "grok-4-7"
+        "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -53,
       "versions": {
-        "grok-4-7": [
-          "HackerBench"
+        "gpt-6-astra": [
+          "GSM8K"
         ]
       }
     },
     {
-      "rank": 152,
+      "rank": 134,
       "benchmark_id": "handbook-md",
       "name": "HANDBOOK.md",
       "domain": "Agent",
@@ -6428,7 +6379,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "kimi-k3-1-pro": [
           "HANDBOOK.md"
@@ -6436,7 +6387,7 @@
       }
     },
     {
-      "rank": 153,
+      "rank": 135,
       "benchmark_id": "hebbia-e2e-financial",
       "name": "Hebbia E2E Financial Agentic evaluation",
       "domain": "Agent",
@@ -6446,7 +6397,7 @@
         "gemini-4-carbon"
       ],
       "first_seen": "2026-11-11",
-      "rank_change": -1,
+      "rank_change": 18,
       "versions": {
         "gemini-4-carbon": [
           "Hebbia E2E Financial Agentic evaluation"
@@ -6454,43 +6405,25 @@
       }
     },
     {
-      "rank": 154,
-      "benchmark_id": "hellaswag",
-      "name": "HellaSwag",
-      "domain": "其他",
+      "rank": 136,
+      "benchmark_id": "humaneval",
+      "name": "HumanEval",
+      "domain": "代码",
       "count": 1,
       "share": 0.05,
       "models": [
-        "deepseek-v4-1-flash"
+        "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -53,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "HellaSwag"
+        "gpt-6-astra": [
+          "HumanEval"
         ]
       }
     },
     {
-      "rank": 155,
-      "benchmark_id": "hummusqa",
-      "name": "HumMusQA",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "HumMusQA"
-        ]
-      }
-    },
-    {
-      "rank": 156,
+      "rank": 137,
       "benchmark_id": "hy-gamedev",
       "name": "GameDev (Hy)",
       "domain": "代码",
@@ -6500,7 +6433,7 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": -1,
+      "rank_change": 19,
       "versions": {
         "hy4": [
           "GameDev (Hy)"
@@ -6508,7 +6441,7 @@
       }
     },
     {
-      "rank": 157,
+      "rank": 138,
       "benchmark_id": "hy-gamelogic",
       "name": "GameLogic (Hy)",
       "domain": "代码",
@@ -6518,7 +6451,7 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": -1,
+      "rank_change": 19,
       "versions": {
         "hy4": [
           "GameLogic (Hy)"
@@ -6526,43 +6459,7 @@
       }
     },
     {
-      "rank": 158,
-      "benchmark_id": "ifbench",
-      "name": "IFBench",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "IFBench"
-        ]
-      }
-    },
-    {
-      "rank": 159,
-      "benchmark_id": "imo-answerbench",
-      "name": "IMO-AnswerBench",
-      "domain": "数学",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "IMO-AnswerBench"
-        ]
-      }
-    },
-    {
-      "rank": 160,
+      "rank": 139,
       "benchmark_id": "irab",
       "name": "iRaB",
       "domain": "Agent",
@@ -6572,7 +6469,7 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": -1,
+      "rank_change": 21,
       "versions": {
         "hy4": [
           "iRaB"
@@ -6580,25 +6477,7 @@
       }
     },
     {
-      "rank": 161,
-      "benchmark_id": "jointavbench",
-      "name": "JointAVBench",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "JointAVBench"
-        ]
-      }
-    },
-    {
-      "rank": 162,
+      "rank": 140,
       "benchmark_id": "kimi-business-operation",
       "name": "Business Operation",
       "domain": "Agent",
@@ -6608,7 +6487,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 22,
       "versions": {
         "kimi-k3-1-pro": [
           "Business Operation"
@@ -6616,7 +6495,7 @@
       }
     },
     {
-      "rank": 163,
+      "rank": 141,
       "benchmark_id": "kimi-code-bench",
       "name": "Kimi Code Bench",
       "domain": "代码",
@@ -6626,7 +6505,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 22,
       "versions": {
         "kimi-k3-1-pro": [
           "Kimi Code Bench 2.0",
@@ -6636,7 +6515,7 @@
       }
     },
     {
-      "rank": 164,
+      "rank": 142,
       "benchmark_id": "kimi-financial-modeling",
       "name": "Financial Modeling",
       "domain": "Agent",
@@ -6646,7 +6525,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 22,
       "versions": {
         "kimi-k3-1-pro": [
           "Financial Modeling"
@@ -6654,7 +6533,7 @@
       }
     },
     {
-      "rank": 165,
+      "rank": 143,
       "benchmark_id": "kimi-financial-research",
       "name": "Financial Research",
       "domain": "Agent",
@@ -6664,7 +6543,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 22,
       "versions": {
         "kimi-k3-1-pro": [
           "Financial Research"
@@ -6672,7 +6551,7 @@
       }
     },
     {
-      "rank": 166,
+      "rank": 144,
       "benchmark_id": "kimi-hallu-bench",
       "name": "Kimi Hallu Bench Hard",
       "domain": "其他",
@@ -6682,7 +6561,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 22,
       "versions": {
         "kimi-k3-1-pro": [
           "Kimi Hallu Bench Hard"
@@ -6690,7 +6569,7 @@
       }
     },
     {
-      "rank": 167,
+      "rank": 145,
       "benchmark_id": "last-secure-code-bench",
       "name": "Last Secure Code Bench",
       "domain": "安全",
@@ -6700,7 +6579,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new",
+      "rank_change": 22,
       "versions": {
         "qwen4-max": [
           "Last Secure Code Bench"
@@ -6708,43 +6587,7 @@
       }
     },
     {
-      "rank": 168,
-      "benchmark_id": "latchbio-biosafety",
-      "name": "LatchBio’s biosafety benchmark",
-      "domain": "生物与医学",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "grok-4-7"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "grok-4-7": [
-          "LatchBio’s biosafety benchmark"
-        ]
-      }
-    },
-    {
-      "rank": 169,
-      "benchmark_id": "legal-research-bench",
-      "name": "Legal Research Bench",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-13",
-      "rank_change": -2,
-      "versions": {
-        "gemini-4-hydrogen": [
-          "Legal Research Bench"
-        ]
-      }
-    },
-    {
-      "rank": 170,
+      "rank": 146,
       "benchmark_id": "lifescibench",
       "name": "LifeSciBench",
       "domain": "生物与医学",
@@ -6754,7 +6597,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 24,
       "versions": {
         "gpt-6-astra": [
           "LifeSciBench"
@@ -6762,43 +6605,7 @@
       }
     },
     {
-      "rank": 171,
-      "benchmark_id": "longaudiospan",
-      "name": "LongAudioSpan",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "LongAudioSpan"
-        ]
-      }
-    },
-    {
-      "rank": 172,
-      "benchmark_id": "longbench-v2",
-      "name": "LongBench-V2",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "LongBench-V2"
-        ]
-      }
-    },
-    {
-      "rank": 173,
+      "rank": 147,
       "benchmark_id": "longcat-appdev",
       "name": "LongCat AppDev",
       "domain": "代码",
@@ -6808,7 +6615,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -1,
+      "rank_change": 26,
       "versions": {
         "longcat-2-5": [
           "LongCat AppDev Internal"
@@ -6816,7 +6623,7 @@
       }
     },
     {
-      "rank": 174,
+      "rank": 148,
       "benchmark_id": "longcatclawbench",
       "name": "LongCatClawBench",
       "domain": "Agent",
@@ -6826,7 +6633,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -1,
+      "rank_change": 26,
       "versions": {
         "longcat-2-5": [
           "LongCatClawBench FORTE",
@@ -6835,79 +6642,25 @@
       }
     },
     {
-      "rank": 175,
-      "benchmark_id": "lvomnibench",
-      "name": "LVOmniBench",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "LVOmniBench"
-        ]
-      }
-    },
-    {
-      "rank": 176,
-      "benchmark_id": "magicdata-ramc",
-      "name": "MagicData-RAMC",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MagicData-RAMC"
-        ]
-      }
-    },
-    {
-      "rank": 177,
-      "benchmark_id": "math",
-      "name": "MATH",
-      "domain": "其他",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "MATH"
-        ]
-      }
-    },
-    {
-      "rank": 178,
-      "benchmark_id": "matharena-apex",
-      "name": "MathArena Apex",
+      "rank": 149,
+      "benchmark_id": "mathvision",
+      "name": "MathVision",
       "domain": "数学",
       "count": 1,
       "share": 0.05,
       "models": [
-        "deepseek-v4-1-flash"
+        "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": -61,
       "versions": {
-        "deepseek-v4-1-flash": [
-          "MathArena Apex"
+        "longcat-2-5": [
+          "MathVision with tools"
         ]
       }
     },
     {
-      "rank": 179,
+      "rank": 150,
       "benchmark_id": "mbct",
       "name": "Molecular Biology Capabilities Test",
       "domain": "安全",
@@ -6917,7 +6670,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 29,
       "versions": {
         "muse-wonder-full": [
           "Molecular Biology Capabilities Test"
@@ -6925,7 +6678,7 @@
       }
     },
     {
-      "rank": 180,
+      "rank": 151,
       "benchmark_id": "medchembench",
       "name": "MedChemBench",
       "domain": "生物与医学",
@@ -6935,7 +6688,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 29,
       "versions": {
         "gpt-6-astra": [
           "MedChemBench"
@@ -6943,25 +6696,7 @@
       }
     },
     {
-      "rank": 181,
-      "benchmark_id": "mgsm",
-      "name": "MGSM",
-      "domain": "数学",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "MGSM"
-        ]
-      }
-    },
-    {
-      "rank": 182,
+      "rank": 152,
       "benchmark_id": "mind2web",
       "name": "Mind2Web",
       "domain": "代码",
@@ -6971,7 +6706,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 30,
       "versions": {
         "gpt-6-astra": [
           "Mind2Web"
@@ -6979,115 +6714,7 @@
       }
     },
     {
-      "rank": 183,
-      "benchmark_id": "mlc-slm",
-      "name": "MLC-SLM",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MLC-SLM"
-        ]
-      }
-    },
-    {
-      "rank": 184,
-      "benchmark_id": "mle-bench",
-      "name": "MLE-Bench",
-      "domain": "代码",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "gpt-6-astra"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "gpt-6-astra": [
-          "MLE-Bench Revised"
-        ]
-      }
-    },
-    {
-      "rank": 185,
-      "benchmark_id": "mmar",
-      "name": "MMAR",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MMAR"
-        ]
-      }
-    },
-    {
-      "rank": 186,
-      "benchmark_id": "mmau",
-      "name": "MMAU",
-      "domain": "其他",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MMAU"
-        ]
-      }
-    },
-    {
-      "rank": 187,
-      "benchmark_id": "mmlu-pro",
-      "name": "MMLU-Pro",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -161,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "MMLU-Pro"
-        ]
-      }
-    },
-    {
-      "rank": 188,
-      "benchmark_id": "mmsu",
-      "name": "MMSU",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MMSU"
-        ]
-      }
-    },
-    {
-      "rank": 189,
+      "rank": 153,
       "benchmark_id": "monorepo-bench",
       "name": "Monorepo-Bench",
       "domain": "安全",
@@ -7097,7 +6724,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 36,
       "versions": {
         "gpt-6-astra": [
           "Monorepo-Bench"
@@ -7105,7 +6732,7 @@
       }
     },
     {
-      "rank": 190,
+      "rank": 154,
       "benchmark_id": "mrcr-v2",
       "name": "OpenAI MRCR",
       "domain": "代码",
@@ -7115,7 +6742,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 36,
       "versions": {
         "gpt-6-astra": [
           "OpenAI MRCR v2 8-needle"
@@ -7123,61 +6750,7 @@
       }
     },
     {
-      "rank": 191,
-      "benchmark_id": "muchomusic-rul",
-      "name": "MuchoMusic-RUL",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MuchoMusic-RUL"
-        ]
-      }
-    },
-    {
-      "rank": 192,
-      "benchmark_id": "multiloko",
-      "name": "MultiLoKo",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "MultiLoKo"
-        ]
-      }
-    },
-    {
-      "rank": 193,
-      "benchmark_id": "mustbench",
-      "name": "MusTBench",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "MusTBench"
-        ]
-      }
-    },
-    {
-      "rank": 194,
+      "rank": 155,
       "benchmark_id": "nucleobench",
       "name": "Nucleobench",
       "domain": "生物与医学",
@@ -7187,7 +6760,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 39,
       "versions": {
         "gpt-6-astra": [
           "Nucleobench"
@@ -7195,79 +6768,7 @@
       }
     },
     {
-      "rank": 195,
-      "benchmark_id": "omnicap-if",
-      "name": "OmniCap-IF",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "OmniCap-IF"
-        ]
-      }
-    },
-    {
-      "rank": 196,
-      "benchmark_id": "omnicloze",
-      "name": "OmniCloze",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "OmniCloze"
-        ]
-      }
-    },
-    {
-      "rank": 197,
-      "benchmark_id": "omnigaia",
-      "name": "OmniGAIA",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "OmniGAIA"
-        ]
-      }
-    },
-    {
-      "rank": 198,
-      "benchmark_id": "omnivideobench",
-      "name": "OmniVideoBench",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "OmniVideoBench"
-        ]
-      }
-    },
-    {
-      "rank": 199,
+      "rank": 156,
       "benchmark_id": "open-score-string-quartets",
       "name": "OpenScore String Quartets",
       "domain": "代码",
@@ -7277,7 +6778,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 43,
       "versions": {
         "gpt-6-astra": [
           "OpenScore String Quartets"
@@ -7285,7 +6786,7 @@
       }
     },
     {
-      "rank": 200,
+      "rank": 157,
       "benchmark_id": "opqa",
       "name": "OPQA",
       "domain": "安全",
@@ -7295,7 +6796,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 43,
       "versions": {
         "gpt-6-astra": [
           "OPQA"
@@ -7303,7 +6804,7 @@
       }
     },
     {
-      "rank": 201,
+      "rank": 158,
       "benchmark_id": "or-bench",
       "name": "OR-Bench",
       "domain": "安全",
@@ -7313,7 +6814,7 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -2,
+      "rank_change": 43,
       "versions": {
         "gemini-4-argon": [
           "OR-Bench"
@@ -7321,7 +6822,7 @@
       }
     },
     {
-      "rank": 202,
+      "rank": 159,
       "benchmark_id": "paperbench",
       "name": "PaperBench",
       "domain": "Agent",
@@ -7331,7 +6832,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -2,
+      "rank_change": 43,
       "versions": {
         "longcat-2-5": [
           "PaperBench"
@@ -7339,7 +6840,7 @@
       }
     },
     {
-      "rank": 203,
+      "rank": 160,
       "benchmark_id": "polyguard",
       "name": "PolyGuard",
       "domain": "安全",
@@ -7349,7 +6850,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": -1,
+      "rank_change": 43,
       "versions": {
         "muse-wonder-full": [
           "PolyGuard"
@@ -7357,7 +6858,7 @@
       }
     },
     {
-      "rank": 204,
+      "rank": 161,
       "benchmark_id": "posterbench",
       "name": "PosterBench",
       "domain": "多模态",
@@ -7367,7 +6868,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": -1,
+      "rank_change": 43,
       "versions": {
         "longcat-2-5": [
           "PosterBench"
@@ -7375,43 +6876,7 @@
       }
     },
     {
-      "rank": 205,
-      "benchmark_id": "qivd",
-      "name": "QIVD",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "QIVD"
-        ]
-      }
-    },
-    {
-      "rank": 206,
-      "benchmark_id": "realworldqa",
-      "name": "RealWorldQA",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": -1,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "RealWorldQA"
-        ]
-      }
-    },
-    {
-      "rank": 207,
+      "rank": 162,
       "benchmark_id": "redcode",
       "name": "RedCode",
       "domain": "安全",
@@ -7421,7 +6886,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 0,
+      "rank_change": 45,
       "versions": {
         "muse-wonder-full": [
           "RedCode"
@@ -7429,26 +6894,7 @@
       }
     },
     {
-      "rank": 208,
-      "benchmark_id": "refcoco",
-      "name": "RefCOCO",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 0,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "RefCOCO",
-          "RefCOCO-g"
-        ]
-      }
-    },
-    {
-      "rank": 209,
+      "rank": 163,
       "benchmark_id": "researchrubrics",
       "name": "ResearchRubrics",
       "domain": "Agent",
@@ -7458,7 +6904,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 1,
+      "rank_change": 46,
       "versions": {
         "longcat-2-5": [
           "ResearchRubrics"
@@ -7466,7 +6912,7 @@
       }
     },
     {
-      "rank": 210,
+      "rank": 164,
       "benchmark_id": "sandbagging-controlarena",
       "name": "ControlArena",
       "domain": "安全",
@@ -7476,7 +6922,7 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 46,
       "versions": {
         "gemini-4-argon": [
           "ControlArena"
@@ -7484,7 +6930,7 @@
       }
     },
     {
-      "rank": 211,
+      "rank": 165,
       "benchmark_id": "screenspot-pro",
       "name": "ScreenSpot-Pro",
       "domain": "代码",
@@ -7494,7 +6940,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 46,
       "versions": {
         "gpt-6-astra": [
           "ScreenSpot-Pro no tools"
@@ -7502,7 +6948,7 @@
       }
     },
     {
-      "rank": 212,
+      "rank": 166,
       "benchmark_id": "seqqa",
       "name": "SeqQA",
       "domain": "生物与医学",
@@ -7512,7 +6958,7 @@
         "muse-wonder-full"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 46,
       "versions": {
         "muse-wonder-full": [
           "SeqQA"
@@ -7520,7 +6966,7 @@
       }
     },
     {
-      "rank": 213,
+      "rank": 167,
       "benchmark_id": "skillsbench",
       "name": "SkillsBench",
       "domain": "Agent",
@@ -7530,7 +6976,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 2,
+      "rank_change": 46,
       "versions": {
         "longcat-2-5": [
           "SkillsBench v1.1"
@@ -7538,7 +6984,7 @@
       }
     },
     {
-      "rank": 214,
+      "rank": 168,
       "benchmark_id": "sneaky-sandbox-escape",
       "name": "Sneaky Sandbox Escape",
       "domain": "安全",
@@ -7548,7 +6994,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 46,
       "versions": {
         "gpt-6-astra": [
           "Sneaky Sandbox Escape"
@@ -7556,25 +7002,7 @@
       }
     },
     {
-      "rank": 215,
-      "benchmark_id": "spotsoundbench",
-      "name": "SpotSoundBench",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "SpotSoundBench"
-        ]
-      }
-    },
-    {
-      "rank": 216,
+      "rank": 169,
       "benchmark_id": "spreadsheetbench",
       "name": "SpreadsheetBench",
       "domain": "Agent",
@@ -7584,7 +7012,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-09",
-      "rank_change": 2,
+      "rank_change": 47,
       "versions": {
         "longcat-2-5": [
           "SpreadsheetBench 2"
@@ -7592,43 +7020,7 @@
       }
     },
     {
-      "rank": 217,
-      "benchmark_id": "streamingbench",
-      "name": "StreamingBench",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "StreamingBench"
-        ]
-      }
-    },
-    {
-      "rank": 218,
-      "benchmark_id": "supergpqa",
-      "name": "SuperGPQA",
-      "domain": "语言",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "deepseek-v4-1-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "deepseek-v4-1-flash": [
-          "SuperGPQA"
-        ]
-      }
-    },
-    {
-      "rank": 219,
+      "rank": 170,
       "benchmark_id": "swe-atlas",
       "name": "SWE Atlas",
       "domain": "代码",
@@ -7638,7 +7030,7 @@
         "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 49,
       "versions": {
         "longcat-2-5": [
           "SWE Atlas Codebase QnA",
@@ -7648,7 +7040,7 @@
       }
     },
     {
-      "rank": 220,
+      "rank": 171,
       "benchmark_id": "tenuretrail",
       "name": "TenureTrail",
       "domain": "综合科学",
@@ -7658,7 +7050,7 @@
         "hy4"
       ],
       "first_seen": "2026-11-10",
-      "rank_change": 3,
+      "rank_change": 49,
       "versions": {
         "hy4": [
           "TenureTrail"
@@ -7666,43 +7058,7 @@
       }
     },
     {
-      "rank": 221,
-      "benchmark_id": "uniclawbench",
-      "name": "UniClawBench",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 3,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "UniClawBench"
-        ]
-      }
-    },
-    {
-      "rank": 222,
-      "benchmark_id": "vals-tax-agent-bench",
-      "name": "Tax Agent Bench",
-      "domain": "Agent",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "gemini-4-hydrogen"
-      ],
-      "first_seen": "2026-11-13",
-      "rank_change": 3,
-      "versions": {
-        "gemini-4-hydrogen": [
-          "Tax Agent Bench"
-        ]
-      }
-    },
-    {
-      "rank": 223,
+      "rank": 172,
       "benchmark_id": "vibe-code-bench",
       "name": "Vibe Code Bench",
       "domain": "代码",
@@ -7712,7 +7068,7 @@
         "gemini-4-argon"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": 51,
       "versions": {
         "gemini-4-argon": [
           "Vibe Code Bench"
@@ -7720,7 +7076,7 @@
       }
     },
     {
-      "rank": 224,
+      "rank": 173,
       "benchmark_id": "video-index",
       "name": "Video-Index",
       "domain": "多模态",
@@ -7730,7 +7086,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new",
+      "rank_change": 51,
       "versions": {
         "qwen4-max": [
           "Video-Index"
@@ -7738,80 +7094,61 @@
       }
     },
     {
-      "rank": 225,
-      "benchmark_id": "voicebench",
-      "name": "VoiceBench",
-      "domain": "语音",
+      "rank": 174,
+      "benchmark_id": "video-mme",
+      "name": "Video-MME",
+      "domain": "多模态",
       "count": 1,
       "share": 0.05,
       "models": [
-        "qwen3-8-omni-flash"
+        "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": -70,
       "versions": {
-        "qwen3-8-omni-flash": [
-          "VoiceBench"
+        "longcat-2-5": [
+          "Video-MME"
         ]
       }
     },
     {
-      "rank": 226,
-      "benchmark_id": "wenetspeech",
-      "name": "WenetSpeech",
-      "domain": "语音",
+      "rank": 175,
+      "benchmark_id": "vision2web",
+      "name": "Vision2Web",
+      "domain": "代码",
       "count": 1,
       "share": 0.05,
       "models": [
-        "qwen3-8-omni-flash"
+        "longcat-2-5"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": -70,
       "versions": {
-        "qwen3-8-omni-flash": [
-          "WenetSpeech",
-          "WenetSpeech-Chuan"
+        "longcat-2-5": [
+          "Vision2Web"
         ]
       }
     },
     {
-      "rank": 227,
-      "benchmark_id": "wildclawbench-mm",
-      "name": "WildClawBench-MM",
-      "domain": "Agent",
+      "rank": 176,
+      "benchmark_id": "webexploitbench",
+      "name": "WebExploitBench",
+      "domain": "安全",
       "count": 1,
       "share": 0.05,
       "models": [
-        "qwen3-8-omni-flash"
+        "gemini-4-neon"
       ],
-      "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "first_seen": "2026-11-19",
+      "rank_change": "new",
       "versions": {
-        "qwen3-8-omni-flash": [
-          "WildClawBench-MM"
+        "gemini-4-neon": [
+          "WebExploitBench v1.2"
         ]
       }
     },
     {
-      "rank": 228,
-      "benchmark_id": "wildspeech",
-      "name": "WildSpeech",
-      "domain": "语音",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 3,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "WildSpeech"
-        ]
-      }
-    },
-    {
-      "rank": 229,
+      "rank": 177,
       "benchmark_id": "wmdp",
       "name": "WMDP",
       "domain": "安全",
@@ -7821,7 +7158,7 @@
         "gpt-6-astra"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 3,
+      "rank_change": 52,
       "versions": {
         "gpt-6-astra": [
           "WMDP"
@@ -7829,7 +7166,7 @@
       }
     },
     {
-      "rank": 230,
+      "rank": 178,
       "benchmark_id": "work360",
       "name": "Work360",
       "domain": "Agent",
@@ -7839,7 +7176,7 @@
         "qwen4-max"
       ],
       "first_seen": "2026-11-16",
-      "rank_change": "new",
+      "rank_change": 52,
       "versions": {
         "qwen4-max": [
           "Work360"
@@ -7847,25 +7184,7 @@
       }
     },
     {
-      "rank": 231,
-      "benchmark_id": "worldsense",
-      "name": "WorldSense",
-      "domain": "多模态",
-      "count": 1,
-      "share": 0.05,
-      "models": [
-        "qwen3-8-omni-flash"
-      ],
-      "first_seen": "2026-11-07",
-      "rank_change": 2,
-      "versions": {
-        "qwen3-8-omni-flash": [
-          "WorldSense"
-        ]
-      }
-    },
-    {
-      "rank": 232,
+      "rank": 179,
       "benchmark_id": "xdev-bench-hard",
       "name": "xdev-bench-hard",
       "domain": "安全",
@@ -7875,7 +7194,7 @@
         "kimi-k3-1-pro"
       ],
       "first_seen": "2026-11-07",
-      "rank_change": 2,
+      "rank_change": 53,
       "versions": {
         "kimi-k3-1-pro": [
           "xdev-bench-hard"
@@ -9334,13 +8653,197 @@
         "worldsense",
         "xdev-bench-hard"
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "top": [
+        "automationbench-aa",
+        "agents-last-exam",
+        "terminal-bench",
+        "healthbench",
+        "terminal-bench-science",
+        "deepswe",
+        "osworld",
+        "hle",
+        "exploitbench",
+        "harvey-lab",
+        "exploitgym",
+        "gdpval",
+        "chartography",
+        "frontiercode",
+        "programbench",
+        "sec-bench",
+        "aav-capsid-packaging",
+        "benchcad",
+        "indirect-prompt-injection-gray-swan",
+        "aa-briefcase",
+        "posttrainbench",
+        "aa-omniscience",
+        "coronavirus-ace2-screen",
+        "cy-scenario-bench",
+        "gdp-pdf",
+        "improper-actions-workplace-openai",
+        "kernelgen",
+        "mentalhealthbench",
+        "phage-plasmid-coevolution",
+        "shp2-function-prediction",
+        "vct",
+        "blocker-deception-openai",
+        "cursorbench",
+        "draco",
+        "frontierswe",
+        "mmmu-pro",
+        "nanogpt-evaluation",
+        "apex-agents",
+        "biomysterybench",
+        "broken-search-tool-openai",
+        "coding-deception-openai",
+        "deepbinary",
+        "gpqa",
+        "jobbench",
+        "lifeval",
+        "mle-bench",
+        "multimodal-troubleshooting-virology",
+        "officeqa",
+        "patchbench",
+        "protocolqa",
+        "swe-marathon",
+        "swe-sweep",
+        "vending-bench",
+        "wandr",
+        "agent-arena",
+        "agentic-honesty",
+        "bbq",
+        "browsecomp",
+        "cwe-bench",
+        "finance-agent",
+        "global-mmlu",
+        "graphwalks",
+        "linuxarena",
+        "mask",
+        "milu",
+        "mka",
+        "oai-repo-sabotage",
+        "riemannbench",
+        "sandbox-bench-openai",
+        "sre-bench",
+        "swe-bench",
+        "swe-bench-pro",
+        "troubleshootingbench",
+        "zerobench",
+        "aa-3d",
+        "aa-lcr",
+        "arc-agi-3",
+        "arxivmath",
+        "babyvision",
+        "biotier",
+        "blueprint-bench",
+        "charxiv",
+        "critpt",
+        "cve-rediscovery-anthropic",
+        "cybergym",
+        "de-novo-binder-design-anthropic",
+        "focusbench",
+        "helpbench",
+        "hpct",
+        "lab-bench",
+        "latchbio-bioinformatics",
+        "legal-research-bench",
+        "lvbench",
+        "mcp-atlas",
+        "memorybench-meta",
+        "nl2repo-bench",
+        "physicianbench",
+        "remote-labor-index",
+        "robodojo",
+        "scicode",
+        "shade-arena",
+        "simpleqa",
+        "singlecellbench",
+        "spatialbench",
+        "toolathlon",
+        "vals-tax-agent-bench",
+        "vbt",
+        "webdev-arena",
+        "3dcodebench",
+        "aa-analystagent",
+        "abc-bench",
+        "agentic-misalignment",
+        "aime",
+        "arc-agi",
+        "atomic-challenges",
+        "autobaxbench",
+        "balyasny-gfi",
+        "bio-design-tools-meta",
+        "claw-eval",
+        "cobench",
+        "cve-bench",
+        "cyberbench",
+        "deck-arena",
+        "design-bench-kimi",
+        "facts-grounding",
+        "finsearchcomp",
+        "frontier-finance",
+        "frontiercyber",
+        "frontiermath",
+        "frontierscience",
+        "genebench",
+        "google-re-bench",
+        "gsm8k",
+        "handbook-md",
+        "hebbia-e2e-financial",
+        "humaneval",
+        "hy-gamedev",
+        "hy-gamelogic",
+        "irab",
+        "kimi-business-operation",
+        "kimi-code-bench",
+        "kimi-financial-modeling",
+        "kimi-financial-research",
+        "kimi-hallu-bench",
+        "last-secure-code-bench",
+        "lifescibench",
+        "longcat-appdev",
+        "longcatclawbench",
+        "mathvision",
+        "mbct",
+        "medchembench",
+        "mind2web",
+        "monorepo-bench",
+        "mrcr-v2",
+        "nucleobench",
+        "open-score-string-quartets",
+        "opqa",
+        "or-bench",
+        "paperbench",
+        "polyguard",
+        "posterbench",
+        "redcode",
+        "researchrubrics",
+        "sandbagging-controlarena",
+        "screenspot-pro",
+        "seqqa",
+        "skillsbench",
+        "sneaky-sandbox-escape",
+        "spreadsheetbench",
+        "swe-atlas",
+        "tenuretrail",
+        "vibe-code-bench",
+        "video-index",
+        "video-mme",
+        "vision2web",
+        "webexploitbench",
+        "wmdp",
+        "work360",
+        "xdev-bench-hard"
+      ]
     }
   ],
   "coverage": {
     "status": "provisional_lower_bound",
     "interpretation_zh": "统计真实打开官方文档中的具名benchmark提及；不是分数榜，也不等于模型实际采用率。图片/OCR及具名评测遗漏仍可能存在。",
     "latest20_verified_globally": false,
-    "rank_change_reference_date": "2026-11-13",
+    "rank_change_reference_date": "2026-11-16",
     "excluded_models": [
       {
         "id": "minimax-m3-1-flash",
@@ -9355,6 +8858,18 @@
         "reason": "ineligible"
       },
       {
+        "id": "grok-4-7",
+        "reason": "ineligible"
+      },
+      {
+        "id": "qwen3-8-omni-flash",
+        "reason": "ineligible"
+      },
+      {
+        "id": "deepseek-v4-1-flash",
+        "reason": "ineligible"
+      },
+      {
         "id": "claude-mythos-5-2",
         "reason": "ineligible"
       },
@@ -9364,6 +8879,10 @@
       },
       {
         "id": "qwen4-max-preview",
+        "reason": "ineligible"
+      },
+      {
+        "id": "hy4-flash",
         "reason": "ineligible"
       }
     ]

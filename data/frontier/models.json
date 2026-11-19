@@ -888,7 +888,7 @@
       }
     ],
     "benchmarks": [],
-    "note": null,
+    "note": "按窗口取舍不计入窗口，并非轻量级、垂直专用或同智力加速版本：为保留 GPT-6 Astra 与 Muse Wonder，在 GPT-6.2 Astra、GPT-6.2 Sol 与 Gemini 4 Neon 进入窗口后，按首发日将其移出（2026-09-21）。",
     "facts": [
       {
         "key": "release",
@@ -932,7 +932,8 @@
         "url": "https://docs.x.ai/developers/models/grok-4.7",
         "accessed": "2026-11-16"
       }
-    ]
+    ],
+    "eligible": false
   },
   {
     "id": "qwen3-8-omni-flash",
@@ -962,7 +963,7 @@
       }
     ],
     "benchmarks": [],
-    "note": "官方博客署日期2026/09/18，与官方发布新闻一致；英语转载博客日期9月20日。",
+    "note": "官方博客署日期2026/09/18，与官方发布新闻一致；英语转载博客日期9月20日。 按窗口取舍不计入窗口，并非轻量级、垂直专用或同智力加速版本：为保留 GPT-6 Astra 与 Muse Wonder，在 GPT-6.2 Astra、GPT-6.2 Sol 与 Gemini 4 Neon 进入窗口后，按首发日将其移出（2026-09-18）。",
     "facts": [
       {
         "key": "modalities",
@@ -1030,7 +1031,8 @@
         "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
         "accessed": "2026-11-16"
       }
-    ]
+    ],
+    "eligible": false
   },
   {
     "id": "deepseek-v4-1-flash",
@@ -1064,7 +1066,7 @@
       }
     ],
     "benchmarks": [],
-    "note": null,
+    "note": "按窗口取舍不计入窗口，并非轻量级、垂直专用或同智力加速版本：为保留 GPT-6 Astra 与 Muse Wonder，在 GPT-6.2 Astra、GPT-6.2 Sol 与 Gemini 4 Neon 进入窗口后，按首发日将其移出（2026-09-10）。",
     "facts": [
       {
         "key": "release",
@@ -1108,7 +1110,8 @@
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "accessed": "2026-11-16"
       }
-    ]
+    ],
+    "eligible": false
   },
   {
     "id": "gpt-6-astra",
@@ -1663,5 +1666,314 @@
         "accessed": "2026-11-16"
       }
     ]
+  },
+  {
+    "id": "gpt-6.2-astra",
+    "name": "GPT-6.2 Astra",
+    "organization": "OpenAI",
+    "release_date": "2026-11-17",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/safety-overview",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/changelog.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "benchmarks": [],
+    "note": "官方发布日以Changelog、系统卡封面与ChatGPT Learn页的2026-11-17为准，与已有窗口模型GPT-6 Astra（2026-09-03）及GPT-6 Sol / GPT-6.1 Sol不是同一checkpoint。同日发布的Astra for Law（gpt-6.2-astra-law）是GPT-6.2 Astra的法律配置，不另计为第三个基础模型。页面未给出精确到小时的首发时刻。",
+    "facts": [
+      {
+        "key": "api_model_id",
+        "value": "gpt-6.2-astra",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "context_window",
+        "value": "1,050,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "max_input",
+        "value": "922,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "max_output",
+        "value": "128,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "modalities",
+        "value": "input: text, image; output: text (no audio/video)",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "knowledge_cutoff",
+        "value": "2026-05-18",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "short context: input $8 / cached input $0.40 / cache write 30m $10 / 12h $20 / output $40",
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "long_context_pricing",
+        "value": "prompts >272K input tokens: 2x input and cache prices, 1.5x output",
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "parameters",
+        "value": "not stated",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "preparedness",
+        "value": "Cybersecurity Critical; Biological/Chemical High; AI Self-Improvement High (Astra only)",
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "gpt-6.2-sol",
+    "name": "GPT-6.2 Sol",
+    "organization": "OpenAI",
+    "release_date": "2026-11-17",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/safety-overview",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://developers.openai.com/api/docs/changelog.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "benchmarks": [],
+    "note": "官方发布日2026-11-17，与已有窗口模型GPT-6 Sol（2026-09-23）及GPT-6.1 Sol（2026-09-29）不是同一checkpoint。官方定位为日常工作、编码与规模化智能体的主力模型，标准短上下文价格与GPT-6.1 Sol相同。页面未给出精确到小时的首发时刻。",
+    "facts": [
+      {
+        "key": "api_model_id",
+        "value": "gpt-6.2-sol",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "context_window",
+        "value": "1,050,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "max_input",
+        "value": "922,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "max_output",
+        "value": "128,000 tokens",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "modalities",
+        "value": "input: text, image; output: text (no audio/video)",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "knowledge_cutoff",
+        "value": "2026-06-01",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "short context: input $2 / cached input $0.10 / cache write 30m $2.50 / 12h $5 / output $10",
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "long_context_pricing",
+        "value": "prompts >272K input tokens: 2x input and cache prices, 1.5x output",
+        "url": "https://developers.openai.com/api/docs/pricing.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "parameters",
+        "value": "not stated",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "preparedness",
+        "value": "Cybersecurity Critical; Biological/Chemical High; AI Self-Improvement High not reached",
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "organization": "Google DeepMind",
+    "release_date": "2026-11-18",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deepmind.google/models/evals-methodology/gemini-4-neon",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deepmind.google/models/gemini/",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "benchmarks": [],
+    "note": "官方发布页与模型卡均署日期2026-11-18，当日向Gemini API/AI Studio、企业与付费Pro/Ultra用户开放，首发日与正式开放日相同。模型卡说明其改编自Gemini 4 Carbon，但定位、定价与官方评测表均独立，处理方式与窗口内已有的Gemini 4 Hydrogen相同，不属于同智力加速版本。Gemini 4 Neon for cyber是面向Fairwind可信防护方的配置，不另计为基础模型。官方安全与安保报告在2026-11-19查阅时仍标注即将发布。",
+    "facts": [
+      {
+        "key": "model_card_published",
+        "value": "18 Nov 2026",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "context_window",
+        "value": "1M combined input-output",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "max_output",
+        "value": "64K default synchronous; up to 1M via background long decode",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "modalities",
+        "value": "input: text, images, audio, video; output: text",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "pricing_usd_per_mtok",
+        "value": "$3 input / $0.15 cached input / $15 output",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "knowledge_cutoff",
+        "value": "March 2026",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "availability",
+        "value": "Gemini API / AI Studio, Gemini for business, Antigravity (Pro/Ultra), Gemini app (Pro/Ultra)",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "parameters",
+        "value": "not stated",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "key": "base_model",
+        "value": "adapted from Gemini 4 Carbon",
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  {
+    "id": "hy4-flash",
+    "name": "Hy4 flash",
+    "organization": "Tencent",
+    "release_date": "2026-11-16",
+    "eligible": false,
+    "sources": [
+      {
+        "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://hy.tencent.ai/research/hy4-flash",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "benchmarks": [],
+    "note": "腾讯官方新闻稿署日期2026-11-16，与上次窗口快照同日，快照中未收录。官方定位为迄今性价比最高、面向日常工作流的Hy模型（224B总参数/12B激活，另含64B Engram参数），并与Claude Haiku 5.5对照用户满意度；官方建议复杂长程软件工程仍使用更强的Hy4。按轻量级/高性价比日常型号规则，建议不计入窗口，并非漏掉的旗舰checkpoint。官方研究页与评测图在本次未能抄录绝对分数（研究页抓取为空，图在新闻稿中），如需归档提及需用浏览器打开官方页。"
   }
 ]

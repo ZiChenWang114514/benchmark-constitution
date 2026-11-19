@@ -1,0 +1,810 @@
+{
+  "id": "afrinorm",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "AfriNORM",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "AfriNORM：面向非洲文化规范推理的大语言模型评测基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.22580v1；约鲁巴语案例研究，含 65 道情景选择题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.22580v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "推理",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "规范推理",
+        "文化评测",
+        "非洲语言"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.22580",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "AfriNORM: An Evaluation Benchmark for Normative Reasoning of LLMs Across African Cultures",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "独立研究者 Ahmad Samuel Gali；墨西哥国立理工学院（Tadesse Destaw Belay）；南非比勒陀利亚大学（Idris Abdulmumin）；德国汉堡大学（Seid Muhie Yimam）；尼日利亚拜科大学与英国帝国理工学院（Shamsuddeen Hassan Muhammad）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Ahmad Samuel Gali、Tadesse Destaw Belay、Idris Abdulmumin、Seid Muhie Yimam、Shamsuddeen Hassan Muhammad（共5位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察大语言模型在非洲社会文化语境中的规范推理，即对应当做与不应当做的义务、许可和禁忌的判断，而不只是语言流利度或一般习俗知识。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，现有非洲自然语言处理基准多测语言能力或领域知识，BLEND 等文化基准主要覆盖人们通常怎么做的社会习俗，而较少测道义情态，即规范与禁忌。SocialIQA 采用情景问答，但限于英语且缺少非洲文化特异性。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "当前发布是针对约鲁巴文化的案例研究，问题由目标文化的本地专家根据真实社会情景编写，并配有平行的英语与约鲁巴语版本。构造流程计划扩展到另外 20 种非洲语言。选项按三步生成：正确的文化规范答案、去掉文化线索后由主流大语言模型给出的常识默认答案，以及对抗性文化干扰项。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "题目由各目标文化的本地专家编写。论文强调用对抗性干扰项降低仅靠模式识别即可答对的可能。局限性中说明约鲁巴语部分只有 65 题，统计效力有限。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "约鲁巴语案例研究共 65 道题，每题为含三个选项的情景选择题（正确规范、常识默认、文化干扰项）。附录表 5 列出尊重、饮食许可、性别许可、王权、生命周期与形而上学、司法、誓约、环境规范、问候与社交、妊娠、死亡等文化领域。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "情景型三选一选择题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "英语与约鲁巴语平行文本",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "准确率（是否选中正确规范答案）；普遍常识偏差分数（UCBS），即选择常识默认项的比例；干扰项偏差分数（DBS），即选择文化干扰项的比例。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "使用零样本提示，文化调参尽量少，以便观察模型的自然偏向。根据模型最终选择计分，而不是比较对数概率。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "零样本提示，模板见图 3；论文称文化调参尽量少，以免覆盖模型的自然偏向。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "当前结果来自约鲁巴语试点，共 65 题，不可直接外推到其他非洲语言与文化。英语与约鲁巴语分数应分开报告。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-17 11:04:36 UTC。文内注释为 8 页、3 张图、5 张表。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "英语提示下准确率已经较高，但约鲁巴语提示下明显下降，尤其是开放权重模型。论文未声称该基准已饱和。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文将约鲁巴语上的表现下降主要归因于文化混淆而非偏向一般答案：三种模型的 UCBS 在两种语言上大致稳定，而 Llama 3.1 8B Instruct 的 DBS 从英语的 4.69% 升至约鲁巴语的 38.46%。当前实证仅覆盖约鲁巴语，且题量较小。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，模型为 Llama 3.1 8B Instruct、Gemini 2.0 Flash 与 GPT-5。英语准确率分别为 85.94%、95.38%、98.46%，UCBS 为 9.23%、3.08%、0.00%，DBS 为 4.69%、1.54%、1.54%。约鲁巴语准确率分别为 52.31%、89.23%、89.23%，UCBS 为 9.23%、3.08%、1.54%，DBS 为 38.46%、7.69%、9.23%。论文称 Llama 在约鲁巴语上的准确率仅略高于随机水平。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "数值取自论文表 4。英语准确率 85.94% 与正文所述 65 题并存，是否有题目被排除，论文未另行说明。评测为案例研究，仅三种模型、两种语言。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.22580",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "4a515f7371807bd0f4784120967239f1a8158c6201785dce20e846f03be3ad25",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "535219",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22580",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22580",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22580",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22580",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

@@ -40,11 +40,11 @@
 
 来源: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (访问 2026-11-16)
 
-**官方代码**：待核实
+**官方代码**：官方项目主页链接的代码仓库：https://github.com/Einsia/Visual-Cipher-Bench
 
 来源: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (访问 2026-11-16)
 
-**数据地址**：待核实
+**数据地址**：题目与图像随官方代码仓库发布：https://github.com/Einsia/Visual-Cipher-Bench（仓库说明写明含40道原创视觉谜题与67幅图像，任务目录为 tasks/）
 
 来源: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (访问 2026-11-16)
 
@@ -249,3 +249,5 @@
 ## 变更记录
 
 2026-11-16：初次收录。
+
+2026-11-19：补充官方代码仓库地址；补充官方题目与图像发布位置。

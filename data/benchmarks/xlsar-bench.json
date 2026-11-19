@@ -1,0 +1,808 @@
+{
+  "id": "xlsar-bench",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "XLSAR-Bench",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "XLSAR-Bench：面向多模态大模型的极大合成孔径雷达图像理解基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.19364v1；405 张图像，十项任务，中英双语",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.19364v1（2026-11-14首次提交）；投稿 IEEE Transactions on Geoscience and Remote Sensing",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "地球与天文",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "合成孔径雷达",
+        "遥感",
+        "多模态大模型",
+        "大场景理解"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。数据集许可因 Hugging Face 页面在核验日返回 401 而未能核实。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.19364",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "国防科技大学电子科学与技术学院；Jiehua Zhang 同时隶属于奥卢大学机器视觉与信号处理中心",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "La Jiang、Lingfeng Chen、Jiaqi Zhu、Fengrong Guo、Jiehua Zhang、Panhe Hu、Li Liu、Zhen Liu（共8位作者；La Jiang 与 Lingfeng Chen 贡献相同；通讯作者为 Panhe Hu 与 Zhen Liu）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "教育部基础与交叉学科突破计划 JYB2025XDXM110，国家自然科学基金 62401585，湖南省科技创新计划 2024RC3120，以及国防科技大学研究生创新基金 XJJCB2026040",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "在完整的大场景合成孔径雷达图像上，同时考察全局语义理解与细粒度小目标感知，任务覆盖场景解译、区域感知、目标理解、视觉定位、详细描述和条件计数。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有合成孔径雷达视觉–语言基准多用小图块或目标中心样本，难以同时评估完整大场景理解与小目标细节；部分自动标注还可能引入无视觉依据的属性或语言偏差。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "从 11 个合成孔径雷达数据源收集 405 张图像，长边约 2,000 至 40,000 像素，平均 7,153×7,153。标注来自已有空间标签并对照原始图像核验；描述由半自动描述器生成后再经细致人工标注。评测为中英双语。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "所有评测样本经人工核验，描述在半自动生成后由人工修订。表 I 将问答与定位标注记为人工核验。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "405 张图像；详细描述 405 条，英文与中文平均词数分别为 402 与 378；定位表达式 3,260 条；问答 14,250 条；共十项任务。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "十项任务，涵盖视觉问答、视觉定位（含条件定位）与详细图像描述，例如计数、土地利用分类、目标分类、空间关系与区域计数",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "大场景合成孔径雷达图像与中英文本指令",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "英语与中文",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "论文声明在 Hugging Face 开源。2026-11-19 访问 https://huggingface.co/datasets/Jiaqikiki/XLSAR 返回 401，公开划分文件未能下载核验。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "按任务报告准确率或描述指标等；论文并引入基于整图降采样视图、对 Qwen3.5-9B 做 LoRA 适配的 XLSAR-Baseline。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "评测通用、遥感和合成孔径雷达专用多模态大模型，并报告中英文结果。因数据页面未能打开，官方脚本是否随仓库提供仍待核实。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-14。稿件页眉标明投稿 IEEE Transactions on Geoscience and Remote Sensing；文中 DOI 仍为占位符。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。论文强调模型在理解大场景和准确感知小目标上仍然困难；文中称详细描述的 BLEU-4 最高分别仅 2.13% 与 1.37%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "大图下采样可能掩盖小目标，裁剪又可能去掉场景上下文，这是本基准要保留完整大图的原因。数据集页面在核验日无法公开访问，外部复现受阻。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，包含通用与领域模型及 XLSAR-Baseline。正文表格中，GPT-6.1-sol 在英文与中文设置下多项指标高于所列开源模型，例如一组英文指标为 48.19、45.85、47.70、80.82、38.26、63.26，对应中文为 47.79、42.27、48.07、82.70、39.83、64.10；定位与描述类指标明显更低。因表头与数字分栏，快照不擅自指定每一列的名称。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "规模取自摘要与表 I；模型数字取自实验表格，仅在不臆测列名的前提下引用整行。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "jiangla22@nudt.edu.cn、chenlingfeng@nudt.edu.cn、zhujiaqi24@nudt.edu.cn、guofengrong21@nudt.edu.cn、hupanhe13@nudt.edu.cn、liuli_nudt@nudt.edu.cn、zhen_liu@nudt.edu.cn、zhangjiehua_nudt@163.com。后三个地址中的下划线由 PDF 中 LaTeX 转义残留空格恢复，存有不确定性。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.19364",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "698ae1bfbf2e8eb07b79ecc4661d6570752ed0cbca02ff091641cfd4c3252a51",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "8996590",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "论文脚注给出 https://huggingface.co/datasets/Jiaqikiki/XLSAR。该页在核验日返回 401，未能保存数据卡或许可文本。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19364",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19364",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

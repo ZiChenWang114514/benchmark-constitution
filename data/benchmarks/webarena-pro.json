@@ -1,0 +1,1496 @@
+{
+  "id": "webarena-pro",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "WebArena-Pro",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "WebArena-Pro：面向网络智能体的异构、多模态、可复现基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.17955v1；300 项任务、20 个自托管网络应用、六个领域类别",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.17955v1（2026-11-13首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "Agent",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "网络智能体",
+        "多模态浏览器",
+        "可复现评测"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。官方代码仓库与主数据集在 2026-11-19 均标注为 MIT 许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.17955",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/McGill-NLP/webarena-pro",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "https://webarena-pro.github.io",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_title": {
+      "value": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "法国里昂国立应用科学学院 LIRIS 与 Esker（Imene Kerboua）；韩国国立大学（SNU）（Fatemeh Pesaran Zadeh、Dongjin Kang、Seyeon Choi、Gunhee Kim）；加拿大麦吉尔大学与 Mila 魁北克人工智能研究所（Xing Han Lù、Alexander Miller、Junyi Song、Yunjia Tian 等，以及通讯作者 Siva Reddy）；美国俄亥俄州立大学（Weijian Qi、Zeyi Liao、Huan Sun）；香港大学（Mengqi Yuan）；ServiceNow AI Research；拉瓦尔大学（Alexandre Drouin 亦属此列）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "作者单位还包括 ServiceNow AI Research 等；具体合作关系以论文作者单位为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "authors": {
+      "value": "Imene Kerboua、Fatemeh Pesaran Zadeh、Xing Han Lù、Weijian Qi、Alexander Miller、Junyi Song、Yunjia Tian、Dongjin Kang、Seyeon Choi、Marzia Nouri、Ewen Gueguen、Matteo Boglioni、Fengyuan Liu、Zeyi Liao、Mengqi Yuan、Yue Li、Alexandre Lacoste、Alexandre Drouin、Spandana Gella、Huan Sun、Gunhee Kim、Siva Reddy（共22位作者）。Imene Kerboua 与 Fatemeh Pesaran Zadeh 为共同第一作者贡献；通讯作者为 Xing Han Lù 与 Siva Reddy。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "仓库位于 McGill-NLP 组织下；Hugging Face 组织为 WebArena-Pro。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "funders": {
+      "value": "Xing Han Lù 得到加拿大自然科学与工程研究理事会（NSERC）资助，编号 579403。Siva Reddy 得到加拿大 CIFAR 人工智能讲席、NSERC Discovery Grant 与 Sloan Fellowship 资助。项目还得到 ServiceNow–Mitacs Accelerate 项目支持。Gunhee Kim、Fatemeh Pesaran Zadeh、Dongjin Kang 与 Seyeon Choi 得到韩国信息通信规划评价院（IITP）及相关韩国国家研究基金会、教育部基础科学研究项目资助，论文列出编号 IITP-2025-RS-2024-00437633、RS-2025-25442338、RS-2021-II211343、RS-2023-00274280。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察网络智能体能否在自托管、可隔离复现的异构网站上完成真实浏览器工作，包括跨站流程，并把音频和视频作为与文本、视觉并列的核心观察，使用专门动作从媒体中提取信息。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有可复现的网络智能体基准往往只覆盖少量应用和少数软件类别，并且模态限于文本和视觉；在线基准扩大了网站覆盖，却因页面与数据漂移而牺牲可复现性。已有基准也未能有意义地评测智能体能否理解并使用网页中嵌入的音频和视频。本条目是 WebArena 的后续新基准，必须与已有的 webarena、visualwebarena、videowebarena 区分，不得覆盖或合并。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "300 项任务分布在 20 个自托管网络应用和六个领域类别：生产力、沟通、分析、业务运营、设计与媒体、旅行；应用按 Notion、Slack、Spotify、Figma、Airbnb 等常用服务建模，完整列表见表 2。按站点覆盖分为 204 项单站、96 项跨站；按模态分为 221 项文本或视觉、79 项音频或视频。与许多由少量模板大量实例化的基准不同，每项任务都有自己的专用模板。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "任务通过专用标注界面编写，先由大语言模型辅助分诊标出看似不可行或过于简单的候选，再由人类审阅做最终接受决定，从而在扩展编写的同时把质量建立在人类判断上。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "300 项任务、20 个自托管应用、六个领域类别；204 项单站、96 项跨站；221 项文本或视觉、79 项音频或视频。每项任务对应一个专用模板。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "自托管网站上的交互式浏览器任务，包括跨站协调以及需要听取或观看嵌入媒体的任务",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本、视觉、音频与视频；对原生处理音视频的智能体提供 listen() 与 watch() 动作",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "项目页、代码与数据集已公开。论文将 300 项任务称为测试集，用于主实验。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "主结果报告成功率；论文还报告部分完成分数，定义为最终任务奖励均值的 100 倍，并可按领域分解。主实验使用 50 步预算。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "每项任务在隔离环境中运行，并支持并行、可复现评测。论文比较了编码智能体配置（如 Codex、Claude Code、OpenCode）和 GenericAgent 配置。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "官方代码：https://github.com/McGill-NLP/webarena-pro 。项目页：https://webarena-pro.github.io 。主数据集：https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro 。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "comparability_warning": {
+      "value": "必须作为独立后续基准收录，不得与已有 webarena、visualwebarena、videowebarena 合并或覆盖。成功率与部分完成分数应分开报告；编码智能体配置与 GenericAgent 配置不宜直接混排。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "主数据集 WebArena-Pro/WebArena-Pro 在 2026-11-19 标注许可为 MIT；同组织还发布了若干站点数据与轨迹子集。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-13 09:44:48 UTC。arXiv 注释写明被 NeurIPS 2026 Evaluation & Datasets Track 接收。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。受评智能体中最高成功率为 62.3%；最强 GenericAgent 配置为 30.3%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文讨论失败模式，包括跨站任务中未访问所需站点、未检查指定视频，以及许多未成功运行达到 50 步上限。可复现的自托管设计是为避免在线网站漂移。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "https://webarena-pro.github.io",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测。受评智能体中，Codex 搭配 GPT 6.1 Sol 与 Claude Code 搭配 Claude Opus 5.5 并列最高，成功率为 62.3%；随后是 OpenCode 搭配 Kimi 3.1 Pro，为 60.7%。最强的 GenericAgent 配置 Gemini 3.1 Pro omni 与 Gemma4 31B 均为 30.3%。论文称，在可复现、由人类策划的网络智能体基准中，WebArena-Pro 提供了迄今最广的应用覆盖和最全面的多模态支持。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "摘要给出的是测试集 300 项任务上的主成功率。附录还报告部分完成分数和 GenericAgent 变体。步数预算为 50。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "通讯作者 Xing Han Lù：xing.han.lu@mail.mcgill.ca；Siva Reddy：siva.reddy@mila.quebec（论文所列）。文中另出现示例邮箱，不计入公开联系方式。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "https://github.com/McGill-NLP/webarena-pro/issues ；2026-11-19 经 GitHub API 读取，open_issues_count 为 0（该字段可能包含未关闭的拉取请求）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.17955",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "522f39f2faa50c121d121d17024164d486098c8a5bc4c0dba3c111f363e59d19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "1157495",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.17955",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.17955",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://webarena-pro.github.io",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/McGill-NLP/webarena-pro",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.17955",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.17955",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://webarena-pro.github.io",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/McGill-NLP/webarena-pro",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

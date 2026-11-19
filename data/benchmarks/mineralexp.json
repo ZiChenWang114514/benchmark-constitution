@@ -1,0 +1,1035 @@
+{
+  "id": "mineralexp",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "MineralExp",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "MineralExp：面向真实世界矿物勘查实验设计的大语言模型智能体基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.17931v1；277 个案例，1,572 条参考实验方案，19 类任务",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.17931v1（2026-11-13首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "地球与天文",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "矿物勘查",
+        "地球化学实验设计",
+        "科学智能体",
+        "矿床系统"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。GitHub 仓库在 2026-11-19 未检索到 LICENSE 文件。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.17931",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/wangbing1416/MineralExp",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://github.com/wangbing1416/MineralExp",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "https://wangbing1416.github.io/projects/mineralexp",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_title": {
+      "value": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "吉林大学计算机科学与技术学院及符号计算与知识工程教育部重点实验室，中国地质大学（北京）地质过程与矿产资源国家重点实验室、地球科学与资源学院及深时数字地球前沿科学中心",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Bing Wang、Mingyang Wang、Yuanhang Mi、Yue Xu、Kaibo Su、Li'ang Xiao、Chunguo Wu、Changchun Li、Ximing Li、Kun-Feng Qiu、Bo Yang（共11位作者；Bing Wang 与 Mingyang Wang 为共同第一作者；通讯作者为 Changchun Li 与 Ximing Li）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "新一代人工智能国家科技重大专项 2026ZD0126104",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "在给定地质假设与初始上下文时，考察智能体能否选择相关的科学任务并生成具体实验方案，以在投入昂贵实验室工作之前检验地质假说，并用多标签分类指标和由大模型评判的证据覆盖指标评分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文认为，大语言模型智能体已较多用于下游地球科学数据分析，但上游的地球化学实验设计，也就是在进实验室前决定做哪些实验，仍缺少评测。同一假说可对应多种合理实验方案，开放式计划也难以写成单一标准答案。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "由已发表矿床文献构建，并经领域专家审核。taxonomy 将实验映射到矿床系统五类过程（物源、搬运、沉淀、改造、保存）和 19 类科学任务，从而得到确定性的多标签目标，同时容纳方法多样性。构建中曾有 353 项候选研究，并排除 54 条不完整记录。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "参考标注经专家审核并需有源文献支持。项目页写明公开浏览器展示参考标注供检查，而评测请求只提供三个输入字段、共享分类体系和输出说明，不含出版元数据或参考答案。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "评测输入不包含出版元数据或参考答案。论文强调分数衡量的是与专家审定参考任务类别的一致性，并不等同于实验必要性、科学正确性或预算可行性，有效替代方案也可能未出现在源文献中。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "277 个案例，1,572 条参考实验方案，19 类科学任务。表 1 给出过程级案例数，例如物源 160、搬运 170、沉淀 146 等，案例可跨越多个过程。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "开放式实验方案生成，评分时映射为 19 类任务上的多标签分类，并另评证据覆盖",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "来自文献的地质假设、背景与条件文本；输出为任务类别与具体实验计划",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "项目页提供中英文界面；评测文本语言以发布数据为准，论文未单独给出单一语种统计。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "数据与代码在 GitHub 发布，项目页提供案例浏览器和 JSONL 下载入口。论文未另述隐藏测试划分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "微平均精确率、召回率与 F1，宏平均 F1，以及精确集合或子集准确率；另有由大模型评判的证据覆盖指标。每一过程使用全部 277 行并只投影该过程的标签列。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "四个开源智能体框架各搭配七个前沿模型，共 28 种配置。官方说明强调：预测对四个参考标签中的四个会得到 40% 召回、100% 精确率和 0 的精确集合准确率，不能把召回写成准确率。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "https://github.com/wangbing1416/MineralExp",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-13。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。28 种配置的总体召回介于 70.76% 至 91.56%，但最高总体 F1 仅为 63.84%。智能体普遍高召回、低精确率，倾向提出多于检验假说所需的实验。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "参考标注并不构成唯一或充分必要的实验方案。标签分布长尾。仓库在核验日没有许可证文件。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，四个开源框架乘以七个模型。最高总体 F1 为 63.84%，由 GPT-6.1 Sol 搭配 OpenCode 取得；Claude Sonnet 5.5 在 OpenCode 上为 60.42%。这两类旗舰推理模型在全部四个框架上的 F1 都更高，例如在另一框架上分别为 60.73% 与 60.51%。总体召回范围为 70.76% 至 91.56%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "规模取自摘要与表 1；主要分数取自结果叙述。28 种配置的完整分表未全部转入快照。过程级阳性案例数在双栏表中部分可读，沉淀过程为 146，其余以正文和项目页为准处已注明。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "wangbing1416@gmail.com、Huysmanwang@qq.com、miyh26@mails.jlu.edu.cn、yuexu26@mails.jlu.edu.cn、sukb26@mails.jlu.edu.cn、xiaola26@mails.jlu.edu.cn、wucg@jlu.edu.cn、changchunli93@gmail.com、liximing86@gmail.com、kunfengqiu@qq.com、ybo@jlu.edu.cn",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "https://github.com/wangbing1416/MineralExp/issues ；2026-11-19 经仓库元数据记录的开放问题数为 0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.17931",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "9a1d35e451194720dbab0eef6560858a5ba3f9a8022023723e8d64e2b26e8a9b",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2420454",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "项目页提供案例浏览器、分类说明和 JSONL 下载入口，并展示独立的 gpt-6.1-sol 运行示例。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.17931",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/wangbing1416/MineralExp",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://wangbing1416.github.io/projects/mineralexp",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.17931",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/wangbing1416/MineralExp",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://wangbing1416.github.io/projects/mineralexp",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

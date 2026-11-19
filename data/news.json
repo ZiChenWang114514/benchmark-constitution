@@ -1,5 +1,233 @@
 [
   {
+    "id": "gpt-6-2-astra-sol-frontier-heat",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-17",
+    "title": "OpenAI 正式发布 GPT-6.2 Astra 与 GPT-6.2 Sol，进入前沿热度窗口",
+    "body": "OpenAI 于11月17日正式发布 GPT-6.2 Astra 与 GPT-6.2 Sol，二者与此前的 GPT-6 Astra、GPT-6 Sol 和 GPT-6.1 Sol 都不是同一模型。官方将 Astra 定位为面向最难项目的前沿模型，将 Sol 定位为日常工作、编码与规模化智能体的主力模型。官方模型卡给出的上下文长度为105万 token，最大输入92.2万、最大输出12.8万，输入为文本与图像，输出为文本。标准短上下文价格为：Astra 每百万 token 输入8美元、缓存命中0.40美元、输出40美元；Sol 为输入2美元、缓存命中0.10美元、输出10美元。官方发布页图表在最大推理档位给出：Agents’ Last Exam v1.1 上 Astra 约77.6%、Sol 约73.0%；Terminal-Bench-Science 0.1 上 Astra 77.1%、Sol 68.0%；LifeVal 上 Astra 86.1%、Sol 83.8%；FrontierCode 2.0 上 Astra 44.2%、Sol 43.8%。系统卡在关闭生产安全护栏的条件下报告：GPQA Diamond（无工具）上 Astra 为97.0%、Sol 为96.0%；HealthBench Professional 长度调整分上 Astra 为66.3、Sol 为65.9。系统卡认定两模型在网络安全上达到 Critical、在生物与化学上达到 High；仅 Astra 达到人工智能自我改进的 High 阈值。同日发布的 Astra for Law 是 GPT-6.2 Astra 的法律配置，不是第三个基础模型。这两款模型按首发日属于滚动20模型窗口的新发布，二者与随后于11月18日发布的 Gemini 4 Neon 一并进入最近20个模型的窗口。为保留 GPT-6 Astra 与 Muse Wonder，按首发日移出窗口的是 DeepSeek-V4.1-Flash、Qwen3.8-Omni-Flash 和 Grok 4.7。",
+    "sources": [
+      {
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "前沿模型",
+    "sort_date": "2026-11-17",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "gemini-4-neon-frontier-heat",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-18",
+    "title": "谷歌正式发布 Gemini 4 Neon，进入前沿热度窗口",
+    "body": "谷歌于11月18日正式发布 Gemini 4 Neon。官方发布页与模型卡均署同一日期，并称当日向 Gemini 应用程序接口、Google AI Studio、企业用户以及付费的 Google AI Pro 与 Ultra 用户开放。官方模型卡写明它改编自 Gemini 4 Carbon，同时把 Carbon 定位为最难的长程项目、把 Hydrogen 定位为快速日常执行，而 Neon 用于在深度与效率之间取得平衡。发布页给出的价格为每百万 token 输入3美元、缓存命中0.15美元、输出15美元，上下文长度为100万 token。官方模型卡评测表报告：Artificial Analysis 智能指数 v5.0.1 为61分，Vals Index v2.2 为70.9%，Agents’ Last Exam v1.1 为75.8%，Terminal-Bench-Science 0.1 为70.5%，Terminal-bench 4.1（作弊调整正确率）为65.2%，FrontierCode 2.0 为46.2%，SEC-bench Pro 为90.5%。官方还称，面向可信防护方的 Gemini 4 Neon for cyber 是该模型的配置，不是另一个基础模型。官方安全与安保报告在查阅时仍标注即将发布。该模型已进入最近20个模型的窗口。为保留 GPT-6 Astra 与 Muse Wonder，按首发日移出窗口的是 DeepSeek-V4.1-Flash、Qwen3.8-Omni-Flash 和 Grok 4.7。",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://deepmind.google/models/evals-methodology/gemini-4-neon",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "前沿模型",
+    "sort_date": "2026-11-18",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "aa-intelligence-index-gpt62-and-neon",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-18",
+    "title": "Artificial Analysis 将 GPT-6.2 Astra 记为智能指数第二，并公布 Gemini 4 Neon 成绩",
+    "body": "Artificial Analysis 更新日志在11月17日记载，GPT-6.2 Astra 在智能指数上的最好成绩为62分，并称其成为该指数上的第二名；GPT-6.2 Sol 在最大档为57分。11月18日的更新日志记载 Gemini 4 Neon 在 xhigh 档为61分、在 high 档为60分，并称其相对 Gemini 4 Carbon 有小幅智能提升，同时每项任务成本约低17%。同一日志还将 Neon 的 low 与 medium 档分别记为44分与55分。这些整数分数来自 Artificial Analysis 官方更新日志；OpenAI 发布页图表则把 Astra 与 Sol 在最大档的指数分记为62.1与57.3。查阅时，该机构的方法说明仍将现行指数标为 v5.0.1。本次未能从 Epoch 官方页面抄到11月16日之后的新榜单数字，因此不以第三方转述代替。",
+    "sources": [
+      {
+        "url": "https://artificialanalysis.ai/changelog",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://artificialanalysis.ai/articles/openai-has-the-2-model-in-the-intelligence-index-with-the-release-of-gpt-6-2-astra-and-gpt-6-2-sol",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "榜单变化",
+    "sort_date": "2026-11-18",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "benchleaking-is-accelerating",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-16",
+    "title": "论文提出“基准泄漏”：部分开源基座模型会复述测试题与答案",
+    "body": "一篇11月16日提交到 arXiv 的论文提出“基准泄漏”（benchleaking），用来指测试题本身进入训练数据、分数反映回忆而非能力的情况，并把它与未直接看到测试集、只针对基准做优化的“基准刷分”（benchmaxxing）区分开来。作者报告了两类迹象：在训练后阶段，近期审计显示智能体在从未得到隐藏评分规则的情况下说出这些规则；在预训练阶段，他们对20项基准和4个公开基座模型做少样本续写，发现有的基座模型会写出输入中并不存在的完整测试题、选项和答案。论文称，新近发布的 ERNIE-5.5-Flash-Base 在 HumanEval 上泄漏约96%的题目及其参考实现，在 OpenBookQA 上泄漏约85%的题目及其答案，而 DeepSeek-V4-Flash-Base 对应比例约为9%和0。作者定义了 Anti-Hack 分数：把被判定泄漏的题目记为零分，但分母仍用原来的题量。按20项基准的平均，这一调整使 DeepSeek-V4-Flash-Base 下降1.5分、Hy3-preview-Base 下降1.3分，而 MiMo-V2.5-Base 下降5.0分、ERNIE-5.5-Flash-Base 下降16.6分。论文呼吁把去污染报告和经污染调整的分数作为常规做法。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.21315",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/GAIR-NLP/Benchleaking",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "核验观察",
+    "sort_date": "2026-11-16",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "winners-curse-llm-leaderboards",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-17",
+    "title": "论文提出排行榜“赢家诅咒”：第一名分数可能被抽样运气抬高",
+    "body": "一篇11月17日提交到 arXiv 的论文认为，公开大语言模型排行榜会系统性地高估榜首模型的成绩。原因是在带噪声的基准分数上做排序时，既选出了更强的能力，也选出了抽样运气；同一选择效应还会扭曲榜单其他位置的分数，作者称之为名次引起的偏差。作者提出一种 m-out-of-N 自助法来校正该偏差，并在5个基准家族的14项基准上估计：对第一名的调整幅度约在0.09至3.86个百分点之间。在他们使用的 SWE-bench Verified 快照中，并列第一的模型被下调0.90个百分点，从79.2%调至78.30%。同一方法还给出各模型可能的名次区间，并把模型分成档次；在该 SWE-bench Verified 快照的173个模型中，有13个被归入领先档。作者把分数调整与名次区间合称为 RULER，并主张把它与原始排名一并公布。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22227",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "核验观察",
+    "sort_date": "2026-11-17",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "sciworkbench-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-17",
+    "title": "SciWorkBench：用98项真实实验工作流检验科学智能体，最高均分57.38",
+    "body": "11月17日，SciWorkBench 在 arXiv 发布。该基准面向生物学、化学、材料科学与物理学中的真实实验工作流，从647项候选中最终收录98项任务。论文在 Claude Code 与 Codex 框架下评测13个模型与框架组合，最高均分为 Codex 搭配 GPT-5.6 Sol 的57.38。作者写明，执行与评测代码以及完整数据尚未公开发布。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22490",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22490",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-17",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "omnitongue-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-17",
+    "title": "OmniTongue：中医舌诊视觉问答基准，准确率与 Macro-F1 差距显著",
+    "body": "11月17日，OmniTongue 在 arXiv 发布。该基准面向中医舌诊，含1,351张经专家校验的图像和21,616条指令对，覆盖16个临床维度与66个细粒度标签。论文评测了九个开源多模态大模型，并指出准确率与 Macro-F1 之间存在明显差距：例如 Qwen3-VL 在舌体大小和瘀点上的准确率分别为80.7%和90.3%，对应的 Macro-F1 为38.7%和29.0%。作者写明代码与数据集将在后续发布，当前版本尚未公开。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22652",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22652",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-17",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "forecastgym-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-17",
+    "title": "ForecastGym：在证据冻结后重放预测任务，受评模型均落后于市场",
+    "body": "11月17日，ForecastGym 在 arXiv 发布。该基准在预测市场问题尚未结算时，每隔两天记录四个商业网络搜索接口返回的结果，并在结局揭晓后离线重放冻结证据。首个发布包含150道问题、614个证据状态和13.1万条搜索结果。论文报告，在主设定（Tavily 证据、最后状态）下，市场的 Brier 分数为0.176，受评模型中 GPT-5.6 Terra 为0.217，均落后于市场。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.23045",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23045",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-17",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "ejbench-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-16",
+    "title": "EJBench：用电池冷板传热设计题考查工程判断，最高宏观分数0.710",
+    "body": "11月16日，EJBench 在 arXiv 发布。该基准由电池冷板共轭传热设计实验构建，考查模型能否根据少量既有结果预测新工况并作出设计决策，而不运行仿真软件。测试集有272题，其中固定的228题计入官方分数。十个前沿模型中最高为 GPT-6 Astra 的宏观分数0.710。训练、验证、测试划分、评测程序和排行榜已在 Hugging Face 发布。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.21707",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21707",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-16",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "nebench-r1-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-15",
+    "title": "NEBench R1：用核反应堆操作员执照考题考查核领域推理，最高准确率73.9%",
+    "body": "11月15日，NEBench R1 在 arXiv 发布。该基准由美国核管理委员会反应堆操作员执照考试抽取，含7,546道互不重复的选择题，覆盖18座核设施，并按知识与能力目录分类。论文评测六个模型，总体准确率介于34.0%至73.9%，最高为 Claude Opus 5.5 的73.9%。论文未给出已发布的整理数据集或代码地址。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.21682",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21682",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-15",
+    "sort_date_basis": "event_date"
+  },
+  {
+    "id": "mineralexp-release",
+    "observed_date": "2026-11-19",
+    "event_date": "2026-11-13",
+    "title": "MineralExp：用真实矿物勘查实验设计考查智能体，最高总体 F1 为63.84%",
+    "body": "11月13日，MineralExp 在 arXiv 发布。该基准面向真实矿物勘查中的地球化学实验设计，由已发表矿床文献构建并经领域专家审核，含277个案例和1,572条参考实验方案，按五类过程与19类科学任务组织。论文在四个开源智能体框架上各搭配七个前沿模型，共28种配置；总体召回介于70.76%至91.56%，但最高总体 F1 仅为63.84%，由 GPT-6.1 Sol 搭配 OpenCode 取得。代码与项目页已公开。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.17931",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.17931",
+        "accessed": "2026-11-19"
+      }
+    ],
+    "type": "新基准",
+    "sort_date": "2026-11-13",
+    "sort_date_basis": "event_date"
+  },
+  {
     "id": "frontier-heat-model-card-recheck",
     "observed_date": "2026-11-16",
     "event_date": "2026-11-16",

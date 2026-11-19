@@ -208,7 +208,7 @@
 
 ## 联系方式
 
-**公开邮箱**：待核实
+**公开邮箱**：官方代码仓库说明要求将评测结果发送至：wildclawbench@proton.me
 
 来源: [1](https://arxiv.org/abs/2605.10912) [2](https://github.com/InternLM/WildClawBench) [3](https://huggingface.co/datasets/internlm/WildClawBench) [4](https://www.alibabacloud.com/blog/qwen3-8-omni-flash-omni-senses--agentic-delivery-_603580) (访问 2026-11-16)
 
@@ -249,3 +249,5 @@
 ## 变更记录
 
 2026-11-16：初次收录。
+
+2026-11-19：补充公开联系邮箱。

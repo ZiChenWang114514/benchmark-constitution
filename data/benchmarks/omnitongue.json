@@ -1,0 +1,811 @@
+{
+  "id": "omnitongue",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "OmniTongue",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "OmniTongue：面向中医自动舌诊的综合多模态大模型基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.22652v1；1,351 张图像，21,616 条指令对",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.22652v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "生物与医学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "中医舌诊",
+        "多模态大模型",
+        "视觉问答",
+        "细粒度属性识别"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。代码与数据集许可以后续官方发布为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.22652",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "dataset_url": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "OmniTongue: A Comprehensive MLLM Benchmark for Automated Tongue Diagnosis in Traditional Chinese Medicine",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "东北大学（信息科学与工程学院、计算机科学与工程学院）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Liuyi Xu、Yun Guo、Shusheng Li、Xuewen Zhang、Yining Qian、An-Yang Lu（共6位作者；通讯作者为 Yining Qian）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察多模态大模型能否对舌象进行全局与局部感知，包括舌体与舌苔的颜色、形态、齿痕、裂纹等属性，以及舌尖、舌中、舌根等区域的病理性特征识别。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有舌诊数据集多为单一维度、标注较粗或缺少区域级标签，难以评估模型在多临床维度和精细病理表征上的真实能力。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "1,351 张高分辨率舌象来自三个临床地点，在标准化光照下用校准数码相机采集。每张图像由两位具有十年以上临床经验的主任中医师在 16 个维度上独立标注，分歧由第三位资深专家裁定。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "双人独立标注加第三人裁定。论文报告各维度平均 Cohen κ 为 0.709，合并后为 0.820，原始一致率为 88.4%。为减少用词捷径，生成的问题会由大模型改写成多样的自然语言，同时保持医学含义。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "划分在图像级进行，同一源图像的问答条目不会分到不同分区，以避免泄漏。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "1,351 张专家校验图像；16 个临床维度；66 个细粒度标签；21,616 条视觉–语言指令对（N×K，即图像数乘维度数）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "多选题形式的视觉问答，覆盖全局舌体、全局舌苔和区域舌苔属性",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "舌象图像与文本问题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "论文说明划分在图像级定义，且基准同时支持零样本评测与监督微调，但未给出各分区的具体题量。代码与数据尚未发布。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "主要报告 Macro-F1，并以 Top-1 准确率作为次要指标；同时给出随机猜测准确率 1/|V(k)| 作为对照。论文明确优先 Macro-F1，因为准确率会奖励多数类。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "在全部 16 个维度上按统一协议评测。表格以 Macro-F1 / 准确率（百分比）形式报告。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-17。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。即使准确率较高，少数类和区域维度上的 Macro-F1 仍低，例如 InternVL3 在舌尖苔厚上 Macro-F1 为 29.1%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文强调高准确率可能来自多数类捷径而非对病理表型的真正理解；医学专用模型也未显示预期的领域优势。当前版本未采集年龄与性别元数据。代码与数据尚未公开。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，九个开源多模态模型，分组包括通用与规模化模型（Qwen2.5-VL-7B、LLaVA-NeXT-7B、Qwen3-VL-8B 及 InternVL 系列）、资源受限的 MiniCPM-V 系列，以及医学模型 HuatuoGPT-Vision。Qwen3-VL 在舌体特征表中的平均成绩为 Macro-F1 35.2 / 准确率 70.8，其中舌体大小 38.7/80.7、瘀点 29.0/90.3；在全局舌苔表中平均为 39.2/64.3，在区域舌苔表中平均为 38.1/63.4。HuatuoGPT-Vision 在某一颜色维度上 Macro-F1 仅 23.7%。论文未给出单一总分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "规模与标注协议取自摘要与第 2 节；模型分数取自表 1 至表 3 及实验分析。表格最后一列按表头与正文交叉核对为平均值。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "论文所列公开邮箱：2210718@stu.neu.edu.cn。通讯作者为 Yining Qian，论文未单独给出其邮箱。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.22652",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "40b4f43d2bc6a2ad89e9f9335d198c2a31cc40286f0c592d30a0acde4c73a2b1",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2693071",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22652",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22652",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22652",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22652",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

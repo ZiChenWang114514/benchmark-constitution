@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-16",
-  "count": 230,
+  "generated_at": "2026-11-19",
+  "count": 251,
   "per_section": {
-    "物理": 21,
+    "物理": 24,
     "化学": 18,
-    "生物与医学": 31,
-    "地球与天文": 10,
+    "生物与医学": 36,
+    "地球与天文": 13,
     "材料": 9,
     "语言": 18,
-    "推理": 16,
+    "推理": 17,
     "数学": 11,
-    "代码": 23,
-    "多模态": 19,
-    "Agent": 32,
+    "代码": 24,
+    "多模态": 21,
+    "Agent": 37,
     "安全": 12,
-    "综合科学": 6,
+    "综合科学": 7,
     "语音": 2,
     "机器人与具身": 2
   },
@@ -8046,6 +8046,645 @@
         }
       ],
       "last_checked": "2026-11-16"
+    },
+    {
+      "id": "afrinorm",
+      "name": "AfriNORM",
+      "section": "推理",
+      "tags": [
+        "推理",
+        "规范推理",
+        "文化评测",
+        "非洲语言"
+      ],
+      "summary": "AfriNORM 用情景选择题评测大语言模型对非洲文化规范与禁忌的推理。当前发布是约鲁巴语案例研究，共 65 道题，每题含正确规范、常识默认与对抗性干扰三项，并配有英语与约鲁巴语平行文本。论文报告，GPT-5 在英语提示下准确率为 98.46%，在约鲁巴语提示下为 89.23%；Llama 3.1 8B Instruct 则从 85.94% 降至 52.31%。",
+      "json": "data/benchmarks/afrinorm.json",
+      "content": "content/benchmarks/afrinorm.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "cae-bench",
+      "name": "CAE-Bench",
+      "section": "物理",
+      "tags": [
+        "物理",
+        "计算机辅助工程",
+        "偏微分方程求解器",
+        "流体力学",
+        "智能体代码生成"
+      ],
+      "summary": "评测智能体能否开发可在未见输入上复用的计算机辅助工程求解器。RC7 版本含 80 项计算任务：13 项给定方程的偏微分方程任务、43 项流体力学任务，以及 24 项改编自 CFDCodeBench、无留出工况的固定问题。论文评测 12 个模型，GPT-6.1 Sol 在中等推理设置下总分为 65.24，但在输入变化的 56 项任务上仅为 50.35；即使公开工况满分，留出工况仍可能得 0 分。代码以 Apache 2.0 许可发布。",
+      "json": "data/benchmarks/cae-bench.json",
+      "content": "content/benchmarks/cae-bench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21273",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/AXeonV/CAE-Bench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "datatrace",
+      "name": "DataTrace",
+      "section": "Agent",
+      "tags": [
+        "Agent",
+        "数据智能体",
+        "根因定位",
+        "证据落地"
+      ],
+      "summary": "DataTrace 评测数据智能体能否在数据库产物图上定位被注入的根因，并检查诊断是否有查阅证据支撑。发布库含 83 个可运行环境；官方冻结榜为 64 项任务、每种模型两次重复。论文报告，七个专有模型的平均根因准确率为 48%，平均条件未支持率为 18%；冻结榜上 gpt-5.6-sol 的 RC@1 为 0.688，接地准确率为 0.586。",
+      "json": "data/benchmarks/datatrace.json",
+      "content": "content/benchmarks/datatrace.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.18926",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.18926",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://hkustdial.github.io/datatrace/",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "diagtrace",
+      "name": "DiagTrace",
+      "section": "生物与医学",
+      "tags": [
+        "生物与医学",
+        "临床决策",
+        "交互式信息获取",
+        "诊断轨迹",
+        "病例报告"
+      ],
+      "summary": "基于 PubMed Central 病例报告构建的交互式临床决策基准，共 510 例、覆盖八个专科，其中 225 例用于主评测。模型在已知最终诊断的前提下，于固定轮次预算内向报告智能体请求信息，以重建有来源依据的诊断轨迹。论文评测四个模型，Claude Haiku 4.5 的事件级召回为 0.665、成对顺序准确率为 0.690。数据与交互轨迹发布于 GitHub。",
+      "json": "data/benchmarks/diagtrace.json",
+      "content": "content/benchmarks/diagtrace.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22009",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22009",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Fanncg1229/Diagtrace",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "eegprobe",
+      "name": "EEGProbe",
+      "section": "生物与医学",
+      "tags": [
+        "生物与医学",
+        "脑电图",
+        "视觉–语言模型",
+        "神经生理推理",
+        "跨模态对齐"
+      ],
+      "summary": "考察通用视觉–语言模型能否在最少预处理的通道级脑电上提取并推理信息的基准，含 620 道题、13 个子任务，分为信号分类、跨模态对齐与神经生理推理三类。论文以统一零样本协议评测 11 个模型，最强的 GPT-5.6 Sol 总分仅为 41.63%。数据集页面位于 Hugging Face，但论文同时写明评测资源将在正式发表后公开。",
+      "json": "data/benchmarks/eegprobe.json",
+      "content": "content/benchmarks/eegprobe.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.20779",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/2122ZHU/EEGProbe",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "ejbench",
+      "name": "EJBench",
+      "section": "物理",
+      "tags": [
+        "物理",
+        "工程判断",
+        "共轭传热",
+        "电池热管理",
+        "计算流体力学"
+      ],
+      "summary": "由电池冷板共轭传热设计实验构建的工程判断基准，考察模型能否根据少量既有结果预测新工况并作出设计决策，而不运行仿真软件。测试集有 272 题，其中固定的 228 题用于官方分数。十个前沿模型中最高为 GPT-6 Astra 的宏观分数 0.710；开源 Qwen3.5-9B 经强化学习后由 0.071 升至 0.106。训练、验证、测试划分、评测程序和排行榜已在 Hugging Face 发布。",
+      "json": "data/benchmarks/ejbench.json",
+      "content": "content/benchmarks/ejbench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21707",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/GradientDynamics/EJBench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "forecastgym",
+      "name": "ForecastGym",
+      "section": "Agent",
+      "tags": [
+        "Agent",
+        "预测智能体",
+        "检索增强推理",
+        "预测市场"
+      ],
+      "summary": "ForecastGym 面向预测智能体：在问题仍未结算时，每隔两天记录四个商业网络搜索接口返回的结果，并在结局揭晓后离线重放冻结证据。首个发布包含 150 道预测市场问题、614 个证据状态和 13.1 万条搜索结果。论文报告，在主设定（Tavily 证据、最后状态）下，市场的 Brier 分数为 0.176，受评模型中 GPT-5.6 Terra 为 0.217，均落后于市场。",
+      "json": "data/benchmarks/forecastgym.json",
+      "content": "content/benchmarks/forecastgym.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "gdp-xlsx",
+      "name": "GDP.xlsx",
+      "section": "Agent",
+      "tags": [
+        "Agent",
+        "电子表格智能体",
+        "专业工作评测",
+        "工作簿理解"
+      ],
+      "summary": "GDP.xlsx 用 70 项由专业人士撰写的工作请求评测智能体能否在完整 Excel 工作簿或 CSV 上给出可依赖的答案，输入合计约 218 万个已填充单元格，评分准则 791 条。评测工具与 3 项公开任务以 Apache 2.0 发布，其余 67 项留出以防污染。论文报告，20 种配置中最高的 Gemini 4 Argon 严格 pass@1 仅为 38.3%，中位数为 19.3%。",
+      "json": "data/benchmarks/gdp-xlsx.json",
+      "content": "content/benchmarks/gdp-xlsx.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17766",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17766",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://surgehq.ai/benchmarks/gdp-xlsx",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/surge-ai/gdp-xlsx",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/surgeai/GDP.xlsx",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "hemif-bench",
+      "name": "HEmIF-Bench",
+      "section": "生物与医学",
+      "tags": [
+        "生物与医学",
+        "计算病理",
+        "虚拟染色",
+        "多重免疫荧光",
+        "下游效用"
+      ],
+      "summary": "评测苏木精–伊红到多重免疫荧光生成模型在像素级保真之外的下游效用，覆盖五个冻结生成器、五项任务和八个公开数据集，并与纯苏木精–伊红基础模型 UNI2 对照。基础模型路线的 MIPHEI-ViT 在生成器中领先，例如单细胞分类宏平均 AUROC 为 0.807；但各生成器的内部特征与生成输出均未能稳定超过 UNI2 的 0.816。论文未给出官方代码或评测包地址。",
+      "json": "data/benchmarks/hemif-bench.json",
+      "content": "content/benchmarks/hemif-bench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "inclusionmed",
+      "name": "InclusionMed",
+      "section": "生物与医学",
+      "tags": [
+        "生物与医学",
+        "医疗评测",
+        "包容性医疗",
+        "评测指数",
+        "多角色能力"
+      ],
+      "summary": "开放的包容性医疗人工智能评测计划。首发 InclusionMed Atlas 从 388 个候选中纳入四个公开基准，并加上私有的 InclusionMed-DxFiles，共五个基准、各占指数 20%。论文评测 22 个模型，InclusionMed Index 总分介于 17.5 至 49.1（百分制），最高为 Gemini 4 Argon 的 49.1。官方网站与 GitHub 仓库已公开。",
+      "json": "data/benchmarks/inclusionmed.json",
+      "content": "content/benchmarks/inclusionmed.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://inclusionmed.ai/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/panuvi/inclusionmed",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "mineralexp",
+      "name": "MineralExp",
+      "section": "地球与天文",
+      "tags": [
+        "地球与天文",
+        "矿物勘查",
+        "地球化学实验设计",
+        "科学智能体",
+        "矿床系统"
+      ],
+      "summary": "面向真实矿物勘查中地球化学实验设计的智能体基准，由已发表矿床文献构建并经领域专家审核，含 277 个案例和 1,572 条参考实验方案，按矿床系统五类过程、19 类科学任务组织。论文在四个开源智能体框架上各搭配七个前沿模型，共 28 种配置；总体召回介于 70.76% 至 91.56%，但最高总体 F1 仅为 63.84%，由 GPT-6.1 Sol 搭配 OpenCode 取得。代码与项目页已公开。",
+      "json": "data/benchmarks/mineralexp.json",
+      "content": "content/benchmarks/mineralexp.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "mm-reportbench",
+      "name": "MM-ReportBench",
+      "section": "多模态",
+      "tags": [
+        "多模态",
+        "表格到报告生成",
+        "多模态生成",
+        "商业分析"
+      ],
+      "summary": "MM-ReportBench 评测由结构化表格生成带图表的多模态商业报告，含 386 项任务、185 张真实表格和 2,992 个参考关键点，覆盖六个领域，并使用双评委评分。论文在 20 个模型上报告，DeepSeek-R1 总体分最高为 68.9，仍低于人类基线 92.3；38.5% 的报告出现数值幻觉。",
+      "json": "data/benchmarks/mm-reportbench.json",
+      "content": "content/benchmarks/mm-reportbench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "nebench-r1",
+      "name": "NEBench R1",
+      "section": "物理",
+      "tags": [
+        "物理",
+        "核工程",
+        "反应堆运行",
+        "推理质量",
+        "执照考试"
+      ],
+      "summary": "由美国核管理委员会反应堆操作员执照考试抽取的推理基准，含 7,546 道互不重复的选择题，覆盖 18 座核设施，并按知识与能力目录分类，附有官方解释作为推理评分参考。六个模型的总体准确率介于 34.0% 至 73.9%，最高为 Claude Opus 5.5 的 73.9%。论文未给出已发布的整理数据集或代码地址。",
+      "json": "data/benchmarks/nebench-r1.json",
+      "content": "content/benchmarks/nebench-r1.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "officeprism",
+      "name": "OfficePrism",
+      "section": "Agent",
+      "tags": [
+        "Agent",
+        "企业智能体",
+        "工具调用",
+        "单域业务操作"
+      ],
+      "summary": "OfficePrism 在七个企业业务职能上评测单域操作，基准集 OfficePrism-420 含 420 项任务（105 项 L1、140 项 L2、175 项 L3），智能体看到的是中文工单。代码与数据发布于 GitHub。论文在 124 种模型–框架–接口配置下报告，自然语言与数据库联合通过率介于 22.6% 至 76.4%，中位数为 67.9%。",
+      "json": "data/benchmarks/officeprism.json",
+      "content": "content/benchmarks/officeprism.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "omni-workspace",
+      "name": "Omni-Workspace",
+      "section": "多模态",
+      "tags": [
+        "多模态",
+        "全模态智能体",
+        "多模态工作区",
+        "跨文件推理"
+      ],
+      "summary": "Omni-Workspace 评测全模态助手在持久多模态工作区中完成深度研究风格任务的能力，共 380 项任务（211 项 L1、169 项 L2），覆盖四种模态组合与 10 个主题，初始工作区含 2,552 个文件实例。论文评测了 18 个模型，最高平均分为 Gemini 3.5 Flash 的 65.93，随后是 Qwen3.7-Plus 的 64.78。",
+      "json": "data/benchmarks/omni-workspace.json",
+      "content": "content/benchmarks/omni-workspace.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "omnitongue",
+      "name": "OmniTongue",
+      "section": "生物与医学",
+      "tags": [
+        "生物与医学",
+        "中医舌诊",
+        "多模态大模型",
+        "视觉问答",
+        "细粒度属性识别"
+      ],
+      "summary": "面向中医舌诊的细粒度视觉问答基准，含 1,351 张经专家校验的图像和 21,616 条指令对，覆盖 16 个临床维度与 66 个细粒度标签。论文评测九个开源多模态大模型，并强调 Macro-F1 与准确率之间的差距；例如 Qwen3-VL 在舌体大小和瘀点上的准确率分别为 80.7% 和 90.3%，对应 Macro-F1 为 38.7% 和 29.0%。代码与数据集写明将在后续发布，目前尚未公开。",
+      "json": "data/benchmarks/omnitongue.json",
+      "content": "content/benchmarks/omnitongue.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "raven-bench",
+      "name": "RAVEN-Bench",
+      "section": "地球与天文",
+      "tags": [
+        "地球与天文",
+        "航空遥感",
+        "光电–红外",
+        "视频问答",
+        "跨模态对齐"
+      ],
+      "summary": "面向低空配对光电–红外视频的问答基准，含 100 对时间对齐视频和 1,200 道经独立审核的四选一题目，支持仅光电、仅红外和配对输入评测。论文评测 26 个多模态模型，并指出汇总准确率会高估有证据支持的推理：例如 Gemini 3.1 Pro 的配对汇总准确率为 49.6%，一致性与连贯性分数降至 36.8% 与 30.2%。代码以 Apache 2.0 发布，数据集为受限访问，且限研究与非商业用途。该文被 NeurIPS 2026 数据集与基准赛道接收。",
+      "json": "data/benchmarks/raven-bench.json",
+      "content": "content/benchmarks/raven-bench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.18880",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/yuhu990424/RAVEN-Bench",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/TerraSenseAnalytics/RAVEN-Bench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "sciworkbench",
+      "name": "SciWorkBench",
+      "section": "综合科学",
+      "tags": [
+        "综合科学",
+        "科学智能体",
+        "实验工作流",
+        "跨学科科学",
+        "评分细则评测"
+      ],
+      "summary": "面向真实实验科学工作流的智能体基准，覆盖生物学、化学、材料科学与物理学，最终收录 98 项任务（647 项候选中的 15.1%）。论文在 Claude Code 与 Codex 框架下评测 13 个模型–框架组合，最高均分为 Codex 搭配 GPT-5.6 Sol 的 57.38。论文写明执行与评测代码及完整数据未公开发布。",
+      "json": "data/benchmarks/sciworkbench.json",
+      "content": "content/benchmarks/sciworkbench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "swe-cowork",
+      "name": "SWE-CoWork",
+      "section": "代码",
+      "tags": [
+        "代码",
+        "软件工程智能体",
+        "组织协作",
+        "需求获取"
+      ],
+      "summary": "SWE-CoWork 把编码智能体放进模拟工程组织中评测：101 项任务对应 101 个真实仓库，每项有 26 名同事，需求分散在交接、记录与对话里，用 2,699 个失败到通过测试节点和 562 个通过到通过节点评分。论文评测了 11 个模型，领先的 GPT-6 Astra 完整任务通过率仅为 7.92%，Claude-Opus-5.5 的失败到通过分数为 63.84%，但完整通过率只有 6.93%。",
+      "json": "data/benchmarks/swe-cowork.json",
+      "content": "content/benchmarks/swe-cowork.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.20218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.20218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://tokenwave-ai.github.io/swe-cowork-page",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tokenwave-AI/swe-cowork",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "webarena-pro",
+      "name": "WebArena-Pro",
+      "section": "Agent",
+      "tags": [
+        "Agent",
+        "网络智能体",
+        "多模态浏览器",
+        "可复现评测"
+      ],
+      "summary": "WebArena-Pro 是面向网络智能体的可复现多模态基准，含 300 项任务、20 个自托管应用和六个领域类别，并把音频、视频与文本、视觉一并作为观察。任务由人类最终审定，每项各有专用模板。论文报告，Codex 搭配 GPT 6.1 Sol 与 Claude Code 搭配 Claude Opus 5.5 的成功率同为 62.3%。本条目须与已有的 WebArena、VisualWebArena、VideoWebArena 区分。",
+      "json": "data/benchmarks/webarena-pro.json",
+      "content": "content/benchmarks/webarena-pro.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
+    },
+    {
+      "id": "xlsar-bench",
+      "name": "XLSAR-Bench",
+      "section": "地球与天文",
+      "tags": [
+        "地球与天文",
+        "合成孔径雷达",
+        "遥感",
+        "多模态大模型",
+        "大场景理解"
+      ],
+      "summary": "面向完整大场景合成孔径雷达图像的多模态基准，含 405 张图像，长边平均 7,153 像素，任务包括视觉问答、视觉定位与详细描述，并提供英文与中文评测。表 I 记录 14,250 条问答、3,260 条定位表达式和 405 条详细描述，标注经人工核验。论文称将数据开源至 Hugging Face，但 2026-11-19 访问该页面返回 401，下载量未能核实。",
+      "json": "data/benchmarks/xlsar-bench.json",
+      "content": "content/benchmarks/xlsar-bench.md",
+      "drive_pdf": {},
+      "drive_intro": {},
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "last_checked": "2026-11-19"
     }
   ]
 }

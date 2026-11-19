@@ -1,0 +1,809 @@
+{
+  "id": "mm-reportbench",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "MM-ReportBench",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "MM-ReportBench：面向表格到多模态报告生成的综合基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.22514v1；386 项任务、185 张表、2,992 个参考关键点",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.22514v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "多模态",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "表格到报告生成",
+        "多模态生成",
+        "商业分析"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.22514",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "MM-ReportBench: A Comprehensive Benchmark for Multimodal Report Generation from Tables",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "香港科技大学（广州）（Teng Lin、Nan Tang）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Teng Lin、Nan Tang（共2位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察模型能否根据一张或多张结构化表和自然语言分析指令，生成把叙述与忠实可视化结合在一起的多模态报告，包括结构化章节和嵌入文中、有表格证据支持的图表。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文认为，已有表格理解基准多关注问答等较窄任务；表格到报告的工作往往分开评文本与视觉，或忽略视觉输出。LLM 评委虽可扩展，但单一评委可能被跨模态补偿欺骗，并抬高总分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "185 张真实商业表来自市政开放数据、行业协会报告、公司年报和开源表格数据，遵循 T2R-Bench 的协议，覆盖金融、制造、医疗、教育、零售和信息技术运维六个领域。其中 38 张表超过 5 万个单元格（占 20.5%），复杂表头占 32.4%。查询用基于模板的自我指令生成，覆盖趋势分析、比较、排序、异常、构成、相关、预测、细分、同比和跨维度等场景，再经人工挑选。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "表由人工审阅；参考报告经蒙特卡洛树搜索生成候选后由人类专家策划与验证。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "quality_control": {
+      "value": "所有表经过人工审阅，去除个人身份信息并确认有足够定量深度。参考报告先由蒙特卡洛树搜索在多维奖励下生成候选，再由人类专家策划与修订。任务配有人类撰写的参考，指定预期章节结构和可验证的关键洞察点。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "185 张表、6 个领域、386 项任务；每张表平均 2.09 项任务；多表任务平均 4.2 张表；每张表平均 285 行、21,200 个单元格；每项任务平均 7.75 个参考关键点，合计 2,992 个。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "表格到多模态报告生成：输出包含结构化章节的分析报告以及嵌入文中的图表",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "结构化表格、文本指令、生成的文本报告与图表",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "最终表集合含中英双语表",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "双评委套件：T-Judge 评文本（含数值准确与信息覆盖等，并平均得到文本分），V-Judge 评视觉（含数据忠实、表达、审美等并平均为 VisScore），再汇总为 0 到 100 的总体分。每份报告评三次并报告平均分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "报告相对人类撰写的参考章节结构与关键洞察点评分。事实核验针对源表而非外部检索。论文还对比单一评委与双评委。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "总体分来自双评委协议；论文显示单一评委会抬高 8 至 12 分，不宜与单评委分数混比。人类基线 92.3 应一并报告。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-17 10:06:56 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。20 个模型中最高总体分为 68.9，人类基线为 92.3。洞察新颖性和可视化质量被列为主要瓶颈。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文报告，单一评委会把总分抬高 8 至 12 分，双评委可减少跨模态补偿并与人类专家判断更一致。错误分析包括：38.5% 的报告出现数值幻觉，31% 为琐碎洞察，22% 为图表与数据不匹配，14% 为多表混淆，12.5% 的极大表报告出现截断。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，共 20 个模型。DeepSeek-R1 总体分最高，为 68.9，超过最强视觉语言模型 Gemini-2.5-Pro 的 66.8，但仍低于人类基线 92.3。消融显示，去掉可视化的纯文本设定使总体分从 66.8 降至 38.2。论文还写审美维度最高为 76.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "总体分与主要分项见表 2；人类基线 92.3 见正文。20 个模型的完整分项以表 2 为准。构造使用生成式人工智能辅助查询与参考报告候选，论文在人工智能使用声明中作了披露。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "Teng Lin：tlin280@connect.hkust-gz.edu.cn；Nan Tang：nantang@hkust-gz.edu.cn（论文所列）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.22514",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "7470ef8e3a0ef7f77dc756d13e38454e740680b0a3f4e35fe9a69481a28095d0",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2567197",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22514",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22514",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22514",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22514",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

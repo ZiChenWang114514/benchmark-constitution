@@ -1,0 +1,1034 @@
+{
+  "id": "officeprism",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "OfficePrism",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "OfficePrism：在企业业务职能上评测单域操作智能体",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "OfficePrism-420；arXiv:2611.22262v1；420 项任务（105 项 L1、140 项 L2、175 项 L3）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.22262v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "Agent",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "企业智能体",
+        "工具调用",
+        "单域业务操作"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。官方代码仓库在 2026-11-19 经 GitHub API 标注为 Apache License 2.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.22262",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "https://github.com/Leozyu/OfficePrism",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "dataset_url": {
+      "value": "https://github.com/Leozyu/OfficePrism",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "OfficePrism: Benchmarking Agents on Single-Domain Operations Across Enterprise Business Functions",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "阿里巴巴集团与香港科技大学（广州）（Hanfeng Liu、Zhenyu Luo、Dongchao Zhang、Zexi Liu、Zulong Chen、Zeyi Wen）；阿里巴巴国际数字商业集团（Jinxin Hu）；广州大学网络空间先进技术研究院（Jia Xu）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Hanfeng Liu、Zhenyu Luo、Dongchao Zhang、Zexi Liu、Zulong Chen、Jinxin Hu、Jia Xu、Zeyi Wen（共8位作者）。Hanfeng Liu 与 Zhenyu Luo 为共同第一作者；通讯作者为 Zulong Chen 与 Zeyi Wen。论文注明 Hanfeng Liu 的工作完成于其在阿里巴巴集团任职期间。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "公开仓库所有者为 Leozyu；当前默认分支为 eval。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "funders": {
+      "value": "阿里巴巴集团通过阿里巴巴创新研究计划资助。致谢还感谢阿里巴巴集团的孟妮叶（Mengni Ye）、张逸伦（Yilun Zhang）与林佩欣（Peixin Lin）提供指导与讨论。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察智能体能否在单一业务职能内完成封闭的企业操作，并比较同一职能内按基准定义的 L1 至 L3 任务结构下的表现，从而在跨职能协调之前先定位单域能力。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文认为，宽泛的职场总分会把同一职能内的能力与跨职能、跨系统协调的额外代价混在一起，使失败难以定位。已有企业基准提供可执行环境或可扩展构造流程；OfficePrism 的补充是把每项任务限制在一个业务职能内，并在各职能使用同一套任务结构定义。本条目须与已有的 OfficeBench、OfficeQA 以及生物医学领域的 PRISM 区分，不得合并。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "每项任务运行在新的任务局部环境中，该环境由共享的合成组织与七个业务职能之一组成，并通过类型化工具访问状态。共享组织有 75 名员工（其中 63 人在职）、12 个部门、22 个团队。七个职能及任务数为：行政管理 56、财务 58、人力资源 60、信息技术 60、法务 76、采购 55、项目工作 55。智能体看到的是调用者上下文和中文自然语言工单。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "构造流程从同一份接地数据包联合生成中文工单、隐藏的可执行参考见证和期望回复；回放见证以检查其函数与参数能否在任务环境中执行。随后进行自动质量过滤、冗余控制（含字符三元组余弦相似度阈值 0.85 的去重）和人工筛选，再纳入基准集。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "OfficePrism-420 含 420 项任务：105 项 L1、140 项 L2、175 项 L3。每个职能贡献 15 项 L1 和 20 项 L2，保留的 L3 数量为 20 至 41。参考见证的调用次数在 L1、L2、L3 上分别为 1–4、2–7、4–16，中位数为 1、3、7。任务局部环境含 42–61 个顶层集合、4,701–17,126 条记录、135–198 个原生函数。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "中文企业工单驱动的多步工具调用；同时评分自然语言回复与数据库状态",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本工单、结构化企业记录与类型化工具接口",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "智能体面对的工单为中文",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "L1 表达一个直接意图；L2 增加依赖链，后续调用消耗先前结果；L3 组合至少两种要素，如过滤、跨实体转移、条件动作、写后检查、恢复或聚合。在全部 124 种配置中 L1 最高，并在 122 种配置中 L2 高于 L3。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "public_hidden_split": {
+      "value": "论文称同一份经校验和固定的 420 项任务 JSON 用于全部实验。正文写基准产物将在录用后公开，但 2026-11-19 已能访问公开仓库 https://github.com/Leozyu/OfficePrism 。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "逐案自然语言与数据库联合通过率；另报告自然语言与数据库分项，以及 L1、L2、L3 子集（105、140、175 项）上的同定义通过率。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "同一 420 项任务通过两种接口包评测：full 直接暴露原生函数模式，search 通过发现与分发调用同一工具集。评测记录所选接口包，并从隔离状态启动每项任务。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "论文写明代码与数据位于 https://github.com/Leozyu/OfficePrism 。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "comparability_warning": {
+      "value": "须与已有条目 officebench、officeqa 以及生物医学基准 prism 区分，不得合并。工单为中文，不宜与英文企业基准直接比较。两种接口包和多种智能体框架会改变分数，比较时应固定框架与接口包。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-17 06:10:32 UTC。预印本标注将投稿 The 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining（KDD ’27，2027 年 8 月 1–5 日，圣何塞）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。124 种模型–框架–接口配置的联合通过率介于 22.6% 至 76.4%，中位数为 67.9%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文未集中报告训练污染。正文曾写基准将在录用后公开，与访问当日已存在的公开仓库并存，收录时以仓库现状为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，共 124 种模型–框架–接口配置。逐案自然语言与数据库联合通过率介于 22.6% 至 76.4%，中位数为 67.9%。L1 在全部 124 种配置中最高，L2 在 122 种配置中高于 L3。在 50 种跨两种接口包、共享同一框架与模型标签的配置中，search 有 30 种更高、1 种持平、19 种更低。文中还给出某一设定下 82.6% 的中位数以及对应的联合自然语言–数据库中位数 67.9%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "摘要给出 124 种配置的总体区间与中位数。附录还按 ReAct、DeepAgents、Claude Code、OpenClaw、Hermes 等展示标签汇总 OfficePrism-420 结果。具体每一单元格的模型名称以论文表 2 及附录表为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "通讯作者：Zulong Chen，zulong.czl@alibaba-inc.com；Zeyi Wen，wenzeyi@hkust-gz.edu.cn（论文所列）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "https://github.com/Leozyu/OfficePrism/issues ；2026-11-19 经 GitHub API 读取，open_issues_count 为 0（该字段可能包含未关闭的拉取请求）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.22262",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "dbdb3726829957dc59388d9d3cfe8d024adcaae288ce5a88193018ab0854f6f9",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "1560192",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22262",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22262",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/Leozyu/OfficePrism",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22262",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22262",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://github.com/Leozyu/OfficePrism",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

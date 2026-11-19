@@ -1,0 +1,810 @@
+{
+  "id": "omni-workspace",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "Omni-Workspace",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "Omni-Workspace：在多模态工作区任务上评测全模态人工智能助手",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.19202v1；380 项任务，含四个工作区类型与两个难度级别",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.19202v1（2026-11-14首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "多模态",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "全模态智能体",
+        "多模态工作区",
+        "跨文件推理"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.19202",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "上海交通大学（Yuhao Wang、Hongcheng Liu、Yu Wang）；阿里巴巴集团通义实验室（Yucheng Zhao、Yiran Zhong、Feida Zhu）；南洋理工大学（Qichao Wang）；中国科学院大学（Ming Ma）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Yuhao Wang、Yucheng Zhao、Yiran Zhong、Feida Zhu、Hongcheng Liu、Qichao Wang、Ming Ma、Yu Wang（共8位作者）。通讯作者为 Yiran Zhong 与 Yu Wang。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察全模态智能体能否在持久的多模态工作区中持续协调感知、推理与工具使用，检查并处理文件，必要时检索外部信息，整合跨文件、跨模态证据，并生成满足明确要求的交付物。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文认为，已有全模态基准主要评感知与理解。Workspace-Bench 评测有跨文件依赖的工作区任务，但对音频和视频覆盖有限。能否通过与持久多模态工作区的持续交互完成复杂任务，仍缺少充分评测。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "初始来源池约有 1 万个来自公开视频平台和 FineVideo 的视频、2 万条从 FineVideo 提取的音轨，以及 2 万张来自 LiveVQA 与 COCO 2017 的图像。Gemini 3.1 Pro 生成模态标注，再由基于 Qwen3.7-Max 的搜索智能体检索相关实体与可核验网络事实。相关文件按共享实体与语义关系组成工作区。任务覆盖 10 个主题，并大致均衡地分配到四种工作区类型。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "构造含可解性与必要性、答案泄漏、评测正确性等检查，失败案例会修复或删除，并经人工审阅。任务用 GPT-5.5 任务生成智能体起草后再检查清晰度与可行性。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "质量流程包括答案泄漏检查。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "380 项深度研究风格任务：211 项 L1、169 项 L2；四种工作区类型为视频–音频–图像–文本（V+A+I+T）、视频–音频–文本（V+A+T）、视频–图像–文本（V+I+T）、音频–图像–文本（A+I+T），数量大致均衡；覆盖 10 个主题。初始工作区共 2,552 个文件实例，每项任务 5 至 12 个文件，平均 6.72 个。任务共要求 402 个输出文件，其中 Markdown 占 49.3%，JSON 占 33.8%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "配备多模态工作区的自然语言用户目标；需交付满足格式与内容要求的目标文件",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "音频、视频、图像与文档等异构工作区文件，以及可选的外部网络检索",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "L1（211 项）可通过直接检查、信息检索和推理完成；L2（169 项）需要代码执行或媒体处理工具先转换或分析媒体。所有受评模型在 L2 上的分数都低于 L1。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "总体分 S = 0.9C + 0.1F，范围 0 到 100，按任务平均；C 为内容分，F 为格式分。论文还按工作区类型和难度级别报告分数。总体对全部 380 项任务等权。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "对照任务的显式格式与内容要求评分。论文比较了 18 个代表性模型，并另提出 OmniFocus，作为结合多模态工作记忆管理与显式任务状态跟踪的轻量方法，这是同一论文中的方法贡献，不是另一项基准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "分数使用 S = 0.9C + 0.1F。L1 与 L2、不同工作区类型应分开报告。同一论文中的 OmniFocus 是方法而非新基准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-14 06:49:09 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。18 个模型中最高平均分为 65.93。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "进一步分析把多模态上下文膨胀和任务状态漂移列为反复出现的挑战。局限性写明须在相应许可允许的范围内使用源媒体。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，共 18 个代表性模型。Gemini 3.5 Flash 总体分最高，为 65.93，随后是 Qwen3.7-Plus 的 64.78。Gemini 3.5 Flash 在 A+I+T 上得到其最高工作区分数 68.42，L1 为 72.77，L2 为 57.38；Qwen3.7-Plus 的 L1 与 L2 为 68.70 与 59.88，并在 V+A+T、V+I+T 和 L2 上领先。论文称原生全模态智能体中较强表现集中在 Gemini 系列，较小的开放权重模型分数明显更低。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "总体分按 380 项任务等权。工作区类型与难度分解见正文和第 5 节表格。OmniFocus 是附加方法结果，不应与基准主分数混淆。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.19202",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "44b243864eccccf38eb2c660a31827954847828197a1cad8579be0938b9fb760",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2685471",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19202",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.19202",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19202",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.19202",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

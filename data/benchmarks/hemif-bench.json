@@ -1,0 +1,810 @@
+{
+  "id": "hemif-bench",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "HEmIF-Bench",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "HEmIF-Bench：超越虚拟染色保真度的苏木精–伊红到多重免疫荧光模型基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.19905v1；五个生成器，五项任务，八个公开数据集",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.19905v1（2026-11-15首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-15",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "生物与医学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "计算病理",
+        "虚拟染色",
+        "多重免疫荧光",
+        "下游效用"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 arXiv 非独占分发许可。评测代码或汇总包的许可未在论文中给出。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.19905",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "HEmIF-Bench: Benchmarking H&E-to-mIF Models Beyond Virtual-Stain Fidelity",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "香港科技大学物理系与生命科学部",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Fuxian Zhao、Hyokeun Park（共2位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "香港研究资助局项目 16103224、16103625、16102322、16100926，以及 N_HKUST648/24（资助 Hyokeun Park）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察苏木精–伊红到多重免疫荧光生成器的内部编码器特征与生成输出，能否在分子、细胞、组织和患者尺度的下游任务上提供效用，包括外部 CD3 恢复、单细胞分类、致密核分割、三级淋巴结构与生发中心分割，以及患者生存预测，并与冻结的 UNI2 对照。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有虚拟染色研究主要看与实测蛋白信号的像素级相关，近期基准也只覆盖部分下游应用；仅评估生成输出，无法判断翻译是否得到强于纯苏木精–伊红基础模型的内部特征，以及生成输出是否保留了这些特征中的预测信号。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "五项任务、八个公开数据集：Cell-niches 上的外部 CD3 恢复，Immunocto 与 NuCLS 上的单细胞分类，PathoCell 与 Lizard 上的致密核分割，HookNet-TLS 上的三级淋巴结构与生发中心分割，以及 TCGA-COAD 与 TCGA-LUAD 上的生存预测。五个已公开的生成器被冻结评测。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "生成器内部特征从最深的解码前瓶颈层或最终骨干 token 提取，与生成输出分开评测。外部 CD3 恢复单独报告，以区分像素级相关与下游效用。作者声明无相关利益冲突。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "五个冻结的苏木精–伊红到多重免疫荧光生成器，五项下游任务，八个公开数据集。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "下游探测任务，包括回归或相关、单细胞分类、分割与生存预测；比较内部特征路线与生成输出路线",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "苏木精–伊红病理图像、生成的多重免疫荧光输出，以及各数据集中的细胞、组织和患者标签",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "评测建立在八个已有公开数据集之上；论文未另述本基准自有的隐藏划分，也未提供统一评测包地址。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "按任务分别使用 Spearman 相关、宏平均 AUROC、宏平均 F1 和 C 指数等。并报告内部特征相对生成输出的平均差值，以及与 UNI2 的对照。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "五个生成器冻结，用任务特定的探测头评测内部特征或生成输出，并与冻结 UNI2 比较。论文未提供官方评测脚本地址。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-15。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "在当前成对翻译数据规模下，生成器尚未稳定超过大规模纯苏木精–伊红基础模型。UNI2 的相应指标为宏平均 AUROC 0.816、宏平均 F1 0.517 与 0.876，以及 C 指数 0.664。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "更大的输出标记面板并不保证更强的下游效用：16 标记的 MIPHEI-ViT 总体强于 50 标记的 ROSIE 与 23 标记的 GigaTIME。内部特征通常优于生成输出，但并非所有任务都如此。未找到官方代码发布。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测。生成器中，基础模型路线的 MIPHEI-ViT 在内部特征上于单细胞分类（宏平均 AUROC 0.807）、致密核分割（宏平均 F1 0.527）、三级淋巴结构与生发中心分割（宏平均 F1 0.884）和患者生存（C 指数 0.655）领先，并在生成输出的外部 CD3 恢复上达到 Spearman ρ 0.265。生成输出在单细胞分类上平均落后内部特征 0.093 宏平均 AUROC（0.721 对 0.627），在致密核分割上落后 0.084 宏平均 F1（0.363 对 0.279）。没有任何生成器稳定超过冻结 UNI2。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "协议与主要数字取自摘要、引言和第 2 节及结果概述。各数据集的详细划分和实现细节未全部转入快照。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "fzhaoai@connect.ust.hk、hkpark@ust.hk",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.19905",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "ce10cd3f2ba95025bde9991296216490871535cdbfa644a9a18ca6733c1ef1d6",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2599443",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "下游评测使用的八个数据集均为既有公开资源，地址以各原数据集发布为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19905",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.19905",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.19905",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.19905",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

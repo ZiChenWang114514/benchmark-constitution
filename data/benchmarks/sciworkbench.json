@@ -1,0 +1,810 @@
+{
+  "id": "sciworkbench",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "SciWorkBench",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "SciWorkBench：面向真实科学工作流的基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.22490v1；98 项工作流任务",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.22490v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "综合科学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "科学智能体",
+        "实验工作流",
+        "跨学科科学",
+        "评分细则评测"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 Creative Commons Attribution 4.0 国际许可协议。完整基准数据与评测代码未公开，第三方实验数据的可用性取决于原出处许可与授权。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.22490",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "dataset_url": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "SciWorkBench: A Benchmark for Real Scientific Workflows",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "阿里巴巴集团、清华大学、中国科学院大学、阿尔伯塔大学、浙江大学",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Yuchen Zhang、Taolin Han、Jinghang Wang、Jinxin Wang、Yun Wu、Wai Yuet Chiu、Xiaogang Li、Yuting Fu、Kewei Sun、Jiaxin Li、Qile Jin、Jiajia Li、Ruodan Chen、Qingteng Chen、Jialu Nie、Junchao Li、Yifei Zhang、Chen Zhao、Hu Wei、Lin Qu、Yanni Yin、Bing Zhao（共22位作者；Yuchen Zhang、Taolin Han 与 Jinghang Wang 为共同第一作者；Yanni Yin 与 Bing Zhao 为通讯作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "考察智能体能否在接近真实实验室分析的工作流中，围绕假设、原始实验数据、数据整理、初步与深入分析、建模或预测、科学结论与迭代修正等环节作出有证据支持的判断，而不只是完成单步计算或静态问答。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有科学基准多只覆盖知识问答、可执行程序生成、领域分析或预定义工具使用等局部环节，缺少在原始或不完美数据、不确定性与伪迹上，把实验证据推进到可辩护结论的工作流级评测。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "任务来自同行评议文献或专家提供的研究场景，覆盖生物学、化学、材料科学与物理学及其代表性子领域；构建流程共收到 647 项候选，最终保留 98 项。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "统一科学分析框架经领域专家验证；任务在容器化环境中实现，使用人工提供的评分细则，并经双重检查。647 项候选中仅 15.1% 进入最终基准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "最终 98 项可执行科学工作流任务，由 647 项候选筛选得到（通过率 15.1%）。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "可执行的多阶段科学工作流任务，覆盖假设检验、数据检查、分析、建模与结论等一个或多个环节",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "原始或接近原始的实验数据、文本说明与智能体工具使用（含跨模态证据）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "未公开完整数据划分。论文仅在附录中给出示例任务格式，并写明示例不是可独立运行的完整基准发布。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "在 98 项任务上的均分；并按学科报告领域成绩。评分协议按任务类型匹配精确匹配、脚本评分或智能体评判。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "在统一执行与基于评分细则的打分协议下评测。论文比较了精确匹配、脚本评分与智能体评判对各类科学任务的适用性，工作流任务更依赖专家撰写的评分细则。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "comparability_warning": {
+      "value": "成绩是模型与智能体框架的联合结果，不能单独解读为模型分数。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "未公开",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "未公开"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-17。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。13 个被测智能体的均分介于 22.12 至 57.38。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文未提供训练数据污染的量化估计。失败分析归纳三类工作流级弱点：科学知识难以转化为任务特定程序、跨模态证据整合弱，以及科学自我纠正能力有限。完整代码与数据未公开，第三方实验数据还受原出处许可限制。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，13 个模型–框架组合，在 Claude Code 与 Codex 下运行。最高均分为 Codex 搭配 GPT-5.6 Sol 的 57.38，Claude Code 搭配 Opus 5 为 57.31，Claude Code 搭配 Qwen3.8-Max 为 49.43，全部组合介于 22.12 至 57.38。Codex 搭配 GPT-5.6 Sol 在生物学上均分为 54.46；论文还报告 Claude Code 搭配 Qwen3.8-Max 在物理学上领先，化学与材料科学上有组合达到 67.59。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "数值取自论文摘要、引言与实验章节及图 6、表 3 和表 4；部分领域最高分仅在正文叙述中给出。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "论文所列公开邮箱：wjh2018@mail.ustc.edu.cn",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.22490",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "ca71751b4681d6fb64422cb90b0a2cc02ed9a954ce39baf919211dccd66bf12e",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "2026693",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "论文附录 D 记录了示例任务的说明、输入组织、参考答案结构与评分细则；手稿源档含该示例的说明与细则文件，但不含完整数据、评测环境、轨迹或评分实现。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22490",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22490",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.22490",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22490",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

@@ -1,0 +1,809 @@
+{
+  "id": "forecastgym",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "ForecastGym",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "ForecastGym：面向预测智能体的实时、可控且可重放基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "arXiv:2611.23045v1；首个发布含 150 道问题、614 个证据状态与 13.1 万条搜索结果",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.23045v1（2026-11-17首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-17",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "Agent",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "预测智能体",
+        "检索增强推理",
+        "预测市场"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.23045",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "美国卡内基梅隆大学（Yicheng Tao、Yuante Li）；中国吉林大学（Zipei Fan）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Yicheng Tao、Yuante Li、Zipei Fan（共3位作者）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "在相同的前瞻性记录证据轨迹上，比较不同模型、记忆策略与搜索来源的预测能力；考察智能体能否依据当时可获得的检索结果给出概率预测，并随证据更新修订判断。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，实时评测会把检索与推理缠在一起；事后用日期过滤或今日排序重建历史检索，可能泄漏结算后的信息。已有基准难以同时满足实时采集、固定证据、多状态可重放，以及在同一轨迹上比较搜索来源。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "题目取自 Polymarket 与 Kalshi 上仍开放的二元预测市场问题，要求在 14 天内收盘。筛选会去掉价格低于 10% 或高于 90%、或 48 小时内收盘的市场；再用大语言模型审阅去掉规则含糊或结果难以核验的问题，并按期限、领域做配额平衡，覆盖六个领域。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "用大语言模型审阅去除规则含糊或结果难以核验的问题；选择时平衡期限与领域。评测前，论文还用该批次检验搜索来源差异、证据随时间变化，以及页面日期能否界定当时可知信息。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "证据在问题仍未结算时前瞻采集并冻结，从而在构造上当时可知。论文报告，事后用同一查询再检索时，即便使用受测日期过滤，仍可能出现几乎直接披露结局的结果，比例最高可达问题的 92%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "首个发布：150 道问题、614 个证据状态（每题每个采集时点一个状态，每题 2 至 7 个状态）、13.1 万条搜索结果。四个搜索接口为 Serper、Tavily、Parallel 与 Exa，每隔两天采集一次。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "二元预测市场问题上的概率预测；可在冻结轨迹上比较模型、记忆策略与搜索来源",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本检索结果（四个商业网络搜索接口）与预测市场问题文本",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "主指标为 Brier 分数；另报告时间平均 Brier 分数（TBS）、最后状态准确率（预测落在 0.5 正确一侧的比例，恰好 0.5 计一半），以及相对市场的差距。分数按问题先平均各状态，再对问题取平均，并给出对问题做自助抽样的 95% 区间。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "主设定使用 Tavily 证据，四个模型在每个状态上预测，并做一次闭卷对照。市场报价为同一时点或采集开始时平台最新价格。GPT-6.1 Sol 在该批次全部结算后发布，论文标明不参与排名。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "论文称四个模型使用附录 C 中的同一提示与设置。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "不同搜索接口返回的地址集合重叠很少；来源差异可能大于模型差异。事后日期过滤不能消除泄漏，不宜与冻结证据上的分数直接比较。GPT-6.1 Sol 在批次结算后发布，论文不将其列入排名。模型只在其发布之后开放的批次上评测。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，v1 提交于2026-11-17 16:44:38 UTC。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。所有受测模型在最后状态和整条轨迹上均落后于市场；排名模型最后状态 Brier 介于 0.217 至 0.244，市场为 0.176。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "论文的核心发现之一是事后检索会泄漏结局：在 60 道已结算问题上，过滤后 Exa 仍有 92% 的问题其泄漏条目几乎直接说明结局，对应 Gemini 3.8 Flash 的 Brier 为 0.080，好于主设定中市场的 0.176。Tavily 被选作主来源。论文建议把证据视为需控制的实验变量。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测。主设定（Tavily、最后状态）下：GPT-5.6 Terra 的 Brier 为 0.217、准确率 0.642、闭卷 0.260、相对市场差距 +0.022；Claude Sonnet 5 为 0.244、0.597、0.279、+0.046；Gemini 3.8 Flash 为 0.218、0.628、0.300、+0.028；DeepSeek-V4.1-Flash 为 0.220、0.660、0.258、+0.028。市场为 0.176、0.719。GPT-6.1 Sol（结算后发布，不排名）为 0.208、0.653、0.266、+0.018。切换搜索接口最多使 Gemini 的最后状态 Brier 改变 0.043，超过四个模型之间 0.027 的差距；其中 Serper 显著差于 Tavily。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "主比较为表 4 的四个在批次开放前已发布的模型；GPT-6.1 Sol 仅作对照。搜索来源比较见表 3 与表 6；记忆变体只在 Gemini 3.8 Flash 上报告。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "Yicheng Tao：yichengtao@cmu.edu；Yuante Li：yuantel@cs.cmu.edu；Zipei Fan：fanzipei@jlu.edu.cn（论文所列）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.23045",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "7360c32fbf8b22dc09cd920a3bedaf5c43033f811daf7362be46b5a7de99134d",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "1099624",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.23045",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23045",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.23045",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23045",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

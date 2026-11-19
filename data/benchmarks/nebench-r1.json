@@ -1,0 +1,809 @@
+{
+  "id": "nebench-r1",
+  "schema_version": "0.1.0",
+  "editorial_status": "",
+  "basic_info": {
+    "name": {
+      "value": "NEBench R1",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "full_name": {
+      "value": "NEBench R1：面向大语言模型核领域能力的推理基准",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "version": {
+      "value": "NEBench R1；7,546 道互不重复选择题",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_version": {
+      "value": "arXiv:2611.21682v1（2026-11-15首次提交）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "release_date": {
+      "value": "2026-11-15",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "section": {
+      "value": "物理",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "subfields": {
+      "value": [
+        "核工程",
+        "反应堆运行",
+        "推理质量",
+        "执照考试"
+      ],
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "license": {
+      "value": "论文在 arXiv 采用 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 国际许可协议。整理后的基准发布许可未在论文中给出。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "paper_url": {
+      "value": "https://arxiv.org/abs/2611.21682",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "code_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "dataset_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_homepage": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_title": {
+      "value": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "organization": {
+    "initiators": {
+      "value": "爱达荷大学计算机科学系与土木与环境工程系，俄勒冈州立大学材料科学系，以及爱达荷瀑布的核工程与工业管理系（论文未在该条单位中另行写明大学名称）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "partners": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "authors": {
+      "value": "Liyan Wang、Longze Li、Mohamed Hassan、Isshu Lee、Dajie Sun、Ruimin Feng、Aleksandar Vakanski（共7位作者；通讯作者为 Liyan Wang）",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "maintainer": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "funders": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "design_goals": {
+    "capabilities": {
+      "value": "既考察核工程选择题的最终准确率，也考察正确作答背后的推理质量，包括问题理解、事实与程序准确性、干扰项分析等。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "gap_in_prior_benchmarks": {
+      "value": "论文指出，已有核领域基准覆盖有限，或主要看答题准确率，而没有系统评估底层推理质量；核应用还要求在核物理、反应堆理论、热力学和仪控等相互关联的学科中进行准确技术推理。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "question_sources": {
+      "value": "题目抽取自美国核管理委员会反应堆操作员执照考试，覆盖 18 座核设施。使用 Qwen3.6-35B-A3B 从考试 PDF 中抽取结构化字段，并去重后得到 7,546 道互不重复题目。其中 3,893 道（51.6%）为 Knowledge，2,898 道（38.4%）为 Ability，755 道（10.0%）为 Other。每题附有官方解释。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "author_background": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "review_process": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "quality_control": {
+      "value": "题目按核管理委员会知识与能力目录分类，并保留 K/A 代码。因题目可能在不同考试周期重复或略作修改，作者做了去重。推理质量由大模型评判器按多维评分细则，仅在答对的题目上评分；论文称对该自动评分做了一致性核对。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "decontamination": {
+      "value": "论文在局限中写明，执照考试材料是公开的，这些题目在多大程度上出现于模型预训练语料，在无法获得训练数据时不能量化。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "data_format": {
+    "size": {
+      "value": "7,546 道互不重复的四选一题目，来自 18 座核设施的执照考试。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "question_types": {
+      "value": "四选一选择题，并要求对正确作答进行推理质量评分",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "modalities": {
+      "value": "文本试题、选项与官方解释",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "languages": {
+      "value": "英语",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "difficulty": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "public_hidden_split": {
+      "value": "论文按全量或子量评测模型，但未描述对外的公开/隐藏划分，也未提供已发布数据集的划分文件。部分推理对比只在随机 1,000 题子集上进行。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "value": "总体准确率及分类准确率；对答对题目用多维评分细则（1 至 5 分）评估推理质量。表 2 还给出各模型实际评测题数，因个别题目失败而不全等于 7,546。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "scoring": {
+      "value": "统一提示要求模型以 “Answer: X” 格式返回答案。Qwen3.8-27B 与 Gemma 4.1 在本地四块 Quadro RTX 8000 上评测，温度为 0.3，最大输出 256 个 token。其余模型通过接口访问。答对题目再由 GPT-5.6-Terra 按评分细则打分。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "prompt_settings": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_scripts": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "comparability_warning": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "latest_status": {
+    "checked_at": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "latest_dataset_version": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "paper_revision_history": {
+      "value": "arXiv 仅有 v1，首次提交日期为 2026-11-15。PDF 由 Microsoft Word 生成。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "saturation": {
+      "value": "未饱和。六个模型的总体准确率介于 34.0% 至 73.9%，并形成三档：Llama 3.3 70B 与 Qwen3.8-27B 约为 34%，Gemma 4.1 为 41.3%，Nemotron-Ultra-550B 为 44.9%，Grok 4.6 为 68.4%，Claude Opus 5.5 为 73.9%。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "contamination_and_issues": {
+      "value": "源材料公开，污染程度无法量化。用 GPT-5.6-Terra 做自动评分可能引入偏差，且评分细则只用于答对的题目。更长的推理轨迹在两个前沿推理模型中与更低准确率相关，例如 Grok 4.6 在推理 token 少于 500 时准确率 90.3%，超过 20,000 时为 39.0%。Nemotron-Ultra-550B 存在明显的答案位置偏差，其他五个模型没有。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "derivatives": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "leaderboard": {
+    "snapshot_date": {
+      "value": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "official_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "third_party_url": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "results": {
+      "value": "均为论文作者自测，六个模型。表 2 总体准确率：Llama 3.3 70B 为 34.0%（7,540 题），Qwen3.8-27B 为 34.5%（7,357 题），Gemma 4.1 为 41.3%（7,517 题），Nemotron-Ultra-550B 为 44.9%（7,314 题），Grok 4.6 为 68.4%（7,530 题），Claude Opus 5.5 为 73.9%（7,544 题）。答对样本的评分细则上，问题理解与清晰度较高，事实与程序准确性、干扰项分析较低。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "coverage_note": {
+      "value": "题目规模与准确率取自摘要和表 2；评分细则均值取自表 3 与分析段落。表 2 的分列指标（除总体准确率外）未全部转入快照。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "public_emails": {
+      "value": "通讯作者 Liyan Wang：iwang@uidaho.edu",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "github_issues": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "official_social": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "privacy_policy": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    }
+  },
+  "original_files": {
+    "paper_pdf_url": {
+      "value": "https://arxiv.org/pdf/2611.21682",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "sha256": {
+      "value": "12b015c74dfc3847cd5dda0c38dec3dc71af98aff591e6e5456cbff51c9957c4",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "pdf_bytes": {
+      "value": "558012",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    },
+    "drive_folder": {
+      "value": "待核实",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "status": "待核实"
+    },
+    "other_documents": {
+      "value": "源考试材料来自公开的美国核管理委员会执照考试，但论文未提供整理后基准的下载地址。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ]
+    }
+  },
+  "drive_pdf": {
+    "value": {},
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.21682",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21682",
+        "accessed": "2026-11-19"
+      }
+    ]
+  },
+  "changelog": {
+    "value": [
+      {
+        "date": "2026-11-19",
+        "change": "初次收录"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.21682",
+        "accessed": "2026-11-19"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21682",
+        "accessed": "2026-11-19"
+      }
+    ]
+  }
+}

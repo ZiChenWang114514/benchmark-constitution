@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16",
-  "count": 1740,
+  "generated_at": "2026-11-19",
+  "count": 1761,
   "items": [
     {
       "id": "3-bench",
@@ -633918,6 +633918,1155 @@
           }
         }
       }
+    },
+    {
+      "id": "afrinorm",
+      "name": "AfriNORM",
+      "aliases": [],
+      "domain": "推理",
+      "subdomain": "非洲文化规范推理",
+      "description_zh": "AfriNORM 用情景选择题评测大语言模型对非洲文化规范与禁忌的推理。当前发布是约鲁巴语案例研究，共 65 道题，每题含正确规范、常识默认与对抗性干扰三项，并配有英语与约鲁巴语平行文本。论文报告，GPT-5 在英语提示下准确率为 98.46%，在约鲁巴语提示下为 89.23%；Llama 3.1 8B Instruct 则从 85.94% 降至 52.31%。",
+      "organization": "Independent researcher; Instituto Politécnico Nacional; University of Pretoria; University of Hamburg; Bayero University Kano; Imperial College London",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.22580",
+      "arxiv_id": "2611.22580",
+      "doi": "10.48550/arXiv.2611.22580",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "情景型三选一选择题",
+      "size": "65 Yoruba case-study questions",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22580",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22580",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "cae-bench",
+      "name": "CAE-Bench",
+      "aliases": [],
+      "domain": "物理",
+      "subdomain": "计算机辅助工程求解器智能体",
+      "description_zh": "评测智能体能否开发可在未见输入上复用的计算机辅助工程求解器。RC7 版本含 80 项计算任务：13 项给定方程的偏微分方程任务、43 项流体力学任务，以及 24 项改编自 CFDCodeBench、无留出工况的固定问题。论文评测 12 个模型，GPT-6.1 Sol 在中等推理设置下总分为 65.24，但在输入变化的 56 项任务上仅为 50.35；即使公开工况满分，留出工况仍可能得 0 分。代码以 Apache 2.0 许可发布。",
+      "organization": "Southern University of Science and Technology; Eastern Institute of Technology, Ningbo; Peking University",
+      "release_date": "2026-11-16",
+      "paper_url": "https://arxiv.org/abs/2611.21273",
+      "arxiv_id": "2611.21273",
+      "doi": "10.48550/arXiv.2611.21273",
+      "github_url": "https://github.com/AXeonV/CAE-Bench",
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "可复用计算机辅助工程求解器开发",
+      "size": "RC7: 80 computational tasks",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 国际许可协议。官方代码仓库采用 Apache License 2.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21273",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/AXeonV/CAE-Bench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 4,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [
+          {
+            "url": "https://api.github.com/repos/AXeonV/CAE-Bench",
+            "accessed": "2026-11-19",
+            "fields": [
+              "stargazers_count",
+              "license",
+              "created_at",
+              "open_issues_count"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "datatrace",
+      "name": "DataTrace",
+      "aliases": [],
+      "domain": "Agent",
+      "subdomain": "数据智能体根因定位",
+      "description_zh": "DataTrace 评测数据智能体能否在数据库产物图上定位被注入的根因，并检查诊断是否有查阅证据支撑。发布库含 83 个可运行环境；官方冻结榜为 64 项任务、每种模型两次重复。论文报告，七个专有模型的平均根因准确率为 48%，平均条件未支持率为 18%；冻结榜上 gpt-5.6-sol 的 RC@1 为 0.688，接地准确率为 0.586。",
+      "organization": "University of California, Los Angeles; Hong Kong University of Science and Technology (Guangzhou)",
+      "release_date": "2026-11-13",
+      "paper_url": "https://arxiv.org/abs/2611.18926",
+      "arxiv_id": "2611.18926",
+      "doi": "10.48550/arXiv.2611.18926",
+      "github_url": "https://hkustdial.github.io/datatrace/",
+      "hf_dataset": null,
+      "homepage": "https://hkustdial.github.io/datatrace/",
+      "leaderboard_url": "https://hkustdial.github.io/datatrace/",
+      "task_format": "有证据约束的数据库根因定位",
+      "size": "83 environments; frozen board 64 tasks × 2 repeats",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.18926",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.18926",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://hkustdial.github.io/datatrace/",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "diagtrace",
+      "name": "DiagTrace",
+      "aliases": [],
+      "domain": "生物与医学",
+      "subdomain": "临床交互式决策",
+      "description_zh": "基于 PubMed Central 病例报告构建的交互式临床决策基准，共 510 例、覆盖八个专科，其中 225 例用于主评测。模型在已知最终诊断的前提下，于固定轮次预算内向报告智能体请求信息，以重建有来源依据的诊断轨迹。论文评测四个模型，Claude Haiku 4.5 的事件级召回为 0.665、成对顺序准确率为 0.690。数据与交互轨迹发布于 GitHub。",
+      "organization": "Weill Cornell Medicine; Cornell University; Columbia University",
+      "release_date": "2026-11-16",
+      "paper_url": "https://arxiv.org/abs/2611.22009",
+      "arxiv_id": "2611.22009",
+      "doi": "10.48550/arXiv.2611.22009",
+      "github_url": "https://github.com/Fanncg1229/DiagTrace-code",
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "交互式诊断轨迹重建",
+      "size": "510 cases; 225 used in the main evaluation",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 国际许可协议。官方数据仓库的许可证在仓库元数据中记为 Other，具体条款以仓库文件为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22009",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22009",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Fanncg1229/Diagtrace",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 0,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [
+          {
+            "url": "https://api.github.com/repos/Fanncg1229/Diagtrace",
+            "accessed": "2026-11-19",
+            "fields": [
+              "stargazers_count",
+              "license",
+              "created_at",
+              "open_issues_count"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "eegprobe",
+      "name": "EEGProbe",
+      "aliases": [],
+      "domain": "生物与医学",
+      "subdomain": "脑电多模态理解",
+      "description_zh": "考察通用视觉–语言模型能否在最少预处理的通道级脑电上提取并推理信息的基准，含 620 道题、13 个子任务，分为信号分类、跨模态对齐与神经生理推理三类。论文以统一零样本协议评测 11 个模型，最强的 GPT-5.6 Sol 总分仅为 41.63%。数据集页面位于 Hugging Face，但论文同时写明评测资源将在正式发表后公开。",
+      "organization": "Kyushu University; Sichuan University of Science and Engineering",
+      "release_date": "2026-11-16",
+      "paper_url": "https://arxiv.org/abs/2611.20779",
+      "arxiv_id": "2611.20779",
+      "doi": "10.48550/arXiv.2611.20779",
+      "github_url": null,
+      "hf_dataset": "2122ZHU/EEGProbe",
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "脑电信号接地的视觉–语言模型问答",
+      "size": "620 questions; 13 subtasks",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。Hugging Face 数据卡在 2026-11-19 未给出已定稿的数据集许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.20779",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/2122ZHU/EEGProbe",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": 44,
+        "hf_likes": 0,
+        "provenance": [
+          {
+            "url": "https://huggingface.co/api/datasets/2122ZHU/EEGProbe",
+            "accessed": "2026-11-19",
+            "fields": [
+              "downloads",
+              "likes",
+              "private",
+              "gated",
+              "siblings",
+              "createdAt"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "ejbench",
+      "name": "EJBench",
+      "aliases": [],
+      "domain": "物理",
+      "subdomain": "共轭传热与电池冷板工程判断",
+      "description_zh": "由电池冷板共轭传热设计实验构建的工程判断基准，考察模型能否根据少量既有结果预测新工况并作出设计决策，而不运行仿真软件。测试集有 272 题，其中固定的 228 题用于官方分数。十个前沿模型中最高为 GPT-6 Astra 的宏观分数 0.710；开源 Qwen3.5-9B 经强化学习后由 0.071 升至 0.106。训练、验证、测试划分、评测程序和排行榜已在 Hugging Face 发布。",
+      "organization": "Gradient Dynamics; AESC",
+      "release_date": "2026-11-16",
+      "paper_url": "https://arxiv.org/abs/2611.21707",
+      "arxiv_id": "2611.21707",
+      "doi": "10.48550/arXiv.2611.21707",
+      "github_url": "https://huggingface.co/datasets/GradientDynamics/EJBench",
+      "hf_dataset": "GradientDynamics/EJBench",
+      "homepage": "https://huggingface.co/datasets/GradientDynamics/EJBench",
+      "leaderboard_url": "https://huggingface.co/datasets/GradientDynamics/EJBench",
+      "task_format": "工程判断问答与设计决策",
+      "size": "test 272 tasks (228 scored); train 1,281; validation 133",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 国际许可协议。Hugging Face 数据集许可为 CC BY-NC 4.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21707",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/GradientDynamics/EJBench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": 148,
+        "hf_likes": 1,
+        "provenance": [
+          {
+            "url": "https://huggingface.co/api/datasets/GradientDynamics/EJBench",
+            "accessed": "2026-11-19",
+            "fields": [
+              "downloads",
+              "likes",
+              "cardData.license",
+              "createdAt"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "forecastgym",
+      "name": "ForecastGym",
+      "aliases": [],
+      "domain": "Agent",
+      "subdomain": "预测智能体",
+      "description_zh": "ForecastGym 面向预测智能体：在问题仍未结算时，每隔两天记录四个商业网络搜索接口返回的结果，并在结局揭晓后离线重放冻结证据。首个发布包含 150 道预测市场问题、614 个证据状态和 13.1 万条搜索结果。论文报告，在主设定（Tavily 证据、最后状态）下，市场的 Brier 分数为 0.176，受评模型中 GPT-5.6 Terra 为 0.217，均落后于市场。",
+      "organization": "Carnegie Mellon University; Jilin University",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.23045",
+      "arxiv_id": "2611.23045",
+      "doi": "10.48550/arXiv.2611.23045",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "冻结证据重放上的概率预测",
+      "size": "150 questions; 614 evidence states; 131k search results",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.23045",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.23045",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "gdp-xlsx",
+      "name": "GDP.xlsx",
+      "aliases": [
+        "GDP.xlsx",
+        "gdp.xlsx"
+      ],
+      "domain": "Agent",
+      "subdomain": "专业工作簿智能体",
+      "description_zh": "GDP.xlsx 用 70 项由专业人士撰写的工作请求评测智能体能否在完整 Excel 工作簿或 CSV 上给出可依赖的答案，输入合计约 218 万个已填充单元格，评分准则 791 条。评测工具与 3 项公开任务以 Apache 2.0 发布，其余 67 项留出以防污染。论文报告，20 种配置中最高的 Gemini 4 Argon 严格 pass@1 仅为 38.3%，中位数为 19.3%。",
+      "organization": "Surge AI",
+      "release_date": "2026-09-30",
+      "paper_url": "https://arxiv.org/abs/2611.17766",
+      "arxiv_id": "2611.17766",
+      "doi": "10.48550/arXiv.2611.17766",
+      "github_url": "https://github.com/surge-ai/gdp-xlsx",
+      "hf_dataset": "surgeai/GDP.xlsx",
+      "homepage": "https://surgehq.ai/benchmarks/gdp-xlsx",
+      "leaderboard_url": "https://surgehq.ai/benchmarks/gdp-xlsx",
+      "task_format": "工作簿上的专业请求与严格准则评分",
+      "size": "70 tasks; 791 criteria; 3 public / 67 held out",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。评测工具与三道公开任务按论文说明采用 Apache 2.0；Hugging Face 数据卡与 GitHub 仓库亦标注 Apache-2.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17766",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17766",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://surgehq.ai/benchmarks/gdp-xlsx",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/surge-ai/gdp-xlsx",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/surgeai/GDP.xlsx",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 3,
+        "hf_downloads": 2408,
+        "hf_likes": 0,
+        "provenance": [
+          {
+            "metric": "github_stars",
+            "value": 3,
+            "url": "https://github.com/surge-ai/gdp-xlsx",
+            "source": "GitHub API stargazers_count",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_all_time",
+            "value": 2408,
+            "url": "https://huggingface.co/datasets/surgeai/GDP.xlsx",
+            "source": "Hugging Face page field downloadsAllTime",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_last_month",
+            "value": 1955,
+            "url": "https://huggingface.co/api/datasets/surgeai/GDP.xlsx",
+            "source": "Hugging Face API field downloads",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_likes",
+            "value": 0,
+            "url": "https://huggingface.co/api/datasets/surgeai/GDP.xlsx",
+            "source": "Hugging Face API field likes",
+            "accessed": "2026-11-19"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "hemif-bench",
+      "name": "HEmIF-Bench",
+      "aliases": [],
+      "domain": "生物与医学",
+      "subdomain": "计算病理与虚拟染色",
+      "description_zh": "评测苏木精–伊红到多重免疫荧光生成模型在像素级保真之外的下游效用，覆盖五个冻结生成器、五项任务和八个公开数据集，并与纯苏木精–伊红基础模型 UNI2 对照。基础模型路线的 MIPHEI-ViT 在生成器中领先，例如单细胞分类宏平均 AUROC 为 0.807；但各生成器的内部特征与生成输出均未能稳定超过 UNI2 的 0.816。论文未给出官方代码或评测包地址。",
+      "organization": "The Hong Kong University of Science and Technology",
+      "release_date": "2026-11-15",
+      "paper_url": "https://arxiv.org/abs/2611.19905",
+      "arxiv_id": "2611.19905",
+      "doi": "10.48550/arXiv.2611.19905",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "苏木精–伊红到多重免疫荧光生成模型的下游效用评测",
+      "size": "5 generators; 5 tasks; 8 public datasets",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。评测代码或汇总包的许可未在论文中给出。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19905",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19905",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "inclusionmed",
+      "name": "InclusionMed",
+      "aliases": [
+        "InclusionMed Atlas",
+        "InclusionMed Index"
+      ],
+      "domain": "生物与医学",
+      "subdomain": "包容性医疗人工智能评测",
+      "description_zh": "开放的包容性医疗人工智能评测计划。首发 InclusionMed Atlas 从 388 个候选中纳入四个公开基准，并加上私有的 InclusionMed-DxFiles，共五个基准、各占指数 20%。论文评测 22 个模型，InclusionMed Index 总分介于 17.5 至 49.1（百分制），最高为 Gemini 4 Argon 的 49.1。官方网站与 GitHub 仓库已公开。",
+      "organization": "InclusionMed Collaboration",
+      "release_date": "2026-11-16",
+      "paper_url": "https://arxiv.org/abs/2611.21218",
+      "arxiv_id": "2611.21218",
+      "doi": "10.48550/arXiv.2611.21218",
+      "github_url": "https://github.com/panuvi/inclusionmed",
+      "hf_dataset": null,
+      "homepage": "https://inclusionmed.ai/",
+      "leaderboard_url": "https://inclusionmed.ai/",
+      "task_format": "多基准医疗评测指数",
+      "size": "5 benchmarks in the first Atlas release; 22 models",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。论文同时标注 “© 2026 InclusionMed. All rights reserved.”。GitHub 仓库在 2026-11-19 未检索到 LICENSE 文件。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://inclusionmed.ai/",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/panuvi/inclusionmed",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 67,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [
+          {
+            "url": "https://api.github.com/repos/panuvi/inclusionmed",
+            "accessed": "2026-11-19",
+            "fields": [
+              "stargazers_count",
+              "license",
+              "created_at",
+              "homepage",
+              "open_issues_count"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "mineralexp",
+      "name": "MineralExp",
+      "aliases": [
+        "GeoTask19"
+      ],
+      "domain": "地球与天文",
+      "subdomain": "矿物勘查实验设计智能体",
+      "description_zh": "面向真实矿物勘查中地球化学实验设计的智能体基准，由已发表矿床文献构建并经领域专家审核，含 277 个案例和 1,572 条参考实验方案，按矿床系统五类过程、19 类科学任务组织。论文在四个开源智能体框架上各搭配七个前沿模型，共 28 种配置；总体召回介于 70.76% 至 91.56%，但最高总体 F1 仅为 63.84%，由 GPT-6.1 Sol 搭配 OpenCode 取得。代码与项目页已公开。",
+      "organization": "Jilin University; China University of Geosciences (Beijing)",
+      "release_date": "2026-11-13",
+      "paper_url": "https://arxiv.org/abs/2611.17931",
+      "arxiv_id": "2611.17931",
+      "doi": "10.48550/arXiv.2611.17931",
+      "github_url": "https://github.com/wangbing1416/MineralExp",
+      "hf_dataset": null,
+      "homepage": "https://wangbing1416.github.io/projects/mineralexp",
+      "leaderboard_url": "https://wangbing1416.github.io/projects/mineralexp",
+      "task_format": "矿物勘查实验方案的多标签分类与证据覆盖评测",
+      "size": "277 cases; 1,572 reference experimental plans",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。GitHub 仓库在 2026-11-19 未检索到 LICENSE 文件。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17931",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/wangbing1416/MineralExp",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://wangbing1416.github.io/projects/mineralexp",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 7,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [
+          {
+            "url": "https://api.github.com/repos/wangbing1416/MineralExp",
+            "accessed": "2026-11-19",
+            "fields": [
+              "stargazers_count",
+              "license",
+              "created_at",
+              "open_issues_count"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "mm-reportbench",
+      "name": "MM-ReportBench",
+      "aliases": [],
+      "domain": "多模态",
+      "subdomain": "表格到多模态报告",
+      "description_zh": "MM-ReportBench 评测由结构化表格生成带图表的多模态商业报告，含 386 项任务、185 张真实表格和 2,992 个参考关键点，覆盖六个领域，并使用双评委评分。论文在 20 个模型上报告，DeepSeek-R1 总体分最高为 68.9，仍低于人类基线 92.3；38.5% 的报告出现数值幻觉。",
+      "organization": "Hong Kong University of Science and Technology (Guangzhou)",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.22514",
+      "arxiv_id": "2611.22514",
+      "doi": "10.48550/arXiv.2611.22514",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "表格到多模态报告生成",
+      "size": "386 tasks; 185 tables; 2,992 keypoints",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22514",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22514",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "nebench-r1",
+      "name": "NEBench R1",
+      "aliases": [],
+      "domain": "物理",
+      "subdomain": "核工程领域推理",
+      "description_zh": "由美国核管理委员会反应堆操作员执照考试抽取的推理基准，含 7,546 道互不重复的选择题，覆盖 18 座核设施，并按知识与能力目录分类，附有官方解释作为推理评分参考。六个模型的总体准确率介于 34.0% 至 73.9%，最高为 Claude Opus 5.5 的 73.9%。论文未给出已发布的整理数据集或代码地址。",
+      "organization": "University of Idaho; Oregon State University",
+      "release_date": "2026-11-15",
+      "paper_url": "https://arxiv.org/abs/2611.21682",
+      "arxiv_id": "2611.21682",
+      "doi": "10.48550/arXiv.2611.21682",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "核工程选择题与推理质量评分",
+      "size": "7,546 unique multiple-choice questions",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 国际许可协议。整理后的基准发布许可未在论文中给出。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.21682",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21682",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "officeprism",
+      "name": "OfficePrism",
+      "aliases": [
+        "OfficePrism-420"
+      ],
+      "domain": "Agent",
+      "subdomain": "单域企业操作智能体",
+      "description_zh": "OfficePrism 在七个企业业务职能上评测单域操作，基准集 OfficePrism-420 含 420 项任务（105 项 L1、140 项 L2、175 项 L3），智能体看到的是中文工单。代码与数据发布于 GitHub。论文在 124 种模型–框架–接口配置下报告，自然语言与数据库联合通过率介于 22.6% 至 76.4%，中位数为 67.9%。",
+      "organization": "Alibaba Group; HKUST (Guangzhou); Alibaba International Digital Commerce Group; Guangzhou University",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.22262",
+      "arxiv_id": "2611.22262",
+      "doi": "10.48550/arXiv.2611.22262",
+      "github_url": "https://github.com/Leozyu/OfficePrism",
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "中文企业工单上的多步工具调用",
+      "size": "420 tasks (105 L1, 140 L2, 175 L3)",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。官方代码仓库在 2026-11-19 经 GitHub API 标注为 Apache License 2.0。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22262",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/Leozyu/OfficePrism",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 1,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [
+          {
+            "metric": "github_stars",
+            "value": 1,
+            "url": "https://github.com/Leozyu/OfficePrism",
+            "source": "GitHub API stargazers_count",
+            "accessed": "2026-11-19"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "omni-workspace",
+      "name": "Omni-Workspace",
+      "aliases": [],
+      "domain": "多模态",
+      "subdomain": "全模态工作区智能体",
+      "description_zh": "Omni-Workspace 评测全模态助手在持久多模态工作区中完成深度研究风格任务的能力，共 380 项任务（211 项 L1、169 项 L2），覆盖四种模态组合与 10 个主题，初始工作区含 2,552 个文件实例。论文评测了 18 个模型，最高平均分为 Gemini 3.5 Flash 的 65.93，随后是 Qwen3.7-Plus 的 64.78。",
+      "organization": "Shanghai Jiao Tong University; Tongyi Lab, Alibaba Group; Nanyang Technological University; University of Chinese Academy of Sciences",
+      "release_date": "2026-11-14",
+      "paper_url": "https://arxiv.org/abs/2611.19202",
+      "arxiv_id": "2611.19202",
+      "doi": "10.48550/arXiv.2611.19202",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "多模态工作区中的深度研究风格任务",
+      "size": "380 tasks (211 L1, 169 L2); 2,552 workspace files",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19202",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19202",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "omnitongue",
+      "name": "OmniTongue",
+      "aliases": [],
+      "domain": "生物与医学",
+      "subdomain": "中医舌诊多模态评测",
+      "description_zh": "面向中医舌诊的细粒度视觉问答基准，含 1,351 张经专家校验的图像和 21,616 条指令对，覆盖 16 个临床维度与 66 个细粒度标签。论文评测九个开源多模态大模型，并强调 Macro-F1 与准确率之间的差距；例如 Qwen3-VL 在舌体大小和瘀点上的准确率分别为 80.7% 和 90.3%，对应 Macro-F1 为 38.7% 和 29.0%。代码与数据集写明将在后续发布，目前尚未公开。",
+      "organization": "Northeastern University",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.22652",
+      "arxiv_id": "2611.22652",
+      "doi": "10.48550/arXiv.2611.22652",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "多维度舌诊视觉问答（选择题）",
+      "size": "1,351 images; 21,616 instruction pairs",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。代码与数据集许可以后续官方发布为准。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22652",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22652",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "raven-bench",
+      "name": "RAVEN-Bench",
+      "aliases": [
+        "RAVEN-Bench",
+        "Reasoning over Aerial Videos with EO–IR aligNment"
+      ],
+      "domain": "地球与天文",
+      "subdomain": "航空跨光谱视频理解",
+      "description_zh": "面向低空配对光电–红外视频的问答基准，含 100 对时间对齐视频和 1,200 道经独立审核的四选一题目，支持仅光电、仅红外和配对输入评测。论文评测 26 个多模态模型，并指出汇总准确率会高估有证据支持的推理：例如 Gemini 3.1 Pro 的配对汇总准确率为 49.6%，一致性与连贯性分数降至 36.8% 与 30.2%。代码以 Apache 2.0 发布，数据集为受限访问，且限研究与非商业用途。该文被 NeurIPS 2026 数据集与基准赛道接收。",
+      "organization": "The University of British Columbia; The Ohio State University; TerraSense Analytics",
+      "release_date": "2026-11-13",
+      "paper_url": "https://arxiv.org/abs/2611.18880",
+      "arxiv_id": "2611.18880",
+      "doi": "10.48550/arXiv.2611.18880",
+      "github_url": "https://github.com/yuhu990424/RAVEN-Bench",
+      "hf_dataset": "TerraSenseAnalytics/RAVEN-Bench",
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "配对光电–红外航空视频问答",
+      "size": "100 EO–IR video pairs; 1,200 four-way questions",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 国际许可协议。GitHub 代码为 Apache License 2.0。Hugging Face 数据卡将数据许可记为 other，并实行自动门禁；论文写明发布条款限研究与非商业用途，禁止再识别以及对特定个人的监视、跟踪或画像。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.18880",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/yuhu990424/RAVEN-Bench",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/TerraSenseAnalytics/RAVEN-Bench",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 0,
+        "hf_downloads": 416,
+        "hf_likes": 1,
+        "provenance": [
+          {
+            "url": "https://api.github.com/repos/yuhu990424/RAVEN-Bench",
+            "accessed": "2026-11-19",
+            "fields": [
+              "stargazers_count",
+              "license",
+              "created_at",
+              "open_issues_count"
+            ],
+            "method": "GET"
+          },
+          {
+            "url": "https://huggingface.co/api/datasets/TerraSenseAnalytics/RAVEN-Bench",
+            "accessed": "2026-11-19",
+            "fields": [
+              "downloads",
+              "likes",
+              "cardData.license",
+              "gated",
+              "createdAt"
+            ],
+            "method": "GET"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "sciworkbench",
+      "name": "SciWorkBench",
+      "aliases": [],
+      "domain": "综合科学",
+      "subdomain": "跨学科科学工作流智能体",
+      "description_zh": "面向真实实验科学工作流的智能体基准，覆盖生物学、化学、材料科学与物理学，最终收录 98 项任务（647 项候选中的 15.1%）。论文在 Claude Code 与 Codex 框架下评测 13 个模型–框架组合，最高均分为 Codex 搭配 GPT-5.6 Sol 的 57.38。论文写明执行与评测代码及完整数据未公开发布。",
+      "organization": "Alibaba Group; Tsinghua University; University of Chinese Academy of Sciences; University of Alberta; Zhejiang University",
+      "release_date": "2026-11-17",
+      "paper_url": "https://arxiv.org/abs/2611.22490",
+      "arxiv_id": "2611.22490",
+      "doi": "10.48550/arXiv.2611.22490",
+      "github_url": null,
+      "hf_dataset": null,
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "科学工作流执行与评分细则打分",
+      "size": "98 tasks (from 647 candidates)",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 国际许可协议。完整基准数据与评测代码未公开，第三方实验数据的可用性取决于原出处许可与授权。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.22490",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.22490",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "swe-cowork",
+      "name": "SWE-CoWork",
+      "aliases": [],
+      "domain": "代码",
+      "subdomain": "组织中的编码智能体",
+      "description_zh": "SWE-CoWork 把编码智能体放进模拟工程组织中评测：101 项任务对应 101 个真实仓库，每项有 26 名同事，需求分散在交接、记录与对话里，用 2,699 个失败到通过测试节点和 562 个通过到通过节点评分。论文评测了 11 个模型，领先的 GPT-6 Astra 完整任务通过率仅为 7.92%，Claude-Opus-5.5 的失败到通过分数为 63.84%，但完整通过率只有 6.93%。",
+      "organization": "TokenWave AI",
+      "release_date": "2026-11-15",
+      "paper_url": "https://arxiv.org/abs/2611.20218",
+      "arxiv_id": "2611.20218",
+      "doi": "10.48550/arXiv.2611.20218",
+      "github_url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+      "hf_dataset": "Tokenwave-AI/swe-cowork",
+      "homepage": "https://tokenwave-ai.github.io/swe-cowork-page",
+      "leaderboard_url": "https://tokenwave-ai.github.io/swe-cowork-page",
+      "task_format": "组织内协作式软件开发任务",
+      "size": "101 tasks; 2,699 F2P and 562 P2P test nodes",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International（CC BY-NC-SA 4.0）许可。Hugging Face 数据卡在 2026-11-19 将许可证标为 other；GitHub 仓库当日 API 未返回 SPDX 许可证。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.20218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.20218",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://tokenwave-ai.github.io/swe-cowork-page",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Tokenwave-AI/swe-cowork",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 14,
+        "hf_downloads": 442,
+        "hf_likes": 7,
+        "provenance": [
+          {
+            "metric": "github_stars",
+            "value": 14,
+            "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+            "source": "GitHub API stargazers_count",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_all_time",
+            "value": 442,
+            "url": "https://huggingface.co/datasets/Tokenwave-AI/swe-cowork",
+            "source": "Hugging Face page field downloadsAllTime",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_last_month",
+            "value": 442,
+            "url": "https://huggingface.co/api/datasets/Tokenwave-AI/swe-cowork",
+            "source": "Hugging Face API field downloads",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_likes",
+            "value": 7,
+            "url": "https://huggingface.co/api/datasets/Tokenwave-AI/swe-cowork",
+            "source": "Hugging Face API field likes",
+            "accessed": "2026-11-19"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "webarena-pro",
+      "name": "WebArena-Pro",
+      "aliases": [],
+      "domain": "Agent",
+      "subdomain": "多模态网络智能体",
+      "description_zh": "WebArena-Pro 是面向网络智能体的可复现多模态基准，含 300 项任务、20 个自托管应用和六个领域类别，并把音频、视频与文本、视觉一并作为观察。任务由人类最终审定，每项各有专用模板。论文报告，Codex 搭配 GPT 6.1 Sol 与 Claude Code 搭配 Claude Opus 5.5 的成功率同为 62.3%。本条目须与已有的 WebArena、VisualWebArena、VideoWebArena 区分。",
+      "organization": "McGill University; Mila; SNU; INSA Lyon; The Ohio State University; ServiceNow AI Research",
+      "release_date": "2026-11-13",
+      "paper_url": "https://arxiv.org/abs/2611.17955",
+      "arxiv_id": "2611.17955",
+      "doi": "10.48550/arXiv.2611.17955",
+      "github_url": "https://github.com/McGill-NLP/webarena-pro",
+      "hf_dataset": "WebArena-Pro/WebArena-Pro",
+      "homepage": "https://webarena-pro.github.io",
+      "leaderboard_url": "https://webarena-pro.github.io",
+      "task_format": "可复现自托管网站上的多模态浏览器任务",
+      "size": "300 tasks; 20 self-hosted apps; 204 single-site / 96 cross-site",
+      "license": "论文在 arXiv 采用 Creative Commons Attribution 4.0 International（CC BY 4.0）许可。官方代码仓库与主数据集在 2026-11-19 均标注为 MIT 许可。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17955",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://webarena-pro.github.io",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://github.com/McGill-NLP/webarena-pro",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": 14,
+        "hf_downloads": 127,
+        "hf_likes": 0,
+        "provenance": [
+          {
+            "metric": "github_stars",
+            "value": 14,
+            "url": "https://github.com/McGill-NLP/webarena-pro",
+            "source": "GitHub API stargazers_count",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_all_time",
+            "value": 127,
+            "url": "https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro",
+            "source": "Hugging Face page field downloadsAllTime",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_downloads_last_month",
+            "value": 127,
+            "url": "https://huggingface.co/api/datasets/WebArena-Pro/WebArena-Pro",
+            "source": "Hugging Face API field downloads",
+            "accessed": "2026-11-19"
+          },
+          {
+            "metric": "hf_likes",
+            "value": 0,
+            "url": "https://huggingface.co/api/datasets/WebArena-Pro/WebArena-Pro",
+            "source": "Hugging Face API field likes",
+            "accessed": "2026-11-19"
+          }
+        ],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
+    },
+    {
+      "id": "xlsar-bench",
+      "name": "XLSAR-Bench",
+      "aliases": [],
+      "domain": "地球与天文",
+      "subdomain": "大场景合成孔径雷达多模态理解",
+      "description_zh": "面向完整大场景合成孔径雷达图像的多模态基准，含 405 张图像，长边平均 7,153 像素，任务包括视觉问答、视觉定位与详细描述，并提供英文与中文评测。表 I 记录 14,250 条问答、3,260 条定位表达式和 405 条详细描述，标注经人工核验。论文称将数据开源至 Hugging Face，但 2026-11-19 访问该页面返回 401，下载量未能核实。",
+      "organization": "National University of Defense Technology",
+      "release_date": "2026-11-14",
+      "paper_url": "https://arxiv.org/abs/2611.19364",
+      "arxiv_id": "2611.19364",
+      "doi": "10.48550/arXiv.2611.19364",
+      "github_url": null,
+      "hf_dataset": "Jiaqikiki/XLSAR",
+      "homepage": null,
+      "leaderboard_url": null,
+      "task_format": "大场景合成孔径雷达图像的视觉问答、定位与描述",
+      "size": "405 images; 14,250 QA items; 3,260 grounding expressions; 405 captions",
+      "license": "论文在 arXiv 采用 arXiv 非独占分发许可。数据集许可因 Hugging Face 页面在核验日返回 401 而未能核实。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.19364",
+          "accessed": "2026-11-19"
+        },
+        {
+          "url": "https://huggingface.co/datasets/Jiaqikiki/XLSAR",
+          "accessed": "2026-11-19"
+        }
+      ],
+      "discovered_via": "官方页面 / 论文检索",
+      "homepage_note_zh": null,
+      "metrics": {
+        "citations": null,
+        "gh_stars": null,
+        "hf_downloads": null,
+        "hf_likes": null,
+        "provenance": [],
+        "paper_eligible": true,
+        "collected_at": "2026-11-19"
+      },
+      "audit_history": []
     }
   ]
 }

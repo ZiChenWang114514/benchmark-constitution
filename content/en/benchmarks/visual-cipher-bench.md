@@ -40,11 +40,11 @@ Sources: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16
 
 Sources: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (accessed 2026-11-16)
 
-**Code**：Unverified
+**Code**：Official code repository linked from the project homepage: https://github.com/Einsia/Visual-Cipher-Bench
 
 Sources: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (accessed 2026-11-16)
 
-**Dataset**：Unverified
+**Dataset**：The tasks and images are published in the official code repository: https://github.com/Einsia/Visual-Cipher-Bench (the README states that the benchmark contains 40 original visual puzzles and 67 images, under tasks/)
 
 Sources: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16861) [3](https://lab.einsia.ai/visual-cipher-bench) (accessed 2026-11-16)
 
@@ -249,3 +249,5 @@ Sources: [1](https://arxiv.org/abs/2611.16861) [2](https://arxiv.org/pdf/2611.16
 ## Changelog
 
 2026-11-16: Initial filing.
+
+2026-11-19: Added official code repository URL; Added official location of the task and image data.

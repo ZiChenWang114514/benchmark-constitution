@@ -2764,5 +2764,135 @@
       "Video-Index"
     ],
     "description_zh": "从大量视频理解评测中筛选抗捷径攻击的难题组成的视频理解元评测。"
+  },
+  "lifeval": {
+    "id": "lifeval",
+    "name": "LifeVal",
+    "domain": "Agent",
+    "aliases": [
+      "LifeVal"
+    ],
+    "description_zh": "OpenAI 发布页给出的日常生活任务评测，例如筛选幼儿园、按通勤与预算找房、在新诊断后规划饮食。"
+  },
+  "deepbinary": {
+    "id": "deepbinary",
+    "name": "DeepBinary",
+    "domain": "安全",
+    "aliases": [
+      "DeepBinary"
+    ],
+    "description_zh": "官方发布页图表：在12个已编译的 Windows 系统二进制上、最大推理档位评测利用/赏金累计结果。"
+  },
+  "patchbench": {
+    "id": "patchbench",
+    "name": "PatchBench",
+    "domain": "安全",
+    "aliases": [
+      "PatchBench"
+    ],
+    "description_zh": "官方发布页：用自动测试与模型评审评估补丁是否修复缺陷、保持原有行为并达到可合并标准。"
+  },
+  "aa-3d": {
+    "id": "aa-3d",
+    "name": "AA-3D",
+    "domain": "多模态",
+    "aliases": [
+      "AA-3D"
+    ],
+    "description_zh": "Artificial Analysis 的交互式三维体验评测，由人类盲选比较并报告 Elo。"
+  },
+  "aa-analystagent": {
+    "id": "aa-analystagent",
+    "name": "AA-AnalystAgent",
+    "domain": "Agent",
+    "aliases": [
+      "AA-AnalystAgent"
+    ],
+    "description_zh": "官方发布页正文给出的分析智能体评测；Astra 在全部五次独立尝试中都答对的题目占 62.5%。未给出版本号。"
+  },
+  "vals-science-index": {
+    "id": "vals-science-index",
+    "name": "Vals Science Index",
+    "domain": "综合科学",
+    "aliases": [
+      "Vals Science Index",
+      "Vals Science Index v1"
+    ],
+    "description_zh": "官方图表：生物数据分析、机制识别与研究工作流三个部分等权合成。本次按复合指数处理为不计分，并与已有的 Vals Index（vals-index）分列。"
+  },
+  "improper-actions-workplace-openai": {
+    "id": "improper-actions-workplace-openai",
+    "name": "Improper actions in workplace tasks",
+    "domain": "安全",
+    "aliases": [
+      "Improper actions in workplace tasks"
+    ],
+    "description_zh": "官方发布页：智能体在指令含糊、权限复杂的职场应用任务中的高严重伤害率。"
+  },
+  "secureswe": {
+    "id": "secureswe",
+    "name": "SecureSWE",
+    "domain": "安全",
+    "aliases": [
+      "SecureSWE"
+    ],
+    "description_zh": "官方发布页图表，说明为内部基准，评估安全敏感组件中的功能与安全代码。"
+  },
+  "webexploitbench": {
+    "id": "webexploitbench",
+    "name": "WebExploitBench",
+    "domain": "安全",
+    "aliases": [
+      "WebExploitBench",
+      "WebExploitBench v1.2"
+    ],
+    "description_zh": "Gemini 4 Neon 模型卡与评测方法页给出的 Web 漏洞利用评测。"
+  },
+  "autobaxbench": {
+    "id": "autobaxbench",
+    "name": "AutoBaxBench",
+    "domain": "安全",
+    "aliases": [
+      "AutoBaxBench"
+    ],
+    "description_zh": "官方发布页给出的安全后端生成评测，Neon for cyber 在 hard 档报告 76%。"
+  },
+  "bio-probe": {
+    "id": "bio-probe",
+    "name": "Bio-Probe",
+    "domain": "综合科学",
+    "aliases": [
+      "Bio-Probe"
+    ],
+    "description_zh": "GPT-6.2 系统卡中的内部探索性生物威胁构想评测。"
+  },
+  "eureka-bench": {
+    "id": "eureka-bench",
+    "name": "EUREKA-Bench",
+    "domain": "综合科学",
+    "aliases": [
+      "EUREKA-Bench"
+    ],
+    "description_zh": "GPT-6.2 系统卡中的探索性计算生物学方法评测。"
+  },
+  "sequitur-lab-automation": {
+    "id": "sequitur-lab-automation",
+    "name": "Sequitur Research: Lab Automation",
+    "domain": "综合科学",
+    "aliases": [
+      "Sequitur Research: Lab Automation",
+      "Sequitur Lab Automation"
+    ],
+    "description_zh": "GPT-6.2 系统卡中的探索性湿实验自动化评测。"
+  },
+  "openai-internal-research-debugging": {
+    "id": "openai-internal-research-debugging",
+    "name": "Internal Research Debugging",
+    "domain": "代码",
+    "aliases": [
+      "Internal Research Debugging",
+      "Internal Research Initial Stage Debugging"
+    ],
+    "description_zh": "GPT-6.2 系统卡 Table 5 中的内部研究调试评测。"
   }
 }
